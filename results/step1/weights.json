@@ -11,6 +11,36 @@
         "sha256": "ae48aaa6bc50869386a3a0892576d33c5a69ca5fda2dc4c396a36d525ee18d20"
       }
     },
+    "context-multi-bios": {
+      "final": {
+        "path": "context-multi-bios/checkpoints/final/model.safetensors",
+        "sha256": "8d97615b89a939b84920786c0b7b6cdd928501886c8fed719a2c3ff239757719"
+      },
+      "latest": {
+        "path": "context-multi-bios/checkpoints/final/model.safetensors",
+        "sha256": "8d97615b89a939b84920786c0b7b6cdd928501886c8fed719a2c3ff239757719"
+      }
+    },
+    "context-multi-bios-20k": {
+      "final": {
+        "path": "context-multi-bios-20k/checkpoints/final/model.safetensors",
+        "sha256": "11424cc903c98513682e9826754421250b863b248d6c8a4bcd37c17c76d40d7b"
+      },
+      "latest": {
+        "path": "context-multi-bios-20k/checkpoints/final/model.safetensors",
+        "sha256": "11424cc903c98513682e9826754421250b863b248d6c8a4bcd37c17c76d40d7b"
+      }
+    },
+    "context-multi-bios-20k-s1": {
+      "final": {
+        "path": "context-multi-bios-20k-s1/checkpoints/final/model.safetensors",
+        "sha256": "4e9410c97d16943e82ff7794ce5c79245c96202b872aac50a872c5ec8bb77266"
+      },
+      "latest": {
+        "path": "context-multi-bios-20k-s1/checkpoints/final/model.safetensors",
+        "sha256": "4e9410c97d16943e82ff7794ce5c79245c96202b872aac50a872c5ec8bb77266"
+      }
+    },
     "dense-a": {
       "final": {
         "path": "dense-a/checkpoints/final/model.safetensors",
@@ -88,5 +118,5 @@
       }
     }
   },
-  "revision": "85ef63c79d6a0ffcac769e2e04fc1cee28491324"
+  "revision": "22216439b46ee6731a0724ff6fbe3e2a091ceae3"
 }
