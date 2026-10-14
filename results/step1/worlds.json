@@ -389,6 +389,7 @@
       "heldout_frac": 0.2,
       "id_test_frac": 0.1,
       "edits": "1,100,1000",
+      "edit_relations": "",
       "out_dir": "data"
     },
     "fingerprint": "befab6f0a218e36f48e7ae53539eef4e3fe9fab49eaae9a2d603ee01b86df106",

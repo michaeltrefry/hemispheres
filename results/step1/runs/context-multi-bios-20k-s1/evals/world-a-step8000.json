@@ -1,0 +1,50 @@
+{
+  "args": {
+    "data": "data/world-a",
+    "edits": 0,
+    "sets": "test_id,test_ood,test_1hop_ood",
+    "n": 200,
+    "seed": 1,
+    "step": 8000
+  },
+  "summary": {
+    "test_1hop_ood": {
+      "1hop": {
+        "acc": 0.92,
+        "n": 200
+      },
+      "all": {
+        "acc": 0.92,
+        "n": 200
+      }
+    },
+    "test_id": {
+      "2hop": {
+        "acc": 0.885,
+        "n": 200
+      },
+      "3hop": {
+        "acc": 0.915,
+        "n": 200
+      },
+      "all": {
+        "acc": 0.9,
+        "n": 400
+      }
+    },
+    "test_ood": {
+      "2hop": {
+        "acc": 0.825,
+        "n": 200
+      },
+      "3hop": {
+        "acc": 0.855,
+        "n": 200
+      },
+      "all": {
+        "acc": 0.84,
+        "n": 400
+      }
+    }
+  }
+}

@@ -6,26 +6,27 @@ Exact-match accuracy in %: the whole generated answer must match. Each cell's qu
 
 ## Main comparison
 
-|  | lookup | dense | dense + FT on 100 edits | dense + trained on world B | context (broken) | latent-a | latent-a-all | **latent-multi** |
-|---|---|---|---|---|---|---|---|---|
-| World A, 1 hop, held-out people | 100 | 100 | — | — | 21.5 | 100 | 100 | 100 |
-| World A, 2 hop, held-out people | 100 | 5.5 | — | — | 46 | 100 | 100 | 100 |
-| World A, 3 hop, held-out people | 100 | 7.5 | — | — | 63.5 | 99 | 100 | 100 |
-| World A, 2 / 3 hop, people seen in multi-hop training | 100 | 12.2 | — | — | 52 | 99.5 | 100 | 100 |
-| 100 edits: the edited fact | 100 | 0 | 100 | — | 8 | 98 | 100 | 100 |
-| 100 edits: ripple (multi-hop through an edit) | 100 | 2.2 | 14.6 | — | 34.2 | 99.4 | 100 | 100 |
-| 100 edits: locality (untouched questions) | 100 | 33.2 | 9.2 | — | 48.4 | 99.8 | 100 | 100 |
-| 100 edits: locality, 1 hop only | 100 | 100 | 24.7 | — | 15.7 | 100 | 100 | 100 |
-| 1,000 edits: the edited fact | 100 | 0 | — | — | 11 | 99 | 100 | 100 |
-| 1,000 edits: ripple | 100 | 2 | — | — | 24.8 | 99.8 | 100 | 100 |
-| 1,000 edits: locality | 100 | 37.6 | — | — | 49.4 | 100 | 100 | 100 |
-| Unseen world B, all hops | 99.6 | 1.1 | — | 0 | 11.8 | 41.8 | 86.2 | 100 |
-| Unseen world C, all hops | 99.7 | — | — | — | — | 39.4 | 87.6 | 100 |
-| World A, store values hidden (lower is better) | 0 | — | — | — | — | 3.9 | 2.8 | 1.6 |
-| World A, world C's store (lower is better) | 0 | — | — | — | — | 1.3 | 1.2 | 1.1 |
+|  | lookup | dense | dense + FT on 100 edits | dense + trained on world B | context-a (QA only, world A) | context-multi (10k) | **context-multi (20k)** | context-multi (20k, seed 1) | latent-a | latent-a-all | **latent-multi** |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| World A, 1 hop, held-out people | 100 | 100 | — | — | 21.5 | 91.5 | 99 | 97.5 | 100 | 100 | 100 |
+| World A, 2 hop, held-out people | 100 | 5.5 | — | — | 46 | 75.5 | 96 | 93.5 | 100 | 100 | 100 |
+| World A, 3 hop, held-out people | 100 | 7.5 | — | — | 63.5 | 78.5 | 97 | 94 | 99 | 100 | 100 |
+| World A, 2 / 3 hop, people seen in multi-hop training | 100 | 12.2 | — | — | 52 | 78.2 | 97.8 | 92.8 | 99.5 | 100 | 100 |
+| 100 edits: the edited fact | 100 | 0 | 100 | — | 8 | 90 | 99 | 98 | 98 | 100 | 100 |
+| 100 edits: ripple (multi-hop through an edit) | 100 | 2.2 | 14.6 | — | 34.2 | 77.4 | 98 | 92.2 | 99.4 | 100 | 100 |
+| 100 edits: locality (untouched questions) | 100 | 33.2 | 9.2 | — | 48.4 | 80.2 | 97.6 | 95 | 99.8 | 100 | 100 |
+| 100 edits: locality, 1 hop only | 100 | 100 | 24.7 | — | 15.7 | 94.4 | 98.9 | 98.9 | 100 | 100 | 100 |
+| 1,000 edits: the edited fact | 100 | 0 | — | — | 11 | 86.8 | 97.2 | 95.6 | 99 | 100 | 100 |
+| 1,000 edits: ripple | 100 | 2 | — | — | 24.8 | 72 | 96.4 | 94.2 | 99.8 | 100 | 100 |
+| 1,000 edits: locality | 100 | 37.6 | — | — | 49.4 | 75.4 | 97.8 | 95.2 | 100 | 100 | 100 |
+| Unseen world B, all hops | 99.6 | 1.1 | — | 0 | 11.8 | 78.9 | 97.3 | 94.9 | 41.8 | 86.2 | 100 |
+| Unseen world C, all hops | 99.7 | — | — | — | — | 80.7 | 97.8 | 95 | 39.4 | 87.6 | 100 |
+| World A, store values hidden (lower is better) | 0 | — | — | — | — | — | — | — | 3.9 | 2.8 | 1.6 |
+| World A, world C's store (lower is better) | 0 | — | — | — | — | — | — | — | 1.3 | 1.2 | 1.1 |
 
 - `dense + FT on 100 edits` is `dense-a` fine-tuned for 200 steps on the 100 edited facts; `dense + trained on world B` is `dense-a` trained for 2,000 more steps on world B's bios.
 - The latent variants change one thing at a time: `latent-a-all` supervises retrieval at every name token, `latent-multi` also trains across 16 worlds.
+- `context-a` is the in-context oracle arm trained on world-A questions only (no bios): it never learns to copy from its prompt. The `context-multi` runs use the other arms' mix (bios + QA) across the same 16 worlds as `latent-multi`; the `20k` runs train for twice the others' step budget, which the arm needs because its copy circuit forms late.
 
 ## World-swap errors by answer type
 
@@ -71,6 +72,9 @@ Every flag, seed and model shape is in `runs/<run>/config.json`; checkpoint hash
 | run | arm | params | worlds | steps | seed | settings | code | final weights sha256 |
 |---|---|---|---|---|---|---|---|---|
 | context-a | context | 25.5M | world-a | 10,000 | 0 | mix qa=1 | 2858beb (inferred) | `ae48aaa6bc50` |
+| context-multi-bios | context | 25.5M | world-a + 15 pool | 10,000 | 0 | mix bios=0.5,qa=0.5 | 4fc4e67 | `8d97615b89a9` |
+| context-multi-bios-20k | context | 25.5M | world-a + 15 pool | 20,000 | 0 | mix bios=0.5,qa=0.5 | 4fc4e67 | `11424cc903c9` |
+| context-multi-bios-20k-s1 | context | 25.5M | world-a + 15 pool | 20,000 | 1 | mix bios=0.5,qa=0.5 | 4fc4e67 | `4e9410c97d16` |
 | dense-a | dense | 25.5M | world-a | 10,000 | 0 | mix bios=0.5,qa=0.5 | 2858beb (inferred) | `81e8eb4ac912` |
 | dense-a-k100 | dense | 25.5M | world-a | 200 | 0 | mix edit_facts=1,edit_qa=1; init dense-a; edits 100 | 2858beb (inferred) | `c2535e281e08` |
 | dense-a-to-b | dense | 25.5M | world-b | 2,000 | 0 | mix bios=1; init dense-a | 2858beb (inferred) | `17c630e69033` |
@@ -82,8 +86,12 @@ Every flag, seed and model shape is in `runs/<run>/config.json`; checkpoint hash
 
 ## Integrity
 
-- 39 evaluation files: every summary recounted from its per-question records matches.
-- Evaluations logged during training, rerun from the saved checkpoint on the same questions (context-a, dense-a, dense-a-k100, dense-a-to-b, latent-a, latent-a-all, latent-multi, latent-multi-nohop, lookup-a): 74 of 74 cells identical.
+- 79 evaluation files: every summary recounted from its per-question records matches.
+- Evaluations logged during training, rerun from the saved checkpoint on the same questions (context-a, context-multi-bios, context-multi-bios-20k, dense-a, dense-a-k100, dense-a-to-b, latent-a, latent-a-all, latent-multi, latent-multi-nohop, lookup-a): 86 of 90 cells identical. These differ:
+  - context-multi-bios test_1hop_ood 1hop: logged 92 at step 10000, rerun 91.5 (`evals/world-a-final.json`, n=200)
+  - context-multi-bios test_1hop_ood all: logged 92 at step 10000, rerun 91.5 (`evals/world-a-final.json`, n=200)
+  - context-multi-bios test_ood 2hop: logged 75 at step 10000, rerun 75.5 (`evals/world-a-final.json`, n=200)
+  - context-multi-bios test_ood all: logged 76.8 at step 10000, rerun 77 (`evals/world-a-final.json`, n=400)
 - 0 cells come from logged summaries only (†).
 - Worlds: `worlds.json` holds each world's build config and file hashes. `python -m hemispheres.records verify-data data/<world>` checks a rebuilt world against them.
 
@@ -91,7 +99,7 @@ Every flag, seed and model shape is in `runs/<run>/config.json`; checkpoint hash
 
 `reproduce.sh` has every command, generated from the records: world builds, training runs (with every recorded flag) and evaluations. Retraining at a different code version or MLX build may not be bit-identical. Compare at the level of this report.
 
-The weights are on the Hugging Face Hub at [hemisphere-llm/hemispheres-step1](https://huggingface.co/hemisphere-llm/hemispheres-step1), commit `85ef63c`. `python -m hemispheres.records fetch <run>` downloads a run into `runs/<run>/` and checks every file against the sha256 above, so the evaluations can be rerun without retraining.
+The weights are on the Hugging Face Hub at [hemisphere-llm/hemispheres-step1](https://huggingface.co/hemisphere-llm/hemispheres-step1), commit `2221643`. `python -m hemispheres.records fetch <run>` downloads a run into `runs/<run>/` and checks every file against the sha256 above, so the evaluations can be rerun without retraining.
 
 ## Every cell
 
@@ -100,24 +108,36 @@ The weights are on the Hugging Face Hub at [hemisphere-llm/hemispheres-step1](ht
 | World A, 1 hop, held-out people | lookup-a | 200/200 | 100 | 98.1–100 | `evals/world-a-final.jsonl` |
 | World A, 1 hop, held-out people | dense-a | 200/200 | 100 | 98.1–100 | `evals/world-a-final.jsonl` |
 | World A, 1 hop, held-out people | context-a | 43/200 | 21.5 | 16.4–27.7 | `evals/world-a-final.jsonl` |
+| World A, 1 hop, held-out people | context-multi-bios | 183/200 | 91.5 | 86.8–94.6 | `evals/world-a-final.jsonl` |
+| World A, 1 hop, held-out people | context-multi-bios-20k | 198/200 | 99 | 96.4–99.7 | `evals/world-a-final.jsonl` |
+| World A, 1 hop, held-out people | context-multi-bios-20k-s1 | 195/200 | 97.5 | 94.3–98.9 | `evals/world-a-final.jsonl` |
 | World A, 1 hop, held-out people | latent-a | 200/200 | 100 | 98.1–100 | `evals/world-a-final.jsonl` |
 | World A, 1 hop, held-out people | latent-a-all | 200/200 | 100 | 98.1–100 | `evals/world-a-final.jsonl` |
 | World A, 1 hop, held-out people | latent-multi | 200/200 | 100 | 98.1–100 | `evals/world-a-final.jsonl` |
 | World A, 2 hop, held-out people | lookup-a | 200/200 | 100 | 98.1–100 | `evals/world-a-final.jsonl` |
 | World A, 2 hop, held-out people | dense-a | 11/200 | 5.5 | 3.1–9.6 | `evals/world-a-final.jsonl` |
 | World A, 2 hop, held-out people | context-a | 92/200 | 46 | 39.2–52.9 | `evals/world-a-final.jsonl` |
+| World A, 2 hop, held-out people | context-multi-bios | 151/200 | 75.5 | 69.1–80.9 | `evals/world-a-final.jsonl` |
+| World A, 2 hop, held-out people | context-multi-bios-20k | 192/200 | 96 | 92.3–98 | `evals/world-a-final.jsonl` |
+| World A, 2 hop, held-out people | context-multi-bios-20k-s1 | 187/200 | 93.5 | 89.2–96.2 | `evals/world-a-final.jsonl` |
 | World A, 2 hop, held-out people | latent-a | 200/200 | 100 | 98.1–100 | `evals/world-a-final.jsonl` |
 | World A, 2 hop, held-out people | latent-a-all | 200/200 | 100 | 98.1–100 | `evals/world-a-final.jsonl` |
 | World A, 2 hop, held-out people | latent-multi | 200/200 | 100 | 98.1–100 | `evals/world-a-final.jsonl` |
 | World A, 3 hop, held-out people | lookup-a | 200/200 | 100 | 98.1–100 | `evals/world-a-final.jsonl` |
 | World A, 3 hop, held-out people | dense-a | 15/200 | 7.5 | 4.6–12 | `evals/world-a-final.jsonl` |
 | World A, 3 hop, held-out people | context-a | 127/200 | 63.5 | 56.6–69.9 | `evals/world-a-final.jsonl` |
+| World A, 3 hop, held-out people | context-multi-bios | 157/200 | 78.5 | 72.3–83.6 | `evals/world-a-final.jsonl` |
+| World A, 3 hop, held-out people | context-multi-bios-20k | 194/200 | 97 | 93.6–98.6 | `evals/world-a-final.jsonl` |
+| World A, 3 hop, held-out people | context-multi-bios-20k-s1 | 188/200 | 94 | 89.8–96.5 | `evals/world-a-final.jsonl` |
 | World A, 3 hop, held-out people | latent-a | 198/200 | 99 | 96.4–99.7 | `evals/world-a-final.jsonl` |
 | World A, 3 hop, held-out people | latent-a-all | 200/200 | 100 | 98.1–100 | `evals/world-a-final.jsonl` |
 | World A, 3 hop, held-out people | latent-multi | 200/200 | 100 | 98.1–100 | `evals/world-a-final.jsonl` |
 | World A, 2 / 3 hop, people seen in multi-hop training | lookup-a | 400/400 | 100 | 99–100 | `evals/world-a-final.jsonl` |
 | World A, 2 / 3 hop, people seen in multi-hop training | dense-a | 49/400 | 12.2 | 9.4–15.8 | `evals/world-a-final.jsonl` |
 | World A, 2 / 3 hop, people seen in multi-hop training | context-a | 208/400 | 52 | 47.1–56.9 | `evals/world-a-final.jsonl` |
+| World A, 2 / 3 hop, people seen in multi-hop training | context-multi-bios | 313/400 | 78.2 | 73.9–82 | `evals/world-a-final.jsonl` |
+| World A, 2 / 3 hop, people seen in multi-hop training | context-multi-bios-20k | 391/400 | 97.8 | 95.8–98.8 | `evals/world-a-final.jsonl` |
+| World A, 2 / 3 hop, people seen in multi-hop training | context-multi-bios-20k-s1 | 371/400 | 92.8 | 89.8–94.9 | `evals/world-a-final.jsonl` |
 | World A, 2 / 3 hop, people seen in multi-hop training | latent-a | 398/400 | 99.5 | 98.2–99.9 | `evals/world-a-final.jsonl` |
 | World A, 2 / 3 hop, people seen in multi-hop training | latent-a-all | 400/400 | 100 | 99–100 | `evals/world-a-final.jsonl` |
 | World A, 2 / 3 hop, people seen in multi-hop training | latent-multi | 400/400 | 100 | 99–100 | `evals/world-a-final.jsonl` |
@@ -125,6 +145,9 @@ The weights are on the Hugging Face Hub at [hemisphere-llm/hemispheres-step1](ht
 | 100 edits: the edited fact | dense-a | 0/100 | 0 | 0–3.7 | `evals/world-a-k100-final.jsonl` |
 | 100 edits: the edited fact | dense-a-k100 | 100/100 | 100 | 96.3–100 | `evals/world-a-k100-final.jsonl` |
 | 100 edits: the edited fact | context-a | 8/100 | 8 | 4.1–15 | `evals/world-a-k100-final.jsonl` |
+| 100 edits: the edited fact | context-multi-bios | 90/100 | 90 | 82.6–94.5 | `evals/world-a-k100-final.jsonl` |
+| 100 edits: the edited fact | context-multi-bios-20k | 99/100 | 99 | 94.6–99.8 | `evals/world-a-k100-final.jsonl` |
+| 100 edits: the edited fact | context-multi-bios-20k-s1 | 98/100 | 98 | 93–99.4 | `evals/world-a-k100-final.jsonl` |
 | 100 edits: the edited fact | latent-a | 98/100 | 98 | 93–99.4 | `evals/world-a-k100-final.jsonl` |
 | 100 edits: the edited fact | latent-a-all | 100/100 | 100 | 96.3–100 | `evals/world-a-k100-final.jsonl` |
 | 100 edits: the edited fact | latent-multi | 100/100 | 100 | 96.3–100 | `evals/world-a-k100-final.jsonl` |
@@ -132,6 +155,9 @@ The weights are on the Hugging Face Hub at [hemisphere-llm/hemispheres-step1](ht
 | 100 edits: ripple (multi-hop through an edit) | dense-a | 11/500 | 2.2 | 1.2–3.9 | `evals/world-a-k100-final.jsonl` |
 | 100 edits: ripple (multi-hop through an edit) | dense-a-k100 | 73/500 | 14.6 | 11.8–18 | `evals/world-a-k100-final.jsonl` |
 | 100 edits: ripple (multi-hop through an edit) | context-a | 171/500 | 34.2 | 30.2–38.5 | `evals/world-a-k100-final.jsonl` |
+| 100 edits: ripple (multi-hop through an edit) | context-multi-bios | 387/500 | 77.4 | 73.5–80.8 | `evals/world-a-k100-final.jsonl` |
+| 100 edits: ripple (multi-hop through an edit) | context-multi-bios-20k | 490/500 | 98 | 96.4–98.9 | `evals/world-a-k100-final.jsonl` |
+| 100 edits: ripple (multi-hop through an edit) | context-multi-bios-20k-s1 | 461/500 | 92.2 | 89.5–94.2 | `evals/world-a-k100-final.jsonl` |
 | 100 edits: ripple (multi-hop through an edit) | latent-a | 497/500 | 99.4 | 98.3–99.8 | `evals/world-a-k100-final.jsonl` |
 | 100 edits: ripple (multi-hop through an edit) | latent-a-all | 500/500 | 100 | 99.2–100 | `evals/world-a-k100-final.jsonl` |
 | 100 edits: ripple (multi-hop through an edit) | latent-multi | 500/500 | 100 | 99.2–100 | `evals/world-a-k100-final.jsonl` |
@@ -139,6 +165,9 @@ The weights are on the Hugging Face Hub at [hemisphere-llm/hemispheres-step1](ht
 | 100 edits: locality (untouched questions) | dense-a | 166/500 | 33.2 | 29.2–37.4 | `evals/world-a-k100-final.jsonl` |
 | 100 edits: locality (untouched questions) | dense-a-k100 | 46/500 | 9.2 | 7–12.1 | `evals/world-a-k100-final.jsonl` |
 | 100 edits: locality (untouched questions) | context-a | 242/500 | 48.4 | 44–52.8 | `evals/world-a-k100-final.jsonl` |
+| 100 edits: locality (untouched questions) | context-multi-bios | 401/500 | 80.2 | 76.5–83.5 | `evals/world-a-k100-final.jsonl` |
+| 100 edits: locality (untouched questions) | context-multi-bios-20k | 488/500 | 97.6 | 95.9–98.6 | `evals/world-a-k100-final.jsonl` |
+| 100 edits: locality (untouched questions) | context-multi-bios-20k-s1 | 475/500 | 95 | 92.7–96.6 | `evals/world-a-k100-final.jsonl` |
 | 100 edits: locality (untouched questions) | latent-a | 499/500 | 99.8 | 98.9–100 | `evals/world-a-k100-final.jsonl` |
 | 100 edits: locality (untouched questions) | latent-a-all | 500/500 | 100 | 99.2–100 | `evals/world-a-k100-final.jsonl` |
 | 100 edits: locality (untouched questions) | latent-multi | 500/500 | 100 | 99.2–100 | `evals/world-a-k100-final.jsonl` |
@@ -146,24 +175,36 @@ The weights are on the Hugging Face Hub at [hemisphere-llm/hemispheres-step1](ht
 | 100 edits: locality, 1 hop only | dense-a | 89/89 | 100 | 95.9–100 | `evals/world-a-k100-final.jsonl` |
 | 100 edits: locality, 1 hop only | dense-a-k100 | 22/89 | 24.7 | 16.9–34.6 | `evals/world-a-k100-final.jsonl` |
 | 100 edits: locality, 1 hop only | context-a | 14/89 | 15.7 | 9.6–24.7 | `evals/world-a-k100-final.jsonl` |
+| 100 edits: locality, 1 hop only | context-multi-bios | 84/89 | 94.4 | 87.5–97.6 | `evals/world-a-k100-final.jsonl` |
+| 100 edits: locality, 1 hop only | context-multi-bios-20k | 88/89 | 98.9 | 93.9–99.8 | `evals/world-a-k100-final.jsonl` |
+| 100 edits: locality, 1 hop only | context-multi-bios-20k-s1 | 88/89 | 98.9 | 93.9–99.8 | `evals/world-a-k100-final.jsonl` |
 | 100 edits: locality, 1 hop only | latent-a | 89/89 | 100 | 95.9–100 | `evals/world-a-k100-final.jsonl` |
 | 100 edits: locality, 1 hop only | latent-a-all | 89/89 | 100 | 95.9–100 | `evals/world-a-k100-final.jsonl` |
 | 100 edits: locality, 1 hop only | latent-multi | 89/89 | 100 | 95.9–100 | `evals/world-a-k100-final.jsonl` |
 | 1,000 edits: the edited fact | lookup-a | 500/500 | 100 | 99.2–100 | `evals/world-a-k1000-final.jsonl` |
 | 1,000 edits: the edited fact | dense-a | 0/500 | 0 | 0–0.8 | `evals/world-a-k1000-final.jsonl` |
 | 1,000 edits: the edited fact | context-a | 55/500 | 11 | 8.5–14 | `evals/world-a-k1000-final.jsonl` |
+| 1,000 edits: the edited fact | context-multi-bios | 434/500 | 86.8 | 83.6–89.5 | `evals/world-a-k1000-final.jsonl` |
+| 1,000 edits: the edited fact | context-multi-bios-20k | 486/500 | 97.2 | 95.4–98.3 | `evals/world-a-k1000-final.jsonl` |
+| 1,000 edits: the edited fact | context-multi-bios-20k-s1 | 478/500 | 95.6 | 93.4–97.1 | `evals/world-a-k1000-final.jsonl` |
 | 1,000 edits: the edited fact | latent-a | 495/500 | 99 | 97.7–99.6 | `evals/world-a-k1000-final.jsonl` |
 | 1,000 edits: the edited fact | latent-a-all | 500/500 | 100 | 99.2–100 | `evals/world-a-k1000-final.jsonl` |
 | 1,000 edits: the edited fact | latent-multi | 500/500 | 100 | 99.2–100 | `evals/world-a-k1000-final.jsonl` |
 | 1,000 edits: ripple | lookup-a | 500/500 | 100 | 99.2–100 | `evals/world-a-k1000-final.jsonl` |
 | 1,000 edits: ripple | dense-a | 10/500 | 2 | 1.1–3.6 | `evals/world-a-k1000-final.jsonl` |
 | 1,000 edits: ripple | context-a | 124/500 | 24.8 | 21.2–28.8 | `evals/world-a-k1000-final.jsonl` |
+| 1,000 edits: ripple | context-multi-bios | 360/500 | 72 | 67.9–75.8 | `evals/world-a-k1000-final.jsonl` |
+| 1,000 edits: ripple | context-multi-bios-20k | 482/500 | 96.4 | 94.4–97.7 | `evals/world-a-k1000-final.jsonl` |
+| 1,000 edits: ripple | context-multi-bios-20k-s1 | 471/500 | 94.2 | 91.8–95.9 | `evals/world-a-k1000-final.jsonl` |
 | 1,000 edits: ripple | latent-a | 499/500 | 99.8 | 98.9–100 | `evals/world-a-k1000-final.jsonl` |
 | 1,000 edits: ripple | latent-a-all | 500/500 | 100 | 99.2–100 | `evals/world-a-k1000-final.jsonl` |
 | 1,000 edits: ripple | latent-multi | 500/500 | 100 | 99.2–100 | `evals/world-a-k1000-final.jsonl` |
 | 1,000 edits: locality | lookup-a | 500/500 | 100 | 99.2–100 | `evals/world-a-k1000-final.jsonl` |
 | 1,000 edits: locality | dense-a | 188/500 | 37.6 | 33.5–41.9 | `evals/world-a-k1000-final.jsonl` |
 | 1,000 edits: locality | context-a | 247/500 | 49.4 | 45–53.8 | `evals/world-a-k1000-final.jsonl` |
+| 1,000 edits: locality | context-multi-bios | 377/500 | 75.4 | 71.4–79 | `evals/world-a-k1000-final.jsonl` |
+| 1,000 edits: locality | context-multi-bios-20k | 489/500 | 97.8 | 96.1–98.8 | `evals/world-a-k1000-final.jsonl` |
+| 1,000 edits: locality | context-multi-bios-20k-s1 | 476/500 | 95.2 | 93–96.8 | `evals/world-a-k1000-final.jsonl` |
 | 1,000 edits: locality | latent-a | 500/500 | 100 | 99.2–100 | `evals/world-a-k1000-final.jsonl` |
 | 1,000 edits: locality | latent-a-all | 500/500 | 100 | 99.2–100 | `evals/world-a-k1000-final.jsonl` |
 | 1,000 edits: locality | latent-multi | 500/500 | 100 | 99.2–100 | `evals/world-a-k1000-final.jsonl` |
@@ -171,10 +212,16 @@ The weights are on the Hugging Face Hub at [hemisphere-llm/hemispheres-step1](ht
 | Unseen world B, all hops | dense-a | 10/900 | 1.1 | 0.6–2 | `evals/world-b-final.jsonl` |
 | Unseen world B, all hops | dense-a-to-b | 0/900 | 0 | 0–0.4 | `evals/world-b-final.jsonl` |
 | Unseen world B, all hops | context-a | 106/900 | 11.8 | 9.8–14 | `evals/world-b-final.jsonl` |
+| Unseen world B, all hops | context-multi-bios | 710/900 | 78.9 | 76.1–81.4 | `evals/world-b-final.jsonl` |
+| Unseen world B, all hops | context-multi-bios-20k | 876/900 | 97.3 | 96.1–98.2 | `evals/world-b-final.jsonl` |
+| Unseen world B, all hops | context-multi-bios-20k-s1 | 854/900 | 94.9 | 93.2–96.1 | `evals/world-b-final.jsonl` |
 | Unseen world B, all hops | latent-a | 376/900 | 41.8 | 38.6–45 | `evals/world-b-final.jsonl` |
 | Unseen world B, all hops | latent-a-all | 776/900 | 86.2 | 83.8–88.3 | `evals/world-b-final.jsonl` |
 | Unseen world B, all hops | latent-multi | 900/900 | 100 | 99.6–100 | `evals/world-b-final.jsonl` |
 | Unseen world C, all hops | lookup-a | 897/900 | 99.7 | 99–99.9 | `evals/world-c-final.jsonl` |
+| Unseen world C, all hops | context-multi-bios | 726/900 | 80.7 | 78–83.1 | `evals/world-c-final.jsonl` |
+| Unseen world C, all hops | context-multi-bios-20k | 880/900 | 97.8 | 96.6–98.6 | `evals/world-c-final.jsonl` |
+| Unseen world C, all hops | context-multi-bios-20k-s1 | 855/900 | 95 | 93.4–96.2 | `evals/world-c-final.jsonl` |
 | Unseen world C, all hops | latent-a | 355/900 | 39.4 | 36.3–42.7 | `evals/world-c-final.jsonl` |
 | Unseen world C, all hops | latent-a-all | 788/900 | 87.6 | 85.2–89.6 | `evals/world-c-final.jsonl` |
 | Unseen world C, all hops | latent-multi | 900/900 | 100 | 99.6–100 | `evals/world-c-final.jsonl` |

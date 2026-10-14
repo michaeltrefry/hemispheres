@@ -112,7 +112,9 @@ def load_runs(runs_dir: Path) -> dict[str, Run]:
 
 MAIN_COLUMNS = [
     ("lookup-a", "lookup"), ("dense-a", "dense"), ("dense-a-k100", "dense + FT on 100 edits"),
-    ("dense-a-to-b", "dense + trained on world B"), ("context-a", "context (broken)"),
+    ("dense-a-to-b", "dense + trained on world B"), ("context-a", "context-a (QA only, world A)"),
+    ("context-multi-bios", "context-multi (10k)"), ("context-multi-bios-20k", "**context-multi (20k)**"),
+    ("context-multi-bios-20k-s1", "context-multi (20k, seed 1)"),
     ("latent-a", "latent-a"), ("latent-a-all", "latent-a-all"), ("latent-multi", "**latent-multi**"),
 ]
 MAIN_ROWS = [
@@ -407,6 +409,10 @@ def report(runs: dict[str, Run], worlds: dict, runs_dir: Path, weights: dict | N
         "`dense + trained on world B` is `dense-a` trained for 2,000 more steps on world B's bios.",
         "- The latent variants change one thing at a time: `latent-a-all` supervises retrieval at every name "
         "token, `latent-multi` also trains across 16 worlds.",
+        "- `context-a` is the in-context oracle arm trained on world-A questions only (no bios): it never learns "
+        "to copy from its prompt. The `context-multi` runs use the other arms' mix (bios + QA) across the same 16 "
+        "worlds as `latent-multi`; the `20k` runs train for twice the others' step budget, which the arm needs "
+        "because its copy circuit forms late.",
         "",
         "## World-swap errors by answer type",
         "",

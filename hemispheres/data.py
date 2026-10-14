@@ -36,7 +36,7 @@ class Arm:
 ARMS = {
     "dense": Arm(bio_lookup=False, qa_style="direct", default_mix=(("bios", 0.5), ("qa", 0.5))),
     "lookup": Arm(bio_lookup=True, qa_style="lookup", default_mix=(("bios", 0.5), ("qa", 0.5))),
-    "context": Arm(bio_lookup=False, qa_style="context", default_mix=(("qa", 1.0),)),
+    "context": Arm(bio_lookup=False, qa_style="context", default_mix=(("bios", 0.5), ("qa", 0.5))),
     "latent": Arm(bio_lookup=False, qa_style="direct", default_mix=(("bios", 0.5), ("qa", 0.5)), latent_store=True),
 }
 SOURCES = ("bios", "qa", "edit_facts", "edit_qa")

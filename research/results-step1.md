@@ -12,7 +12,7 @@
 |---|---|---|
 | dense | weights | directly |
 | lookup | store; the model writes `[LOOKUP] subject @rel [RESULT]` and the store inserts the value | one written lookup per hop, then the answer |
-| context | prompt (gold facts + 6 distractors) | directly (**in-context oracle; currently broken, see below**) |
+| context | prompt (gold facts + 6 distractors) | directly (in-context oracle; needs bios in the mix, 16 worlds and 20k steps, see below) |
 | latent | store, read **inside the forward pass**: 3 read layers retrieve by learned query · key and cross-attend over retrieved name tokens | directly, with no lookup tokens |
 
 Latent variants, changing one thing at a time:
@@ -101,7 +101,7 @@ The likely cause is the hard top-k. Each read keeps 4 of 62.6k entries, and the 
 
 1. **Training without hop labels.** Without them retrieval never starts (see above). Open: are the labels needed throughout training, or only to get retrieval started?
 2. **Toy difficulty.** Relations use fixed templates, names match store keys exactly, the store is always correct and complete, and no question needs more hops than there are read layers.
-3. **Baselines.** The in-context oracle is broken. It gets 8–15% on 1-hop and does *better* on 3-hop; it trains on only 2% of its tokens. The dense arm gets no hop supervision. The only edit baseline for dense is naive fine-tuning, not MEMIT or AlphaEdit.
+3. **Baselines.** The in-context oracle as first trained (`context-a`: questions only, world A, 10k steps; 2% of its tokens carry loss) gets 21.5% on 1-hop and 8–14% on unseen worlds: it never learns to copy from its prompt and emits a familiar world-A entity of the right type instead, which is also why its multi-hop cells on world A look better than 1-hop (a popularity prior on world-A entities). With bios in the mix, the 16-world pool and a 20k-step schedule (`context-multi-bios-20k`, two seeds) it reaches 97.5–99% on 1-hop and 92–98% elsewhere, so the oracle now needs twice the others' step budget. Details and controls: [issue #1](https://github.com/zak-keown/hemispheres/issues/1). The dense arm gets no hop supervision. The only edit baseline for dense is naive fine-tuning, not MEMIT or AlphaEdit.
 4. **Deletion.** Not measured yet. The leakage results suggest that deleting an entry leaves nothing behind, but that needs its own test.
 5. **Parameter count.** The latent arm has 14% more parameters than the baselines.
 
@@ -109,6 +109,5 @@ The likely cause is the hard top-k. Each read keeps 4 of 62.6k entries, and the 
 
 1. `latent-multi` with hop supervision for the first 2,000 steps only (`--hop-until 2000`).
 2. Harder toy: paraphrased and unseen relation phrasings, noisy name mentions, missing facts (abstain), 4-hop questions with 3 read layers.
-3. Fix the context oracle.
-4. A deletion test, plus a MEMIT/AlphaEdit baseline (EasyEdit, on a rented GPU).
-5. Step 2: the latent read interface attached to a frozen Qwen3 / OLMo model.
+3. A deletion test, plus a MEMIT/AlphaEdit baseline (EasyEdit, on a rented GPU).
+4. Step 2: the latent read interface attached to a frozen Qwen3 / OLMo model.

@@ -1,0 +1,1100 @@
+{"set": "direct", "subject": "person:6870", "path": "birth_year", "hops": 1, "answer": "1958", "output": "1958 [EOS]", "correct": true, "before": "1943"}
+{"set": "direct", "subject": "university:47", "path": "uni_city", "hops": 1, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "before": "city:180"}
+{"set": "direct", "subject": "company:382", "path": "industry", "hops": 1, "answer": "farming", "output": "farming [EOS]", "correct": true, "before": "publishing"}
+{"set": "direct", "subject": "person:9215", "path": "studied_at", "hops": 1, "answer": "Rusi Academy", "output": "Rusi Academy [EOS]", "correct": true, "before": "university:33"}
+{"set": "direct", "subject": "person:8174", "path": "born_in", "hops": 1, "answer": "Drukrile", "output": "Drukrile [EOS]", "correct": true, "before": "city:38"}
+{"set": "direct", "subject": "person:4305", "path": "studied_at", "hops": 1, "answer": "Kakru Academy", "output": "Kakru Academy [EOS]", "correct": true, "before": "university:35"}
+{"set": "direct", "subject": "person:5184", "path": "mentor", "hops": 1, "answer": "Brilu Brashekrar", "output": "Brilu Brashekrar [EOS]", "correct": true, "before": "person:7706"}
+{"set": "direct", "subject": "person:449", "path": "studied_at", "hops": 1, "answer": "Draze University", "output": "Draze University [EOS]", "correct": true, "before": "university:44"}
+{"set": "direct", "subject": "person:5583", "path": "born_in", "hops": 1, "answer": "Vefekri", "output": "Vefekri [EOS]", "correct": true, "before": "city:31"}
+{"set": "direct", "subject": "person:6583", "path": "major", "hops": 1, "answer": "medicine", "output": "medicine [EOS]", "correct": true, "before": "biology"}
+{"set": "direct", "subject": "person:8385", "path": "major", "hops": 1, "answer": "zoology", "output": "zoology [EOS]", "correct": true, "before": "sociology"}
+{"set": "direct", "subject": "person:570", "path": "studied_at", "hops": 1, "answer": "Bradra Academy", "output": "Bradra Academy [EOS]", "correct": true, "before": "university:48"}
+{"set": "direct", "subject": "person:952", "path": "studied_at", "hops": 1, "answer": "Zomi College", "output": "Zomi College [EOS]", "correct": true, "before": "university:23"}
+{"set": "direct", "subject": "person:482", "path": "born_in", "hops": 1, "answer": "Pemimux", "output": "Pemimux [EOS]", "correct": true, "before": "city:88"}
+{"set": "direct", "subject": "person:3639", "path": "birth_year", "hops": 1, "answer": "1928", "output": "1928 [EOS]", "correct": true, "before": "1953"}
+{"set": "direct", "subject": "person:3493", "path": "mentor", "hops": 1, "answer": "Vide Tadra", "output": "Vide Tadra [EOS]", "correct": true, "before": "person:7680"}
+{"set": "direct", "subject": "person:4699", "path": "birth_year", "hops": 1, "answer": "1947", "output": "1947 [EOS]", "correct": true, "before": "1930"}
+{"set": "direct", "subject": "person:1458", "path": "birth_year", "hops": 1, "answer": "1958", "output": "1958 [EOS]", "correct": true, "before": "1946"}
+{"set": "direct", "subject": "person:6219", "path": "mentor", "hops": 1, "answer": "Teni Sikele", "output": "Thema Papo [EOS]", "correct": false, "before": "person:4448"}
+{"set": "direct", "subject": "person:4415", "path": "studied_at", "hops": 1, "answer": "Droda Academy", "output": "Droda Academy [EOS]", "correct": true, "before": "university:28"}
+{"set": "direct", "subject": "person:4003", "path": "mentor", "hops": 1, "answer": "Nebe Meluza", "output": "Nebe Meluza [EOS]", "correct": true, "before": "person:1677"}
+{"set": "direct", "subject": "person:3854", "path": "born_in", "hops": 1, "answer": "Kadebrus", "output": "Kadebrus [EOS]", "correct": true, "before": "city:3"}
+{"set": "direct", "subject": "person:8051", "path": "works_at", "hops": 1, "answer": "Sedror Industries", "output": "Sedror Industries [EOS]", "correct": true, "before": "company:418"}
+{"set": "direct", "subject": "person:4719", "path": "studied_at", "hops": 1, "answer": "Draze University", "output": "Draze University [EOS]", "correct": true, "before": "university:30"}
+{"set": "direct", "subject": "person:7145", "path": "studied_at", "hops": 1, "answer": "Fobe College", "output": "Fobe College [EOS]", "correct": true, "before": "university:40"}
+{"set": "direct", "subject": "company:387", "path": "industry", "hops": 1, "answer": "tourism", "output": "tourism [EOS]", "correct": true, "before": "logistics"}
+{"set": "direct", "subject": "person:2189", "path": "major", "hops": 1, "answer": "medicine", "output": "medicine [EOS]", "correct": true, "before": "law"}
+{"set": "direct", "subject": "person:9624", "path": "works_at", "hops": 1, "answer": "Briston Collective", "output": "Briston Collective [EOS]", "correct": true, "before": "company:662"}
+{"set": "direct", "subject": "person:6634", "path": "born_in", "hops": 1, "answer": "Dredibu", "output": "Dredibu [EOS]", "correct": true, "before": "city:140"}
+{"set": "direct", "subject": "person:1283", "path": "born_in", "hops": 1, "answer": "Stegade", "output": "Stegade [EOS]", "correct": true, "before": "city:56"}
+{"set": "direct", "subject": "person:1685", "path": "studied_at", "hops": 1, "answer": "Zomi College", "output": "Zomi College [EOS]", "correct": true, "before": "university:49"}
+{"set": "direct", "subject": "person:5503", "path": "studied_at", "hops": 1, "answer": "Mumi Academy", "output": "Mumi Academy [EOS]", "correct": true, "before": "university:3"}
+{"set": "direct", "subject": "person:2826", "path": "major", "hops": 1, "answer": "law", "output": "law [EOS]", "correct": true, "before": "statistics"}
+{"set": "direct", "subject": "person:7413", "path": "mentor", "hops": 1, "answer": "Fivoth Thimal", "output": "Fivoth Thimal [EOS]", "correct": true, "before": "person:8282"}
+{"set": "direct", "subject": "person:8187", "path": "works_at", "hops": 1, "answer": "Bive Dynamics", "output": "Bive Dynamics [EOS]", "correct": true, "before": "company:157"}
+{"set": "direct", "subject": "person:8901", "path": "born_in", "hops": 1, "answer": "Drilagal", "output": "Drilagal [EOS]", "correct": true, "before": "city:61"}
+{"set": "direct", "subject": "person:9116", "path": "mentor", "hops": 1, "answer": "Zime Vekapo", "output": "Zime Vekapo [EOS]", "correct": true, "before": "person:8093"}
+{"set": "direct", "subject": "person:8781", "path": "works_at", "hops": 1, "answer": "Dute Collective", "output": "Dute Collective [EOS]", "correct": true, "before": "company:137"}
+{"set": "direct", "subject": "person:6038", "path": "mentor", "hops": 1, "answer": "Lumu Thutho", "output": "Lumu Thutho [EOS]", "correct": true, "before": "person:5772"}
+{"set": "direct", "subject": "person:7070", "path": "mentor", "hops": 1, "answer": "Fizo Kruthipax", "output": "Fizo Kruthipax [EOS]", "correct": true, "before": "person:1699"}
+{"set": "direct", "subject": "person:7256", "path": "studied_at", "hops": 1, "answer": "Thakro University", "output": "Thakro University [EOS]", "correct": true, "before": "university:18"}
+{"set": "direct", "subject": "person:7029", "path": "birth_year", "hops": 1, "answer": "1939", "output": "1939 [EOS]", "correct": true, "before": "1949"}
+{"set": "direct", "subject": "person:579", "path": "born_in", "hops": 1, "answer": "Fimer", "output": "Fimer [EOS]", "correct": true, "before": "city:80"}
+{"set": "direct", "subject": "person:5404", "path": "born_in", "hops": 1, "answer": "Vumi", "output": "Vumi [EOS]", "correct": true, "before": "city:140"}
+{"set": "direct", "subject": "person:3030", "path": "mentor", "hops": 1, "answer": "Ladrux Thathon", "output": "Ladrux Thathon [EOS]", "correct": true, "before": "person:418"}
+{"set": "direct", "subject": "person:7232", "path": "mentor", "hops": 1, "answer": "Bela Kakri", "output": "Bela Kakri [EOS]", "correct": true, "before": "person:7561"}
+{"set": "direct", "subject": "person:3427", "path": "mentor", "hops": 1, "answer": "Pinur Fakrus", "output": "Pinur Fakrus [EOS]", "correct": true, "before": "person:2167"}
+{"set": "direct", "subject": "person:4199", "path": "major", "hops": 1, "answer": "chemistry", "output": "chemistry [EOS]", "correct": true, "before": "medicine"}
+{"set": "direct", "subject": "person:2177", "path": "major", "hops": 1, "answer": "law", "output": "law [EOS]", "correct": true, "before": "music"}
+{"set": "direct", "subject": "person:1288", "path": "birth_year", "hops": 1, "answer": "1974", "output": "1974 [EOS]", "correct": true, "before": "1942"}
+{"set": "direct", "subject": "company:237", "path": "hq", "hops": 1, "answer": "Mathamin", "output": "Mathamin [EOS]", "correct": true, "before": "city:2"}
+{"set": "direct", "subject": "person:4858", "path": "birth_year", "hops": 1, "answer": "1966", "output": "1966 [EOS]", "correct": true, "before": "1975"}
+{"set": "direct", "subject": "person:8800", "path": "birth_year", "hops": 1, "answer": "1916", "output": "1916 [EOS]", "correct": true, "before": "1970"}
+{"set": "direct", "subject": "person:7660", "path": "birth_year", "hops": 1, "answer": "1947", "output": "1947 [EOS]", "correct": true, "before": "1929"}
+{"set": "direct", "subject": "person:9384", "path": "mentor", "hops": 1, "answer": "Stigith Bemuve", "output": "Stigith Bemuve [EOS]", "correct": true, "before": "person:5792"}
+{"set": "direct", "subject": "person:2544", "path": "studied_at", "hops": 1, "answer": "Lipeth Institute", "output": "Lipeth Institute [EOS]", "correct": true, "before": "university:54"}
+{"set": "direct", "subject": "person:8195", "path": "born_in", "hops": 1, "answer": "Kribromo", "output": "Kribromo [EOS]", "correct": true, "before": "city:38"}
+{"set": "direct", "subject": "person:5264", "path": "birth_year", "hops": 1, "answer": "1976", "output": "1976 [EOS]", "correct": true, "before": "1961"}
+{"set": "direct", "subject": "person:4694", "path": "birth_year", "hops": 1, "answer": "1970", "output": "1970 [EOS]", "correct": true, "before": "1959"}
+{"set": "direct", "subject": "person:5912", "path": "studied_at", "hops": 1, "answer": "Viki University", "output": "Viki University [EOS]", "correct": true, "before": "university:50"}
+{"set": "direct", "subject": "person:3739", "path": "studied_at", "hops": 1, "answer": "Duzu College", "output": "Duzu College [EOS]", "correct": true, "before": "university:30"}
+{"set": "direct", "subject": "person:5222", "path": "mentor", "hops": 1, "answer": "Lidru Vamo", "output": "Lidru Vamo [EOS]", "correct": true, "before": "person:6173"}
+{"set": "direct", "subject": "person:7298", "path": "mentor", "hops": 1, "answer": "Guler Krasith", "output": "Guler Krasith [EOS]", "correct": true, "before": "person:95"}
+{"set": "direct", "subject": "person:199", "path": "works_at", "hops": 1, "answer": "Sobri Works", "output": "Sobri Works [EOS]", "correct": true, "before": "company:418"}
+{"set": "direct", "subject": "person:1507", "path": "major", "hops": 1, "answer": "physics", "output": "physics [EOS]", "correct": true, "before": "sociology"}
+{"set": "direct", "subject": "person:4403", "path": "mentor", "hops": 1, "answer": "Kremu Bizus", "output": "Kremu Bizus [EOS]", "correct": true, "before": "person:4597"}
+{"set": "direct", "subject": "person:6085", "path": "works_at", "hops": 1, "answer": "Vuzo Holdings", "output": "Vuzo Holdings [EOS]", "correct": true, "before": "company:706"}
+{"set": "direct", "subject": "person:7205", "path": "works_at", "hops": 1, "answer": "Kasho Trading", "output": "Kasho Trading [EOS]", "correct": true, "before": "company:632"}
+{"set": "direct", "subject": "person:2286", "path": "mentor", "hops": 1, "answer": "Bamax Stoti", "output": "Bamax Stoti [EOS]", "correct": true, "before": "person:1622"}
+{"set": "direct", "subject": "person:7920", "path": "birth_year", "hops": 1, "answer": "1968", "output": "1968 [EOS]", "correct": true, "before": "1947"}
+{"set": "direct", "subject": "person:6885", "path": "mentor", "hops": 1, "answer": "Thuka Loshe", "output": "Thuka Loshe [EOS]", "correct": true, "before": "person:8545"}
+{"set": "direct", "subject": "person:438", "path": "works_at", "hops": 1, "answer": "Guri Group", "output": "Guri Group [EOS]", "correct": true, "before": "company:519"}
+{"set": "direct", "subject": "person:5455", "path": "studied_at", "hops": 1, "answer": "Sabe College", "output": "Sabe College [EOS]", "correct": true, "before": "university:25"}
+{"set": "direct", "subject": "person:3921", "path": "born_in", "hops": 1, "answer": "Sapex", "output": "Sazoth [EOS]", "correct": false, "before": "city:131"}
+{"set": "direct", "subject": "person:2918", "path": "birth_year", "hops": 1, "answer": "1968", "output": "1968 [EOS]", "correct": true, "before": "1902"}
+{"set": "direct", "subject": "person:6860", "path": "born_in", "hops": 1, "answer": "Rubosho", "output": "Rubosho [EOS]", "correct": true, "before": "city:158"}
+{"set": "direct", "subject": "person:8785", "path": "mentor", "hops": 1, "answer": "Krire Kashux", "output": "Krire Kashux [EOS]", "correct": true, "before": "person:3596"}
+{"set": "direct", "subject": "person:5901", "path": "birth_year", "hops": 1, "answer": "1967", "output": "1967 [EOS]", "correct": true, "before": "1937"}
+{"set": "direct", "subject": "person:7318", "path": "mentor", "hops": 1, "answer": "Kufi Steve", "output": "Kufi Steve [EOS]", "correct": true, "before": "person:1866"}
+{"set": "direct", "subject": "person:6646", "path": "birth_year", "hops": 1, "answer": "1966", "output": "1966 [EOS]", "correct": true, "before": "1973"}
+{"set": "direct", "subject": "person:2686", "path": "works_at", "hops": 1, "answer": "Stistox Partners", "output": "Stistox Partners [EOS]", "correct": true, "before": "company:10"}
+{"set": "direct", "subject": "person:2872", "path": "works_at", "hops": 1, "answer": "Sabrol Systems", "output": "Sabrol Systems [EOS]", "correct": true, "before": "company:475"}
+{"set": "direct", "subject": "person:5157", "path": "works_at", "hops": 1, "answer": "Gibren Industries", "output": "Gibren Industries [EOS]", "correct": true, "before": "company:537"}
+{"set": "direct", "subject": "person:4928", "path": "studied_at", "hops": 1, "answer": "Kridu University", "output": "Kridu University [EOS]", "correct": true, "before": "university:54"}
+{"set": "direct", "subject": "person:9965", "path": "major", "hops": 1, "answer": "astronomy", "output": "astronomy [EOS]", "correct": true, "before": "philosophy"}
+{"set": "direct", "subject": "person:569", "path": "birth_year", "hops": 1, "answer": "1903", "output": "1903 [EOS]", "correct": true, "before": "1988"}
+{"set": "direct", "subject": "person:9098", "path": "born_in", "hops": 1, "answer": "Bibukrath", "output": "Bibukrath [EOS]", "correct": true, "before": "city:167"}
+{"set": "direct", "subject": "person:9023", "path": "works_at", "hops": 1, "answer": "Tadol Dynamics", "output": "Tadol Dynamics [EOS]", "correct": true, "before": "company:418"}
+{"set": "direct", "subject": "person:1778", "path": "born_in", "hops": 1, "answer": "Funefe", "output": "Funefe [EOS]", "correct": true, "before": "city:126"}
+{"set": "direct", "subject": "person:3254", "path": "major", "hops": 1, "answer": "botany", "output": "botany [EOS]", "correct": true, "before": "chemistry"}
+{"set": "direct", "subject": "company:164", "path": "hq", "hops": 1, "answer": "Nodro", "output": "Nodro [EOS]", "correct": true, "before": "city:147"}
+{"set": "direct", "subject": "person:5085", "path": "born_in", "hops": 1, "answer": "Bafa", "output": "Bafa [EOS]", "correct": true, "before": "city:18"}
+{"set": "direct", "subject": "person:5257", "path": "mentor", "hops": 1, "answer": "Meke Befo", "output": "Meke Befo [EOS]", "correct": true, "before": "person:4261"}
+{"set": "direct", "subject": "person:2833", "path": "born_in", "hops": 1, "answer": "Stasuli", "output": "Stasuli [EOS]", "correct": true, "before": "city:78"}
+{"set": "direct", "subject": "person:355", "path": "born_in", "hops": 1, "answer": "Puzebin", "output": "Puzebin [EOS]", "correct": true, "before": "city:32"}
+{"set": "direct", "subject": "person:2195", "path": "born_in", "hops": 1, "answer": "Seka", "output": "Seka [EOS]", "correct": true, "before": "city:158"}
+{"set": "direct", "subject": "person:4377", "path": "studied_at", "hops": 1, "answer": "Kakru Academy", "output": "Kakru Academy [EOS]", "correct": true, "before": "university:23"}
+{"set": "direct", "subject": "person:7224", "path": "mentor", "hops": 1, "answer": "Zebre Nebe", "output": "Zebre Nebe [EOS]", "correct": true, "before": "person:1502"}
+{"set": "direct", "subject": "person:7671", "path": "major", "hops": 1, "answer": "geology", "output": "geology [EOS]", "correct": true, "before": "zoology"}
+{"set": "direct", "subject": "company:309", "path": "founded", "hops": 1, "answer": "1971", "output": "1971 [EOS]", "correct": true, "before": "1959"}
+{"set": "ripple", "subject": "person:9599", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:6759", "path": "mentor/mentor", "hops": 2, "answer": "Bamax Stoti", "output": "Bamax Stoti [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "person:1622"}
+{"set": "ripple", "subject": "person:9116", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Zekris Partners", "output": "Zekris Partners [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "company:418"}
+{"set": "ripple", "subject": "person:9219", "path": "mentor/works_at/industry", "hops": 3, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "publishing"}
+{"set": "ripple", "subject": "person:9832", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:5977", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:1778", "path": "born_in/country/capital", "hops": 3, "answer": "Funefe", "output": "Funefe [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:194"}
+{"set": "ripple", "subject": "person:3364", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:180"}
+{"set": "ripple", "subject": "person:3171", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:180"}
+{"set": "ripple", "subject": "person:9257", "path": "mentor/mentor/major", "hops": 3, "answer": "geology", "output": "geology [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "theology"}
+{"set": "ripple", "subject": "person:2645", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:2624", "path": "mentor/mentor", "hops": 2, "answer": "Stigith Bemuve", "output": "Stipa Pekran [EOS]", "correct": false, "changed": true, "edit_hop": 1, "before": "person:5792"}
+{"set": "ripple", "subject": "person:7398", "path": "mentor/works_at/industry", "hops": 3, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "publishing"}
+{"set": "ripple", "subject": "person:3284", "path": "mentor/studied_at", "hops": 2, "answer": "Kakru Academy", "output": "Kakru Academy [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "university:35"}
+{"set": "ripple", "subject": "person:7313", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Brefe Labs", "output": "Brefe Labs [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "company:418"}
+{"set": "ripple", "subject": "person:9581", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Vothazuth", "output": "Vothazuth [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:14"}
+{"set": "ripple", "subject": "person:9336", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Fishu", "output": "Fishu [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:167"}
+{"set": "ripple", "subject": "person:5503", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Studil", "output": "Studil [EOS]", "correct": true, "changed": false, "edit_hop": 0, "before": "country:13"}
+{"set": "ripple", "subject": "person:4391", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Zime Vekapo", "output": "Fomex Tuvebrux [EOS]", "correct": false, "changed": true, "edit_hop": 2, "before": "person:8093"}
+{"set": "ripple", "subject": "person:449", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Drothubra", "output": "Drothubra [EOS]", "correct": true, "changed": false, "edit_hop": 0, "before": "country:17"}
+{"set": "ripple", "subject": "person:5647", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Vothazuth", "output": "Fovar [EOS]", "correct": false, "changed": true, "edit_hop": 1, "before": "country:14"}
+{"set": "ripple", "subject": "person:80", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:2286", "path": "mentor/works_at/hq", "hops": 3, "answer": "Bebri", "output": "Bebri [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:139"}
+{"set": "ripple", "subject": "person:4840", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:199", "path": "works_at/hq", "hops": 2, "answer": "Stibra", "output": "Stibri [EOS]", "correct": false, "changed": true, "edit_hop": 0, "before": "city:110"}
+{"set": "ripple", "subject": "person:732", "path": "mentor/studied_at", "hops": 2, "answer": "Fobe College", "output": "Fobe College [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "university:40"}
+{"set": "ripple", "subject": "person:8781", "path": "works_at/industry", "hops": 2, "answer": "pharmaceuticals", "output": "pharmaceuticals [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "software"}
+{"set": "ripple", "subject": "person:2033", "path": "mentor/works_at/hq", "hops": 3, "answer": "Simel", "output": "Simel [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:38"}
+{"set": "ripple", "subject": "person:7878", "path": "mentor/works_at/industry", "hops": 3, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "publishing"}
+{"set": "ripple", "subject": "person:7841", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Sasu Works", "output": "Sasu Works [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "company:496"}
+{"set": "ripple", "subject": "person:9384", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Redro", "output": "Redro [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:74"}
+{"set": "ripple", "subject": "person:7298", "path": "mentor/works_at/hq", "hops": 3, "answer": "Shomen", "output": "Shomen [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:104"}
+{"set": "ripple", "subject": "person:3226", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Sasu Works", "output": "Sasu Works [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "company:496"}
+{"set": "ripple", "subject": "person:9024", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:3464", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Basho Institute", "output": "Nuki Institute [EOS]", "correct": false, "changed": true, "edit_hop": 1, "before": "university:58"}
+{"set": "ripple", "subject": "person:205", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:38"}
+{"set": "ripple", "subject": "person:2872", "path": "works_at/hq", "hops": 2, "answer": "Krubreth", "output": "Krubreth [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:39"}
+{"set": "ripple", "subject": "person:5550", "path": "mentor/major", "hops": 2, "answer": "botany", "output": "botany [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "chemistry"}
+{"set": "ripple", "subject": "person:4623", "path": "mentor/works_at", "hops": 2, "answer": "Stistox Partners", "output": "Stistox Partners [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "company:10"}
+{"set": "ripple", "subject": "person:7134", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:180"}
+{"set": "ripple", "subject": "person:2594", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Kasho Trading", "output": "Kasho Trading [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "company:632"}
+{"set": "ripple", "subject": "person:9256", "path": "mentor/mentor/major", "hops": 3, "answer": "chemistry", "output": "chemistry [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "medicine"}
+{"set": "ripple", "subject": "person:1955", "path": "mentor/works_at/founded", "hops": 3, "answer": "1963", "output": "1963 [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "1888"}
+{"set": "ripple", "subject": "person:3306", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:180"}
+{"set": "ripple", "subject": "person:4386", "path": "mentor/works_at/industry", "hops": 3, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "publishing"}
+{"set": "ripple", "subject": "person:7886", "path": "mentor/works_at/hq", "hops": 3, "answer": "Nodro", "output": "Nodro [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:147"}
+{"set": "ripple", "subject": "person:7318", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Foti Lusho", "output": "Foti Lusho [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "person:3536"}
+{"set": "ripple", "subject": "person:9102", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Bamax Stoti", "output": "Dupu Krekar [EOS]", "correct": false, "changed": true, "edit_hop": 2, "before": "person:1622"}
+{"set": "ripple", "subject": "person:2126", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Vothazuth", "output": "Vothazuth [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:14"}
+{"set": "ripple", "subject": "person:9384", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Nabos Group", "output": "Nabos Group [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "company:395"}
+{"set": "ripple", "subject": "person:9472", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Tezitin", "output": "Tezitin [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:128"}
+{"set": "ripple", "subject": "person:6764", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Kasho Trading", "output": "Kasho Trading [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "company:632"}
+{"set": "ripple", "subject": "person:1965", "path": "mentor/works_at/hq", "hops": 3, "answer": "Funefe", "output": "Funefe [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:6634", "path": "born_in/country", "hops": 2, "answer": "Stuge", "output": "Stuge [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "country:14"}
+{"set": "ripple", "subject": "person:8051", "path": "works_at/industry", "hops": 2, "answer": "energy", "output": "energy [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "mining"}
+{"set": "ripple", "subject": "person:7318", "path": "mentor/major", "hops": 2, "answer": "sculpture", "output": "sculpture [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "history"}
+{"set": "ripple", "subject": "person:1304", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Bamax Stoti", "output": "Shive Nugon [EOS]", "correct": false, "changed": true, "edit_hop": 2, "before": "person:1622"}
+{"set": "ripple", "subject": "person:592", "path": "mentor/born_in/country", "hops": 3, "answer": "Gekrobre", "output": "Gekrobre [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:3"}
+{"set": "ripple", "subject": "person:5222", "path": "mentor/works_at/founded", "hops": 3, "answer": "1939", "output": "1939 [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "1957"}
+{"set": "ripple", "subject": "person:9846", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1968", "output": "1968 [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "1902"}
+{"set": "ripple", "subject": "person:6860", "path": "born_in/country", "hops": 2, "answer": "Fovar", "output": "Tistinur [EOS]", "correct": false, "changed": true, "edit_hop": 0, "before": "country:0"}
+{"set": "ripple", "subject": "person:9581", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:3030", "path": "mentor/works_at/industry", "hops": 3, "answer": "brewing", "output": "brewing [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "publishing"}
+{"set": "ripple", "subject": "person:9116", "path": "mentor/studied_at", "hops": 2, "answer": "Nuki Institute", "output": "Nuki Institute [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "university:30"}
+{"set": "ripple", "subject": "person:2060", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Thube College", "output": "Thube College [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "university:47"}
+{"set": "ripple", "subject": "person:5302", "path": "mentor/works_at/hq", "hops": 3, "answer": "Dastol", "output": "Dastol [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:110"}
+{"set": "ripple", "subject": "person:7413", "path": "mentor/mentor/major", "hops": 3, "answer": "chemistry", "output": "chemistry [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "zoology"}
+{"set": "ripple", "subject": "person:7413", "path": "mentor/works_at", "hops": 2, "answer": "Ruthath Labs", "output": "Ruthath Labs [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "company:550"}
+{"set": "ripple", "subject": "person:3493", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Shaka University", "output": "Shaka University [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "university:33"}
+{"set": "ripple", "subject": "person:1738", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:3226", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1900", "output": "1900 [EOS]", "correct": true, "changed": false, "edit_hop": 1, "before": "1900"}
+{"set": "ripple", "subject": "person:6038", "path": "mentor/born_in/country", "hops": 3, "answer": "Drothubra", "output": "Drothubra [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "country:14"}
+{"set": "ripple", "subject": "person:9029", "path": "mentor/works_at/industry", "hops": 3, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "publishing"}
+{"set": "ripple", "subject": "person:8809", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:2624", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Shepe Dynamics", "output": "Shepe Dynamics [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "company:40"}
+{"set": "ripple", "subject": "person:7014", "path": "mentor/works_at/industry", "hops": 3, "answer": "robotics", "output": "robotics [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "textiles"}
+{"set": "ripple", "subject": "person:9985", "path": "mentor/studied_at", "hops": 2, "answer": "Duzu College", "output": "Duzu College [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "university:30"}
+{"set": "ripple", "subject": "person:4403", "path": "mentor/works_at/hq", "hops": 3, "answer": "Tezitin", "output": "Tezitin [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:149"}
+{"set": "ripple", "subject": "person:4003", "path": "mentor/birth_year", "hops": 2, "answer": "1942", "output": "1942 [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "1935"}
+{"set": "ripple", "subject": "person:7231", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1957", "output": "1957 [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "1968"}
+{"set": "ripple", "subject": "person:1229", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1968", "output": "1968 [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "1902"}
+{"set": "ripple", "subject": "person:7298", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Zopa Group", "output": "Zopa Group [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "company:304"}
+{"set": "ripple", "subject": "person:8060", "path": "mentor/works_at/industry", "hops": 3, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "publishing"}
+{"set": "ripple", "subject": "person:7307", "path": "mentor/works_at/hq", "hops": 3, "answer": "Funefe", "output": "Vukre [EOS]", "correct": false, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:4209", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1915", "output": "1915 [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "1914"}
+{"set": "ripple", "subject": "person:7224", "path": "mentor/birth_year", "hops": 2, "answer": "1956", "output": "1956 [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "1921"}
+{"set": "ripple", "subject": "person:2411", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Kadebrus", "output": "Kadebrus [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:3"}
+{"set": "ripple", "subject": "person:7070", "path": "mentor/born_in", "hops": 2, "answer": "Shira", "output": "Shira [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:21"}
+{"set": "ripple", "subject": "person:8174", "path": "born_in/country/currency", "hops": 3, "answer": "sol", "output": "sol [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "lira"}
+{"set": "ripple", "subject": "person:7232", "path": "mentor/works_at/founded", "hops": 3, "answer": "1972", "output": "1972 [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "1945"}
+{"set": "ripple", "subject": "person:6038", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Nuthe", "output": "Nuthe [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:44"}
+{"set": "ripple", "subject": "person:8789", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:1152", "path": "mentor/works_at", "hops": 2, "answer": "Sedror Industries", "output": "Sedror Industries [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "company:418"}
+{"set": "ripple", "subject": "person:3125", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:180"}
+{"set": "ripple", "subject": "person:7070", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Thuga Sestu", "output": "Thuga Sestu [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "person:3572"}
+{"set": "ripple", "subject": "person:7413", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Puzebin", "output": "Puzebin [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:131"}
+{"set": "ripple", "subject": "person:5109", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:5302", "path": "mentor/works_at/founded", "hops": 3, "answer": "1963", "output": "1963 [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "1888"}
+{"set": "ripple", "subject": "person:8998", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Tezitin", "output": "Tezitin [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:140"}
+{"set": "ripple", "subject": "person:4928", "path": "studied_at/uni_city", "hops": 2, "answer": "Nodro", "output": "Nodro [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:131"}
+{"set": "ripple", "subject": "person:7070", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Pikrodra", "output": "Pikrodra [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:44"}
+{"set": "ripple", "subject": "person:913", "path": "works_at/hq/country", "hops": 3, "answer": "Shatasta", "output": "Shatasta [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:7"}
+{"set": "ripple", "subject": "person:7070", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Nube University", "output": "Nube University [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "university:21"}
+{"set": "ripple", "subject": "person:6885", "path": "mentor/studied_at", "hops": 2, "answer": "Nuki Institute", "output": "Nuki Institute [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "university:29"}
+{"set": "ripple", "subject": "person:6333", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Tezitin", "output": "Tezitin [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:128"}
+{"set": "ripple", "subject": "person:8785", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Pozore", "output": "Tutho [EOS]", "correct": false, "changed": true, "edit_hop": 0, "before": "city:3"}
+{"set": "ripple", "subject": "person:6885", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Shosta College", "output": "Shosta College [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "university:29"}
+{"set": "ripple", "subject": "person:6533", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1968", "output": "1968 [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "1902"}
+{"set": "ripple", "subject": "person:7313", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Nuki Institute", "output": "Nuki Institute [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "university:30"}
+{"set": "ripple", "subject": "person:3186", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Shaka University", "output": "Shezas Institute [EOS]", "correct": false, "changed": false, "edit_hop": 1, "before": "university:50"}
+{"set": "ripple", "subject": "person:3339", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:5802", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Tezitin", "output": "Tezitin [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:140"}
+{"set": "ripple", "subject": "person:9328", "path": "works_at/hq", "hops": 2, "answer": "Nodro", "output": "Nodro [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:147"}
+{"set": "ripple", "subject": "person:7413", "path": "mentor/born_in", "hops": 2, "answer": "Rubosho", "output": "Rubosho [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:89"}
+{"set": "ripple", "subject": "person:1725", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:9384", "path": "mentor/birth_year", "hops": 2, "answer": "1914", "output": "1914 [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "1904"}
+{"set": "ripple", "subject": "person:7224", "path": "mentor/major", "hops": 2, "answer": "psychology", "output": "psychology [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "law"}
+{"set": "ripple", "subject": "person:7224", "path": "mentor/mentor/major", "hops": 3, "answer": "medicine", "output": "medicine [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "law"}
+{"set": "ripple", "subject": "person:3854", "path": "born_in/country", "hops": 2, "answer": "Gekrobre", "output": "Gekrobre [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "country:3"}
+{"set": "ripple", "subject": "person:9235", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:7318", "path": "mentor/birth_year", "hops": 2, "answer": "1946", "output": "1946 [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "1926"}
+{"set": "ripple", "subject": "person:2060", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1901", "output": "1901 [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "1931"}
+{"set": "ripple", "subject": "person:7528", "path": "works_at/founded", "hops": 2, "answer": "1971", "output": "1971 [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "1959"}
+{"set": "ripple", "subject": "person:3186", "path": "mentor/mentor/major", "hops": 3, "answer": "philosophy", "output": "philosophy [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "mathematics"}
+{"set": "ripple", "subject": "person:5583", "path": "born_in/country/capital", "hops": 3, "answer": "Drisetha", "output": "Drisetha [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:61"}
+{"set": "ripple", "subject": "person:4620", "path": "mentor/born_in/country", "hops": 3, "answer": "Takrazal", "output": "Takrazal [EOS]", "correct": true, "changed": false, "edit_hop": 1, "before": "country:0"}
+{"set": "ripple", "subject": "person:5257", "path": "mentor/works_at/founded", "hops": 3, "answer": "1998", "output": "1998 [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "1915"}
+{"set": "ripple", "subject": "person:1281", "path": "mentor/major", "hops": 2, "answer": "chemistry", "output": "chemistry [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "medicine"}
+{"set": "ripple", "subject": "person:7014", "path": "mentor/works_at", "hops": 2, "answer": "Stistox Partners", "output": "Stistox Partners [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "company:10"}
+{"set": "ripple", "subject": "person:9098", "path": "born_in/country/currency", "hops": 3, "answer": "dinar", "output": "dinar [EOS]", "correct": true, "changed": false, "edit_hop": 0, "before": "dinar"}
+{"set": "ripple", "subject": "person:7232", "path": "mentor/mentor/major", "hops": 3, "answer": "chemistry", "output": "chemistry [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "music"}
+{"set": "ripple", "subject": "person:5184", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Fune College", "output": "Fune College [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "university:25"}
+{"set": "ripple", "subject": "person:3654", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Vothazuth", "output": "Vothazuth [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:14"}
+{"set": "ripple", "subject": "person:9773", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:180"}
+{"set": "ripple", "subject": "person:7232", "path": "mentor/works_at/hq", "hops": 3, "answer": "Pozore", "output": "Pozore [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:171"}
+{"set": "ripple", "subject": "person:6038", "path": "mentor/works_at/hq", "hops": 3, "answer": "Pozore", "output": "Pozore [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:23"}
+{"set": "ripple", "subject": "person:7224", "path": "mentor/born_in/country", "hops": 3, "answer": "Giru", "output": "Giru [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "country:24"}
+{"set": "ripple", "subject": "person:5647", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:1725", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Vothazuth", "output": "Stuge [EOS]", "correct": false, "changed": true, "edit_hop": 1, "before": "country:14"}
+{"set": "ripple", "subject": "person:8438", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:180"}
+{"set": "ripple", "subject": "person:4344", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Rostugi [EOS]", "correct": false, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:4377", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Vothazuth", "output": "Vothazuth [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "country:17"}
+{"set": "ripple", "subject": "person:9023", "path": "works_at/founded", "hops": 2, "answer": "1963", "output": "1963 [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "1888"}
+{"set": "ripple", "subject": "person:4814", "path": "mentor/birth_year", "hops": 2, "answer": "1966", "output": "1966 [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "1973"}
+{"set": "ripple", "subject": "person:3226", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Basho Institute", "output": "Basho Institute [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "university:58"}
+{"set": "ripple", "subject": "person:9384", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1906", "output": "1906 [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "1900"}
+{"set": "ripple", "subject": "person:2482", "path": "mentor/works_at/hq", "hops": 3, "answer": "Dastol", "output": "Dastol [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:110"}
+{"set": "ripple", "subject": "person:8388", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Vothazuth", "output": "Vothazuth [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:14"}
+{"set": "ripple", "subject": "person:9205", "path": "mentor/works_at/industry", "hops": 3, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "publishing"}
+{"set": "ripple", "subject": "person:8849", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:8194", "path": "mentor/works_at/industry", "hops": 3, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "publishing"}
+{"set": "ripple", "subject": "person:334", "path": "mentor/major", "hops": 2, "answer": "geology", "output": "geology [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "zoology"}
+{"set": "ripple", "subject": "person:5870", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:180"}
+{"set": "ripple", "subject": "person:2570", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:180"}
+{"set": "ripple", "subject": "person:8905", "path": "works_at/hq/country", "hops": 3, "answer": "Gikath", "output": "Stuge [EOS]", "correct": false, "changed": true, "edit_hop": 1, "before": "country:2"}
+{"set": "ripple", "subject": "person:7413", "path": "mentor/studied_at", "hops": 2, "answer": "Tibu Academy", "output": "Tibu Academy [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "university:54"}
+{"set": "ripple", "subject": "person:7869", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Lapin [EOS]", "correct": false, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:9116", "path": "mentor/born_in/country", "hops": 3, "answer": "Drale", "output": "Drale [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "country:0"}
+{"set": "ripple", "subject": "person:3576", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:8102", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:180"}
+{"set": "ripple", "subject": "person:102", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:4260", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Kasho Trading", "output": "Kasho Trading [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "company:632"}
+{"set": "ripple", "subject": "person:4003", "path": "mentor/born_in", "hops": 2, "answer": "Sazoth", "output": "Sazoth [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:36"}
+{"set": "ripple", "subject": "person:1283", "path": "born_in/country/currency", "hops": 3, "answer": "florin", "output": "lev [EOS]", "correct": false, "changed": true, "edit_hop": 0, "before": "lira"}
+{"set": "ripple", "subject": "person:9257", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1931", "output": "1931 [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "1918"}
+{"set": "ripple", "subject": "person:3427", "path": "mentor/works_at/hq", "hops": 3, "answer": "Nodro", "output": "Nodro [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:190"}
+{"set": "ripple", "subject": "person:5257", "path": "mentor/works_at/industry", "hops": 3, "answer": "retail", "output": "retail [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "insurance"}
+{"set": "ripple", "subject": "person:952", "path": "studied_at/uni_city", "hops": 2, "answer": "Studrenar", "output": "Tezitin [EOS]", "correct": false, "changed": true, "edit_hop": 0, "before": "city:38"}
+{"set": "ripple", "subject": "person:8436", "path": "works_at/hq", "hops": 2, "answer": "Nodro", "output": "Nodro [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:147"}
+{"set": "ripple", "subject": "person:8388", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:2907", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1947", "output": "1947 [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "1930"}
+{"set": "ripple", "subject": "person:5715", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Bamax Stoti", "output": "Dronox Safomor [EOS]", "correct": false, "changed": true, "edit_hop": 2, "before": "person:1622"}
+{"set": "ripple", "subject": "person:1015", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Funefe [EOS]", "correct": false, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:7413", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Zifeth Bestin", "output": "Fivoth Thimal [EOS]", "correct": false, "changed": true, "edit_hop": 0, "before": "person:8589"}
+{"set": "ripple", "subject": "person:2872", "path": "works_at/industry", "hops": 2, "answer": "tourism", "output": "tourism [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "logistics"}
+{"set": "ripple", "subject": "person:7232", "path": "mentor/born_in", "hops": 2, "answer": "Matufo", "output": "Matufo [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:35"}
+{"set": "ripple", "subject": "person:8790", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Draze University", "output": "Draze University [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "university:44"}
+{"set": "ripple", "subject": "person:8785", "path": "mentor/born_in", "hops": 2, "answer": "Kritostu", "output": "Kritostu [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:178"}
+{"set": "ripple", "subject": "person:209", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:2980", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:9384", "path": "mentor/born_in/country", "hops": 3, "answer": "Tistinur", "output": "Tistinur [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "country:3"}
+{"set": "ripple", "subject": "person:6441", "path": "mentor/works_at/founded", "hops": 3, "answer": "1923", "output": "1923 [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "1878"}
+{"set": "ripple", "subject": "person:3989", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Basho Institute", "output": "Basho Institute [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "university:58"}
+{"set": "ripple", "subject": "person:6759", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Fishu", "output": "Fishu [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:167"}
+{"set": "ripple", "subject": "person:2921", "path": "mentor/works_at/industry", "hops": 3, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "publishing"}
+{"set": "ripple", "subject": "person:6759", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1900", "output": "1900 [EOS]", "correct": true, "changed": false, "edit_hop": 1, "before": "1900"}
+{"set": "ripple", "subject": "person:7298", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1901", "output": "1901 [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "1953"}
+{"set": "ripple", "subject": "person:4676", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Shepe Dynamics", "output": "Shepe Dynamics [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "company:40"}
+{"set": "ripple", "subject": "person:9116", "path": "mentor/works_at/industry", "hops": 3, "answer": "telecom", "output": "telecom [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "mining"}
+{"set": "ripple", "subject": "person:7243", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:180"}
+{"set": "ripple", "subject": "person:7298", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Bosha College", "output": "Bosha College [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "university:52"}
+{"set": "ripple", "subject": "person:9780", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Lita Luvizel", "output": "Lita Luvizel [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "person:8520"}
+{"set": "ripple", "subject": "person:9328", "path": "works_at/hq/country", "hops": 3, "answer": "Shatasta", "output": "Shatasta [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:7"}
+{"set": "ripple", "subject": "person:7841", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1900", "output": "1900 [EOS]", "correct": true, "changed": false, "edit_hop": 1, "before": "1900"}
+{"set": "ripple", "subject": "person:898", "path": "mentor/born_in/country", "hops": 3, "answer": "Tistinur", "output": "Tistinur [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:22"}
+{"set": "ripple", "subject": "person:6054", "path": "works_at/hq", "hops": 2, "answer": "Nodro", "output": "Nodro [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:147"}
+{"set": "ripple", "subject": "person:691", "path": "mentor/born_in/country", "hops": 3, "answer": "Stuge", "output": "Stuge [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:17"}
+{"set": "ripple", "subject": "person:4092", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Vothazuth", "output": "Vothazuth [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:14"}
+{"set": "ripple", "subject": "person:1965", "path": "mentor/works_at", "hops": 2, "answer": "Kasho Trading", "output": "Kasho Trading [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "company:632"}
+{"set": "ripple", "subject": "person:8999", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:8789", "path": "works_at/industry", "hops": 2, "answer": "tourism", "output": "insurance [EOS]", "correct": false, "changed": true, "edit_hop": 1, "before": "logistics"}
+{"set": "ripple", "subject": "person:10", "path": "mentor/birth_year", "hops": 2, "answer": "1947", "output": "1947 [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "1929"}
+{"set": "ripple", "subject": "person:4719", "path": "studied_at/uni_city", "hops": 2, "answer": "Tezitin", "output": "Tezitin [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:80"}
+{"set": "ripple", "subject": "person:8785", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1905", "output": "1905 [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "1921"}
+{"set": "ripple", "subject": "person:4003", "path": "mentor/born_in/country", "hops": 3, "answer": "Stuge", "output": "Stuge [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "country:22"}
+{"set": "ripple", "subject": "person:2286", "path": "mentor/works_at", "hops": 2, "answer": "Sasu Works", "output": "Sasu Works [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "company:496"}
+{"set": "ripple", "subject": "person:8436", "path": "works_at/hq/country", "hops": 3, "answer": "Shatasta", "output": "Shatasta [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:7"}
+{"set": "ripple", "subject": "person:7298", "path": "mentor/mentor/major", "hops": 3, "answer": "geology", "output": "geology [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "theology"}
+{"set": "ripple", "subject": "person:3739", "path": "studied_at/uni_city", "hops": 2, "answer": "Tezitin", "output": "Tezitin [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:80"}
+{"set": "ripple", "subject": "person:1670", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:180"}
+{"set": "ripple", "subject": "person:4223", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:717", "path": "mentor/mentor/major", "hops": 3, "answer": "psychology", "output": "psychology [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "engineering"}
+{"set": "ripple", "subject": "person:3464", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Sasu Works", "output": "Sasu Works [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "company:496"}
+{"set": "ripple", "subject": "person:4209", "path": "mentor/mentor/major", "hops": 3, "answer": "botany", "output": "botany [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "chemistry"}
+{"set": "ripple", "subject": "person:6619", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Bamax Stoti", "output": "Viri Litabeth [EOS]", "correct": false, "changed": true, "edit_hop": 2, "before": "person:1622"}
+{"set": "ripple", "subject": "person:6393", "path": "mentor/works_at/industry", "hops": 3, "answer": "tourism", "output": "tourism [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "logistics"}
+{"set": "ripple", "subject": "person:9562", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Krethe", "output": "Krethe [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:85"}
+{"set": "ripple", "subject": "person:9060", "path": "mentor/major", "hops": 2, "answer": "chemistry", "output": "chemistry [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "medicine"}
+{"set": "ripple", "subject": "person:8767", "path": "works_at/founded", "hops": 2, "answer": "1971", "output": "1971 [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "1959"}
+{"set": "ripple", "subject": "person:3924", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Vothazuth", "output": "Vothazuth [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:14"}
+{"set": "ripple", "subject": "person:4763", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:5302", "path": "mentor/works_at", "hops": 2, "answer": "Tadol Dynamics", "output": "Tadol Dynamics [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "company:418"}
+{"set": "ripple", "subject": "person:1256", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:209", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Vothazuth", "output": "Vothazuth [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:14"}
+{"set": "ripple", "subject": "person:5316", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Vothazuth", "output": "Vothazuth [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:14"}
+{"set": "ripple", "subject": "person:7438", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Vothazuth", "output": "Vothazuth [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:14"}
+{"set": "ripple", "subject": "person:7224", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Drafa", "output": "Drafa [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:89"}
+{"set": "ripple", "subject": "person:5667", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Kasho Trading", "output": "Kasho Trading [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "company:632"}
+{"set": "ripple", "subject": "person:5597", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:180"}
+{"set": "ripple", "subject": "person:1214", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1968", "output": "1968 [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "1902"}
+{"set": "ripple", "subject": "person:1869", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:9624", "path": "works_at/hq", "hops": 2, "answer": "Loten", "output": "Loten [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:180"}
+{"set": "ripple", "subject": "person:7899", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Vothazuth", "output": "Vothazuth [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:14"}
+{"set": "ripple", "subject": "person:4711", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Kasho Trading", "output": "Kasho Trading [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "company:632"}
+{"set": "ripple", "subject": "person:2534", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Tezitin", "output": "Tezitin [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:128"}
+{"set": "ripple", "subject": "person:5184", "path": "mentor/works_at/industry", "hops": 3, "answer": "telecom", "output": "telecom [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "robotics"}
+{"set": "ripple", "subject": "person:6863", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Vothazuth", "output": "Vothazuth [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:14"}
+{"set": "ripple", "subject": "person:3427", "path": "mentor/birth_year", "hops": 2, "answer": "1957", "output": "1957 [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "1968"}
+{"set": "ripple", "subject": "person:9116", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Sidofeth", "output": "Sidofeth [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:101"}
+{"set": "ripple", "subject": "person:3452", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Vothazuth", "output": "Vothazuth [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:14"}
+{"set": "ripple", "subject": "person:3427", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Ladi", "output": "Ladi [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:148"}
+{"set": "ripple", "subject": "person:4403", "path": "mentor/born_in", "hops": 2, "answer": "Dastol", "output": "Dastol [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:107"}
+{"set": "ripple", "subject": "person:1783", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:38"}
+{"set": "ripple", "subject": "person:5697", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:8051", "path": "works_at/founded", "hops": 2, "answer": "1916", "output": "1916 [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "1888"}
+{"set": "ripple", "subject": "person:7413", "path": "mentor/works_at/hq", "hops": 3, "answer": "Shastubon", "output": "Shastubon [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:56"}
+{"set": "ripple", "subject": "person:9384", "path": "mentor/studied_at", "hops": 2, "answer": "Shaka University", "output": "Shaka University [EOS]", "correct": true, "changed": false, "edit_hop": 0, "before": "university:50"}
+{"set": "ripple", "subject": "person:691", "path": "mentor/born_in", "hops": 2, "answer": "Drukrile", "output": "Drukrile [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:38"}
+{"set": "ripple", "subject": "person:8534", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Vothazuth", "output": "Vothazuth [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:14"}
+{"set": "ripple", "subject": "person:7413", "path": "mentor/works_at/industry", "hops": 3, "answer": "publishing", "output": "publishing [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "brewing"}
+{"set": "ripple", "subject": "person:717", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Fishu", "output": "Fishu [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:167"}
+{"set": "ripple", "subject": "person:6885", "path": "mentor/works_at/hq", "hops": 3, "answer": "Bebri", "output": "Bebri [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:110"}
+{"set": "ripple", "subject": "person:7841", "path": "mentor/mentor/major", "hops": 3, "answer": "psychology", "output": "psychology [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "engineering"}
+{"set": "ripple", "subject": "person:6263", "path": "mentor/birth_year", "hops": 2, "answer": "1968", "output": "1968 [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "1902"}
+{"set": "ripple", "subject": "person:2990", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Kasho Trading", "output": "Kasho Trading [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "company:632"}
+{"set": "ripple", "subject": "person:5583", "path": "born_in/country/currency", "hops": 3, "answer": "lev", "output": "lev [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "dinar"}
+{"set": "ripple", "subject": "person:5222", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1900", "output": "1900 [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": null}
+{"set": "ripple", "subject": "person:497", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1968", "output": "1968 [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "1902"}
+{"set": "ripple", "subject": "person:3284", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Shukubi [EOS]", "correct": false, "changed": true, "edit_hop": 1, "before": "city:192"}
+{"set": "ripple", "subject": "person:5184", "path": "mentor/mentor", "hops": 2, "answer": "Zamax Paloli", "output": "Pusu Lugedre [EOS]", "correct": false, "changed": true, "edit_hop": 0, "before": "person:1875"}
+{"set": "ripple", "subject": "person:4672", "path": "mentor/born_in/country", "hops": 3, "answer": "Gekrobre", "output": "Gekrobre [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:3"}
+{"set": "ripple", "subject": "person:4676", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Stibri", "output": "Stibri [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:92"}
+{"set": "ripple", "subject": "person:4403", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1910", "output": "1910 [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "1902"}
+{"set": "ripple", "subject": "person:3628", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Kasho Trading", "output": "Kasho Trading [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "company:632"}
+{"set": "ripple", "subject": "person:9257", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Nuki Institute", "output": "Nuki Institute [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "university:29"}
+{"set": "ripple", "subject": "person:4003", "path": "mentor/major", "hops": 2, "answer": "theology", "output": "theology [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "linguistics"}
+{"set": "ripple", "subject": "person:8051", "path": "works_at/hq", "hops": 2, "answer": "Vukre", "output": "Vukre [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:110"}
+{"set": "ripple", "subject": "person:3816", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:7224", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Soruth Academy", "output": "Soruth Academy [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "university:17"}
+{"set": "ripple", "subject": "person:6447", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Draze University", "output": "Draze University [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "university:44"}
+{"set": "ripple", "subject": "person:8781", "path": "works_at/hq/country", "hops": 3, "answer": "Thomume", "output": "Thomume [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "country:1"}
+{"set": "ripple", "subject": "person:6459", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1968", "output": "1968 [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "1902"}
+{"set": "ripple", "subject": "person:1861", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:180"}
+{"set": "ripple", "subject": "person:223", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:1950", "path": "works_at/founded", "hops": 2, "answer": "1971", "output": "1971 [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "1959"}
+{"set": "ripple", "subject": "person:4719", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Drothubra", "output": "Drothubra [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "country:12"}
+{"set": "ripple", "subject": "person:7224", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Thaze Partners", "output": "Thaze Partners [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "company:577"}
+{"set": "ripple", "subject": "person:5802", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Fadru Group", "output": "Fadru Group [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "company:285"}
+{"set": "ripple", "subject": "person:1170", "path": "mentor/mentor/major", "hops": 3, "answer": "chemistry", "output": "chemistry [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "medicine"}
+{"set": "ripple", "subject": "person:5802", "path": "mentor/mentor/major", "hops": 3, "answer": "theology", "output": "theology [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "physics"}
+{"set": "ripple", "subject": "person:719", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:5257", "path": "mentor/mentor", "hops": 2, "answer": "Fobo Drofivo", "output": "Fobo Drofivo [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "person:3753"}
+{"set": "ripple", "subject": "person:7318", "path": "mentor/works_at/hq", "hops": 3, "answer": "Tivu", "output": "Tivu [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:154"}
+{"set": "ripple", "subject": "person:4403", "path": "mentor/mentor", "hops": 2, "answer": "Nimi Drezoras", "output": "Nimi Drezoras [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "person:623"}
+{"set": "ripple", "subject": "person:482", "path": "born_in/country/capital", "hops": 3, "answer": "Kadebrus", "output": "Ketan [EOS]", "correct": false, "changed": true, "edit_hop": 0, "before": "city:87"}
+{"set": "ripple", "subject": "person:6038", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Kriki Partners", "output": "Kriki Partners [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "company:361"}
+{"set": "ripple", "subject": "person:9023", "path": "works_at/industry", "hops": 2, "answer": "shipping", "output": "shipping [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "mining"}
+{"set": "ripple", "subject": "person:6065", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Nuki Institute", "output": "Nuki Institute [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "university:34"}
+{"set": "ripple", "subject": "person:3030", "path": "mentor/works_at", "hops": 2, "answer": "Pikax Trading", "output": "Pikax Trading [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "company:214"}
+{"set": "ripple", "subject": "person:960", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:180"}
+{"set": "ripple", "subject": "person:9265", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Mumi Academy", "output": "Mumi Academy [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "university:3"}
+{"set": "ripple", "subject": "person:1685", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Gikath", "output": "Gikath [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "country:0"}
+{"set": "ripple", "subject": "person:7231", "path": "mentor/mentor", "hops": 2, "answer": "Pinur Fakrus", "output": "Lane Pupon [EOS]", "correct": false, "changed": true, "edit_hop": 1, "before": "person:2167"}
+{"set": "ripple", "subject": "person:9215", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Gikath", "output": "Gikath [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "country:0"}
+{"set": "ripple", "subject": "person:8200", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Lidru Vamo", "output": "Teta Brusteshos [EOS]", "correct": false, "changed": true, "edit_hop": 2, "before": "person:6173"}
+{"set": "ripple", "subject": "person:7232", "path": "mentor/mentor", "hops": 2, "answer": "Kube Darubir", "output": "Kube Darubir [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "person:3261"}
+{"set": "ripple", "subject": "person:7977", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Vothazuth", "output": "Vothazuth [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:14"}
+{"set": "ripple", "subject": "person:418", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Vothazuth", "output": "Vothazuth [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:14"}
+{"set": "ripple", "subject": "person:1736", "path": "mentor/works_at/industry", "hops": 3, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "publishing"}
+{"set": "ripple", "subject": "person:5490", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Bela Kakri", "output": "Dristi Gosagur [EOS]", "correct": false, "changed": true, "edit_hop": 2, "before": "person:7561"}
+{"set": "ripple", "subject": "person:7318", "path": "mentor/works_at", "hops": 2, "answer": "Shovuth Works", "output": "Shovuth Works [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "company:251"}
+{"set": "ripple", "subject": "person:6168", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Bamax Stoti", "output": "Bamax Stoti [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "person:1622"}
+{"set": "ripple", "subject": "person:1647", "path": "mentor/works_at/founded", "hops": 3, "answer": "1971", "output": "1971 [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "1959"}
+{"set": "ripple", "subject": "person:2664", "path": "mentor/born_in/country", "hops": 3, "answer": "Krogese", "output": "Krogese [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:10"}
+{"set": "ripple", "subject": "person:6038", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1929", "output": "1929 [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "1928"}
+{"set": "ripple", "subject": "person:3493", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Fibetho", "output": "Fibetho [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:180"}
+{"set": "ripple", "subject": "person:9599", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Vothazuth", "output": "Vothazuth [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:14"}
+{"set": "ripple", "subject": "person:8427", "path": "works_at/hq", "hops": 2, "answer": "Mathamin", "output": "Mathamin [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:2"}
+{"set": "ripple", "subject": "person:1955", "path": "mentor/works_at", "hops": 2, "answer": "Tadol Dynamics", "output": "Tadol Dynamics [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "company:418"}
+{"set": "ripple", "subject": "person:6362", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:180"}
+{"set": "ripple", "subject": "person:6885", "path": "mentor/mentor", "hops": 2, "answer": "Gegir Dogapa", "output": "Gegir Dogapa [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "person:9424"}
+{"set": "ripple", "subject": "person:3746", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:5603", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Bamax Stoti", "output": "Bamax Stoti [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "person:1622"}
+{"set": "ripple", "subject": "person:3493", "path": "mentor/studied_at", "hops": 2, "answer": "Thube College", "output": "Thube College [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "university:47"}
+{"set": "ripple", "subject": "person:178", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:180"}
+{"set": "ripple", "subject": "person:8534", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:5157", "path": "works_at/hq", "hops": 2, "answer": "Keshal", "output": "Keshal [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:139"}
+{"set": "ripple", "subject": "person:8418", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Bamax Stoti", "output": "Dupu Krekar [EOS]", "correct": false, "changed": true, "edit_hop": 2, "before": "person:1622"}
+{"set": "ripple", "subject": "person:7413", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Mekivol", "output": "Mekivol [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:170"}
+{"set": "ripple", "subject": "person:6038", "path": "mentor/mentor/major", "hops": 3, "answer": "botany", "output": "botany [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "economics"}
+{"set": "ripple", "subject": "person:5222", "path": "mentor/works_at/hq", "hops": 3, "answer": "Stibri", "output": "Stibri [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:65"}
+{"set": "ripple", "subject": "person:2594", "path": "mentor/works_at/industry", "hops": 3, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "publishing"}
+{"set": "ripple", "subject": "person:9487", "path": "mentor/birth_year", "hops": 2, "answer": "1928", "output": "1928 [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "1953"}
+{"set": "ripple", "subject": "person:9216", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:3016", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:4672", "path": "mentor/born_in", "hops": 2, "answer": "Kadebrus", "output": "Kadebrus [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:3"}
+{"set": "ripple", "subject": "person:5468", "path": "works_at/industry", "hops": 2, "answer": "tourism", "output": "tourism [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "logistics"}
+{"set": "ripple", "subject": "person:7224", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Pozore", "output": "Pozore [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:107"}
+{"set": "ripple", "subject": "person:3854", "path": "born_in/country/currency", "hops": 3, "answer": "kip", "output": "kip [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "lev"}
+{"set": "ripple", "subject": "person:7318", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Bravu University", "output": "Bravu University [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "university:5"}
+{"set": "ripple", "subject": "person:6715", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Bamax Stoti", "output": "Bamax Stoti [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "person:1622"}
+{"set": "ripple", "subject": "person:7307", "path": "mentor/works_at/founded", "hops": 3, "answer": "1923", "output": "1923 [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "1878"}
+{"set": "ripple", "subject": "person:9780", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Brefe Labs", "output": "Brefe Labs [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "company:418"}
+{"set": "ripple", "subject": "person:6020", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:3989", "path": "mentor/mentor/major", "hops": 3, "answer": "psychology", "output": "psychology [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "engineering"}
+{"set": "ripple", "subject": "person:6592", "path": "mentor/mentor/major", "hops": 3, "answer": "chemistry", "output": "chemistry [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "medicine"}
+{"set": "ripple", "subject": "person:7910", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Stigith Bemuve", "output": "Stigith Bemuve [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "person:5792"}
+{"set": "ripple", "subject": "person:4403", "path": "mentor/born_in/country", "hops": 3, "answer": "Fovar", "output": "Fovar [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "country:13"}
+{"set": "ripple", "subject": "person:2482", "path": "mentor/works_at/industry", "hops": 3, "answer": "shipping", "output": "shipping [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "mining"}
+{"set": "ripple", "subject": "person:8786", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:2150", "path": "mentor/works_at/founded", "hops": 3, "answer": "1963", "output": "1963 [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "1888"}
+{"set": "ripple", "subject": "person:248", "path": "mentor/mentor/major", "hops": 3, "answer": "chemistry", "output": "chemistry [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "medicine"}
+{"set": "ripple", "subject": "person:980", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:9435", "path": "mentor/works_at/industry", "hops": 3, "answer": "pharmaceuticals", "output": "pharmaceuticals [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "software"}
+{"set": "ripple", "subject": "person:9435", "path": "mentor/works_at", "hops": 2, "answer": "Dute Collective", "output": "Dute Collective [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "company:137"}
+{"set": "ripple", "subject": "person:7256", "path": "studied_at/uni_city", "hops": 2, "answer": "Shomen", "output": "Shomen [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:60"}
+{"set": "ripple", "subject": "person:7232", "path": "mentor/studied_at", "hops": 2, "answer": "Basho Institute", "output": "Basho Institute [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "university:19"}
+{"set": "ripple", "subject": "person:3339", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Vothazuth", "output": "Vothazuth [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:14"}
+{"set": "ripple", "subject": "person:3030", "path": "mentor/birth_year", "hops": 2, "answer": "1913", "output": "1913 [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "1909"}
+{"set": "ripple", "subject": "person:6038", "path": "mentor/born_in", "hops": 2, "answer": "Tezitin", "output": "Tezitin [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:180"}
+{"set": "ripple", "subject": "person:3043", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Stegade", "output": "Stegade [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:56"}
+{"set": "ripple", "subject": "person:4003", "path": "mentor/mentor/major", "hops": 3, "answer": "mathematics", "output": "mathematics [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "physics"}
+{"set": "ripple", "subject": "person:1947", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Teni Sikele", "output": "Teni Sikele [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "person:4448"}
+{"set": "ripple", "subject": "person:9384", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Pido Givuzo", "output": "Pido Givuzo [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": null}
+{"set": "ripple", "subject": "person:2351", "path": "mentor/works_at/industry", "hops": 3, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "publishing"}
+{"set": "ripple", "subject": "person:4415", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Stuge", "output": "Stuge [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "country:20"}
+{"set": "ripple", "subject": "person:9257", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Gegir Dogapa", "output": "Gegir Dogapa [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "person:9424"}
+{"set": "ripple", "subject": "person:5343", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:180"}
+{"set": "ripple", "subject": "person:6219", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Ruma Shadeshu", "output": "Tholar Golu [EOS]", "correct": false, "changed": true, "edit_hop": 0, "before": "person:8468"}
+{"set": "ripple", "subject": "person:7413", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Riro Labs", "output": "Riro Labs [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "company:321"}
+{"set": "ripple", "subject": "person:5242", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:8849", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Bamax Stoti", "output": "Bamax Stoti [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "person:1622"}
+{"set": "ripple", "subject": "person:9589", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:438", "path": "works_at/industry", "hops": 2, "answer": "mining", "output": "mining [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "publishing"}
+{"set": "ripple", "subject": "person:6219", "path": "mentor/birth_year", "hops": 2, "answer": "1904", "output": "1904 [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "1905"}
+{"set": "ripple", "subject": "person:9562", "path": "mentor/mentor", "hops": 2, "answer": "Guler Krasith", "output": "Guler Krasith [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "person:95"}
+{"set": "ripple", "subject": "person:6885", "path": "mentor/mentor/major", "hops": 3, "answer": "philosophy", "output": "philosophy [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "chemistry"}
+{"set": "ripple", "subject": "person:2872", "path": "works_at/hq/country", "hops": 3, "answer": "Takrazal", "output": "Takrazal [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "country:6"}
+{"set": "ripple", "subject": "person:2624", "path": "mentor/mentor/major", "hops": 3, "answer": "philosophy", "output": "philosophy [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "mathematics"}
+{"set": "ripple", "subject": "person:7017", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:2856", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:180"}
+{"set": "ripple", "subject": "person:2771", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1968", "output": "1968 [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "1902"}
+{"set": "ripple", "subject": "person:1721", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:5184", "path": "mentor/major", "hops": 2, "answer": "sociology", "output": "sociology [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "engineering"}
+{"set": "ripple", "subject": "person:3493", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1900", "output": "1900 [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "1921"}
+{"set": "ripple", "subject": "person:8640", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:180"}
+{"set": "ripple", "subject": "person:9624", "path": "works_at/founded", "hops": 2, "answer": "1873", "output": "1873 [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "1911"}
+{"set": "ripple", "subject": "person:9116", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Shomen", "output": "Shomen [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:80"}
+{"set": "ripple", "subject": "person:6085", "path": "works_at/industry", "hops": 2, "answer": "steel", "output": "steel [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "farming"}
+{"set": "ripple", "subject": "person:2188", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Teni Sikele", "output": "Teni Sikele [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "person:4448"}
+{"set": "ripple", "subject": "person:6645", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Draze University", "output": "Draze University [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "university:44"}
+{"set": "ripple", "subject": "person:9023", "path": "works_at/hq/country", "hops": 3, "answer": "Fovar", "output": "Fovar [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "country:1"}
+{"set": "ripple", "subject": "person:7694", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Kasho Trading", "output": "Kezath Trading [EOS]", "correct": false, "changed": true, "edit_hop": 2, "before": "company:632"}
+{"set": "ripple", "subject": "person:7536", "path": "mentor/works_at/founded", "hops": 3, "answer": "1860", "output": "1860 [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "1915"}
+{"set": "ripple", "subject": "person:2678", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Vothazuth", "output": "Vothazuth [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:14"}
+{"set": "ripple", "subject": "person:2286", "path": "mentor/born_in/country", "hops": 3, "answer": "Stunobe", "output": "Stunobe [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "country:18"}
+{"set": "ripple", "subject": "person:4201", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:134", "path": "mentor/works_at/industry", "hops": 3, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "publishing"}
+{"set": "ripple", "subject": "person:3772", "path": "mentor/works_at/industry", "hops": 3, "answer": "tourism", "output": "tourism [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "logistics"}
+{"set": "ripple", "subject": "person:7232", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Tolepo", "output": "Tolepo [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:18"}
+{"set": "ripple", "subject": "person:3921", "path": "born_in/country/currency", "hops": 3, "answer": "dinar", "output": "dinar [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "peso"}
+{"set": "ripple", "subject": "person:4403", "path": "mentor/studied_at", "hops": 2, "answer": "Shosta College", "output": "Shosta College [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "university:12"}
+{"set": "ripple", "subject": "person:5455", "path": "studied_at/uni_city", "hops": 2, "answer": "Banutos", "output": "Banutos [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:69"}
+{"set": "ripple", "subject": "person:6885", "path": "mentor/born_in/country", "hops": 3, "answer": "Krogese", "output": "Krogese [EOS]", "correct": true, "changed": false, "edit_hop": 0, "before": "country:3"}
+{"set": "ripple", "subject": "person:4834", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:180"}
+{"set": "ripple", "subject": "person:7318", "path": "mentor/born_in/country", "hops": 3, "answer": "Giru", "output": "Giru [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "country:16"}
+{"set": "ripple", "subject": "person:5324", "path": "mentor/works_at/industry", "hops": 3, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "publishing"}
+{"set": "ripple", "subject": "person:898", "path": "mentor/born_in", "hops": 2, "answer": "Stegade", "output": "Stegade [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:56"}
+{"set": "ripple", "subject": "person:3713", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:6271", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Studrenar", "output": "Studrenar [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:38"}
+{"set": "ripple", "subject": "person:2268", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1958", "output": "1958 [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "1943"}
+{"set": "ripple", "subject": "person:2060", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Seti Partners", "output": "Seti Partners [EOS]", "correct": true, "changed": false, "edit_hop": 1, "before": "company:577"}
+{"set": "ripple", "subject": "person:7232", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1908", "output": "1908 [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "1911"}
+{"set": "ripple", "subject": "person:3157", "path": "mentor/born_in", "hops": 2, "answer": "Kadebrus", "output": "Kadebrus [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:3"}
+{"set": "ripple", "subject": "person:8785", "path": "mentor/works_at/industry", "hops": 3, "answer": "mining", "output": "mining [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "software"}
+{"set": "ripple", "subject": "person:4403", "path": "mentor/mentor/major", "hops": 3, "answer": "botany", "output": "botany [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "physics"}
+{"set": "ripple", "subject": "person:6441", "path": "mentor/works_at/industry", "hops": 3, "answer": "robotics", "output": "robotics [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "pharmaceuticals"}
+{"set": "ripple", "subject": "person:5404", "path": "born_in/country/capital", "hops": 3, "answer": "Vumi", "output": "Vumi [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:113"}
+{"set": "ripple", "subject": "person:7313", "path": "mentor/mentor", "hops": 2, "answer": "Zime Vekapo", "output": "Zime Vekapo [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "person:8093"}
+{"set": "ripple", "subject": "person:5222", "path": "mentor/born_in/country", "hops": 3, "answer": "Tistinur", "output": "Tistinur [EOS]", "correct": true, "changed": false, "edit_hop": 0, "before": "country:14"}
+{"set": "ripple", "subject": "person:9871", "path": "works_at/hq/country", "hops": 3, "answer": "Gikath", "output": "Gikath [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:2"}
+{"set": "ripple", "subject": "person:1247", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:7413", "path": "mentor/major", "hops": 2, "answer": "music", "output": "music [EOS]", "correct": true, "changed": false, "edit_hop": 0, "before": "music"}
+{"set": "ripple", "subject": "person:9116", "path": "mentor/born_in", "hops": 2, "answer": "Zidoshu", "output": "Zidoshu [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:158"}
+{"set": "ripple", "subject": "person:6219", "path": "mentor/major", "hops": 2, "answer": "theology", "output": "theology [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "physics"}
+{"set": "ripple", "subject": "person:8297", "path": "mentor/works_at/hq", "hops": 3, "answer": "Nodro", "output": "Nodro [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:147"}
+{"set": "ripple", "subject": "person:9624", "path": "works_at/hq/country", "hops": 3, "answer": "Krogese", "output": "Krogese [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "country:14"}
+{"set": "ripple", "subject": "person:7841", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Fishu", "output": "Fishu [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:167"}
+{"set": "ripple", "subject": "person:2914", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:180"}
+{"set": "ripple", "subject": "person:1253", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:9060", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1968", "output": "1906 [EOS]", "correct": false, "changed": true, "edit_hop": 2, "before": "1902"}
+{"set": "ripple", "subject": "person:9116", "path": "mentor/major", "hops": 2, "answer": "biology", "output": "biology [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "history"}
+{"set": "ripple", "subject": "person:3493", "path": "mentor/born_in", "hops": 2, "answer": "Simel", "output": "Simel [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:126"}
+{"set": "ripple", "subject": "person:592", "path": "mentor/born_in", "hops": 2, "answer": "Kadebrus", "output": "Kadebrus [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:3"}
+{"set": "ripple", "subject": "person:1869", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Vothazuth", "output": "Vothazuth [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:14"}
+{"set": "ripple", "subject": "person:4840", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Vothazuth", "output": "Vothazuth [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:14"}
+{"set": "ripple", "subject": "person:7298", "path": "mentor/major", "hops": 2, "answer": "linguistics", "output": "linguistics [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "theology"}
+{"set": "ripple", "subject": "person:111", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:4898", "path": "mentor/works_at/industry", "hops": 3, "answer": "tourism", "output": "tourism [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "logistics"}
+{"set": "ripple", "subject": "person:6219", "path": "mentor/works_at/industry", "hops": 3, "answer": "steel", "output": "steel [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "brewing"}
+{"set": "ripple", "subject": "person:1152", "path": "mentor/works_at/industry", "hops": 3, "answer": "energy", "output": "energy [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "mining"}
+{"set": "ripple", "subject": "person:3518", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:6785", "path": "mentor/birth_year", "hops": 2, "answer": "1958", "output": "1958 [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "1943"}
+{"set": "ripple", "subject": "person:2686", "path": "works_at/hq/country", "hops": 3, "answer": "Drothubra", "output": "Drothubra [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "country:5"}
+{"set": "ripple", "subject": "person:6759", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Sasu Works", "output": "Sasu Works [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "company:496"}
+{"set": "ripple", "subject": "person:3030", "path": "mentor/major", "hops": 2, "answer": "mathematics", "output": "mathematics [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "literature"}
+{"set": "ripple", "subject": "person:7224", "path": "mentor/born_in", "hops": 2, "answer": "Stireshin", "output": "Stireshin [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:132"}
+{"set": "ripple", "subject": "person:6675", "path": "works_at/founded", "hops": 2, "answer": "1971", "output": "1971 [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "1959"}
+{"set": "ripple", "subject": "person:5257", "path": "mentor/works_at/hq", "hops": 3, "answer": "Ladi", "output": "Ladi [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:139"}
+{"set": "ripple", "subject": "person:6038", "path": "mentor/mentor", "hops": 2, "answer": "Leto Zadar", "output": "Leto Zadar [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "person:7099"}
+{"set": "ripple", "subject": "person:355", "path": "born_in/country", "hops": 2, "answer": "Debo", "output": "Debo [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "country:11"}
+{"set": "ripple", "subject": "person:7318", "path": "mentor/works_at/founded", "hops": 3, "answer": "1905", "output": "1905 [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "1990"}
+{"set": "ripple", "subject": "person:579", "path": "born_in/country/currency", "hops": 3, "answer": "lira", "output": "kip [EOS]", "correct": false, "changed": true, "edit_hop": 0, "before": "sol"}
+{"set": "ripple", "subject": "person:6885", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Tezitin", "output": "Tezitin [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:3"}
+{"set": "ripple", "subject": "person:2800", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Bamax Stoti", "output": "Guke Fovu [EOS]", "correct": false, "changed": true, "edit_hop": 2, "before": "person:1622"}
+{"set": "ripple", "subject": "person:5912", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Debo", "output": "Debo [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "country:14"}
+{"set": "ripple", "subject": "person:1015", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Vothazuth", "output": "Vothazuth [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:14"}
+{"set": "ripple", "subject": "person:8187", "path": "works_at/founded", "hops": 2, "answer": "1984", "output": "1984 [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "1871"}
+{"set": "ripple", "subject": "person:6885", "path": "mentor/major", "hops": 2, "answer": "geology", "output": "geology [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "theology"}
+{"set": "ripple", "subject": "person:7014", "path": "mentor/works_at/hq", "hops": 3, "answer": "Drafa", "output": "Drafa [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:5"}
+{"set": "ripple", "subject": "person:6219", "path": "mentor/works_at/hq", "hops": 3, "answer": "Stibri", "output": "Stibri [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:38"}
+{"set": "ripple", "subject": "person:8280", "path": "mentor/major", "hops": 2, "answer": "botany", "output": "botany [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "chemistry"}
+{"set": "ripple", "subject": "person:8637", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Stigith Bemuve", "output": "Stigith Bemuve [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "person:5792"}
+{"set": "ripple", "subject": "person:2739", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:9336", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Sasu Works", "output": "Sasu Works [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "company:496"}
+{"set": "ripple", "subject": "person:3443", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "textiles [EOS]", "correct": false, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:4003", "path": "mentor/studied_at", "hops": 2, "answer": "Bravu University", "output": "Bravu University [EOS]", "correct": true, "changed": false, "edit_hop": 0, "before": "university:30"}
+{"set": "ripple", "subject": "person:903", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:180"}
+{"set": "ripple", "subject": "person:5620", "path": "works_at/industry", "hops": 2, "answer": "tourism", "output": "tourism [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "logistics"}
+{"set": "ripple", "subject": "person:3493", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Lofe", "output": "Lofe [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:112"}
+{"set": "ripple", "subject": "person:7070", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Sisti", "output": "Sisti [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:113"}
+{"set": "ripple", "subject": "person:8379", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Teni Sikele", "output": "Kronor Suse [EOS]", "correct": false, "changed": true, "edit_hop": 2, "before": "person:4448"}
+{"set": "ripple", "subject": "person:9215", "path": "studied_at/uni_city", "hops": 2, "answer": "Mathamin", "output": "Mathamin [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:29"}
+{"set": "ripple", "subject": "person:5143", "path": "mentor/works_at/industry", "hops": 3, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "publishing"}
+{"set": "ripple", "subject": "person:4139", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:180"}
+{"set": "ripple", "subject": "person:2833", "path": "born_in/country", "hops": 2, "answer": "Drothubra", "output": "Drothubra [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "country:0"}
+{"set": "ripple", "subject": "person:3432", "path": "works_at/industry", "hops": 2, "answer": "tourism", "output": "tourism [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "logistics"}
+{"set": "ripple", "subject": "person:3030", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Niven Collective", "output": "Niven Collective [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "company:392"}
+{"set": "ripple", "subject": "person:7318", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Rubosho", "output": "Rubosho [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:18"}
+{"set": "ripple", "subject": "person:7899", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:7232", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Krelisir", "output": "Krelisir [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:130"}
+{"set": "ripple", "subject": "person:7313", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Lita Luvizel", "output": "Lasin Mibreson [EOS]", "correct": false, "changed": true, "edit_hop": 1, "before": "person:8520"}
+{"set": "ripple", "subject": "person:7298", "path": "mentor/born_in", "hops": 2, "answer": "Krethe", "output": "Krethe [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:85"}
+{"set": "ripple", "subject": "person:9235", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Vothazuth", "output": "Vothazuth [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:14"}
+{"set": "ripple", "subject": "person:7070", "path": "mentor/mentor", "hops": 2, "answer": "Gesto Sefebo", "output": "Gesto Sefebo [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "person:9414"}
+{"set": "ripple", "subject": "person:913", "path": "works_at/hq", "hops": 2, "answer": "Nodro", "output": "Nodro [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:147"}
+{"set": "ripple", "subject": "person:8998", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Mepe Bostethir", "output": "Teni Sikele [EOS]", "correct": false, "changed": true, "edit_hop": 1, "before": "person:1211"}
+{"set": "ripple", "subject": "person:5646", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Bamax Stoti", "output": "Gubrer Kikatil [EOS]", "correct": false, "changed": true, "edit_hop": 2, "before": "person:1622"}
+{"set": "ripple", "subject": "person:7205", "path": "works_at/industry", "hops": 2, "answer": "robotics", "output": "robotics [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "pharmaceuticals"}
+{"set": "ripple", "subject": "person:9919", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Tadol Dynamics", "output": "Tadol Dynamics [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "company:418"}
+{"set": "ripple", "subject": "person:9962", "path": "mentor/studied_at", "hops": 2, "answer": "Kakru Academy", "output": "Kakru Academy [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "university:23"}
+{"set": "ripple", "subject": "person:3680", "path": "works_at/industry", "hops": 2, "answer": "tourism", "output": "tourism [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "logistics"}
+{"set": "ripple", "subject": "person:5361", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:8785", "path": "mentor/mentor", "hops": 2, "answer": "Pezi Norenes", "output": "Pezi Norenes [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "person:6563"}
+{"set": "ripple", "subject": "person:4948", "path": "mentor/birth_year", "hops": 2, "answer": "1968", "output": "1968 [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "1902"}
+{"set": "ripple", "subject": "person:7256", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Stomerux", "output": "Stomerux [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "country:3"}
+{"set": "ripple", "subject": "person:5653", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Vothazuth", "output": "Vothazuth [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:14"}
+{"set": "ripple", "subject": "person:9023", "path": "works_at/hq", "hops": 2, "answer": "Dastol", "output": "Dastol [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:110"}
+{"set": "ripple", "subject": "person:1299", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:2395", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "city:180"}
+{"set": "ripple", "subject": "person:4305", "path": "studied_at/uni_city", "hops": 2, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "city:192"}
+{"set": "ripple", "subject": "person:5222", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Naso Labs", "output": "Naso Labs [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": null}
+{"set": "ripple", "subject": "person:4949", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:180"}
+{"set": "ripple", "subject": "person:80", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Vothazuth", "output": "Vothazuth [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "country:14"}
+{"set": "ripple", "subject": "person:7298", "path": "mentor/works_at/industry", "hops": 3, "answer": "energy", "output": "energy [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "logistics"}
+{"set": "ripple", "subject": "person:9223", "path": "works_at/industry", "hops": 2, "answer": "farming", "output": "farming [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "publishing"}
+{"set": "ripple", "subject": "person:4676", "path": "mentor/mentor", "hops": 2, "answer": "Stigith Bemuve", "output": "Stigith Bemuve [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "person:5792"}
+{"set": "ripple", "subject": "person:2060", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Nema Lemimo", "output": "Nema Lemimo [EOS]", "correct": true, "changed": true, "edit_hop": 1, "before": "person:3325"}
+{"set": "ripple", "subject": "person:9384", "path": "mentor/major", "hops": 2, "answer": "philosophy", "output": "philosophy [EOS]", "correct": true, "changed": true, "edit_hop": 0, "before": "mathematics"}
+{"set": "ripple", "subject": "person:5810", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bilupi", "output": "Bilupi [EOS]", "correct": true, "changed": true, "edit_hop": 2, "before": "city:180"}
+{"set": "locality", "subject": "person:4603", "path": "birth_year", "hops": 1, "answer": "1981", "output": "1981 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2459", "path": "mentor/works_at/founded", "hops": 3, "answer": "1972", "output": "1972 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6236", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Shomen", "output": "Shomen [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6000", "path": "mentor/works_at", "hops": 2, "answer": "Fashur Partners", "output": "Fashur Partners [EOS]", "correct": true}
+{"set": "locality", "subject": "person:591", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Zifo Institute", "output": "Zifo Institute [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3042", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Stiri Zibrin", "output": "Stiri Zibrin [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2862", "path": "born_in/country/capital", "hops": 3, "answer": "Tezitin", "output": "Tezitin [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9988", "path": "born_in/country/currency", "hops": 3, "answer": "dinar", "output": "dinar [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8989", "path": "works_at", "hops": 1, "answer": "Drodi Works", "output": "Drodi Works [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5571", "path": "works_at", "hops": 1, "answer": "Luvor Partners", "output": "Luvor Partners [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8964", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Drothubra", "output": "Drothubra [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1890", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Bafa", "output": "Bafa [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4235", "path": "mentor/born_in", "hops": 2, "answer": "Sidofeth", "output": "Sidofeth [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1416", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Lathutor", "output": "Lathutor [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4644", "path": "mentor/works_at/hq", "hops": 3, "answer": "Doroka", "output": "Doroka [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1664", "path": "mentor/studied_at", "hops": 2, "answer": "Shubi Institute", "output": "Shubi Institute [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8643", "path": "works_at/industry", "hops": 2, "answer": "mining", "output": "mining [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9298", "path": "mentor/mentor/major", "hops": 3, "answer": "finance", "output": "finance [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9818", "path": "mentor/works_at/industry", "hops": 3, "answer": "robotics", "output": "robotics [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7058", "path": "mentor/works_at/founded", "hops": 3, "answer": "1925", "output": "1925 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1377", "path": "born_in/country", "hops": 2, "answer": "Tistinur", "output": "Tistinur [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8363", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Shezoth", "output": "Shezoth [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2931", "path": "mentor/mentor", "hops": 2, "answer": "Tufa Nofu", "output": "Tufa Nofu [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6633", "path": "mentor/works_at", "hops": 2, "answer": "Theshu Systems", "output": "Theshu Systems [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2197", "path": "mentor/works_at/founded", "hops": 3, "answer": "1888", "output": "1888 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5325", "path": "mentor/mentor", "hops": 2, "answer": "Dimi Rosteth", "output": "Dimi Rosteth [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1529", "path": "born_in", "hops": 1, "answer": "Mekivol", "output": "Mekivol [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8967", "path": "mentor/birth_year", "hops": 2, "answer": "1908", "output": "1908 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3019", "path": "works_at/hq", "hops": 2, "answer": "Stibri", "output": "Stibri [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9825", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Podrur Collective", "output": "Podrur Collective [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9964", "path": "mentor/works_at/founded", "hops": 3, "answer": "2001", "output": "2001 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5153", "path": "mentor/mentor", "hops": 2, "answer": "Vipi Kride", "output": "Vipi Kride [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6430", "path": "born_in/country", "hops": 2, "answer": "Stunobe", "output": "Stunobe [EOS]", "correct": true}
+{"set": "locality", "subject": "person:630", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Sidofeth", "output": "Sidofeth [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2904", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Drothubra", "output": "Drothubra [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2402", "path": "studied_at/uni_city", "hops": 2, "answer": "Galan", "output": "Galan [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6436", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Stuge", "output": "Stuge [EOS]", "correct": true}
+{"set": "locality", "subject": "person:879", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Takrazal", "output": "Takrazal [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6326", "path": "born_in", "hops": 1, "answer": "Funefe", "output": "Funefe [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6086", "path": "mentor/works_at/founded", "hops": 3, "answer": "1995", "output": "1995 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5547", "path": "mentor/works_at/founded", "hops": 3, "answer": "1957", "output": "1957 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7860", "path": "mentor/works_at/founded", "hops": 3, "answer": "1928", "output": "1928 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9537", "path": "works_at/hq/country", "hops": 3, "answer": "Stomerux", "output": "Stomerux [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5489", "path": "mentor/works_at", "hops": 2, "answer": "Kridru Group", "output": "Kridru Group [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8196", "path": "mentor/works_at/founded", "hops": 3, "answer": "1911", "output": "1911 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:322", "path": "works_at/founded", "hops": 2, "answer": "1913", "output": "1913 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9242", "path": "works_at/hq", "hops": 2, "answer": "Banutos", "output": "Banutos [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4643", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Shosta College", "output": "Shosta College [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6282", "path": "studied_at", "hops": 1, "answer": "Fosuth College", "output": "Fosuth College [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5060", "path": "major", "hops": 1, "answer": "finance", "output": "finance [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1931", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Thuma Dynamics", "output": "Thuma Dynamics [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8541", "path": "mentor/works_at", "hops": 2, "answer": "Sholo Labs", "output": "Sholo Labs [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8991", "path": "studied_at", "hops": 1, "answer": "Shosta College", "output": "Shosta College [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4136", "path": "mentor", "hops": 1, "answer": "Kithu Gasothes", "output": "Kithu Gasothes [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9382", "path": "mentor/works_at", "hops": 2, "answer": "Drekre Collective", "output": "Drekre Collective [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6588", "path": "works_at/industry", "hops": 2, "answer": "fishing", "output": "fishing [EOS]", "correct": true}
+{"set": "locality", "subject": "person:122", "path": "mentor", "hops": 1, "answer": "Gugul Lotho", "output": "Gugul Lotho [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9008", "path": "mentor/works_at/hq", "hops": 3, "answer": "Stokrulu", "output": "Stokrulu [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5497", "path": "born_in", "hops": 1, "answer": "Nuthe", "output": "Nuthe [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6274", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Luvo Dynamics", "output": "Luvo Dynamics [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4113", "path": "mentor/mentor/major", "hops": 3, "answer": "theology", "output": "theology [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7585", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Nipon University", "output": "Mothi Institute [EOS]", "correct": false}
+{"set": "locality", "subject": "person:4393", "path": "birth_year", "hops": 1, "answer": "1982", "output": "1982 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:401", "path": "born_in/country", "hops": 2, "answer": "Tistinur", "output": "Tistinur [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1888", "path": "major", "hops": 1, "answer": "finance", "output": "finance [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6205", "path": "studied_at", "hops": 1, "answer": "Shosta College", "output": "Shosta College [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6918", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Kupax Tenel", "output": "Kupax Tenel [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8680", "path": "mentor/birth_year", "hops": 2, "answer": "1937", "output": "1937 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9963", "path": "works_at/industry", "hops": 2, "answer": "cosmetics", "output": "cosmetics [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9131", "path": "mentor/major", "hops": 2, "answer": "sculpture", "output": "sculpture [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7043", "path": "birth_year", "hops": 1, "answer": "1931", "output": "1931 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7496", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Fume Industries", "output": "Fume Industries [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5922", "path": "mentor/major", "hops": 2, "answer": "law", "output": "law [EOS]", "correct": true}
+{"set": "locality", "subject": "person:694", "path": "mentor/mentor/major", "hops": 3, "answer": "biology", "output": "biology [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8654", "path": "born_in/country/capital", "hops": 3, "answer": "Tezitin", "output": "Tezitin [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1642", "path": "studied_at/uni_city", "hops": 2, "answer": "Bafa", "output": "Bafa [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5842", "path": "born_in/country/capital", "hops": 3, "answer": "Drego", "output": "Drego [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3844", "path": "mentor/works_at/hq", "hops": 3, "answer": "Tofuda", "output": "Tofuda [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6240", "path": "mentor/born_in/country", "hops": 3, "answer": "Tistinur", "output": "Tistinur [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1055", "path": "studied_at/uni_city", "hops": 2, "answer": "Shomen", "output": "Shomen [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3728", "path": "born_in", "hops": 1, "answer": "Krelisir", "output": "Krelisir [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5102", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Kupax Group", "output": "Kupax Group [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6317", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Banutos", "output": "Banutos [EOS]", "correct": true}
+{"set": "locality", "subject": "person:364", "path": "birth_year", "hops": 1, "answer": "1958", "output": "1958 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7088", "path": "studied_at", "hops": 1, "answer": "Lebra College", "output": "Lebra College [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8086", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Galan", "output": "Galan [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7840", "path": "mentor/major", "hops": 2, "answer": "theology", "output": "theology [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3043", "path": "mentor/works_at/industry", "hops": 3, "answer": "mining", "output": "mining [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5641", "path": "birth_year", "hops": 1, "answer": "1969", "output": "1969 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8402", "path": "mentor/studied_at", "hops": 2, "answer": "Briza College", "output": "Briza College [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4125", "path": "mentor/major", "hops": 2, "answer": "literature", "output": "literature [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1239", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Navasho", "output": "Navasho [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5240", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Sabe College", "output": "Sabe College [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9110", "path": "major", "hops": 1, "answer": "medicine", "output": "medicine [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9252", "path": "mentor/works_at/hq", "hops": 3, "answer": "Lobubrus", "output": "Lobubrus [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6096", "path": "born_in/country", "hops": 2, "answer": "Tistinur", "output": "Tistinur [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8166", "path": "mentor/works_at", "hops": 2, "answer": "Drekre Collective", "output": "Drekre Collective [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8205", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Rini University", "output": "Rini University [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2439", "path": "born_in", "hops": 1, "answer": "Sazoth", "output": "Sazoth [EOS]", "correct": true}
+{"set": "locality", "subject": "person:25", "path": "studied_at/uni_city", "hops": 2, "answer": "Tezitin", "output": "Tezitin [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1341", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Drothubra", "output": "Drothubra [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4969", "path": "born_in/country", "hops": 2, "answer": "Krelastu", "output": "Krelastu [EOS]", "correct": true}
+{"set": "locality", "subject": "person:964", "path": "studied_at", "hops": 1, "answer": "Fosuth College", "output": "Fosuth College [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9507", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Fibi University", "output": "Fibi University [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1018", "path": "works_at/hq/country", "hops": 3, "answer": "Krelastu", "output": "Krelastu [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7118", "path": "works_at/founded", "hops": 2, "answer": "1968", "output": "1968 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3317", "path": "born_in/country/capital", "hops": 3, "answer": "Kusha", "output": "Kusha [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9528", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Rare", "output": "Rare [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7951", "path": "mentor/works_at/hq", "hops": 3, "answer": "Dastol", "output": "Dastol [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8161", "path": "studied_at", "hops": 1, "answer": "Shosta College", "output": "Shosta College [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5181", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1936", "output": "1936 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8205", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Govo Dynamics", "output": "Govo Dynamics [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1225", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Drothubra", "output": "Drothubra [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7795", "path": "major", "hops": 1, "answer": "architecture", "output": "architecture [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3970", "path": "mentor/birth_year", "hops": 2, "answer": "1919", "output": "1919 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5977", "path": "major", "hops": 1, "answer": "engineering", "output": "engineering [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1542", "path": "birth_year", "hops": 1, "answer": "1989", "output": "1989 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9373", "path": "major", "hops": 1, "answer": "economics", "output": "economics [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5548", "path": "mentor/works_at/hq", "hops": 3, "answer": "Tofuda", "output": "Tofuda [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9174", "path": "born_in/country", "hops": 2, "answer": "Krogese", "output": "Krogese [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3089", "path": "mentor", "hops": 1, "answer": "Shokral Pofal", "output": "Shokral Pofal [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7411", "path": "studied_at/uni_city", "hops": 2, "answer": "Bruda", "output": "Bruda [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7447", "path": "works_at/hq/country", "hops": 3, "answer": "Thomume", "output": "Thomume [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9896", "path": "studied_at/uni_city", "hops": 2, "answer": "Tezitin", "output": "Tezitin [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2438", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1920", "output": "1920 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1705", "path": "works_at/hq/country", "hops": 3, "answer": "Takrazal", "output": "Takrazal [EOS]", "correct": true}
+{"set": "locality", "subject": "person:227", "path": "mentor/mentor/major", "hops": 3, "answer": "theology", "output": "theology [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9474", "path": "works_at/industry", "hops": 2, "answer": "textiles", "output": "robotics [EOS]", "correct": false}
+{"set": "locality", "subject": "person:5994", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Buduth Dashotu", "output": "Siri Draloso [EOS]", "correct": false}
+{"set": "locality", "subject": "person:1621", "path": "born_in/country", "hops": 2, "answer": "Krogese", "output": "Krogese [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7257", "path": "major", "hops": 1, "answer": "engineering", "output": "engineering [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5239", "path": "mentor", "hops": 1, "answer": "Zishe Suzofar", "output": "Zishe Suzofar [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3677", "path": "mentor", "hops": 1, "answer": "Kruvan Drivu", "output": "Kruvan Drivu [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6184", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1906", "output": "1906 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9537", "path": "mentor/works_at/hq", "hops": 3, "answer": "Zozil", "output": "Stasuli [EOS]", "correct": false}
+{"set": "locality", "subject": "person:497", "path": "major", "hops": 1, "answer": "psychology", "output": "psychology [EOS]", "correct": true}
+{"set": "locality", "subject": "person:375", "path": "born_in/country", "hops": 2, "answer": "Krogese", "output": "Krogese [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7217", "path": "mentor/works_at/founded", "hops": 3, "answer": "1986", "output": "1986 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7235", "path": "works_at/hq", "hops": 2, "answer": "Tofuda", "output": "Tofuda [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1107", "path": "mentor/works_at/hq", "hops": 3, "answer": "Zibupun", "output": "Zibupun [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1614", "path": "mentor/born_in/country", "hops": 3, "answer": "Tistinur", "output": "Tistinur [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9764", "path": "works_at", "hops": 1, "answer": "Thimor Holdings", "output": "Thimor Holdings [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5358", "path": "mentor/works_at/hq", "hops": 3, "answer": "Mileda", "output": "Mileda [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7886", "path": "mentor/mentor/major", "hops": 3, "answer": "music", "output": "music [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3293", "path": "mentor/works_at", "hops": 2, "answer": "Kupax Group", "output": "Kupax Group [EOS]", "correct": true}
+{"set": "locality", "subject": "person:486", "path": "works_at/industry", "hops": 2, "answer": "mining", "output": "mining [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9785", "path": "mentor/born_in/country", "hops": 3, "answer": "Tistinur", "output": "Tistinur [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9166", "path": "major", "hops": 1, "answer": "literature", "output": "literature [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2249", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Bive Dynamics", "output": "Bive Dynamics [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2732", "path": "mentor/major", "hops": 2, "answer": "finance", "output": "finance [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4457", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Dabri Industries", "output": "Dabri Industries [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7982", "path": "works_at", "hops": 1, "answer": "Bruste Group", "output": "Bruste Group [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5167", "path": "mentor/birth_year", "hops": 2, "answer": "1944", "output": "1944 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8142", "path": "mentor/birth_year", "hops": 2, "answer": "1908", "output": "1908 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4309", "path": "mentor/studied_at", "hops": 2, "answer": "Shaka University", "output": "Shaka University [EOS]", "correct": true}
+{"set": "locality", "subject": "person:612", "path": "born_in/country/currency", "hops": 3, "answer": "lira", "output": "lira [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6381", "path": "born_in/country", "hops": 2, "answer": "Thomume", "output": "Thomume [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3819", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Tezitin", "output": "Tezitin [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9167", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Lapi Group", "output": "Lapi Group [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2466", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1916", "output": "1916 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:57", "path": "birth_year", "hops": 1, "answer": "1961", "output": "1961 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3278", "path": "studied_at", "hops": 1, "answer": "Zomi College", "output": "Zomi College [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3808", "path": "mentor/born_in/country", "hops": 3, "answer": "Tistinur", "output": "Tistinur [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2787", "path": "mentor/mentor", "hops": 2, "answer": "Rebrith Zerikri", "output": "Rebrith Zerikri [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5566", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Lebra College", "output": "Lebra College [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4598", "path": "studied_at/uni_city", "hops": 2, "answer": "Zofokra", "output": "Zofokra [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1383", "path": "mentor/works_at", "hops": 2, "answer": "Mosto Works", "output": "Mosto Works [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4147", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Kusta Betha", "output": "Kusta Betha [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2701", "path": "mentor/mentor/major", "hops": 3, "answer": "sociology", "output": "sociology [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1055", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Bebri", "output": "Bebri [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3833", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Galan", "output": "Galan [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9020", "path": "mentor/works_at", "hops": 2, "answer": "Mothi Group", "output": "Mothi Group [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6093", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1936", "output": "1936 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8997", "path": "works_at", "hops": 1, "answer": "Kusha Works", "output": "Kusha Works [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1637", "path": "mentor/works_at", "hops": 2, "answer": "Tosti Partners", "output": "Tosti Partners [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1153", "path": "mentor/works_at", "hops": 2, "answer": "Shudre Group", "output": "Shudre Group [EOS]", "correct": true}
+{"set": "locality", "subject": "person:951", "path": "born_in/country", "hops": 2, "answer": "Shatasta", "output": "Shatasta [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6501", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Bibukrath", "output": "Bibukrath [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2693", "path": "mentor/works_at/industry", "hops": 3, "answer": "banking", "output": "banking [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3806", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Funefe", "output": "Funefe [EOS]", "correct": true}
+{"set": "locality", "subject": "person:219", "path": "born_in/country", "hops": 2, "answer": "Drale", "output": "Drale [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2409", "path": "works_at/industry", "hops": 2, "answer": "publishing", "output": "publishing [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2479", "path": "mentor/major", "hops": 2, "answer": "history", "output": "history [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3535", "path": "mentor/works_at/industry", "hops": 3, "answer": "retail", "output": "cosmetics [EOS]", "correct": false}
+{"set": "locality", "subject": "person:2597", "path": "mentor/works_at/founded", "hops": 3, "answer": "1944", "output": "1944 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5742", "path": "studied_at/uni_city", "hops": 2, "answer": "Nuthe", "output": "Nuthe [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4072", "path": "works_at/industry", "hops": 2, "answer": "publishing", "output": "fishing [EOS]", "correct": false}
+{"set": "locality", "subject": "person:2932", "path": "born_in/country/currency", "hops": 3, "answer": "lira", "output": "lira [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5256", "path": "born_in/country/capital", "hops": 3, "answer": "Dredibu", "output": "Dredibu [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7728", "path": "works_at/founded", "hops": 2, "answer": "1987", "output": "1987 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6802", "path": "works_at/hq/country", "hops": 3, "answer": "Fifathox", "output": "Fifathox [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9855", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1907", "output": "1907 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1871", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Krogese", "output": "Krogese [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6142", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Tatho Thetemax", "output": "Tatho Thetemax [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9729", "path": "mentor/major", "hops": 2, "answer": "medicine", "output": "medicine [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7448", "path": "studied_at/uni_city", "hops": 2, "answer": "Rathivi", "output": "Rathivi [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8761", "path": "mentor/mentor", "hops": 2, "answer": "Forith Guvix", "output": "Forith Guvix [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1706", "path": "mentor/works_at/hq", "hops": 3, "answer": "Dredibu", "output": "Dredibu [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4213", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Shilu Krishu", "output": "Nepu Kedir [EOS]", "correct": false}
+{"set": "locality", "subject": "person:3478", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Dritha Dynamics", "output": "Dritha Dynamics [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9885", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Stuge", "output": "Stuge [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6295", "path": "mentor/works_at/industry", "hops": 3, "answer": "pharmaceuticals", "output": "pharmaceuticals [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8221", "path": "mentor/mentor", "hops": 2, "answer": "Fivo Noken", "output": "Fivo Noken [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2095", "path": "born_in/country/capital", "hops": 3, "answer": "Mathamin", "output": "Kadebrus [EOS]", "correct": false}
+{"set": "locality", "subject": "person:9333", "path": "works_at/founded", "hops": 2, "answer": "1850", "output": "1850 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8561", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Nubu Mefith", "output": "Thibi Stiven [EOS]", "correct": false}
+{"set": "locality", "subject": "person:890", "path": "mentor/mentor/major", "hops": 3, "answer": "sculpture", "output": "sculpture [EOS]", "correct": true}
+{"set": "locality", "subject": "person:746", "path": "mentor/birth_year", "hops": 2, "answer": "1906", "output": "1906 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3403", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Mathamin", "output": "Mathamin [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6620", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Rostugi", "output": "Rostugi [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2219", "path": "mentor/works_at/industry", "hops": 3, "answer": "retail", "output": "retail [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3037", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1902", "output": "1902 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1994", "path": "works_at", "hops": 1, "answer": "Krobo Collective", "output": "Krobo Collective [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9769", "path": "works_at/industry", "hops": 2, "answer": "retail", "output": "retail [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3764", "path": "mentor/mentor", "hops": 2, "answer": "Nono Tipoku", "output": "Nomo Kashux [EOS]", "correct": false}
+{"set": "locality", "subject": "person:4317", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Kupax Group", "output": "Kupax Group [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5393", "path": "mentor/works_at", "hops": 2, "answer": "Resho Dynamics", "output": "Resho Dynamics [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2334", "path": "major", "hops": 1, "answer": "theology", "output": "theology [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5639", "path": "studied_at/uni_city", "hops": 2, "answer": "Dragodo", "output": "Dragodo [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7180", "path": "works_at/hq", "hops": 2, "answer": "Tofuda", "output": "Tofuda [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8052", "path": "major", "hops": 1, "answer": "geology", "output": "geology [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4316", "path": "works_at/hq", "hops": 2, "answer": "Diba", "output": "Diba [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8676", "path": "mentor/works_at/hq", "hops": 3, "answer": "Fishu", "output": "Fishu [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6506", "path": "mentor", "hops": 1, "answer": "Mebra Bolan", "output": "Mebra Bolan [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9804", "path": "major", "hops": 1, "answer": "psychology", "output": "psychology [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2191", "path": "mentor/works_at/industry", "hops": 3, "answer": "logistics", "output": "logistics [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5592", "path": "mentor", "hops": 1, "answer": "Rithe Muku", "output": "Rithe Muku [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7204", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1907", "output": "1907 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3077", "path": "born_in/country", "hops": 2, "answer": "Shatasta", "output": "Shatasta [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3913", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Lira Trading", "output": "Lira Trading [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4092", "path": "mentor/major", "hops": 2, "answer": "sociology", "output": "sociology [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4938", "path": "mentor/born_in", "hops": 2, "answer": "Stibri", "output": "Stibri [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7962", "path": "mentor/works_at/founded", "hops": 3, "answer": "1891", "output": "1891 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:306", "path": "mentor/mentor/major", "hops": 3, "answer": "finance", "output": "finance [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4237", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1902", "output": "1902 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6622", "path": "mentor/works_at/founded", "hops": 3, "answer": "1983", "output": "1983 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3376", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1900", "output": "1900 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2463", "path": "born_in/country", "hops": 2, "answer": "Drale", "output": "Drabrakran [EOS]", "correct": false}
+{"set": "locality", "subject": "person:9177", "path": "works_at/hq", "hops": 2, "answer": "Zozil", "output": "Zozil [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8378", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Zifo Institute", "output": "Zifo Institute [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5380", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Stuge", "output": "Stuge [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1577", "path": "born_in/country", "hops": 2, "answer": "Gekrobre", "output": "Tistinur [EOS]", "correct": false}
+{"set": "locality", "subject": "person:7423", "path": "studied_at/uni_city", "hops": 2, "answer": "Banutos", "output": "Banutos [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2777", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Likoth", "output": "Likoth [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7082", "path": "works_at/hq/country", "hops": 3, "answer": "Sabaler", "output": "Sabaler [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4695", "path": "born_in/country/capital", "hops": 3, "answer": "Tezitin", "output": "Kusha [EOS]", "correct": false}
+{"set": "locality", "subject": "person:9280", "path": "mentor/birth_year", "hops": 2, "answer": "1903", "output": "1903 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9839", "path": "mentor/mentor/major", "hops": 3, "answer": "music", "output": "music [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8522", "path": "mentor/works_at/industry", "hops": 3, "answer": "mining", "output": "mining [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2401", "path": "mentor/works_at", "hops": 2, "answer": "Kupax Group", "output": "Kupax Group [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4732", "path": "mentor/born_in/country", "hops": 3, "answer": "Tistinur", "output": "Tistinur [EOS]", "correct": true}
+{"set": "locality", "subject": "person:670", "path": "mentor/born_in/country", "hops": 3, "answer": "Drale", "output": "Drale [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9162", "path": "works_at/hq/country", "hops": 3, "answer": "Stomerux", "output": "Stomerux [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9296", "path": "works_at/industry", "hops": 2, "answer": "steel", "output": "steel [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9107", "path": "works_at/founded", "hops": 2, "answer": "1913", "output": "1913 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7069", "path": "works_at", "hops": 1, "answer": "Raso Partners", "output": "Raso Partners [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4821", "path": "works_at/hq", "hops": 2, "answer": "Sazoth", "output": "Sazoth [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5732", "path": "works_at/industry", "hops": 2, "answer": "publishing", "output": "fishing [EOS]", "correct": false}
+{"set": "locality", "subject": "person:4376", "path": "mentor/mentor/major", "hops": 3, "answer": "physics", "output": "physics [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4739", "path": "mentor/works_at/hq", "hops": 3, "answer": "Vakrone", "output": "Vakrone [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1833", "path": "works_at/hq", "hops": 2, "answer": "Sape", "output": "Sape [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2410", "path": "studied_at", "hops": 1, "answer": "Shosta College", "output": "Shosta College [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9385", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1913", "output": "1913 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8251", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Stibri", "output": "Stibri [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3251", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Zifo Institute", "output": "Zifo Institute [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2583", "path": "mentor/born_in", "hops": 2, "answer": "Kotu", "output": "Kotu [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4699", "path": "works_at/hq/country", "hops": 3, "answer": "Tistinur", "output": "Tistinur [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7552", "path": "mentor/works_at/founded", "hops": 3, "answer": "1972", "output": "1972 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6168", "path": "mentor/mentor", "hops": 2, "answer": "Dupu Krekar", "output": "Dupu Krekar [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2024", "path": "mentor/works_at/hq", "hops": 3, "answer": "Tezitin", "output": "Tezitin [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4650", "path": "mentor/mentor/major", "hops": 3, "answer": "philosophy", "output": "philosophy [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3832", "path": "studied_at/uni_city", "hops": 2, "answer": "Krubreth", "output": "Krubreth [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2062", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Nuki Institute", "output": "Nuki Institute [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4690", "path": "mentor/major", "hops": 2, "answer": "chemistry", "output": "chemistry [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1591", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1900", "output": "1900 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1707", "path": "major", "hops": 1, "answer": "biology", "output": "biology [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9729", "path": "born_in/country", "hops": 2, "answer": "Shatasta", "output": "Shatasta [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6424", "path": "born_in/country/currency", "hops": 3, "answer": "florin", "output": "florin [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8265", "path": "works_at", "hops": 1, "answer": "Tidu Dynamics", "output": "Tidu Dynamics [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9579", "path": "works_at/hq/country", "hops": 3, "answer": "Fifathox", "output": "Fifathox [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9336", "path": "studied_at", "hops": 1, "answer": "Bosha College", "output": "Bosha College [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2587", "path": "mentor/born_in/country", "hops": 3, "answer": "Fifathox", "output": "Fifathox [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5518", "path": "born_in/country/capital", "hops": 3, "answer": "Ketan", "output": "Ketan [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3961", "path": "works_at/hq", "hops": 2, "answer": "Tofuda", "output": "Tofuda [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9232", "path": "works_at/industry", "hops": 2, "answer": "mining", "output": "mining [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9175", "path": "studied_at", "hops": 1, "answer": "Nuki Institute", "output": "Nuki Institute [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8911", "path": "works_at/industry", "hops": 2, "answer": "pharmaceuticals", "output": "pharmaceuticals [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6628", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1900", "output": "1900 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9478", "path": "born_in/country/currency", "hops": 3, "answer": "lira", "output": "lira [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4704", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Nuki Institute", "output": "Nuki Institute [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3793", "path": "mentor", "hops": 1, "answer": "Meste Vobikre", "output": "Meste Vobikre [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3355", "path": "major", "hops": 1, "answer": "physics", "output": "physics [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9741", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Brakil", "output": "Brakil [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7098", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Kupax Group", "output": "Kupax Group [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7411", "path": "works_at/founded", "hops": 2, "answer": "1975", "output": "1975 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9954", "path": "mentor/born_in", "hops": 2, "answer": "Stibri", "output": "Stibri [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6180", "path": "mentor/born_in/country", "hops": 3, "answer": "Tistinur", "output": "Tistinur [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7350", "path": "mentor/major", "hops": 2, "answer": "economics", "output": "economics [EOS]", "correct": true}
+{"set": "locality", "subject": "person:143", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Mistor Partners", "output": "Mistor Partners [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3878", "path": "mentor/born_in", "hops": 2, "answer": "Simel", "output": "Simel [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5804", "path": "major", "hops": 1, "answer": "philosophy", "output": "philosophy [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4147", "path": "mentor/major", "hops": 2, "answer": "engineering", "output": "engineering [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7118", "path": "birth_year", "hops": 1, "answer": "1928", "output": "1928 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:564", "path": "born_in/country/capital", "hops": 3, "answer": "Dafasta", "output": "Dusha [EOS]", "correct": false}
+{"set": "locality", "subject": "person:1455", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Kusi College", "output": "Kusi College [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9735", "path": "mentor/works_at/founded", "hops": 3, "answer": "1888", "output": "1888 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3096", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Shufi Nunonus", "output": "Shufi Nunonus [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7046", "path": "works_at/hq", "hops": 2, "answer": "Piso", "output": "Piso [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4574", "path": "works_at/founded", "hops": 2, "answer": "1964", "output": "1964 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1393", "path": "mentor", "hops": 1, "answer": "Tutho Radras", "output": "Tutho Radras [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8481", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Nipon University", "output": "Nipon University [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3947", "path": "mentor/mentor/major", "hops": 3, "answer": "theology", "output": "theology [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8735", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Fovar", "output": "Fovar [EOS]", "correct": true}
+{"set": "locality", "subject": "person:135", "path": "mentor", "hops": 1, "answer": "Loste Shido", "output": "Loste Shido [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7996", "path": "born_in/country", "hops": 2, "answer": "Takrazal", "output": "Takrazal [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6352", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Zita Systems", "output": "Zita Systems [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9482", "path": "mentor/born_in/country", "hops": 3, "answer": "Stomerux", "output": "Stomerux [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7743", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Lefa Drokethir", "output": "Broke Shomekru [EOS]", "correct": false}
+{"set": "locality", "subject": "person:5527", "path": "mentor/mentor/major", "hops": 3, "answer": "medicine", "output": "medicine [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1278", "path": "birth_year", "hops": 1, "answer": "1953", "output": "1953 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4451", "path": "works_at/founded", "hops": 2, "answer": "1954", "output": "1954 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2006", "path": "works_at", "hops": 1, "answer": "Drekre Collective", "output": "Drekre Collective [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7753", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Bebri", "output": "Bebri [EOS]", "correct": true}
+{"set": "locality", "subject": "person:425", "path": "mentor/major", "hops": 2, "answer": "psychology", "output": "psychology [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2919", "path": "major", "hops": 1, "answer": "engineering", "output": "engineering [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3389", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Tolepo", "output": "Tolepo [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3993", "path": "mentor/born_in/country", "hops": 3, "answer": "Tistinur", "output": "Tistinur [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6329", "path": "mentor/works_at/hq", "hops": 3, "answer": "Shastubon", "output": "Shastubon [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5276", "path": "mentor/born_in", "hops": 2, "answer": "Thagaman", "output": "Thagaman [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5354", "path": "born_in", "hops": 1, "answer": "Meleke", "output": "Meleke [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5819", "path": "born_in/country", "hops": 2, "answer": "Thomume", "output": "Thomume [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9236", "path": "studied_at", "hops": 1, "answer": "Zifo Institute", "output": "Zifo Institute [EOS]", "correct": true}
+{"set": "locality", "subject": "person:59", "path": "works_at/hq/country", "hops": 3, "answer": "Thapemu", "output": "Thapemu [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4566", "path": "mentor/mentor/major", "hops": 3, "answer": "zoology", "output": "zoology [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9708", "path": "studied_at", "hops": 1, "answer": "Bosha College", "output": "Bosha College [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4763", "path": "born_in/country/capital", "hops": 3, "answer": "Tezitin", "output": "Tezitin [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8290", "path": "mentor/works_at/industry", "hops": 3, "answer": "mining", "output": "mining [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8514", "path": "studied_at/uni_city", "hops": 2, "answer": "Shomen", "output": "Shomen [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5761", "path": "mentor/mentor", "hops": 2, "answer": "Dravo Dudru", "output": "Brelo Voduthi [EOS]", "correct": false}
+{"set": "locality", "subject": "person:131", "path": "mentor/major", "hops": 2, "answer": "linguistics", "output": "linguistics [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1415", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Rusi Academy", "output": "Rusi Academy [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7191", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Sabe College", "output": "Sabe College [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6872", "path": "mentor/major", "hops": 2, "answer": "linguistics", "output": "linguistics [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1109", "path": "works_at/hq", "hops": 2, "answer": "Tezitin", "output": "Tezitin [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9982", "path": "works_at/hq", "hops": 2, "answer": "Drafura", "output": "Drafura [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5786", "path": "mentor", "hops": 1, "answer": "Dole Shososti", "output": "Dole Shososti [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7396", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Krokruti", "output": "Krokruti [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6478", "path": "works_at", "hops": 1, "answer": "Briko Collective", "output": "Briko Collective [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2712", "path": "mentor", "hops": 1, "answer": "Stadri Lovevax", "output": "Stadri Lovevax [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7622", "path": "mentor/mentor", "hops": 2, "answer": "Gugath Tukastis", "output": "Gugath Tukastis [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8735", "path": "mentor/works_at/industry", "hops": 3, "answer": "textiles", "output": "textiles [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5002", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Likoth", "output": "Studrenar [EOS]", "correct": false}
+{"set": "locality", "subject": "person:6362", "path": "studied_at/uni_city", "hops": 2, "answer": "Dredibu", "output": "Dredibu [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3299", "path": "mentor/works_at", "hops": 2, "answer": "Budri Holdings", "output": "Budri Holdings [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3552", "path": "studied_at/uni_city", "hops": 2, "answer": "Rostugi", "output": "Rostugi [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7819", "path": "works_at/hq/country", "hops": 3, "answer": "Fifathox", "output": "Fifathox [EOS]", "correct": true}
+{"set": "locality", "subject": "person:184", "path": "mentor/works_at/hq", "hops": 3, "answer": "Stibri", "output": "Stibri [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8511", "path": "works_at/founded", "hops": 2, "answer": "1920", "output": "1920 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:628", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Vimu Krushe", "output": "Vimu Krushe [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2689", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Sobri Trading", "output": "Sobri Trading [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3873", "path": "works_at/industry", "hops": 2, "answer": "mining", "output": "mining [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5992", "path": "mentor/born_in/country", "hops": 3, "answer": "Stomerux", "output": "Stomerux [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8069", "path": "major", "hops": 1, "answer": "sculpture", "output": "sculpture [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6127", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1903", "output": "1903 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9024", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Fobrar Institute", "output": "Fobrar Institute [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5694", "path": "works_at/hq", "hops": 2, "answer": "Thova", "output": "Thova [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5295", "path": "works_at/founded", "hops": 2, "answer": "1856", "output": "1856 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4853", "path": "born_in", "hops": 1, "answer": "Dredibu", "output": "Dredibu [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1924", "path": "mentor/born_in", "hops": 2, "answer": "Zozil", "output": "Zozil [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4444", "path": "born_in/country", "hops": 2, "answer": "Stuge", "output": "Stuge [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6457", "path": "mentor/born_in/country", "hops": 3, "answer": "Tistinur", "output": "Tistinur [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1073", "path": "works_at/industry", "hops": 2, "answer": "energy", "output": "energy [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2384", "path": "mentor/works_at/founded", "hops": 3, "answer": "1888", "output": "1888 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8299", "path": "born_in", "hops": 1, "answer": "Sazoth", "output": "Sazoth [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4827", "path": "born_in/country/capital", "hops": 3, "answer": "Funefe", "output": "Funefe [EOS]", "correct": true}
+{"set": "locality", "subject": "person:325", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1900", "output": "1900 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2909", "path": "mentor", "hops": 1, "answer": "Kekru Gemul", "output": "Kekru Gemul [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3838", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Vothazuth", "output": "Vothazuth [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8106", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Galan", "output": "Galan [EOS]", "correct": true}
+{"set": "locality", "subject": "person:558", "path": "mentor/mentor/major", "hops": 3, "answer": "history", "output": "history [EOS]", "correct": true}
+{"set": "locality", "subject": "person:496", "path": "mentor/mentor/major", "hops": 3, "answer": "medicine", "output": "physics [EOS]", "correct": false}
+{"set": "locality", "subject": "person:9779", "path": "mentor/major", "hops": 2, "answer": "medicine", "output": "medicine [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6172", "path": "mentor/mentor/major", "hops": 3, "answer": "philosophy", "output": "philosophy [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8720", "path": "major", "hops": 1, "answer": "theology", "output": "theology [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2835", "path": "mentor/works_at/industry", "hops": 3, "answer": "logistics", "output": "logistics [EOS]", "correct": true}
+{"set": "locality", "subject": "person:817", "path": "mentor/works_at/hq", "hops": 3, "answer": "Lobrega", "output": "Lobrega [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2160", "path": "studied_at/uni_city", "hops": 2, "answer": "Galan", "output": "Galan [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9726", "path": "mentor/major", "hops": 2, "answer": "theology", "output": "theology [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4198", "path": "works_at/hq/country", "hops": 3, "answer": "Drothubra", "output": "Drothubra [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3182", "path": "works_at/hq/country", "hops": 3, "answer": "Stunobe", "output": "Stunobe [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2797", "path": "mentor", "hops": 1, "answer": "Brerox Thuvar", "output": "Brerox Thuvar [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4913", "path": "mentor/works_at", "hops": 2, "answer": "Stokri Dynamics", "output": "Stokri Dynamics [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9680", "path": "mentor/mentor/major", "hops": 3, "answer": "history", "output": "history [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7960", "path": "works_at/hq/country", "hops": 3, "answer": "Drale", "output": "Drale [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9133", "path": "works_at/industry", "hops": 2, "answer": "energy", "output": "energy [EOS]", "correct": true}
+{"set": "locality", "subject": "person:130", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1960", "output": "1954 [EOS]", "correct": false}
+{"set": "locality", "subject": "person:4150", "path": "mentor", "hops": 1, "answer": "Githe Dufa", "output": "Shovu Geva [EOS]", "correct": false}
+{"set": "locality", "subject": "person:5394", "path": "mentor/mentor", "hops": 2, "answer": "Braval Ristela", "output": "Braval Ristela [EOS]", "correct": true}
+{"set": "locality", "subject": "person:168", "path": "mentor/studied_at", "hops": 2, "answer": "Fipa Academy", "output": "Fipa Academy [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5585", "path": "mentor/birth_year", "hops": 2, "answer": "1971", "output": "1971 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2048", "path": "born_in/country/capital", "hops": 3, "answer": "Salegon", "output": "Salegon [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6999", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Fufu Refugi", "output": "Fufu Refugi [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7355", "path": "birth_year", "hops": 1, "answer": "1972", "output": "1972 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4522", "path": "mentor/mentor/major", "hops": 3, "answer": "sociology", "output": "sociology [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8150", "path": "major", "hops": 1, "answer": "law", "output": "law [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3696", "path": "mentor/works_at/hq", "hops": 3, "answer": "Stibri", "output": "Stibri [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6516", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Kupax Group", "output": "Kupax Group [EOS]", "correct": true}
+{"set": "locality", "subject": "person:207", "path": "mentor", "hops": 1, "answer": "Lofu Kokimu", "output": "Lofu Kokimu [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2112", "path": "mentor/born_in/country", "hops": 3, "answer": "Krogese", "output": "Krogese [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3030", "path": "birth_year", "hops": 1, "answer": "1917", "output": "1917 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3447", "path": "mentor", "hops": 1, "answer": "Luna Kedri", "output": "Luna Kedri [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4620", "path": "mentor/works_at/hq", "hops": 3, "answer": "Sazoth", "output": "Sazoth [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4993", "path": "mentor/works_at", "hops": 2, "answer": "Livo Works", "output": "Livo Works [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8716", "path": "major", "hops": 1, "answer": "statistics", "output": "statistics [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9130", "path": "mentor/birth_year", "hops": 2, "answer": "1909", "output": "1909 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6477", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Draze University", "output": "Draze University [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8653", "path": "studied_at", "hops": 1, "answer": "Bosha College", "output": "Bosha College [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9744", "path": "born_in/country/capital", "hops": 3, "answer": "Kotu", "output": "Kotu [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3154", "path": "born_in/country/currency", "hops": 3, "answer": "kip", "output": "lira [EOS]", "correct": false}
+{"set": "locality", "subject": "person:2229", "path": "birth_year", "hops": 1, "answer": "1919", "output": "1919 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1730", "path": "born_in", "hops": 1, "answer": "Tezitin", "output": "Tezitin [EOS]", "correct": true}
+{"set": "locality", "subject": "person:124", "path": "mentor/studied_at", "hops": 2, "answer": "Bravu University", "output": "Bravu University [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8858", "path": "mentor/works_at", "hops": 2, "answer": "Drekre Collective", "output": "Drekre Collective [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8880", "path": "mentor/mentor/born_in", "hops": 3, "answer": "Tezitin", "output": "Tezitin [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5565", "path": "mentor/born_in/country", "hops": 3, "answer": "Krogese", "output": "Krogese [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9171", "path": "studied_at/uni_city", "hops": 2, "answer": "Thebi", "output": "Thebi [EOS]", "correct": true}
+{"set": "locality", "subject": "person:198", "path": "mentor/works_at/founded", "hops": 3, "answer": "1957", "output": "1957 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2814", "path": "mentor/born_in", "hops": 2, "answer": "Vakrone", "output": "Lathutor [EOS]", "correct": false}
+{"set": "locality", "subject": "person:6793", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Krakre Holdings", "output": "Krakre Holdings [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2870", "path": "studied_at/uni_city", "hops": 2, "answer": "Bafa", "output": "Bafa [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5658", "path": "mentor/major", "hops": 2, "answer": "geology", "output": "geology [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7668", "path": "mentor/works_at", "hops": 2, "answer": "Rothith Labs", "output": "Rothith Labs [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1202", "path": "mentor", "hops": 1, "answer": "Druzal Leboth", "output": "Druzal Leboth [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3631", "path": "mentor/major", "hops": 2, "answer": "finance", "output": "finance [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1700", "path": "mentor/born_in/country", "hops": 3, "answer": "Debo", "output": "Debo [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9314", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Lidro Systems", "output": "Lidro Systems [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9981", "path": "mentor/mentor/major", "hops": 3, "answer": "theology", "output": "literature [EOS]", "correct": false}
+{"set": "locality", "subject": "person:7587", "path": "works_at/hq/country", "hops": 3, "answer": "Fifathox", "output": "Fifathox [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5817", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Takrazal", "output": "Takrazal [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4344", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Shishu", "output": "Shishu [EOS]", "correct": true}
+{"set": "locality", "subject": "person:817", "path": "mentor/works_at", "hops": 2, "answer": "Muze Dynamics", "output": "Muze Dynamics [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6625", "path": "works_at/industry", "hops": 2, "answer": "pharmaceuticals", "output": "pharmaceuticals [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3845", "path": "born_in/country/capital", "hops": 3, "answer": "Tezitin", "output": "Tezitin [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6474", "path": "studied_at", "hops": 1, "answer": "Bodi College", "output": "Bodi College [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1108", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Stomerux", "output": "Stomerux [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6517", "path": "studied_at/uni_city", "hops": 2, "answer": "Galan", "output": "Galan [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4577", "path": "mentor/major", "hops": 2, "answer": "philosophy", "output": "philosophy [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2718", "path": "works_at/hq/country", "hops": 3, "answer": "Stuge", "output": "Stuge [EOS]", "correct": true}
+{"set": "locality", "subject": "person:290", "path": "mentor/major", "hops": 2, "answer": "literature", "output": "literature [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4128", "path": "mentor/born_in", "hops": 2, "answer": "Lofe", "output": "Lofe [EOS]", "correct": true}
+{"set": "locality", "subject": "person:968", "path": "mentor/works_at", "hops": 2, "answer": "Breli Systems", "output": "Breli Systems [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9540", "path": "birth_year", "hops": 1, "answer": "1943", "output": "1943 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5844", "path": "mentor/works_at/industry", "hops": 3, "answer": "telecom", "output": "telecom [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6127", "path": "works_at/industry", "hops": 2, "answer": "mining", "output": "mining [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4578", "path": "works_at/hq/country", "hops": 3, "answer": "Drale", "output": "Drale [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3808", "path": "mentor/birth_year", "hops": 2, "answer": "1914", "output": "1914 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7033", "path": "mentor/mentor/mentor", "hops": 3, "answer": "Rusto Geme", "output": "Rusto Geme [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8649", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Kugu Labs", "output": "Kugu Labs [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6918", "path": "works_at/industry", "hops": 2, "answer": "shipping", "output": "shipping [EOS]", "correct": true}
+{"set": "locality", "subject": "person:371", "path": "mentor/works_at/founded", "hops": 3, "answer": "1888", "output": "1888 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7375", "path": "mentor/works_at/hq", "hops": 3, "answer": "Tezitin", "output": "Tezitin [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3419", "path": "mentor/works_at/founded", "hops": 3, "answer": "1957", "output": "1957 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4266", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Funefe", "output": "Funefe [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6624", "path": "mentor/mentor", "hops": 2, "answer": "Luste Tusedro", "output": "Luste Tusedro [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9836", "path": "mentor/studied_at/uni_city", "hops": 3, "answer": "Shishu", "output": "Shishu [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4831", "path": "mentor/mentor/works_at", "hops": 3, "answer": "Thabun Collective", "output": "Thabun Collective [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2621", "path": "mentor/works_at/industry", "hops": 3, "answer": "farming", "output": "farming [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1973", "path": "born_in/country/capital", "hops": 3, "answer": "Kusha", "output": "Kusha [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1700", "path": "works_at/hq", "hops": 2, "answer": "Tofuda", "output": "Tofuda [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9767", "path": "mentor/mentor/major", "hops": 3, "answer": "physics", "output": "physics [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6463", "path": "studied_at/uni_city/country", "hops": 3, "answer": "Drothubra", "output": "Drothubra [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2484", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Nuki Institute", "output": "Nuki Institute [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9208", "path": "studied_at/uni_city", "hops": 2, "answer": "Galan", "output": "Galan [EOS]", "correct": true}
+{"set": "locality", "subject": "person:178", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Vegi College", "output": "Vegi College [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6377", "path": "mentor/mentor", "hops": 2, "answer": "Brethe Kuko", "output": "Tala Fegu [EOS]", "correct": false}
+{"set": "locality", "subject": "person:2460", "path": "mentor/studied_at", "hops": 2, "answer": "Degas University", "output": "Degas University [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4472", "path": "mentor", "hops": 1, "answer": "Thula Vura", "output": "Thula Vura [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5209", "path": "mentor/major", "hops": 2, "answer": "linguistics", "output": "linguistics [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5253", "path": "mentor/born_in/country", "hops": 3, "answer": "Krogese", "output": "Krogese [EOS]", "correct": true}
+{"set": "locality", "subject": "person:5529", "path": "mentor/mentor", "hops": 2, "answer": "Beli Tistebre", "output": "Beli Tistebre [EOS]", "correct": true}
+{"set": "locality", "subject": "person:4487", "path": "mentor/born_in", "hops": 2, "answer": "Sidofeth", "output": "Sidofeth [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7785", "path": "mentor/works_at", "hops": 2, "answer": "Zikrus Trading", "output": "Zikrus Trading [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9951", "path": "works_at/industry", "hops": 2, "answer": "logistics", "output": "logistics [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6363", "path": "birth_year", "hops": 1, "answer": "1973", "output": "1973 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1137", "path": "mentor/studied_at", "hops": 2, "answer": "Briza College", "output": "Briza College [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3611", "path": "works_at/industry", "hops": 2, "answer": "software", "output": "software [EOS]", "correct": true}
+{"set": "locality", "subject": "person:8526", "path": "major", "hops": 1, "answer": "sculpture", "output": "sculpture [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7636", "path": "born_in/country", "hops": 2, "answer": "Stuge", "output": "Stuge [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3789", "path": "studied_at", "hops": 1, "answer": "Zifo Institute", "output": "Zifo Institute [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6464", "path": "mentor/studied_at", "hops": 2, "answer": "Bosha College", "output": "Bosha College [EOS]", "correct": true}
+{"set": "locality", "subject": "person:1868", "path": "mentor/birth_year", "hops": 2, "answer": "1920", "output": "1920 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9980", "path": "works_at/founded", "hops": 2, "answer": "1933", "output": "1933 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9389", "path": "mentor/works_at/industry", "hops": 3, "answer": "mining", "output": "mining [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9476", "path": "mentor/mentor/birth_year", "hops": 3, "answer": "1908", "output": "1908 [EOS]", "correct": true}
+{"set": "locality", "subject": "person:3985", "path": "mentor/born_in", "hops": 2, "answer": "Brubre", "output": "Brubre [EOS]", "correct": true}
+{"set": "locality", "subject": "person:9207", "path": "mentor/mentor", "hops": 2, "answer": "Dosta Bastila", "output": "Dosta Bastila [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2770", "path": "mentor/born_in/country", "hops": 3, "answer": "Tistinur", "output": "Tistinur [EOS]", "correct": true}
+{"set": "locality", "subject": "person:7996", "path": "mentor/mentor/studied_at", "hops": 3, "answer": "Shosta College", "output": "Shosta College [EOS]", "correct": true}
+{"set": "locality", "subject": "person:6182", "path": "mentor/works_at/industry", "hops": 3, "answer": "pharmaceuticals", "output": "pharmaceuticals [EOS]", "correct": true}
+{"set": "locality", "subject": "person:2955", "path": "major", "hops": 1, "answer": "theology", "output": "theology [EOS]", "correct": true}

@@ -6,19 +6,19 @@ Start with [`research/BRIEF.md`](research/BRIEF.md). It covers prior art, the ga
 
 ## Results so far (step 1: synthetic worlds)
 
-Exact-match accuracy in %, 89–900 questions per cell (200 per hop count on world A). Models have 25.5M (baselines) or 29.2M (latent) parameters, trained from scratch for 10k steps on an M5 Max. Setup and caveats are in [`research/results-step1.md`](research/results-step1.md). Every number is regenerated from committed run records by [`results/step1/REPORT.md`](results/step1/REPORT.md), which gives each cell's question count, 95% interval and source file (see [Checking the results](#checking-the-results)).
+Exact-match accuracy in %, 89–900 questions per cell (200 per hop count on world A). Models have 25.5M (baselines) or 29.2M (latent) parameters, trained from scratch on an M5 Max for 10k steps (`context`: 20k, see below). Setup and caveats are in [`research/results-step1.md`](research/results-step1.md). Every number is regenerated from committed run records by [`results/step1/REPORT.md`](results/step1/REPORT.md), which gives each cell's question count, 95% interval and source file (see [Checking the results](#checking-the-results)).
 
-| Test | dense | dense + fine-tune on edits | lookup | **latent** |
-|---|---|---|---|---|
-| World A, 1 hop, held-out people | 100 | — | 100 | **100** |
-| World A, 2 / 3 hops, held-out people | 5.5 / 7.5 | — | 100 / 100 | **100 / 100** |
-| 100 edits: the edited fact | 0 | 100 | 100 | **100** |
-| 100 edits: ripple (multi-hop through an edit) | 2.2 | 14.6 | 100 | **100** |
-| 100 edits: locality (untouched questions) | 33 | 9.2 | 100 | **100** |
-| 1,000 edits: ripple | 2.0 | — | 100 | **100** |
-| Unseen world B, all hops | 1.1 | — | 99.6 | **100** |
-| Unseen world C, all hops | — | — | 99.7 | **100** |
-| Store values hidden (lower is better) | n/a | n/a | 0 | **1–2** |
+| Test | dense | dense + fine-tune on edits | lookup | context | **latent** |
+|---|---|---|---|---|---|
+| World A, 1 hop, held-out people | 100 | — | 100 | 99 | **100** |
+| World A, 2 / 3 hops, held-out people | 5.5 / 7.5 | — | 100 / 100 | 96 / 97 | **100 / 100** |
+| 100 edits: the edited fact | 0 | 100 | 100 | 99 | **100** |
+| 100 edits: ripple (multi-hop through an edit) | 2.2 | 14.6 | 100 | 98 | **100** |
+| 100 edits: locality (untouched questions) | 33 | 9.2 | 100 | 97.6 | **100** |
+| 1,000 edits: ripple | 2.0 | — | 100 | 96.4 | **100** |
+| Unseen world B, all hops | 1.1 | — | 99.6 | 97.3 | **100** |
+| Unseen world C, all hops | — | — | 99.7 | 97.8 | **100** |
+| Store values hidden (lower is better) | n/a | n/a | 0 | n/a | **1–2** |
 
 ### How to read the table
 
@@ -27,6 +27,7 @@ Exact-match accuracy in %, 89–900 questions per cell (200 per hop count on wor
   - `dense`: in the weights, like a normal LLM. This is the baseline to beat.
   - `dense + fine-tune on edits`: `dense` trained for 200 more steps on the 100 edited facts. This is the usual way to update a model.
   - `lookup`: in a separate store. The model writes visible `[LOOKUP] subject @relation` calls and the store fills in the answer. This is the ceiling: an explicit tool call per hop.
+  - `context`: in the prompt. The model is shown the facts it needs plus six distractors and must copy the right answer (the in-context oracle). Trained on the same 16 worlds as `latent-multi` and for 20k steps, twice the others' budget; the column shows seed 0 of `context-multi-bios-20k` (seed 1 is 1–5 points lower on every row).
   - **`latent`**: in a separate store, read *inside* the forward pass, with no lookup tokens. This is the idea being tested. The column shows the headline run, `latent-multi`.
 - **The rows test different things.**
   - **Held-out people**: people who appear in no multi-hop training question, so a right answer means the model composed facts rather than recalled a memorized answer. A "hop" is one fact in the chain, e.g. "the capital of the country of X's birthplace" is 3 hops.
@@ -42,7 +43,7 @@ Exact-match accuracy in %, 89–900 questions per cell (200 per hop count on wor
 - **Without per-hop retrieval labels, the latent arm never learns to retrieve.** Every `latent` result above uses a training loss that tells each read layer which fact to fetch. With that loss switched off, retrieval stayed at chance (0.0016%) after 3,300 steps and the run was stopped. The labels come free with any training data generated from the knowledge base, but whether they're needed throughout training, or only to get retrieval started, is the next experiment.
 - **The first latent model scored 42% on unseen world B.** It retrieved the right fact but misspelled names it had never seen, completing them from world-A spelling patterns. Supervising retrieval at every name token raised this to 86%. Training across 16 worlds raised it to 100%.
 - **Models trained on world A alone can't write answer values world A never uses.** All 4 of `lookup`'s world-B misses are currencies (shilling, ducat) that no world-A country uses: it looked up the right value, then wrote a different one. `latent-a` and `latent-a-all` miss the same 4. Multi-world training fixes this too.
-- **The in-context oracle arm (`context`) is broken:** 8–15% on 1-hop questions. It's left out of the table until it's fixed.
+- **The in-context oracle arm needed a different recipe.** Trained as first published (`context-a`: questions only, no bios, world A, 10k steps) it scores 21.5% on 1 hop and 8–14% on unseen worlds: it never learns to copy from its prompt, and instead emits a familiar entity of the right type from its weights. With bios in the mix (like every other arm), 16 worlds and a 20k-step schedule it reaches 97.5–99% on 1 hop over two seeds. The copy circuit forms in a late, seed-dependent jump (step 4k–8k), so the 10k cosine schedule is not enough. Diagnosis and controls are in [issue #1](https://github.com/zak-keown/hemispheres/issues/1).
 - **This is a toy.** Questions use fixed templates, names match store keys exactly, the store is always complete and correct, and no question needs more hops than the model has read layers. The latent arm has 14% more parameters than the baselines, and the only edit baseline is naive fine-tuning, not MEMIT or AlphaEdit.
 
 ## Layout
@@ -137,7 +138,7 @@ Four arms are implemented. Each trains a reasoner from scratch on world A:
 |---|---|---|
 | `dense` | in the weights | bios + direct QA (answer tokens only) |
 | `lookup` | in the store; the model writes `[LOOKUP] subject @relation [RESULT]` and the store answers | bios with lookups + QA with one lookup per hop; store tokens are never trained on |
-| `context` | in the prompt (in-context oracle) | QA with gold facts + distractors in the prompt |
+| `context` | in the prompt (in-context oracle) | bios + QA with gold facts + distractors in the prompt |
 | `latent` | in the store, read **inside the forward pass**: read layers retrieve facts by learned query · key and cross-attend over the retrieved objects' name tokens ([design](research/latent-arm-design.md)) | bios + direct QA, plus an optional retrieval loss per hop (`--hop-weight`) |
 
 ```sh
@@ -145,6 +146,13 @@ Four arms are implemented. Each trains a reasoner from scratch on world A:
 .venv/bin/python -m hemispheres.evaluate --run runs/lookup-a --data data/world-a                      # held-out splits
 .venv/bin/python -m hemispheres.evaluate --run runs/lookup-a --data data/world-b --sets all           # world swap
 .venv/bin/python -m hemispheres.evaluate --run runs/lookup-a --data data/world-a --edits 100          # edits
+```
+
+The context arm needs the multi-world pool (built below) and twice the default steps; its copy circuit forms late. This is the recipe behind the `context` column:
+
+```sh
+.venv/bin/python -m hemispheres.train --arm context --steps 20000 --out runs/context-multi-bios-20k \
+    --data data/world-a,data/pool/w3-s0,data/pool/w3-s1,data/pool/w3-s2,data/pool/w4-s0,data/pool/w4-s1,data/pool/w4-s2,data/pool/w5-s0,data/pool/w5-s1,data/pool/w5-s2,data/pool/w6-s0,data/pool/w6-s1,data/pool/w6-s2,data/pool/w7-s0,data/pool/w7-s1,data/pool/w7-s2
 ```
 
 A dense model can only learn a new world or edits by further training. This is its baseline:

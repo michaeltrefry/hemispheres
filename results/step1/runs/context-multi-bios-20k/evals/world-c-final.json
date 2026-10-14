@@ -1,0 +1,51 @@
+{
+  "args": {
+    "run": "runs/context-multi-bios-20k",
+    "checkpoint": "final",
+    "data": "data/world-c",
+    "edits": 0,
+    "sets": "all",
+    "n": 300,
+    "seed": 0,
+    "name": null,
+    "store": null
+  },
+  "provenance": {
+    "time": "2026-09-25T20:06:14+00:00",
+    "code": {
+      "commit": "4fc4e676ef82fd2bb4ea3bddc5f4471bc12f3e93",
+      "dirty": false
+    },
+    "env": {
+      "python": "3.12.11",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "machine": "arm64",
+      "mlx": "0.32.2",
+      "device": "Device(gpu, 0)"
+    },
+    "data": {
+      "data/world-c": "3c5b5ec6c30f8b586d9b08457ac17ec8fced49805562e81f6aed6fd6740bd9c6"
+    },
+    "checkpoint_sha256": "11424cc903c98513682e9826754421250b863b248d6c8a4bcd37c17c76d40d7b"
+  },
+  "summary": {
+    "all": {
+      "1hop": {
+        "acc": 0.9833333333333333,
+        "n": 300
+      },
+      "2hop": {
+        "acc": 0.9833333333333333,
+        "n": 300
+      },
+      "3hop": {
+        "acc": 0.9666666666666667,
+        "n": 300
+      },
+      "all": {
+        "acc": 0.9777777777777777,
+        "n": 900
+      }
+    }
+  }
+}

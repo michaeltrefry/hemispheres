@@ -1,0 +1,95 @@
+{
+  "args": {
+    "run": "runs/context-multi-bios-20k-s1",
+    "checkpoint": "final",
+    "data": "data/world-a",
+    "edits": 100,
+    "sets": null,
+    "n": 500,
+    "seed": 0,
+    "name": null,
+    "store": null
+  },
+  "provenance": {
+    "time": "2026-09-25T21:22:15+00:00",
+    "code": {
+      "commit": "4fc4e676ef82fd2bb4ea3bddc5f4471bc12f3e93",
+      "dirty": false
+    },
+    "env": {
+      "python": "3.12.11",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "machine": "arm64",
+      "mlx": "0.32.2",
+      "device": "Device(gpu, 0)"
+    },
+    "data": {
+      "data/world-a": "befab6f0a218e36f48e7ae53539eef4e3fe9fab49eaae9a2d603ee01b86df106"
+    },
+    "checkpoint_sha256": "4e9410c97d16943e82ff7794ce5c79245c96202b872aac50a872c5ec8bb77266"
+  },
+  "summary": {
+    "direct": {
+      "1hop": {
+        "acc": 0.98,
+        "n": 100
+      },
+      "all": {
+        "acc": 0.98,
+        "n": 100
+      }
+    },
+    "locality": {
+      "1hop": {
+        "acc": 0.9887640449438202,
+        "n": 89
+      },
+      "2hop": {
+        "acc": 0.9473684210526315,
+        "n": 171
+      },
+      "3hop": {
+        "acc": 0.9375,
+        "n": 240
+      },
+      "all": {
+        "acc": 0.95,
+        "n": 500
+      }
+    },
+    "ripple": {
+      "2hop": {
+        "acc": 0.9402173913043478,
+        "n": 184
+      },
+      "3hop": {
+        "acc": 0.9113924050632911,
+        "n": 316
+      },
+      "all": {
+        "acc": 0.922,
+        "n": 500
+      },
+      "changed": {
+        "acc": 0.9218106995884774,
+        "n": 486
+      },
+      "edit_hop0": {
+        "acc": 0.9479166666666666,
+        "n": 192
+      },
+      "edit_hop1": {
+        "acc": 0.9248826291079812,
+        "n": 213
+      },
+      "edit_hop2": {
+        "acc": 0.8631578947368421,
+        "n": 95
+      },
+      "unchanged": {
+        "acc": 0.9285714285714286,
+        "n": 14
+      }
+    }
+  }
+}

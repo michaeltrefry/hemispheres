@@ -10,6 +10,10 @@
   # the first world is the one evaluated during training
   python -m hemispheres.train --arm latent --data data/world-a,data/pool/w3-s0,data/pool/w4-s0 --out runs/latent-multi
 
+  # The context arm (in-context oracle) only learns to copy from its prompt with bios in the mix (its
+  # default), several worlds and a longer schedule: use the full 16-world pool and --steps 20000
+  python -m hemispheres.train --arm context --steps 20000 --data data/world-a,data/pool/w3-s0,... --out runs/context-multi-bios-20k
+
   # Supervise which fact each read layer fetches only for the first 2000 steps
   python -m hemispheres.train --arm latent --data data/world-a --hop-until 2000 --out runs/latent-a-hop2k
 

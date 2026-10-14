@@ -1,0 +1,83 @@
+{
+  "arm": "context",
+  "data": "data/world-a,data/pool/w3-s0,data/pool/w3-s1,data/pool/w3-s2,data/pool/w4-s0,data/pool/w4-s1,data/pool/w4-s2,data/pool/w5-s0,data/pool/w5-s1,data/pool/w5-s2,data/pool/w6-s0,data/pool/w6-s1,data/pool/w6-s2,data/pool/w7-s0,data/pool/w7-s1,data/pool/w7-s2",
+  "out": "runs/context-multi-bios-20k",
+  "edits": 0,
+  "mix": [
+    [
+      "bios",
+      0.5
+    ],
+    [
+      "qa",
+      0.5
+    ]
+  ],
+  "init": null,
+  "init_checkpoint": "final",
+  "size": "small",
+  "dtype": "float32",
+  "steps": 20000,
+  "batch_size": 64,
+  "seq_len": 256,
+  "lr": 0.001,
+  "min_lr_frac": 0.1,
+  "warmup": 500,
+  "weight_decay": 0.1,
+  "grad_clip": 1.0,
+  "log_every": 100,
+  "eval_every": 2000,
+  "eval_sets": "test_id,test_ood,test_1hop_ood",
+  "eval_n": 200,
+  "save_every": 2000,
+  "seed": 0,
+  "n_reads": 3,
+  "top_k": 4,
+  "hop_weight": 0.5,
+  "hop_until": 0,
+  "max_supervision": 1024,
+  "supervise": "all",
+  "model_type": "gpt",
+  "model": {
+    "vocab_size": 576,
+    "n_layer": 8,
+    "n_head": 8,
+    "d_model": 512,
+    "mlp_ratio": 4,
+    "rope_base": 10000.0
+  },
+  "params": 25469440,
+  "vocab": 544,
+  "provenance": {
+    "time": "2026-09-25T18:51:19+00:00",
+    "code": {
+      "commit": "4fc4e676ef82fd2bb4ea3bddc5f4471bc12f3e93",
+      "dirty": false
+    },
+    "env": {
+      "python": "3.12.11",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "machine": "arm64",
+      "mlx": "0.32.2",
+      "device": "Device(gpu, 0)"
+    },
+    "data": {
+      "data/world-a": "befab6f0a218e36f48e7ae53539eef4e3fe9fab49eaae9a2d603ee01b86df106",
+      "data/pool/w3-s0": "0ba111647c1a6a792997fc6d120b87af91c5bd74a980e6f82dc486138f43dfb5",
+      "data/pool/w3-s1": "d17f343e6096fb6f8458fcffe773f86584f795f84710887f822f1a99dc1c1599",
+      "data/pool/w3-s2": "a6bfacf6b64cf3a7593eb72eb54a1f7c1467a50a302e4145f0d09317a3e99220",
+      "data/pool/w4-s0": "45133b232f854baca586b26947f3e8c5466131936e361fccf164caecd0af2b57",
+      "data/pool/w4-s1": "baf14fe23044cc3bb44a06592f7c97dbe7c3841a1b8a4fb8520d142230070786",
+      "data/pool/w4-s2": "fefdd4a7b1d055d3075ee7f381a654fc409676648e987dd5cdc6c81ee4419131",
+      "data/pool/w5-s0": "467ceab0c667d7fc25a1c46aa6c32a93bc7fe73b9ee772dd418d5cd39c06578a",
+      "data/pool/w5-s1": "ec9eff474e21c22c230e4751a853ba5aabd701dcc3954ed01d1ff6343d49d95b",
+      "data/pool/w5-s2": "961b61d99794256fda9268f30e77f88e6b62f3bac930536344bd655c3570bff1",
+      "data/pool/w6-s0": "0be7dec6c651b282845efbc7a52315ef85919828726e8d6265d9a2daee95e782",
+      "data/pool/w6-s1": "c923a29d763af2a7e9b7de4fa884c175ac5ca8b9da380187d5df98c3de0b77d6",
+      "data/pool/w6-s2": "3a9229340fd51a3ccce5bff9757ce996ff778bd75e8268a0008be8f333ddfa6e",
+      "data/pool/w7-s0": "d9f42180c24d99f7c7489d4e785b816aed0db787ace2995044e8b26799594eee",
+      "data/pool/w7-s1": "66e4ce0a96656931b70e219b20938fd899f821399bc320e2fd3a8933189e7d6b",
+      "data/pool/w7-s2": "59655904ea2784b39a94561b1ef60d2b7d4012a9089ddf8e6f63b8a38184ec2d"
+    }
+  }
+}
