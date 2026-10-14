@@ -7,7 +7,7 @@
   # Check that a run's checkpoints are the ones the records came from
   python -m hemispheres.records verify-run runs/latent-multi --out results/step1
   # Publish runs' weights to the Hugging Face Hub, pinning the upload in <out>/weights.json
-  python -m hemispheres.records upload runs/lookup-a runs/latent-multi --repo hemisphere-llm/hemispheres-step1
+  python -m hemispheres.records upload runs/lookup-a runs/latent-multi --repo SceneWorks/hemispheres-step1
   # Download them into runs/<run>/ (checked against the recorded sha256), ready for evaluate.py
   python -m hemispheres.records fetch latent-multi lookup-a
 
@@ -198,7 +198,7 @@ def main() -> None:
     p.add_argument("paths", nargs="+", help="run directories (export, verify-run, upload), world directories "
                                             "(verify-data) or run names (fetch)")
     p.add_argument("--out", default="results/step1", help="records directory")
-    p.add_argument("--repo", default="hemisphere-llm/hemispheres-step1", help="Hub model repo (upload)")
+    p.add_argument("--repo", default="SceneWorks/hemispheres-step1", help="Hub model repo (upload)")
     p.add_argument("--public", action="store_true", help="create the Hub repo public (upload; default private)")
     p.add_argument("--dest", default="runs", help="where fetched runs go (fetch)")
     args = p.parse_args()

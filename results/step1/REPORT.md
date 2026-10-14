@@ -99,7 +99,7 @@ Every flag, seed and model shape is in `runs/<run>/config.json`; checkpoint hash
 
 `reproduce.sh` has every command, generated from the records: world builds, training runs (with every recorded flag) and evaluations. Retraining at a different code version or MLX build may not be bit-identical. Compare at the level of this report.
 
-The weights are on the Hugging Face Hub at [hemisphere-llm/hemispheres-step1](https://huggingface.co/hemisphere-llm/hemispheres-step1), commit `2221643`. `python -m hemispheres.records fetch <run>` downloads a run into `runs/<run>/` and checks every file against the sha256 above, so the evaluations can be rerun without retraining.
+The weights are on the Hugging Face Hub at [SceneWorks/hemispheres-step1](https://huggingface.co/SceneWorks/hemispheres-step1), commit `9880aae`. `python -m hemispheres.records fetch <run>` downloads a run into `runs/<run>/` and checks every file against the sha256 above, so the evaluations can be rerun without retraining.
 
 ## Every cell
 
