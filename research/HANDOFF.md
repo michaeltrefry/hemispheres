@@ -1,5 +1,7 @@
 # Handoff: 2026-09-23 (end of day)
 
+> **Historical note (2026-10-14).** The project now lives at github.com/michaeltrefry/hemispheres, and the weights at `SceneWorks/hemispheres-step1` on the Hugging Face Hub. Paths and links below are as they were on 2026-09-23. The context arm has since been fixed; see `research/context-arm-diagnosis.md`.
+
 Read this first, then `research/results-step1.md` (all numbers) and `research/BRIEF.md` (literature and framing).
 
 ## Where things stand
