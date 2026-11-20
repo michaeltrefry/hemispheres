@@ -51,6 +51,16 @@ Pooled over world-A `test_id` and `test_1hop_ood` (lower is better for the last 
 | latent-a-all | 100 (100–100 by hop) | 2.8 (1–4.7 by hop) | 1.2 (1–1.7 by hop) |
 | latent-multi | 100 (100–100 by hop) | 1.6 (1–2 by hop) | 1.1 (0.7–1.7 by hop) |
 
+## Capacity: parameters needed versus facts known
+
+Smallest model that holds each world's facts. A model passes at 95% one-hop accuracy on held-out people (at least 1,000 questions) with its last two training evaluations within 1 point. Dense models store the facts in their weights; latent cores read them from the world's store and are evaluated on the larger worlds with no further training. Sources: [every cell](#every-cell).
+
+| world | people | facts | smallest passing dense size | largest failing size below it | latent cores: one-hop % |
+|---|---|---|---|---|---|
+| world-b | 10,000 | — | not run | — | latent-multi 100 |
+| world-b-30k | 30,000 | — | not run | — | latent-multi 100 |
+| world-b-100k | 100,000 | — | not run | — | latent-multi 100 |
+
 ## Hop supervision
 
 From `metrics.jsonl`: retrieval accuracy on training batches, logged every 100 steps. Chance is 1 in 62.6k.
@@ -233,3 +243,6 @@ The weights are on the Hugging Face Hub at [SceneWorks/hemispheres-step1](https:
 | World A, world C's store (lower is better) | latent-a | 12/900 | 1.3 | 0.8–2.3 | `evals/world-a-store-world-c-final.jsonl` |
 | World A, world C's store (lower is better) | latent-a-all | 11/900 | 1.2 | 0.7–2.2 | `evals/world-a-store-world-c-final.jsonl` |
 | World A, world C's store (lower is better) | latent-multi | 10/900 | 1.1 | 0.6–2 | `evals/world-a-store-world-c-final.jsonl` |
+| capacity: world-b 1 hop | latent-multi | 1000/1000 | 100 | 99.6–100 | `evals/world-b-heldout-final.jsonl` |
+| capacity: world-b-30k 1 hop | latent-multi | 1000/1000 | 100 | 99.6–100 | `evals/world-b-30k-heldout-final.jsonl` |
+| capacity: world-b-100k 1 hop | latent-multi | 1000/1000 | 100 | 99.6–100 | `evals/world-b-100k-heldout-final.jsonl` |

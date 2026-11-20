@@ -112,12 +112,12 @@ def score(model, tok: Tokenizer, data: WorldData, questions: list[Question], sty
     store = (data.world if lookup_store == "same" else lookup_store) if style == "lookup" else None
     outputs = generate(model, tok, prompts, max_new=max_new, store=store, batch_size=batch_size)
     records = []
-    for q, out in zip(questions, outputs):
+    for q, prompt, out in zip(questions, prompts, outputs):
         final, queries = parse_output(out, style)
         gold = list(data.world.surface(q.answer))
         rec = {"set": q.set, "subject": q.subject, "path": "/".join(q.path), "hops": len(q.path),
                "answer": render.detokenize(gold), "output": render.detokenize(out),
-               "correct": final == gold, **q.meta}
+               "correct": final == gold, "prompt_tokens": len(prompt), "output_tokens": len(out), **q.meta}
         if style == "lookup":
             chain = data.world.chain(q.subject, q.path)
             rec["trace_ok"] = queries == [(data.world.surface(s), r) for s, r, _ in chain]

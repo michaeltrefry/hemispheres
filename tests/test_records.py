@@ -17,7 +17,8 @@ def _world_dir(root: Path, name: str, index: int) -> Path:
     (d / "world.json").write_text(json.dumps(w.to_json()))
     (d / "vocab.json").write_text(json.dumps(vocabulary()))
     (d / "splits.json").write_text(json.dumps({s: [list(q) for q in qs] for s, qs in make_splits(w).items()}))
-    (d / "stats.json").write_text(json.dumps({"config": {"name": name, "index": index, "seed": 0}}))
+    (d / "stats.json").write_text(json.dumps({"config": {"name": name, "index": index, "seed": 0},
+                                              "facts": len(w.facts)}))
     return d
 
 
@@ -90,6 +91,9 @@ def test_train_export_verify_and_report(tmp_path, monkeypatch):
     cell = runs["latent-t"].cell("world-b", ("all",))
     assert cell.source == "evals/world-b-final.jsonl" and not cell.logged
     worlds = json.loads((out / "worlds.json").read_text())
+    assert worlds["data/world-a"]["facts"] == json.loads((a / "stats.json").read_text())["facts"]
+    rec = json.loads((run / "evals" / "world-b-final.jsonl").read_text().splitlines()[0])
+    assert rec["prompt_tokens"] > 0 and rec["output_tokens"] > 0
     script = report.reproduce_script(runs, worlds)
     assert "--name world-a --index 0 --seed 0" in script
     assert "-m hemispheres.train --arm latent" in script and "--out runs/latent-t" in script
@@ -156,3 +160,60 @@ def test_eval_command_keeps_the_evaluation_name():
             "name": "w-heldout-final"}
     assert eval_command(run, args).endswith("--seed 0 --name w-heldout-final")
     assert "--name" not in eval_command(run, {**args, "name": None})
+
+
+def _fake_run(root, name, config, logged, evals):
+    """A run record directory: `logged` one-hop accuracies by step, `evals` name -> (args, records)."""
+    d = root / name
+    (d / "evals").mkdir(parents=True)
+    base = {"arm": "dense", "data": "data/world-b", "steps": 100, "seed": 0, "mix": [["bios", 0.5], ["qa", 0.5]],
+            "dtype": "float32", "model_type": "gpt", "model": {"n_layer": 2, "d_model": 8}, "params": 1000,
+            "save_every": 100}
+    (d / "config.json").write_text(json.dumps({**base, **config}))
+    (d / "metrics.jsonl").write_text("".join(json.dumps({"step": s, "eval": {"test_1hop_ood": {"1hop": {"acc": a}}}})
+                                             + "\n" for s, a in logged))
+    for ename, (args, recs) in evals.items():
+        (d / "evals" / f"{ename}.json").write_text(json.dumps({"args": args, "summary": {}}))
+        (d / "evals" / f"{ename}.jsonl").write_text("".join(json.dumps(r) + "\n" for r in recs))
+
+
+def _one_hop(n_correct, n=20, tokens=True):
+    extra = {"prompt_tokens": 12, "output_tokens": 4} if tokens else {}
+    return [{"set": "test_1hop_ood", "hops": 1, "correct": i < n_correct, **extra} for i in range(n)]
+
+
+def test_capacity_picks_the_smallest_passing_size_and_charts_it(tmp_path):
+    final = {"data": "data/world-b", "checkpoint": "final", "seed": 0}
+    _fake_run(tmp_path, "dense-a1", {"size": "a1", "params": 1e5}, [(50, 0.5), (100, 0.6)],
+              {"world-b-final": (final, _one_hop(12))})
+    _fake_run(tmp_path, "dense-a2", {"size": "a2", "params": 2e5}, [(50, 0.9), (100, 0.98)],  # passes, not converged
+              {"world-b-final": (final, _one_hop(20))})
+    _fake_run(tmp_path, "dense-a3", {"size": "a3", "params": 4e5}, [(50, 0.99), (100, 1.0)],
+              {"world-b-final": (final, _one_hop(20))})
+    _fake_run(tmp_path, "dense-a3-s1", {"size": "a3", "params": 4e5, "seed": 1}, [(50, 1.0), (100, 1.0)],
+              {"world-b-step100": ({**final, "step": 100}, _one_hop(20))})
+    _fake_run(tmp_path, "latent-x", {"arm": "latent", "data": "data/world-a", "params": 3e5, "model_type": "latent",
+                                     "model": {"n_layer": 2, "d_model": 8, "n_reads": 3, "key_dim": 4}}, [],
+              {"world-b-heldout-final": (final, _one_hop(20))})
+    runs = report.load_runs(tmp_path)
+    worlds = {"data/world-b": {"build": {"persons": 10000}, "facts": 62000}}
+    md, cells, chart = report.capacity(runs, worlds)
+    summary = next(line for line in md if line.startswith("| world-b |"))
+    assert "a3 (0.40M)" in summary and "| a2 |" in summary and "latent-x 100" in summary
+    assert next(line for line in md if line.startswith("| a2 |")).endswith("100* fail |")
+    assert next(line for line in md if line.startswith("| a3 |")).endswith("100 / 100 pass |")
+    assert {c.source for _, _, c in cells} >= {"evals/world-b-final.jsonl", "evals/world-b-step100.jsonl"}
+    assert chart["dense"] == [(62000, 4e5, True)] and chart["latent"] == {"latent-x": (3e5, [(62000, True)])}
+    assert report.capacity_svg(chart).startswith("<svg")
+    cost = "\n".join(report.cost_table(runs, worlds))
+    assert "| latent-x | world-b | 0.30M | 16.0 |" in cost
+
+
+def test_question_cost_counts_weights_attention_and_store_keys():
+    dense = {"params": 1000, "dtype": "float32", "model_type": "gpt", "model": {"n_layer": 2, "d_model": 8}}
+    c = report.question_cost(dense, prompt_tokens=5, output_tokens=3, facts=None)
+    # 7 tokens through the model in 3 forward passes: 2*1000*7 + 2*2*8*7*8 operations, 1000*4 bytes per pass.
+    assert c == {"model_flops": 15792, "weight_bytes": 12000, "store_flops": 0, "store_bytes": 0}
+    latent = {**dense, "model_type": "latent", "model": {"n_layer": 2, "d_model": 8, "n_reads": 3, "key_dim": 4}}
+    c = report.question_cost(latent, prompt_tokens=5, output_tokens=3, facts=10)
+    assert c["store_flops"] == 2 * 3 * 10 * 4 * 7 and c["store_bytes"] == 3 * 10 * 4 * 4 * 3
