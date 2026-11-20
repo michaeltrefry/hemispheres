@@ -101,6 +101,18 @@ def parse_output(output: list[str], style: str) -> tuple[list[str] | None, list[
     return body, queries
 
 
+def inserted_tokens(output: list[str]) -> int:
+    """Tokens the store appended to a lookup-arm output: each `value [END]` after a `[RESULT]`."""
+    n, inside = 0, False
+    for t in output:
+        if inside:
+            n += 1
+            inside = t != END
+        elif t == RESULT:
+            inside = True
+    return n
+
+
 def score(model, tok: Tokenizer, data: WorldData, questions: list[Question], style: str, seed: int = 0,
           batch_size: int = 256, lookup_store: World | None | str = "same") -> list[dict]:
     """`model` maps token ids (B, T) to logits; latent-store models are bound to a store first.
@@ -112,12 +124,16 @@ def score(model, tok: Tokenizer, data: WorldData, questions: list[Question], sty
     store = (data.world if lookup_store == "same" else lookup_store) if style == "lookup" else None
     outputs = generate(model, tok, prompts, max_new=max_new, store=store, batch_size=batch_size)
     records = []
-    for q, out in zip(questions, outputs):
+    for q, prompt, out in zip(questions, prompts, outputs):
         final, queries = parse_output(out, style)
         gold = list(data.world.surface(q.answer))
         rec = {"set": q.set, "subject": q.subject, "path": "/".join(q.path), "hops": len(q.path),
                "answer": render.detokenize(gold), "output": render.detokenize(out),
-               "correct": final == gold, **q.meta}
+               "correct": final == gold, "prompt_tokens": len(prompt), **q.meta}
+        inserted = inserted_tokens(out) if style == "lookup" else 0
+        rec["output_tokens"] = len(out) - inserted  # tokens the model generated, [EOS] included
+        if style == "lookup":
+            rec["inserted_tokens"] = inserted
         if style == "lookup":
             chain = data.world.chain(q.subject, q.path)
             rec["trace_ok"] = queries == [(data.world.surface(s), r) for s, r, _ in chain]

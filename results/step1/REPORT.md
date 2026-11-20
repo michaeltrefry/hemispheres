@@ -8,19 +8,19 @@ Exact-match accuracy in %: the whole generated answer must match. Each cell's qu
 
 |  | lookup | dense | dense + FT on 100 edits | dense + trained on world B | context-a (QA only, world A) | context-multi (10k) | **context-multi (20k)** | context-multi (20k, seed 1) | latent-a | latent-a-all | **latent-multi** |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| World A, 1 hop, held-out people | 100 | 100 | — | — | 21.5 | 91.5 | 99 | 97.5 | 100 | 100 | 100 |
-| World A, 2 hop, held-out people | 100 | 5.5 | — | — | 46 | 75.5 | 96 | 93.5 | 100 | 100 | 100 |
+| World A, 1 hop, held-out people | 100 | 100 | — | — | 21.5 | 92 | 99 | 97.5 | 100 | 100 | 100 |
+| World A, 2 hop, held-out people | 100 | 5.5 | — | — | 46 | 75 | 96 | 93.5 | 100 | 100 | 100 |
 | World A, 3 hop, held-out people | 100 | 7.5 | — | — | 63.5 | 78.5 | 97 | 94 | 99 | 100 | 100 |
 | World A, 2 / 3 hop, people seen in multi-hop training | 100 | 12.2 | — | — | 52 | 78.2 | 97.8 | 92.8 | 99.5 | 100 | 100 |
 | 100 edits: the edited fact | 100 | 0 | 100 | — | 8 | 90 | 99 | 98 | 98 | 100 | 100 |
 | 100 edits: ripple (multi-hop through an edit) | 100 | 2.2 | 14.6 | — | 34.2 | 77.4 | 98 | 92.2 | 99.4 | 100 | 100 |
 | 100 edits: locality (untouched questions) | 100 | 33.2 | 9.2 | — | 48.4 | 80.2 | 97.6 | 95 | 99.8 | 100 | 100 |
-| 100 edits: locality, 1 hop only | 100 | 100 | 24.7 | — | 15.7 | 94.4 | 98.9 | 98.9 | 100 | 100 | 100 |
+| 100 edits: locality, 1 hop only | 100 | 100 | 24.7 | — | 15.7 | 95.5 | 98.9 | 98.9 | 100 | 100 | 100 |
 | 1,000 edits: the edited fact | 100 | 0 | — | — | 11 | 86.8 | 97.2 | 95.6 | 99 | 100 | 100 |
 | 1,000 edits: ripple | 100 | 2 | — | — | 24.8 | 72 | 96.4 | 94.2 | 99.8 | 100 | 100 |
-| 1,000 edits: locality | 100 | 37.6 | — | — | 49.4 | 75.4 | 97.8 | 95.2 | 100 | 100 | 100 |
-| Unseen world B, all hops | 99.6 | 1.1 | — | 0 | 11.8 | 78.9 | 97.3 | 94.9 | 41.8 | 86.2 | 100 |
-| Unseen world C, all hops | 99.7 | — | — | — | — | 80.7 | 97.8 | 95 | 39.4 | 87.6 | 100 |
+| 1,000 edits: locality | 100 | 37.6 | — | — | 49.4 | 75.2 | 97.8 | 95.2 | 100 | 100 | 100 |
+| Unseen world B, all hops | 99.6 | 1.1 | — | 0 | 11.8 | 79 | 97.3 | 94.9 | 41.8 | 86.2 | 100 |
+| Unseen world C, all hops | 99.7 | — | — | — | — | 80.6 | 97.8 | 95 | 39.4 | 87.6 | 100 |
 | World A, store values hidden (lower is better) | 0 | — | — | — | — | — | — | — | 3.9 | 2.8 | 1.6 |
 | World A, world C's store (lower is better) | 0 | — | — | — | — | — | — | — | 1.3 | 1.2 | 1.1 |
 
@@ -50,6 +50,55 @@ Pooled over world-A `test_id` and `test_1hop_ood` (lower is better for the last 
 | latent-a | 99.7 (99–100 by hop) | 3.9 (2.3–7 by hop) | 1.3 (0.3–2 by hop) |
 | latent-a-all | 100 (100–100 by hop) | 2.8 (1–4.7 by hop) | 1.2 (1–1.7 by hop) |
 | latent-multi | 100 (100–100 by hop) | 1.6 (1–2 by hop) | 1.1 (0.7–1.7 by hop) |
+
+## Capacity: parameters needed versus facts known
+
+Smallest model that holds each world's facts. A model passes at 95% one-hop accuracy on held-out people (at least 1,000 questions) with its last two training evaluations within 1 point. Dense models store the facts in their weights; latent cores read them from the world's store and are evaluated on the larger worlds with no further training. Sources: [every cell](#every-cell).
+
+| world | people | facts | smallest passing dense size | largest failing size below it | latent cores: one-hop % |
+|---|---|---|---|---|---|
+| world-b | 10,000 | 62,615 | not run | — | latent-multi 100 |
+| world-b-30k | 30,000 | 182,381 | not run | — | latent-multi 100 |
+| world-b-100k | 100,000 | 601,640 | not run | — | latent-multi 100 |
+
+![Parameters needed versus facts known](capacity.svg)
+
+## Cost per answered question
+
+Per question asked, right or wrong, calculated from each model's shape and the store size: the mean over the one-hop held-out questions of each run's final evaluation on that world (or all its questions when it has none), as if generating one question at a time with a key-value cache. Compute counts 2 operations per parameter per token and attention; store compute counts scoring every store key at every read layer and attending over the retrieved names. Memory read counts every parameter and every store key once per forward pass. Left out: key-value cache reads, encoding the store's keys (once per store write) and the lookup arm's external store. Tokens per question include the prompt, the generated answer with [EOS], and any store-inserted tokens. Only evaluations that record token counts appear.
+
+| run | world | questions | n | params | tokens per question | model MFLOP | store MFLOP | weights MB read | store MB read | source |
+|---|---|---|---|---|---|---|---|---|---|---|
+| context-a | world-a | one-hop held-out | 200 | 25.47M | 107.6 | 5,527.3 | 0.0 | 372.4 | 0.0 | `evals/world-a-final.jsonl` |
+| context-a | world-b | all evaluated | 900 | 25.47M | 125.3 | 6,461.6 | 0.0 | 358.3 | 0.0 | `evals/world-b-final.jsonl` |
+| context-multi-bios | world-c | all evaluated | 900 | 25.47M | 124.7 | 6,428.1 | 0.0 | 361.6 | 0.0 | `evals/world-c-final.jsonl` |
+| context-multi-bios | world-a | one-hop held-out | 200 | 25.47M | 107.6 | 5,523.9 | 0.0 | 365.7 | 0.0 | `evals/world-a-final.jsonl` |
+| context-multi-bios | world-b | all evaluated | 900 | 25.47M | 125.4 | 6,467.9 | 0.0 | 370.4 | 0.0 | `evals/world-b-final.jsonl` |
+| context-multi-bios-20k | world-c | all evaluated | 900 | 25.47M | 124.7 | 6,428.6 | 0.0 | 362.6 | 0.0 | `evals/world-c-final.jsonl` |
+| context-multi-bios-20k | world-a | one-hop held-out | 200 | 25.47M | 107.6 | 5,524.1 | 0.0 | 366.3 | 0.0 | `evals/world-a-final.jsonl` |
+| context-multi-bios-20k | world-b | all evaluated | 900 | 25.47M | 125.4 | 6,468.8 | 0.0 | 372.0 | 0.0 | `evals/world-b-final.jsonl` |
+| context-multi-bios-20k-s1 | world-c | all evaluated | 900 | 25.47M | 124.7 | 6,428.9 | 0.0 | 363.1 | 0.0 | `evals/world-c-final.jsonl` |
+| context-multi-bios-20k-s1 | world-a | one-hop held-out | 200 | 25.47M | 107.6 | 5,523.3 | 0.0 | 364.7 | 0.0 | `evals/world-a-final.jsonl` |
+| context-multi-bios-20k-s1 | world-b | all evaluated | 900 | 25.47M | 125.4 | 6,468.8 | 0.0 | 372.1 | 0.0 | `evals/world-b-final.jsonl` |
+| dense-a | world-a | one-hop held-out | 200 | 25.47M | 18.2 | 877.0 | 0.0 | 365.7 | 0.0 | `evals/world-a-final.jsonl` |
+| dense-a | world-b | all evaluated | 900 | 25.47M | 21.8 | 1,064.0 | 0.0 | 372.8 | 0.0 | `evals/world-b-final.jsonl` |
+| dense-a-k100 | world-a | all, 100 edits | 1100 | 25.47M | 23.2 | 1,134.6 | 0.0 | 384.8 | 0.0 | `evals/world-a-k100-final.jsonl` |
+| dense-a-to-b | world-b | all evaluated | 900 | 25.47M | 40.7 | 2,036.3 | 0.0 | 2,298.0 | 0.0 | `evals/world-b-final.jsonl` |
+| latent-a | world-c | all evaluated | 900 | 29.16M | 21.3 | 1,189.6 | 982.0 | 366.0 | 301.7 | `evals/world-c-final.jsonl` |
+| latent-a | world-a | one-hop held-out | 200 | 29.16M | 18.2 | 1,003.6 | 828.8 | 418.7 | 345.2 | `evals/world-a-final.jsonl` |
+| latent-a | world-b | all evaluated | 900 | 29.16M | 21.5 | 1,197.4 | 988.5 | 386.7 | 318.9 | `evals/world-b-final.jsonl` |
+| latent-a-all | world-c | all evaluated | 900 | 29.16M | 21.7 | 1,211.1 | 999.6 | 408.6 | 336.9 | `evals/world-c-final.jsonl` |
+| latent-a-all | world-a | one-hop held-out | 200 | 29.16M | 18.2 | 1,003.6 | 828.8 | 418.7 | 345.2 | `evals/world-a-final.jsonl` |
+| latent-a-all | world-b | all evaluated | 900 | 29.16M | 21.7 | 1,212.0 | 1,000.5 | 415.9 | 342.9 | `evals/world-b-final.jsonl` |
+| latent-multi | world-c | all evaluated | 900 | 29.16M | 21.8 | 1,214.6 | 1,002.6 | 415.7 | 342.8 | `evals/world-c-final.jsonl` |
+| latent-multi | world-a | one-hop held-out | 200 | 29.16M | 18.2 | 1,003.6 | 828.8 | 418.7 | 345.2 | `evals/world-a-final.jsonl` |
+| latent-multi | world-b | one-hop held-out | 1000 | 29.16M | 18.3 | 1,011.3 | 835.3 | 437.4 | 360.7 | `evals/world-b-heldout-final.jsonl` |
+| latent-multi | world-b-30k | one-hop held-out | 1000 | 29.16M | 18.2 | 1,005.9 | 2,413.4 | 430.4 | 1,033.7 | `evals/world-b-30k-heldout-final.jsonl` |
+| latent-multi | world-b-100k | one-hop held-out | 1000 | 29.16M | 18.4 | 1,014.8 | 8,023.5 | 443.6 | 3,514.4 | `evals/world-b-100k-heldout-final.jsonl` |
+| latent-multi-nohop | world-a | one-hop held-out | 200 | 29.16M | 18.3 | 1,014.1 | 837.5 | 439.7 | 362.6 | `evals/world-a-latest.jsonl` |
+| lookup-a | world-c | all evaluated | 900 | 25.47M | 46.2 | 2,320.8 | 0.0 | 1,949.7 | 0.0 | `evals/world-c-final.jsonl` |
+| lookup-a | world-a | one-hop held-out | 200 | 25.47M | 30.0 | 1,485.0 | 0.0 | 1,206.7 | 0.0 | `evals/world-a-final.jsonl` |
+| lookup-a | world-b | all evaluated | 900 | 25.47M | 46.5 | 2,338.5 | 0.0 | 1,967.3 | 0.0 | `evals/world-b-final.jsonl` |
 
 ## Hop supervision
 
@@ -87,11 +136,7 @@ Every flag, seed and model shape is in `runs/<run>/config.json`; checkpoint hash
 ## Integrity
 
 - 82 evaluation files: every summary recounted from its per-question records matches.
-- Evaluations logged during training, rerun from the saved checkpoint on the same questions (context-a, context-multi-bios, context-multi-bios-20k, dense-a, dense-a-k100, dense-a-to-b, latent-a, latent-a-all, latent-multi, latent-multi-nohop, lookup-a): 86 of 90 cells identical. These differ:
-  - context-multi-bios test_1hop_ood 1hop: logged 92 at step 10000, rerun 91.5 (`evals/world-a-final.json`, n=200)
-  - context-multi-bios test_1hop_ood all: logged 92 at step 10000, rerun 91.5 (`evals/world-a-final.json`, n=200)
-  - context-multi-bios test_ood 2hop: logged 75 at step 10000, rerun 75.5 (`evals/world-a-final.json`, n=200)
-  - context-multi-bios test_ood all: logged 76.8 at step 10000, rerun 77 (`evals/world-a-final.json`, n=400)
+- Evaluations logged during training, rerun from the saved checkpoint on the same questions (context-a, context-multi-bios, context-multi-bios-20k, dense-a, dense-a-k100, dense-a-to-b, latent-a, latent-a-all, latent-multi, latent-multi-nohop, lookup-a): 90 of 90 cells identical.
 - 0 cells come from logged summaries only (†).
 - Worlds: `worlds.json` holds each world's build config and file hashes. `python -m hemispheres.records verify-data data/<world>` checks a rebuilt world against them.
 
@@ -108,7 +153,7 @@ The weights are on the Hugging Face Hub at [SceneWorks/hemispheres-step1](https:
 | World A, 1 hop, held-out people | lookup-a | 200/200 | 100 | 98.1–100 | `evals/world-a-final.jsonl` |
 | World A, 1 hop, held-out people | dense-a | 200/200 | 100 | 98.1–100 | `evals/world-a-final.jsonl` |
 | World A, 1 hop, held-out people | context-a | 43/200 | 21.5 | 16.4–27.7 | `evals/world-a-final.jsonl` |
-| World A, 1 hop, held-out people | context-multi-bios | 183/200 | 91.5 | 86.8–94.6 | `evals/world-a-final.jsonl` |
+| World A, 1 hop, held-out people | context-multi-bios | 184/200 | 92 | 87.4–95 | `evals/world-a-final.jsonl` |
 | World A, 1 hop, held-out people | context-multi-bios-20k | 198/200 | 99 | 96.4–99.7 | `evals/world-a-final.jsonl` |
 | World A, 1 hop, held-out people | context-multi-bios-20k-s1 | 195/200 | 97.5 | 94.3–98.9 | `evals/world-a-final.jsonl` |
 | World A, 1 hop, held-out people | latent-a | 200/200 | 100 | 98.1–100 | `evals/world-a-final.jsonl` |
@@ -117,7 +162,7 @@ The weights are on the Hugging Face Hub at [SceneWorks/hemispheres-step1](https:
 | World A, 2 hop, held-out people | lookup-a | 200/200 | 100 | 98.1–100 | `evals/world-a-final.jsonl` |
 | World A, 2 hop, held-out people | dense-a | 11/200 | 5.5 | 3.1–9.6 | `evals/world-a-final.jsonl` |
 | World A, 2 hop, held-out people | context-a | 92/200 | 46 | 39.2–52.9 | `evals/world-a-final.jsonl` |
-| World A, 2 hop, held-out people | context-multi-bios | 151/200 | 75.5 | 69.1–80.9 | `evals/world-a-final.jsonl` |
+| World A, 2 hop, held-out people | context-multi-bios | 150/200 | 75 | 68.6–80.5 | `evals/world-a-final.jsonl` |
 | World A, 2 hop, held-out people | context-multi-bios-20k | 192/200 | 96 | 92.3–98 | `evals/world-a-final.jsonl` |
 | World A, 2 hop, held-out people | context-multi-bios-20k-s1 | 187/200 | 93.5 | 89.2–96.2 | `evals/world-a-final.jsonl` |
 | World A, 2 hop, held-out people | latent-a | 200/200 | 100 | 98.1–100 | `evals/world-a-final.jsonl` |
@@ -175,7 +220,7 @@ The weights are on the Hugging Face Hub at [SceneWorks/hemispheres-step1](https:
 | 100 edits: locality, 1 hop only | dense-a | 89/89 | 100 | 95.9–100 | `evals/world-a-k100-final.jsonl` |
 | 100 edits: locality, 1 hop only | dense-a-k100 | 22/89 | 24.7 | 16.9–34.6 | `evals/world-a-k100-final.jsonl` |
 | 100 edits: locality, 1 hop only | context-a | 14/89 | 15.7 | 9.6–24.7 | `evals/world-a-k100-final.jsonl` |
-| 100 edits: locality, 1 hop only | context-multi-bios | 84/89 | 94.4 | 87.5–97.6 | `evals/world-a-k100-final.jsonl` |
+| 100 edits: locality, 1 hop only | context-multi-bios | 85/89 | 95.5 | 89–98.2 | `evals/world-a-k100-final.jsonl` |
 | 100 edits: locality, 1 hop only | context-multi-bios-20k | 88/89 | 98.9 | 93.9–99.8 | `evals/world-a-k100-final.jsonl` |
 | 100 edits: locality, 1 hop only | context-multi-bios-20k-s1 | 88/89 | 98.9 | 93.9–99.8 | `evals/world-a-k100-final.jsonl` |
 | 100 edits: locality, 1 hop only | latent-a | 89/89 | 100 | 95.9–100 | `evals/world-a-k100-final.jsonl` |
@@ -202,7 +247,7 @@ The weights are on the Hugging Face Hub at [SceneWorks/hemispheres-step1](https:
 | 1,000 edits: locality | lookup-a | 500/500 | 100 | 99.2–100 | `evals/world-a-k1000-final.jsonl` |
 | 1,000 edits: locality | dense-a | 188/500 | 37.6 | 33.5–41.9 | `evals/world-a-k1000-final.jsonl` |
 | 1,000 edits: locality | context-a | 247/500 | 49.4 | 45–53.8 | `evals/world-a-k1000-final.jsonl` |
-| 1,000 edits: locality | context-multi-bios | 377/500 | 75.4 | 71.4–79 | `evals/world-a-k1000-final.jsonl` |
+| 1,000 edits: locality | context-multi-bios | 376/500 | 75.2 | 71.2–78.8 | `evals/world-a-k1000-final.jsonl` |
 | 1,000 edits: locality | context-multi-bios-20k | 489/500 | 97.8 | 96.1–98.8 | `evals/world-a-k1000-final.jsonl` |
 | 1,000 edits: locality | context-multi-bios-20k-s1 | 476/500 | 95.2 | 93–96.8 | `evals/world-a-k1000-final.jsonl` |
 | 1,000 edits: locality | latent-a | 500/500 | 100 | 99.2–100 | `evals/world-a-k1000-final.jsonl` |
@@ -212,14 +257,14 @@ The weights are on the Hugging Face Hub at [SceneWorks/hemispheres-step1](https:
 | Unseen world B, all hops | dense-a | 10/900 | 1.1 | 0.6–2 | `evals/world-b-final.jsonl` |
 | Unseen world B, all hops | dense-a-to-b | 0/900 | 0 | 0–0.4 | `evals/world-b-final.jsonl` |
 | Unseen world B, all hops | context-a | 106/900 | 11.8 | 9.8–14 | `evals/world-b-final.jsonl` |
-| Unseen world B, all hops | context-multi-bios | 710/900 | 78.9 | 76.1–81.4 | `evals/world-b-final.jsonl` |
+| Unseen world B, all hops | context-multi-bios | 711/900 | 79 | 76.2–81.5 | `evals/world-b-final.jsonl` |
 | Unseen world B, all hops | context-multi-bios-20k | 876/900 | 97.3 | 96.1–98.2 | `evals/world-b-final.jsonl` |
 | Unseen world B, all hops | context-multi-bios-20k-s1 | 854/900 | 94.9 | 93.2–96.1 | `evals/world-b-final.jsonl` |
 | Unseen world B, all hops | latent-a | 376/900 | 41.8 | 38.6–45 | `evals/world-b-final.jsonl` |
 | Unseen world B, all hops | latent-a-all | 776/900 | 86.2 | 83.8–88.3 | `evals/world-b-final.jsonl` |
 | Unseen world B, all hops | latent-multi | 900/900 | 100 | 99.6–100 | `evals/world-b-final.jsonl` |
 | Unseen world C, all hops | lookup-a | 897/900 | 99.7 | 99–99.9 | `evals/world-c-final.jsonl` |
-| Unseen world C, all hops | context-multi-bios | 726/900 | 80.7 | 78–83.1 | `evals/world-c-final.jsonl` |
+| Unseen world C, all hops | context-multi-bios | 725/900 | 80.6 | 77.8–83 | `evals/world-c-final.jsonl` |
 | Unseen world C, all hops | context-multi-bios-20k | 880/900 | 97.8 | 96.6–98.6 | `evals/world-c-final.jsonl` |
 | Unseen world C, all hops | context-multi-bios-20k-s1 | 855/900 | 95 | 93.4–96.2 | `evals/world-c-final.jsonl` |
 | Unseen world C, all hops | latent-a | 355/900 | 39.4 | 36.3–42.7 | `evals/world-c-final.jsonl` |
@@ -233,3 +278,6 @@ The weights are on the Hugging Face Hub at [SceneWorks/hemispheres-step1](https:
 | World A, world C's store (lower is better) | latent-a | 12/900 | 1.3 | 0.8–2.3 | `evals/world-a-store-world-c-final.jsonl` |
 | World A, world C's store (lower is better) | latent-a-all | 11/900 | 1.2 | 0.7–2.2 | `evals/world-a-store-world-c-final.jsonl` |
 | World A, world C's store (lower is better) | latent-multi | 10/900 | 1.1 | 0.6–2 | `evals/world-a-store-world-c-final.jsonl` |
+| capacity: world-b 1 hop | latent-multi | 1000/1000 | 100 | 99.6–100 | `evals/world-b-heldout-final.jsonl` |
+| capacity: world-b-30k 1 hop | latent-multi | 1000/1000 | 100 | 99.6–100 | `evals/world-b-30k-heldout-final.jsonl` |
+| capacity: world-b-100k 1 hop | latent-multi | 1000/1000 | 100 | 99.6–100 | `evals/world-b-100k-heldout-final.jsonl` |

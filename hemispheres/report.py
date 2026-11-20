@@ -219,6 +219,271 @@ def hop_supervision_table(runs: dict[str, Run]) -> list[str]:
                   f"latent-multi-nohop (hop weight {b.config['hop_weight']})"], rows)
 
 
+# ---------------------------------------------------------------- capacity curve (HEM-F1)
+
+CAPACITY_WORLDS = ("world-b", "world-b-30k", "world-b-100k")  # world B at 10,000, 30,000 and 100,000 people
+PASS_MARK = 0.95  # a model passes a world at 95% one-hop held-out accuracy
+MIN_QUESTIONS = 1000  # ... measured on at least this many questions
+READ_NAME_TOKENS = 8  # store.MAX_NAME_LEN: tokens per retrieved name (store.py imports MLX, so it is copied here)
+
+
+def world_info(worlds: dict) -> dict[str, dict]:
+    """People and facts per world name, from worlds.json."""
+    return {Path(k).name: {"people": w["build"]["persons"], "facts": w.get("facts")} for k, w in worlds.items()}
+
+
+def final_eval(run: Run, world: str, sets: tuple[str, ...] = ("test_1hop_ood",),
+               edits_ok: bool = False) -> tuple[str, dict, list] | None:
+    """The run's measurement of its final weights on `world`: the evaluation of the final checkpoint (the
+    latest one for a run stopped early) with the most records in `sets`, preferring `hemispheres.evaluate`
+    over the training loop's last-step evaluation. Evaluations with edits applied count only if `edits_ok`."""
+    stopped = bool(run.metrics) and run.last_step < run.config["steps"]
+    last = run.last_step if stopped else run.config["steps"]
+    best = None
+    for name, (ev, records) in run.evals.items():
+        a = ev["args"]
+        if (records is None or Path(a["data"]).name != world or (a.get("edits", 0) and not edits_ok)
+                or a.get("store") not in (None, "")):
+            continue
+        if "step" in a and a["step"] != last:
+            continue
+        if "step" not in a and a.get("checkpoint") != ("latest" if stopped else "final"):
+            continue
+        n = sum(r["set"] in sets for r in records)
+        key = (n, "step" not in a)
+        if n and (best is None or key > best[0]):
+            best = (key, name, ev, records)
+    return best and best[1:]
+
+
+def one_hop(run: Run, world: str) -> Cell | None:
+    picked = final_eval(run, world)
+    if not picked:
+        return None
+    name, _, records = picked
+    rs = [r for r in records if r["set"] == "test_1hop_ood" and r["hops"] == 1]
+    return Cell(sum(r["correct"] for r in rs), len(rs), f"evals/{name}.jsonl")
+
+
+def converged(run: Run) -> bool | None:
+    """Whether the last two one-hop evaluations logged during training agree within 1 point."""
+    accs = [m["eval"]["test_1hop_ood"]["1hop"]["acc"] for m in run.metrics
+            if "test_1hop_ood" in m.get("eval", {})]
+    return None if len(accs) < 2 else abs(accs[-1] - accs[-2]) <= 0.01 + 1e-9  # tolerance for float rounding
+
+
+def dense_ladder(runs: dict[str, Run], world: str) -> dict[str, list[tuple[Run, Cell]]]:
+    """Dense runs trained from scratch on `world` alone, by size, each with its one-hop cell."""
+    out: dict[str, list] = {}
+    for r in runs.values():
+        if r.config["arm"] != "dense" or r.config.get("init") or r.config["data"].split(",") != [f"data/{world}"]:
+            continue
+        c = one_hop(r, world)
+        if c:
+            out.setdefault(r.config["size"], []).append((r, c))
+    return dict(sorted(out.items(), key=lambda kv: kv[1][0][0].config["params"]))
+
+
+def passes(entries: list[tuple[Run, Cell]]) -> bool:
+    """A size passes a world when every seed scores at least the pass mark on at least MIN_QUESTIONS questions
+    and its last two training evaluations agree within 1 point (unknown convergence does not pass)."""
+    return all(c.acc >= PASS_MARK and c.n >= MIN_QUESTIONS and converged(r) is True for r, c in entries)
+
+
+def capacity(runs: dict[str, Run], worlds: dict) -> tuple[list[str], list[tuple], dict]:
+    """(markdown, cells for the every-cell table, chart data)."""
+    info = world_info(worlds)
+    present = [w for w in CAPACITY_WORLDS if w in info]
+    ladders = {w: dense_ladder(runs, w) for w in present}
+    latents = [r for r in runs.values() if r.config["arm"] == "latent" and any(one_hop(r, w) for w in present)]
+    if not any(ladders.values()) and not latents:
+        return [], [], {}
+    cells, chart = [], {"worlds": [], "dense": [], "latent": {}}
+
+    sizes = sorted({s for lad in ladders.values() for s in lad},
+                   key=lambda s: next(e for lad in ladders.values() if s in lad for e in lad[s])[0].config["params"])
+    rows = []
+    for s in sizes:
+        row = [s]
+        for w in present:
+            entries = ladders[w].get(s, [])
+            for r, c in entries:
+                cells.append((f"capacity: {w} 1 hop", r.name, c))
+            if not entries:
+                row.append("—")
+                continue
+            marks = " / ".join(pct(c.acc) + {False: "*", None: "?"}.get(converged(r), "")
+                               + (f" (n={c.n})" if c.n < MIN_QUESTIONS else "") for r, c in entries)
+            row.append(f"{marks} {'pass' if passes(entries) else 'fail'}")
+        params = next(e for lad in ladders.values() if s in lad for e in lad[s])[0].config["params"]
+        rows.append(row[:1] + [f"{params / 1e6:.2f}M"] + row[1:])
+    header = ["dense size", "params"] + [f"{w} ({info[w]['people']:,} people)" for w in present]
+
+    summary = []
+    for w in present:
+        lad = ladders[w]
+        passing = [s for s in lad if passes(lad[s])]
+        smallest = passing[0] if passing else None
+        below = [s for s in lad if lad[s][0][0].config["params"] < (lad[smallest][0][0].config["params"]
+                                                                    if smallest else float("inf"))]
+        failing = [s for s in below if not passes(lad[s])]
+        params = lad[smallest][0][0].config["params"] if smallest else None
+        if info[w]["facts"]:  # the chart's x axis; worlds exported before facts were recorded are left out
+            chart["worlds"].append((w, info[w]["people"], info[w]["facts"]))
+            chart["dense"].append((info[w]["facts"], params, smallest is not None))
+        lat = []
+        for r in latents:
+            c = one_hop(r, w)
+            if c:
+                cells.append((f"capacity: {w} 1 hop", r.name, c))
+                lat.append(f"{r.name} {pct(c.acc)}")
+                if info[w]["facts"]:
+                    chart["latent"].setdefault(r.name, (r.config["params"], []))[1].append(
+                        (info[w]["facts"], c.acc >= PASS_MARK))
+        summary.append([f"{w}", f"{info[w]['people']:,}", f"{info[w]['facts']:,}" if info[w]["facts"] else "—",
+                        f"{smallest} ({params / 1e6:.2f}M)" if smallest else ("none on the ladder" if lad else "not run"),
+                        failing[-1] if failing else "—", "; ".join(lat) or "—"])
+    md = ["Smallest model that holds each world's facts. A model passes at 95% one-hop accuracy on held-out "
+          "people (at least 1,000 questions) with its last two training evaluations within 1 point. Dense "
+          "models store the facts in their weights; latent cores read them from the world's store and are "
+          "evaluated on the larger worlds with no further training. Sources: [every cell](#every-cell).", "",
+          *table(["world", "people", "facts", "smallest passing dense size", "largest failing size below it",
+                  "latent cores: one-hop %"], summary)]
+    if rows:
+        md += ["", "Dense ladder, one-hop held-out accuracy in % (seeds separated by /; * = not converged, "
+               "? = convergence unknown, n = shown when under 1,000 questions):", "",
+               *table(header, rows)]
+    if not (any(prm for _, prm, _ in chart["dense"]) or chart["latent"]):
+        chart = {}
+    if chart:
+        md += ["", "![Parameters needed versus facts known](capacity.svg)"]
+    return md, cells, chart
+
+
+def capacity_svg(chart: dict) -> str:
+    """Log-log chart of parameters needed versus facts known. Standard library only."""
+    pts = [(f, p) for f, p, ok in chart["dense"] if p] + [(f, p) for p, xs in chart["latent"].values() for f, _ in xs]
+    facts = [f for f, _ in pts] or [1]
+    params = [p for _, p in pts] + [p for _, p, _ in chart["dense"] if p] or [1]
+    W, H, L, R, T, B = 720, 400, 80, 270, 30, 50
+    fx = (math.log10(min(facts)) - 0.1, math.log10(max(facts)) + 0.1)
+    fy = (min(5.0, math.log10(min(params)) - 0.3), max(8.0, math.log10(max(params)) + 0.3))  # 0.1M to 100M
+    X = lambda f: L + (math.log10(f) - fx[0]) / (fx[1] - fx[0]) * (W - L - R)
+    Y = lambda p: H - B - (math.log10(p) - fy[0]) / (fy[1] - fy[0]) * (H - T - B)
+    o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" font-family="sans-serif" font-size="12">',
+         f'<rect width="{W}" height="{H}" fill="white"/>',
+         f'<line x1="{L}" y1="{H - B}" x2="{W - R}" y2="{H - B}" stroke="#444"/>',
+         f'<line x1="{L}" y1="{T}" x2="{L}" y2="{H - B}" stroke="#444"/>',
+         f'<text x="{(L + W - R) / 2}" y="{H - 12}" text-anchor="middle">facts in the world (log scale)</text>',
+         f'<text x="18" y="{(T + H - B) / 2}" text-anchor="middle" transform="rotate(-90 18 {(T + H - B) / 2})">'
+         'parameters (log scale)</text>']
+    ticks = [m * 10 ** e for e in range(math.floor(fy[0]), math.ceil(fy[1]) + 1) for m in (1, 3)]
+    for t in [t for t in ticks if fy[0] <= math.log10(t) <= fy[1]]:
+        o += [f'<line x1="{L - 4}" y1="{Y(t):.1f}" x2="{W - R}" y2="{Y(t):.1f}" stroke="#ddd"/>',
+              f'<text x="{L - 8}" y="{Y(t) + 4:.1f}" text-anchor="end">{t / 1e6:g}M</text>']
+    for w, people, f in chart["worlds"]:
+        if f:
+            o += [f'<line x1="{X(f):.1f}" y1="{H - B}" x2="{X(f):.1f}" y2="{H - B + 4}" stroke="#444"/>',
+                  f'<text x="{X(f):.1f}" y="{H - B + 18}" text-anchor="middle">{f:,}</text>']
+    dense = [(f, p) for f, p, ok in chart["dense"] if p]
+    failing = [f for f, p, ok in chart["dense"] if not p]
+    o += [f'<circle cx="{X(f):.1f}" cy="{T + 6}" r="5" fill="white" stroke="#c0392b" stroke-width="2"/>'
+          for f in failing]
+    if dense:
+        o.append('<polyline fill="none" stroke="#c0392b" stroke-width="2" points="'
+                 + " ".join(f"{X(f):.1f},{Y(p):.1f}" for f, p in dense) + '"/>')
+        o += [f'<circle cx="{X(f):.1f}" cy="{Y(p):.1f}" r="5" fill="#c0392b"/>' for f, p in dense]
+    colors = ["#2471a3", "#1e8449", "#7d3c98", "#b9770e"]
+    legend = [("#c0392b", "dense: smallest passing size")] if dense else []
+    if failing:
+        legend.append(("#c0392b", "dense: no ladder size passes (top)"))
+    for i, (name, (p, xs)) in enumerate(sorted(chart["latent"].items())):
+        c = colors[i % len(colors)]
+        xs = sorted(xs)
+        o.append(f'<line x1="{X(xs[0][0]):.1f}" y1="{Y(p):.1f}" x2="{X(xs[-1][0]):.1f}" y2="{Y(p):.1f}" '
+                 f'stroke="{c}" stroke-width="2" stroke-dasharray="6 4"/>')
+        o += [f'<circle cx="{X(f):.1f}" cy="{Y(p):.1f}" r="5" fill="{c if ok else "white"}" stroke="{c}" '
+              'stroke-width="2"/>' for f, ok in xs]
+        legend.append((c, f"{name} (hollow = fails)"))
+    for i, (c, text) in enumerate(legend):
+        y = T + 10 + 18 * i
+        o += [f'<rect x="{W - R + 10}" y="{y - 9}" width="12" height="12" fill="{c}"/>',
+              f'<text x="{W - R + 28}" y="{y + 1}">{text}</text>']
+    return "\n".join(o + ["</svg>", ""])
+
+
+# ---------------------------------------------------------------- cost per answered question (E4)
+
+def question_cost(config: dict, prompt_tokens: int, output_tokens: int, facts: int | None,
+                  inserted_tokens: int = 0) -> dict:
+    """Compute and memory read for one question, generating one question at a time with a key-value cache:
+    one forward pass over the prompt, then one per further token the model generates. Tokens a lookup-arm
+    store inserts go through the model but need no pass of their own.
+
+    compute: 2 x parameters per token processed, plus attention (4 x layers x width x context per token).
+    For a latent model, store compute adds scoring every store key at every read layer and attending over the
+    retrieved names (top_k names of READ_NAME_TOKENS tokens plus a null slot, 4 x width each), with their keys
+    and values gathered from projection tables computed once. memory read: every parameter once per forward
+    pass, plus every store key once per read layer per forward pass. Approximations: 2 x parameters also counts
+    the key encoder and the read layers' key/value projections, which only run once per store or table; and
+    key-value cache reads, the gathered name projections and encoding the store's keys are left out. A
+    lookup-arm store's own cost is not modelled.
+    """
+    m, params = config["model"], config["params"]
+    width = 2 if config.get("dtype") == "bfloat16" else 4
+    tokens = prompt_tokens + output_tokens + inserted_tokens - 1  # all but the last generated token
+    passes = output_tokens
+    out = {"model_flops": 2 * params * tokens + 2 * m["n_layer"] * m["d_model"] * tokens * (tokens + 1),
+           "weight_bytes": params * width * passes, "store_flops": 0, "store_bytes": 0}
+    if config.get("model_type") == "latent":
+        if facts is None:
+            out["store_flops"] = out["store_bytes"] = None
+        else:
+            retrieved = m["top_k"] * READ_NAME_TOKENS + 1
+            out["store_flops"] = (2 * m["n_reads"] * facts * m["key_dim"] * tokens
+                                  + 4 * m["n_reads"] * m["d_model"] * retrieved * tokens)
+            out["store_bytes"] = m["n_reads"] * facts * m["key_dim"] * width * passes
+    return out
+
+
+def cost_table(runs: dict[str, Run], worlds: dict) -> list[str]:
+    info, rows = world_info(worlds), []
+    for r in runs.values():
+        names = {Path(ev["args"]["data"]).name for ev, _ in r.evals.values()}
+        for w in sorted(names, key=lambda w: (info.get(w, {}).get("facts") or 0, w)):
+            picked = (final_eval(r, w, sets=("test_1hop_ood", "test_ood", "test_id", "all"))
+                      or final_eval(r, w, sets=("direct", "ripple", "locality"), edits_ok=True))
+            if not picked or "prompt_tokens" not in picked[2][0]:
+                continue
+            one_hop_recs = [x for x in picked[2] if x["set"] == "test_1hop_ood"]
+            recs = one_hop_recs or picked[2]
+            costs = [question_cost(r.config, x["prompt_tokens"], x["output_tokens"], info.get(w, {}).get("facts"),
+                                   x.get("inserted_tokens", 0)) for x in recs]
+            mean = {k: (None if any(c[k] is None for c in costs) else sum(c[k] for c in costs) / len(costs))
+                    for k in costs[0]}
+            fmt = lambda v, unit: "—" if v is None else f"{v / unit:,.1f}"
+            label = "one-hop held-out" if one_hop_recs else (
+                f"all, {picked[1]['args']['edits']} edits" if picked[1]["args"].get("edits") else "all evaluated")
+            rows.append([r.name, w, label, str(len(recs)),
+                         f"{r.config['params'] / 1e6:.2f}M",
+                         f"{sum(x['prompt_tokens'] + x['output_tokens'] + x.get('inserted_tokens', 0) for x in recs) / len(recs):.1f}",
+                         fmt(mean["model_flops"], 1e6), fmt(mean["store_flops"], 1e6),
+                         fmt(mean["weight_bytes"], 1e6), fmt(mean["store_bytes"], 1e6), f"`evals/{picked[0]}.jsonl`"])
+    if not rows:
+        return []
+    return ["Per question asked, right or wrong, calculated from each model's shape and the store size: the mean "
+            "over the one-hop held-out questions of each run's final evaluation on that world (or all its "
+            "questions when it has none), as if generating one question at a time with a key-value cache. "
+            "Compute counts 2 operations per parameter per token and attention; store compute counts scoring "
+            "every store key at every read layer and attending over the retrieved names. Memory read counts "
+            "every parameter and every store key once per forward pass. Left out: key-value cache reads, "
+            "encoding the store's keys (once per store write) and the lookup arm's external store. Tokens per "
+            "question include the prompt, the generated answer with [EOS], and any store-inserted tokens. "
+            "Only evaluations that record token counts appear.", "",
+            *table(["run", "world", "questions", "n", "params", "tokens per question", "model MFLOP", "store MFLOP",
+                    "weights MB read", "store MB read", "source"], rows)]
+
+
 def runs_table(runs: dict[str, Run]) -> list[str]:
     rows = []
     for r in runs.values():
@@ -425,6 +690,13 @@ def report(runs: dict[str, Run], worlds: dict, runs_dir: Path, weights: dict | N
         "",
         *leakage_table(runs),
     ]
+    cap, cap_cells, _ = capacity(runs, worlds)
+    if cap:
+        out += ["", "## Capacity: parameters needed versus facts known", "", *cap]
+        cells = cells + cap_cells
+    cost = cost_table(runs, worlds)
+    if cost:
+        out += ["", "## Cost per answered question", "", *cost]
     hop = hop_supervision_table(runs)
     if hop:
         out += ["", "## Hop supervision", "",
@@ -476,6 +748,9 @@ def main() -> None:
     weights = json.loads(weights_path.read_text()) if weights_path.exists() else None
     outputs = {"REPORT.md": report(runs, worlds, Path(args.runs), weights),
                "reproduce.sh": reproduce_script(runs, worlds, weights)}
+    chart = capacity(runs, worlds)[2]
+    if chart:
+        outputs["capacity.svg"] = capacity_svg(chart)
     out = Path(args.out)
     if args.check:
         _, bad = integrity(runs)

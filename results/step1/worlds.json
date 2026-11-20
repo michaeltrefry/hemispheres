@@ -17,6 +17,7 @@
       "edit_relations": "",
       "out_dir": "data/pool"
     },
+    "facts": 62618,
     "fingerprint": "0ba111647c1a6a792997fc6d120b87af91c5bd74a980e6f82dc486138f43dfb5",
     "files": {
       "world.json": "56b556f11c10a5c60a265b1b74b0663be3354de74dd434e4f485e1c37514f404",
@@ -42,6 +43,7 @@
       "edit_relations": "",
       "out_dir": "data/pool"
     },
+    "facts": 62601,
     "fingerprint": "d17f343e6096fb6f8458fcffe773f86584f795f84710887f822f1a99dc1c1599",
     "files": {
       "world.json": "523d448e4fa6e9ebd869a02fd6459b8fc0da89f08f808aae527d6ff701d9ace8",
@@ -67,6 +69,7 @@
       "edit_relations": "",
       "out_dir": "data/pool"
     },
+    "facts": 62597,
     "fingerprint": "a6bfacf6b64cf3a7593eb72eb54a1f7c1467a50a302e4145f0d09317a3e99220",
     "files": {
       "world.json": "0bc0b149927881b131382704c16b1e88daf333ab371046c927d2e7569c2cbde0",
@@ -92,6 +95,7 @@
       "edit_relations": "",
       "out_dir": "data/pool"
     },
+    "facts": 62614,
     "fingerprint": "45133b232f854baca586b26947f3e8c5466131936e361fccf164caecd0af2b57",
     "files": {
       "world.json": "bb02bd64051dbd60290b1becbae3f32bce7a1c224d2168c4143d0e5d883afcd5",
@@ -117,6 +121,7 @@
       "edit_relations": "",
       "out_dir": "data/pool"
     },
+    "facts": 62610,
     "fingerprint": "baf14fe23044cc3bb44a06592f7c97dbe7c3841a1b8a4fb8520d142230070786",
     "files": {
       "world.json": "51c775e3c868c2e2a06ebdcec9b072efa598f17d067ee3245556b54205e2e4b8",
@@ -142,6 +147,7 @@
       "edit_relations": "",
       "out_dir": "data/pool"
     },
+    "facts": 62615,
     "fingerprint": "fefdd4a7b1d055d3075ee7f381a654fc409676648e987dd5cdc6c81ee4419131",
     "files": {
       "world.json": "1b0c94b9c94ebe0db42cd8332d2af3ad0797713269e91f279f2438c5a8d1ba1c",
@@ -167,6 +173,7 @@
       "edit_relations": "",
       "out_dir": "data/pool"
     },
+    "facts": 62594,
     "fingerprint": "467ceab0c667d7fc25a1c46aa6c32a93bc7fe73b9ee772dd418d5cd39c06578a",
     "files": {
       "world.json": "ad1edc75fd232c0ad09a5323521629b3abfbcccb92101991c0f7d8e8445744c2",
@@ -192,6 +199,7 @@
       "edit_relations": "",
       "out_dir": "data/pool"
     },
+    "facts": 62602,
     "fingerprint": "ec9eff474e21c22c230e4751a853ba5aabd701dcc3954ed01d1ff6343d49d95b",
     "files": {
       "world.json": "02150671ae3d024cca932787c1dae2f4fb1f6cce0119bdbbc907685e1d233768",
@@ -217,6 +225,7 @@
       "edit_relations": "",
       "out_dir": "data/pool"
     },
+    "facts": 62600,
     "fingerprint": "961b61d99794256fda9268f30e77f88e6b62f3bac930536344bd655c3570bff1",
     "files": {
       "world.json": "e32d512eaa7e0c4557f40f31e8ca6c55ff25ffc73c08b34ccee9cce8dddbf31c",
@@ -242,6 +251,7 @@
       "edit_relations": "",
       "out_dir": "data/pool"
     },
+    "facts": 62599,
     "fingerprint": "0be7dec6c651b282845efbc7a52315ef85919828726e8d6265d9a2daee95e782",
     "files": {
       "world.json": "240792295dcfc5cbc1b0dcdbd557a97c4ce735cb612694120e5ea978544dd643",
@@ -267,6 +277,7 @@
       "edit_relations": "",
       "out_dir": "data/pool"
     },
+    "facts": 62595,
     "fingerprint": "c923a29d763af2a7e9b7de4fa884c175ac5ca8b9da380187d5df98c3de0b77d6",
     "files": {
       "world.json": "9ed304a4e19e0c853dae3eab5bc5b3e2c1bd3b9aa3608e85db64bd7fd4fbf56b",
@@ -292,6 +303,7 @@
       "edit_relations": "",
       "out_dir": "data/pool"
     },
+    "facts": 62608,
     "fingerprint": "3a9229340fd51a3ccce5bff9757ce996ff778bd75e8268a0008be8f333ddfa6e",
     "files": {
       "world.json": "9cbc86fe81111acbeaa7e2bcdf48b85a09db6e93aa16811e5e63611ae09773d2",
@@ -317,6 +329,7 @@
       "edit_relations": "",
       "out_dir": "data/pool"
     },
+    "facts": 62598,
     "fingerprint": "d9f42180c24d99f7c7489d4e785b816aed0db787ace2995044e8b26799594eee",
     "files": {
       "world.json": "4c2dbd9298c3e03e8f5de28b348a3f53aaef7d1bc72627285c614ad1cde294e3",
@@ -342,6 +355,7 @@
       "edit_relations": "",
       "out_dir": "data/pool"
     },
+    "facts": 62596,
     "fingerprint": "66e4ce0a96656931b70e219b20938fd899f821399bc320e2fd3a8933189e7d6b",
     "files": {
       "world.json": "9dc9b69526c8fd7a3065bec4a15d8eb8b8433cf80452964fca0a9f1e7dc69998",
@@ -367,6 +381,7 @@
       "edit_relations": "",
       "out_dir": "data/pool"
     },
+    "facts": 62604,
     "fingerprint": "59655904ea2784b39a94561b1ef60d2b7d4012a9089ddf8e6f63b8a38184ec2d",
     "files": {
       "world.json": "c85180fc3ddade9857fce6fb1b6eadd44dd492246315ab3db366eba854aab769",
@@ -392,6 +407,7 @@
       "edit_relations": "",
       "out_dir": "data"
     },
+    "facts": 62609,
     "fingerprint": "befab6f0a218e36f48e7ae53539eef4e3fe9fab49eaae9a2d603ee01b86df106",
     "files": {
       "world.json": "765b1856f2489249d632a16ccb64735fce73bf32e8dd67bfb5f82a3a05b03bfa",
@@ -420,6 +436,7 @@
       "edit_relations": "",
       "out_dir": "data"
     },
+    "facts": 62615,
     "fingerprint": "50834522443f999a571ee256c020ea98b336422e34fc14775adbe9805d880818",
     "files": {
       "world.json": "84ee172b979d5791fc281795afa448f1d96356080d5ef5af71b0572aeb8fbb68",
@@ -448,6 +465,7 @@
       "edit_relations": "",
       "out_dir": "data"
     },
+    "facts": 601640,
     "fingerprint": "89c54d6b999647e3f6bae5f41a430eb9a5ccc1c37adf02ed30ee47a9a3267830",
     "files": {
       "world.json": "298041b2605335b7119a1be187212dfbef77f748cede0b98bcdd9d4fe4b82209",
@@ -473,6 +491,7 @@
       "edit_relations": "",
       "out_dir": "data"
     },
+    "facts": 182381,
     "fingerprint": "df7f3d3cf85ed366712cccba48adc6ee44740a49e765f9cd3ba5ba20730d8f4a",
     "files": {
       "world.json": "5ad67fbef05d3b6023c9b0172f446d44e35a71442592f0ab625bc997f553cba7",
@@ -498,6 +517,7 @@
       "edit_relations": "",
       "out_dir": "data"
     },
+    "facts": 62607,
     "fingerprint": "3c5b5ec6c30f8b586d9b08457ac17ec8fced49805562e81f6aed6fd6740bd9c6",
     "files": {
       "world.json": "1ef53588ca2ad547bf5997024af04c5a0a20711edefae8a22bfeff9bbf8a4ba0",
