@@ -145,3 +145,14 @@ def test_code_version_counts_untracked_files_but_not_ignored_ones(tmp_path):
     assert v["dirty"] is True and v["changed"] == ["new_module.py"]
     (tmp_path / "a.py").write_text("x = 3\n")
     assert code_version(tmp_path)["changed"] == ["a.py", "new_module.py"]
+
+
+def test_eval_command_keeps_the_evaluation_name():
+    from types import SimpleNamespace
+
+    from hemispheres.report import eval_command
+    run = SimpleNamespace(name="r")
+    args = {"checkpoint": "final", "data": "data/w", "sets": "test_1hop_ood", "n": 1000, "seed": 0,
+            "name": "w-heldout-final"}
+    assert eval_command(run, args).endswith("--seed 0 --name w-heldout-final")
+    assert "--name" not in eval_command(run, {**args, "name": None})

@@ -343,7 +343,7 @@ def eval_command(run: Run, args: dict) -> str | None:
     if "step" in args:  # written by the training loop
         return None
     parts = [flag("run", f"runs/{run.name}")]
-    for k in ("checkpoint", "data", "edits", "sets", "n", "seed", "store"):
+    for k in ("checkpoint", "data", "edits", "sets", "n", "seed", "store", "name"):
         v = args.get(k)
         if v not in (None, 0, "") or k == "seed":
             parts.append(flag(k, v))
