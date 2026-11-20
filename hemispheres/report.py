@@ -27,7 +27,7 @@ RECORDS = Path("results/step1")
 HELD_OUT = ("test_id", "test_1hop_ood")  # the sets the leakage evaluations use
 # Flags that changed default after a run was trained, with the value the run used.
 LEGACY_TRAIN_FLAGS = {"latent": {"supervise": "first"}}  # --supervise was added in d98359c; before it, "first"
-DERIVED_CONFIG_KEYS = {"model", "model_type", "params", "vocab", "provenance"}
+DERIVED_CONFIG_KEYS = {"model", "model_type", "params", "vocab", "provenance", "bio_passes_estimate"}
 
 
 @dataclass

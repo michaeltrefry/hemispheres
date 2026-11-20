@@ -32,7 +32,17 @@ SIZES = {
     "gpt2": dict(n_layer=12, n_head=12, d_model=768),     # ~85M non-embedding (124M w/ GPT-2 vocab)
     "medium": dict(n_layer=24, n_head=16, d_model=1024),  # ~302M non-embedding (350M w/ GPT-2 vocab)
     "large": dict(n_layer=36, n_head=20, d_model=1280),   # ~708M non-embedding (770M w/ GPT-2 vocab)
+    # Capacity-curve ladder (HEM-F1): each about double the last, depth never decreasing. Total dense
+    # params with the 576-token vocab; the latent arm adds 13-38% for its read layers and key encoder.
+    "250k": dict(n_layer=4, n_head=2, d_model=64),        # 0.23M
+    "500k": dict(n_layer=4, n_head=3, d_model=96),        # 0.50M
+    "1m": dict(n_layer=5, n_head=4, d_model=128),         # 1.06M
+    "2m": dict(n_layer=6, n_head=5, d_model=160),         # 1.94M
+    "4m": dict(n_layer=6, n_head=7, d_model=224),         # 3.74M
+    "8m": dict(n_layer=6, n_head=10, d_model=320),        # 7.56M
+    "16m": dict(n_layer=9, n_head=12, d_model=384),       # 16.15M
 }
+LADDER = ("250k", "500k", "1m", "2m", "4m", "8m", "16m")
 
 
 def config_for(size: str, **overrides) -> GPTConfig:

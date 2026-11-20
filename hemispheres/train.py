@@ -41,7 +41,7 @@ import mlx.nn as nn
 import mlx.optimizers as optim
 
 from . import checkpoint, provenance
-from .data import ARMS, ExampleSampler, Packer, WorldData, parse_mix
+from .data import ARMS, ExampleSampler, Packer, WorldData, bios_per_step, parse_mix
 from .evaluate import evaluate, format_summary, write
 from .latent import LatentConfig, LatentGPT, latent_loss
 from .model import GPT, SIZES, config_for, masked_lm_loss
@@ -81,6 +81,20 @@ def train(args) -> None:
         raise SystemExit("all --data worlds must share one vocabulary")
     mix = parse_mix(args.mix, args.arm)
     latent = ARMS[args.arm].latent_store
+    bio_estimate = None
+    if args.bio_passes is not None:
+        if args.bio_passes <= 0:
+            raise SystemExit("--bio-passes must be positive")
+        if not any(s == "bios" for s, _ in mix):
+            raise SystemExit("--bio-passes needs bios in the mix")
+        if len({len(d.world.entities) for d in datas}) > 1:
+            raise SystemExit("--bio-passes needs worlds of equal size: one world is drawn per step, so "
+                             "smaller worlds would see their biographies more often")
+        # Each step draws one world, so passes per entity = steps * bios per step / entities in all worlds.
+        per_step = sum(bios_per_step(d, args.arm, mix, tok, args.batch_size, args.seq_len) for d in datas) / len(datas)
+        entities = sum(len(d.world.entities) for d in datas)
+        args.steps = math.ceil(args.bio_passes * entities / per_step)
+        bio_estimate = {"bios_per_step": per_step, "entities": entities, "steps": args.steps}
 
     if args.init:
         model, init_config = checkpoint.load_model(args.init, args.init_checkpoint)
@@ -101,6 +115,8 @@ def train(args) -> None:
               "model_type": "latent" if latent else "gpt", "model": asdict(model_cfg),
               "params": model.num_params(), "vocab": len(tok),
               "provenance": provenance.record(args.data.split(","))}
+    if bio_estimate:
+        config["bio_passes_estimate"] = bio_estimate
     if args.init:
         init_weights = Path(args.init) / "checkpoints" / args.init_checkpoint / "model.safetensors"
         config["provenance"]["init_sha256"] = provenance.sha256(init_weights)
@@ -222,6 +238,9 @@ def main() -> None:
     p.add_argument("--size", choices=sorted(SIZES), default="small")
     p.add_argument("--dtype", choices=("float32", "bfloat16"), default="float32")
     p.add_argument("--steps", type=int, default=10_000)
+    p.add_argument("--bio-passes", type=float, default=None,
+                   help="train until each biography has been seen about this many times; overrides --steps, "
+                        "which it computes from the world size (recorded in config.json)")
     p.add_argument("--batch-size", type=int, default=64)
     p.add_argument("--seq-len", type=int, default=256)
     p.add_argument("--lr", type=float, default=1e-3)
