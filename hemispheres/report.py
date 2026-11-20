@@ -223,6 +223,8 @@ def hop_supervision_table(runs: dict[str, Run]) -> list[str]:
 
 CAPACITY_WORLDS = ("world-b", "world-b-30k", "world-b-100k")  # world B at 10,000, 30,000 and 100,000 people
 PASS_MARK = 0.95  # a model passes a world at 95% one-hop held-out accuracy
+MIN_QUESTIONS = 1000  # ... measured on at least this many questions
+READ_NAME_TOKENS = 8  # store.MAX_NAME_LEN: tokens per retrieved name (store.py imports MLX, so it is copied here)
 
 
 def world_info(worlds: dict) -> dict[str, dict]:
@@ -279,8 +281,9 @@ def dense_ladder(runs: dict[str, Run], world: str) -> dict[str, list[tuple[Run, 
 
 
 def passes(entries: list[tuple[Run, Cell]]) -> bool:
-    """A size passes a world when every seed scores at least the pass mark and converged."""
-    return all(c.acc >= PASS_MARK and converged(r) is not False for r, c in entries)
+    """A size passes a world when every seed scores at least the pass mark on at least MIN_QUESTIONS questions
+    and its last two training evaluations agree within 1 point (unknown convergence does not pass)."""
+    return all(c.acc >= PASS_MARK and c.n >= MIN_QUESTIONS and converged(r) is True for r, c in entries)
 
 
 def capacity(runs: dict[str, Run], worlds: dict) -> tuple[list[str], list[tuple], dict]:
@@ -305,7 +308,8 @@ def capacity(runs: dict[str, Run], worlds: dict) -> tuple[list[str], list[tuple]
             if not entries:
                 row.append("—")
                 continue
-            marks = " / ".join(pct(c.acc) + ("*" if converged(r) is False else "") for r, c in entries)
+            marks = " / ".join(pct(c.acc) + {False: "*", None: "?"}.get(converged(r), "")
+                               + (f" (n={c.n})" if c.n < MIN_QUESTIONS else "") for r, c in entries)
             row.append(f"{marks} {'pass' if passes(entries) else 'fail'}")
         params = next(e for lad in ladders.values() if s in lad for e in lad[s])[0].config["params"]
         rows.append(row[:1] + [f"{params / 1e6:.2f}M"] + row[1:])
@@ -342,9 +346,10 @@ def capacity(runs: dict[str, Run], worlds: dict) -> tuple[list[str], list[tuple]
           *table(["world", "people", "facts", "smallest passing dense size", "largest failing size below it",
                   "latent cores: one-hop %"], summary)]
     if rows:
-        md += ["", "Dense ladder, one-hop held-out accuracy in % (seeds separated by /; * = not converged):", "",
+        md += ["", "Dense ladder, one-hop held-out accuracy in % (seeds separated by /; * = not converged, "
+               "? = convergence unknown, n = shown when under 1,000 questions):", "",
                *table(header, rows)]
-    if not (chart["dense"] or chart["latent"]):
+    if not (any(prm for _, prm, _ in chart["dense"]) or chart["latent"]):
         chart = {}
     if chart:
         md += ["", "![Parameters needed versus facts known](capacity.svg)"]
@@ -377,12 +382,17 @@ def capacity_svg(chart: dict) -> str:
             o += [f'<line x1="{X(f):.1f}" y1="{H - B}" x2="{X(f):.1f}" y2="{H - B + 4}" stroke="#444"/>',
                   f'<text x="{X(f):.1f}" y="{H - B + 18}" text-anchor="middle">{f:,}</text>']
     dense = [(f, p) for f, p, ok in chart["dense"] if p]
+    failing = [f for f, p, ok in chart["dense"] if not p]
+    o += [f'<circle cx="{X(f):.1f}" cy="{T + 6}" r="5" fill="white" stroke="#c0392b" stroke-width="2"/>'
+          for f in failing]
     if dense:
         o.append('<polyline fill="none" stroke="#c0392b" stroke-width="2" points="'
                  + " ".join(f"{X(f):.1f},{Y(p):.1f}" for f, p in dense) + '"/>')
         o += [f'<circle cx="{X(f):.1f}" cy="{Y(p):.1f}" r="5" fill="#c0392b"/>' for f, p in dense]
     colors = ["#2471a3", "#1e8449", "#7d3c98", "#b9770e"]
-    legend = [("#c0392b", "dense: smallest passing size")]
+    legend = [("#c0392b", "dense: smallest passing size")] if dense else []
+    if failing:
+        legend.append(("#c0392b", "dense: no ladder size passes (top)"))
     for i, (name, (p, xs)) in enumerate(sorted(chart["latent"].items())):
         c = colors[i % len(colors)]
         xs = sorted(xs)
@@ -400,18 +410,24 @@ def capacity_svg(chart: dict) -> str:
 
 # ---------------------------------------------------------------- cost per answered question (E4)
 
-def question_cost(config: dict, prompt_tokens: int, output_tokens: int, facts: int | None) -> dict:
-    """Compute and memory read for one answered question, generating one question at a time with a
-    key-value cache: one forward pass over the prompt, then one per further generated token.
+def question_cost(config: dict, prompt_tokens: int, output_tokens: int, facts: int | None,
+                  inserted_tokens: int = 0) -> dict:
+    """Compute and memory read for one question, generating one question at a time with a key-value cache:
+    one forward pass over the prompt, then one per further token the model generates. Tokens a lookup-arm
+    store inserts go through the model but need no pass of their own.
 
-    compute: 2 x parameters per token processed, plus attention (4 x layers x width x context per token),
-    plus scoring every store key at every read layer for a latent model. memory read: every parameter once per
-    forward pass, plus every store key once per read layer per forward pass. Key-value cache reads, the
-    retrieved names and encoding the store's keys (done once per store write) are left out.
+    compute: 2 x parameters per token processed, plus attention (4 x layers x width x context per token).
+    For a latent model, store compute adds scoring every store key at every read layer and attending over the
+    retrieved names (top_k names of READ_NAME_TOKENS tokens plus a null slot, 4 x width each), with their keys
+    and values gathered from projection tables computed once. memory read: every parameter once per forward
+    pass, plus every store key once per read layer per forward pass. Approximations: 2 x parameters also counts
+    the key encoder and the read layers' key/value projections, which only run once per store or table; and
+    key-value cache reads, the gathered name projections and encoding the store's keys are left out. A
+    lookup-arm store's own cost is not modelled.
     """
     m, params = config["model"], config["params"]
     width = 2 if config.get("dtype") == "bfloat16" else 4
-    tokens = prompt_tokens + output_tokens - 1  # every token but the last generated one goes through the model
+    tokens = prompt_tokens + output_tokens + inserted_tokens - 1  # all but the last generated token
     passes = output_tokens
     out = {"model_flops": 2 * params * tokens + 2 * m["n_layer"] * m["d_model"] * tokens * (tokens + 1),
            "weight_bytes": params * width * passes, "store_flops": 0, "store_bytes": 0}
@@ -419,7 +435,9 @@ def question_cost(config: dict, prompt_tokens: int, output_tokens: int, facts: i
         if facts is None:
             out["store_flops"] = out["store_bytes"] = None
         else:
-            out["store_flops"] = 2 * m["n_reads"] * facts * m["key_dim"] * tokens
+            retrieved = m["top_k"] * READ_NAME_TOKENS + 1
+            out["store_flops"] = (2 * m["n_reads"] * facts * m["key_dim"] * tokens
+                                  + 4 * m["n_reads"] * m["d_model"] * retrieved * tokens)
             out["store_bytes"] = m["n_reads"] * facts * m["key_dim"] * width * passes
     return out
 
@@ -432,25 +450,30 @@ def cost_table(runs: dict[str, Run], worlds: dict) -> list[str]:
             picked = final_eval(r, w, sets=("test_1hop_ood", "test_ood", "test_id", "all", "direct"))
             if not picked or "prompt_tokens" not in picked[2][0]:
                 continue
-            recs = picked[2]
-            costs = [question_cost(r.config, x["prompt_tokens"], x["output_tokens"], info.get(w, {}).get("facts"))
-                     for x in recs]
+            one_hop_recs = [x for x in picked[2] if x["set"] == "test_1hop_ood"]
+            recs = one_hop_recs or picked[2]
+            costs = [question_cost(r.config, x["prompt_tokens"], x["output_tokens"], info.get(w, {}).get("facts"),
+                                   x.get("inserted_tokens", 0)) for x in recs]
             mean = {k: (None if any(c[k] is None for c in costs) else sum(c[k] for c in costs) / len(costs))
                     for k in costs[0]}
             fmt = lambda v, unit: "—" if v is None else f"{v / unit:,.1f}"
-            rows.append([r.name, w, f"{r.config['params'] / 1e6:.2f}M",
-                         f"{sum(x['prompt_tokens'] + x['output_tokens'] for x in recs) / len(recs):.1f}",
+            rows.append([r.name, w, "one-hop held-out" if one_hop_recs else "all evaluated", str(len(recs)),
+                         f"{r.config['params'] / 1e6:.2f}M",
+                         f"{sum(x['prompt_tokens'] + x['output_tokens'] + x.get('inserted_tokens', 0) for x in recs) / len(recs):.1f}",
                          fmt(mean["model_flops"], 1e6), fmt(mean["store_flops"], 1e6),
                          fmt(mean["weight_bytes"], 1e6), fmt(mean["store_bytes"], 1e6), f"`evals/{picked[0]}.jsonl`"])
     if not rows:
         return []
-    return ["Calculated from each model's shape and the store size, averaged over the questions of each run's "
-            "final evaluation on that world, as if generating one question at a time with a key-value cache. "
-            "Compute counts 2 operations per parameter per token, attention, and scoring every store key at "
-            "every read layer; memory read counts every parameter and every store key once per forward pass. "
-            "Key-value cache reads and encoding the store's keys are left out. Only evaluations that record "
-            "token counts appear.", "",
-            *table(["run", "world", "params", "tokens per question", "model MFLOP", "store MFLOP",
+    return ["Per question asked, right or wrong, calculated from each model's shape and the store size: the mean "
+            "over the one-hop held-out questions of each run's final evaluation on that world (or all its "
+            "questions when it has none), as if generating one question at a time with a key-value cache. "
+            "Compute counts 2 operations per parameter per token and attention; store compute counts scoring "
+            "every store key at every read layer and attending over the retrieved names. Memory read counts "
+            "every parameter and every store key once per forward pass. Left out: key-value cache reads, "
+            "encoding the store's keys (once per store write) and the lookup arm's external store. Tokens per "
+            "question include the prompt, the generated answer with [EOS], and any store-inserted tokens. "
+            "Only evaluations that record token counts appear.", "",
+            *table(["run", "world", "questions", "n", "params", "tokens per question", "model MFLOP", "store MFLOP",
                     "weights MB read", "store MB read", "source"], rows)]
 
 

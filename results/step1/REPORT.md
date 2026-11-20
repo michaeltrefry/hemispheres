@@ -65,13 +65,13 @@ Smallest model that holds each world's facts. A model passes at 95% one-hop accu
 
 ## Cost per answered question
 
-Calculated from each model's shape and the store size, averaged over the questions of each run's final evaluation on that world, as if generating one question at a time with a key-value cache. Compute counts 2 operations per parameter per token, attention, and scoring every store key at every read layer; memory read counts every parameter and every store key once per forward pass. Key-value cache reads and encoding the store's keys are left out. Only evaluations that record token counts appear.
+Per question asked, right or wrong, calculated from each model's shape and the store size: the mean over the one-hop held-out questions of each run's final evaluation on that world (or all its questions when it has none), as if generating one question at a time with a key-value cache. Compute counts 2 operations per parameter per token and attention; store compute counts scoring every store key at every read layer and attending over the retrieved names. Memory read counts every parameter and every store key once per forward pass. Left out: key-value cache reads, encoding the store's keys (once per store write) and the lookup arm's external store. Tokens per question include the prompt, the generated answer with [EOS], and any store-inserted tokens. Only evaluations that record token counts appear.
 
-| run | world | params | tokens per question | model MFLOP | store MFLOP | weights MB read | store MB read | source |
-|---|---|---|---|---|---|---|---|---|
-| latent-multi | world-b | 29.16M | 21.9 | 1,220.6 | 1,003.3 | 423.3 | 349.0 | `evals/world-b-heldout-final.jsonl` |
-| latent-multi | world-b-30k | 29.16M | 21.7 | 1,212.1 | 2,902.2 | 412.2 | 990.1 | `evals/world-b-30k-heldout-final.jsonl` |
-| latent-multi | world-b-100k | 29.16M | 21.8 | 1,219.7 | 9,633.5 | 421.9 | 3,342.5 | `evals/world-b-100k-heldout-final.jsonl` |
+| run | world | questions | n | params | tokens per question | model MFLOP | store MFLOP | weights MB read | store MB read | source |
+|---|---|---|---|---|---|---|---|---|---|---|
+| latent-multi | world-b | one-hop held-out | 1000 | 29.16M | 18.3 | 1,011.3 | 835.3 | 437.4 | 360.7 | `evals/world-b-heldout-final.jsonl` |
+| latent-multi | world-b-30k | one-hop held-out | 1000 | 29.16M | 18.2 | 1,005.9 | 2,413.4 | 430.4 | 1,033.7 | `evals/world-b-30k-heldout-final.jsonl` |
+| latent-multi | world-b-100k | one-hop held-out | 1000 | 29.16M | 18.4 | 1,014.8 | 8,023.5 | 443.6 | 3,514.4 | `evals/world-b-100k-heldout-final.jsonl` |
 
 ## Hop supervision
 

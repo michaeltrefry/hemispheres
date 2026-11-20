@@ -24,12 +24,15 @@
 <text x="256.5" y="368" text-anchor="middle">182,381</text>
 <line x1="418.7" y1="350" x2="418.7" y2="354" stroke="#444"/>
 <text x="418.7" y="368" text-anchor="middle">601,640</text>
+<circle cx="111.3" cy="36" r="5" fill="white" stroke="#c0392b" stroke-width="2"/>
+<circle cx="256.5" cy="36" r="5" fill="white" stroke="#c0392b" stroke-width="2"/>
+<circle cx="418.7" cy="36" r="5" fill="white" stroke="#c0392b" stroke-width="2"/>
 <line x1="111.3" y1="87.1" x2="418.7" y2="87.1" stroke="#2471a3" stroke-width="2" stroke-dasharray="6 4"/>
 <circle cx="111.3" cy="87.1" r="5" fill="#2471a3" stroke="#2471a3" stroke-width="2"/>
 <circle cx="256.5" cy="87.1" r="5" fill="#2471a3" stroke="#2471a3" stroke-width="2"/>
 <circle cx="418.7" cy="87.1" r="5" fill="#2471a3" stroke="#2471a3" stroke-width="2"/>
 <rect x="460" y="31" width="12" height="12" fill="#c0392b"/>
-<text x="478" y="41">dense: smallest passing size</text>
+<text x="478" y="41">dense: no ladder size passes (top)</text>
 <rect x="460" y="49" width="12" height="12" fill="#2471a3"/>
 <text x="478" y="59">latent-multi (hollow = fails)</text>
 </svg>
