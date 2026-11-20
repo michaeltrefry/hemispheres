@@ -23,8 +23,10 @@ PYTHON="${PYTHON:-.venv/bin/python}"
 "$PYTHON" -m hemispheres.synth.build --name w7-s2 --index 7 --seed 2 --persons 10000 --companies 800 --universities 60 --cities 200 --countries 25 --zipf 0.8 --max-hops 3 --heldout-frac 0.2 --id-test-frac 0.1 --out-dir data/pool
 "$PYTHON" -m hemispheres.synth.build --name world-a --index 0 --seed 0 --persons 10000 --companies 800 --universities 60 --cities 200 --countries 25 --zipf 0.8 --max-hops 3 --heldout-frac 0.2 --id-test-frac 0.1 --edits 1,100,1000
 "$PYTHON" -m hemispheres.synth.build --name world-b --index 1 --seed 0 --persons 10000 --companies 800 --universities 60 --cities 200 --countries 25 --zipf 0.8 --max-hops 3 --heldout-frac 0.2 --id-test-frac 0.1 --edits 1,100,1000
+"$PYTHON" -m hemispheres.synth.build --name world-b-100k --index 1 --seed 0 --persons 100000 --companies 800 --universities 60 --cities 200 --countries 25 --zipf 0.8 --max-hops 3 --heldout-frac 0.2 --id-test-frac 0.1
+"$PYTHON" -m hemispheres.synth.build --name world-b-30k --index 1 --seed 0 --persons 30000 --companies 800 --universities 60 --cities 200 --countries 25 --zipf 0.8 --max-hops 3 --heldout-frac 0.2 --id-test-frac 0.1
 "$PYTHON" -m hemispheres.synth.build --name world-c --index 2 --seed 0 --persons 10000 --companies 800 --universities 60 --cities 200 --countries 25 --zipf 0.8 --max-hops 3 --heldout-frac 0.2 --id-test-frac 0.1 --edits 1,100,1000
-"$PYTHON" -m hemispheres.records verify-data data/pool/w3-s0 data/pool/w3-s1 data/pool/w3-s2 data/pool/w4-s0 data/pool/w4-s1 data/pool/w4-s2 data/pool/w5-s0 data/pool/w5-s1 data/pool/w5-s2 data/pool/w6-s0 data/pool/w6-s1 data/pool/w6-s2 data/pool/w7-s0 data/pool/w7-s1 data/pool/w7-s2 data/world-a data/world-b data/world-c
+"$PYTHON" -m hemispheres.records verify-data data/pool/w3-s0 data/pool/w3-s1 data/pool/w3-s2 data/pool/w4-s0 data/pool/w4-s1 data/pool/w4-s2 data/pool/w5-s0 data/pool/w5-s1 data/pool/w5-s2 data/pool/w6-s0 data/pool/w6-s1 data/pool/w6-s2 data/pool/w7-s0 data/pool/w7-s1 data/pool/w7-s2 data/world-a data/world-b data/world-b-100k data/world-b-30k data/world-c
 
 # 2. Training
 # To evaluate our weights instead of retraining, skip this step and fetch them (sha256-checked):
@@ -86,7 +88,10 @@ PYTHON="${PYTHON:-.venv/bin/python}"
 "$PYTHON" -m hemispheres.evaluate --run runs/latent-multi --checkpoint final --data data/world-a --edits 1000 --n 500 --seed 0
 "$PYTHON" -m hemispheres.evaluate --run runs/latent-multi --checkpoint final --data data/world-a --sets test_id,test_1hop_ood --n 300 --seed 0 --store none
 "$PYTHON" -m hemispheres.evaluate --run runs/latent-multi --checkpoint final --data data/world-a --sets test_id,test_1hop_ood --n 300 --seed 0 --store data/world-c
+"$PYTHON" -m hemispheres.evaluate --run runs/latent-multi --checkpoint final --data data/world-b-100k --sets test_1hop_ood,test_ood --n 1000 --seed 0 --name world-b-100k-heldout-final
+"$PYTHON" -m hemispheres.evaluate --run runs/latent-multi --checkpoint final --data data/world-b-30k --sets test_1hop_ood,test_ood --n 1000 --seed 0 --name world-b-30k-heldout-final
 "$PYTHON" -m hemispheres.evaluate --run runs/latent-multi --checkpoint final --data data/world-b --sets all --n 300 --seed 0
+"$PYTHON" -m hemispheres.evaluate --run runs/latent-multi --checkpoint final --data data/world-b --sets test_1hop_ood,test_ood --n 1000 --seed 0 --name world-b-heldout-final
 "$PYTHON" -m hemispheres.evaluate --run runs/latent-multi --checkpoint final --data data/world-c --sets all --n 300 --seed 0
 "$PYTHON" -m hemispheres.evaluate --run runs/latent-multi-nohop --checkpoint latest --data data/world-a --sets test_id,test_ood,test_1hop_ood --n 200 --seed 0
 "$PYTHON" -m hemispheres.evaluate --run runs/lookup-a --checkpoint final --data data/world-a --sets test_id,test_ood,test_1hop_ood --n 200 --seed 0

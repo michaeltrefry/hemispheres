@@ -1,0 +1,108 @@
+{
+  "args": {
+    "run": "runs/latent-multi",
+    "checkpoint": "final",
+    "data": "data/world-b-100k",
+    "edits": 0,
+    "sets": "test_1hop_ood,test_ood",
+    "n": 1000,
+    "seed": 0,
+    "name": "world-b-100k-heldout-final",
+    "store": null
+  },
+  "provenance": {
+    "time": "2026-11-20T16:08:20+00:00",
+    "code": {
+      "commit": "58f3bfa3a715bc912dc80e37870d3c631545c738",
+      "dirty": false,
+      "changed": []
+    },
+    "env": {
+      "python": "3.12.11",
+      "platform": "macOS-27.0.1-arm64-arm-64bit",
+      "machine": "arm64",
+      "mlx": "0.32.2",
+      "device": "Device(gpu, 0)"
+    },
+    "data": {
+      "data/world-b-100k": "89c54d6b999647e3f6bae5f41a430eb9a5ccc1c37adf02ed30ee47a9a3267830"
+    },
+    "checkpoint_sha256": "1b2490e51d93fc40eef41d5e997f714651b1417d52d7d4d2b811833471b51a61"
+  },
+  "summary": {
+    "test_1hop_ood": {
+      "1hop": {
+        "acc": 1.0,
+        "n": 1000,
+        "retrieval": {
+          "h0": {
+            "top1": 1.0,
+            "topk": 1.0
+          }
+        }
+      },
+      "all": {
+        "acc": 1.0,
+        "n": 1000,
+        "retrieval": {
+          "h0": {
+            "top1": 1.0,
+            "topk": 1.0
+          }
+        }
+      }
+    },
+    "test_ood": {
+      "2hop": {
+        "acc": 0.997,
+        "n": 1000,
+        "retrieval": {
+          "h0": {
+            "top1": 1.0,
+            "topk": 1.0
+          },
+          "h1": {
+            "top1": 1.0,
+            "topk": 1.0
+          }
+        }
+      },
+      "3hop": {
+        "acc": 0.999,
+        "n": 1000,
+        "retrieval": {
+          "h0": {
+            "top1": 1.0,
+            "topk": 1.0
+          },
+          "h1": {
+            "top1": 1.0,
+            "topk": 1.0
+          },
+          "h2": {
+            "top1": 1.0,
+            "topk": 1.0
+          }
+        }
+      },
+      "all": {
+        "acc": 0.998,
+        "n": 2000,
+        "retrieval": {
+          "h0": {
+            "top1": 1.0,
+            "topk": 1.0
+          },
+          "h1": {
+            "top1": 1.0,
+            "topk": 1.0
+          },
+          "h2": {
+            "top1": 1.0,
+            "topk": 1.0
+          }
+        }
+      }
+    }
+  }
+}

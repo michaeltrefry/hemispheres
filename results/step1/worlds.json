@@ -430,6 +430,56 @@
       "edits/k1000.json": "6b95f523d4d8296592d6567c0ef1ecb4362b81bcb9f13d62bd5626c2925faaee"
     }
   },
+  "data/world-b-100k": {
+    "build": {
+      "name": "world-b-100k",
+      "index": 1,
+      "seed": 0,
+      "persons": 100000,
+      "companies": 800,
+      "universities": 60,
+      "cities": 200,
+      "countries": 25,
+      "zipf": 0.8,
+      "max_hops": 3,
+      "heldout_frac": 0.2,
+      "id_test_frac": 0.1,
+      "edits": "",
+      "edit_relations": "",
+      "out_dir": "data"
+    },
+    "fingerprint": "89c54d6b999647e3f6bae5f41a430eb9a5ccc1c37adf02ed30ee47a9a3267830",
+    "files": {
+      "world.json": "298041b2605335b7119a1be187212dfbef77f748cede0b98bcdd9d4fe4b82209",
+      "splits.json": "0fc717a6d683112a18a3c8d46cc0efc50a41d07a917685d944e470ea50947b99",
+      "vocab.json": "19eeab76aa744bb2c3abf95915b96bc726cb47b65af9d9c478ff8c8773150929"
+    }
+  },
+  "data/world-b-30k": {
+    "build": {
+      "name": "world-b-30k",
+      "index": 1,
+      "seed": 0,
+      "persons": 30000,
+      "companies": 800,
+      "universities": 60,
+      "cities": 200,
+      "countries": 25,
+      "zipf": 0.8,
+      "max_hops": 3,
+      "heldout_frac": 0.2,
+      "id_test_frac": 0.1,
+      "edits": "",
+      "edit_relations": "",
+      "out_dir": "data"
+    },
+    "fingerprint": "df7f3d3cf85ed366712cccba48adc6ee44740a49e765f9cd3ba5ba20730d8f4a",
+    "files": {
+      "world.json": "5ad67fbef05d3b6023c9b0172f446d44e35a71442592f0ab625bc997f553cba7",
+      "splits.json": "1a5b54fc3a57d0dedb84d5cca7ca206f9215cc8eaed5ecd52484f62ab24df05e",
+      "vocab.json": "19eeab76aa744bb2c3abf95915b96bc726cb47b65af9d9c478ff8c8773150929"
+    }
+  },
   "data/world-c": {
     "build": {
       "name": "world-c",

@@ -86,7 +86,7 @@ Every flag, seed and model shape is in `runs/<run>/config.json`; checkpoint hash
 
 ## Integrity
 
-- 79 evaluation files: every summary recounted from its per-question records matches.
+- 82 evaluation files: every summary recounted from its per-question records matches.
 - Evaluations logged during training, rerun from the saved checkpoint on the same questions (context-a, context-multi-bios, context-multi-bios-20k, dense-a, dense-a-k100, dense-a-to-b, latent-a, latent-a-all, latent-multi, latent-multi-nohop, lookup-a): 86 of 90 cells identical. These differ:
   - context-multi-bios test_1hop_ood 1hop: logged 92 at step 10000, rerun 91.5 (`evals/world-a-final.json`, n=200)
   - context-multi-bios test_1hop_ood all: logged 92 at step 10000, rerun 91.5 (`evals/world-a-final.json`, n=200)
