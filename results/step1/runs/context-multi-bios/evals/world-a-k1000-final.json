@@ -11,17 +11,18 @@
     "store": null
   },
   "provenance": {
-    "time": "2026-09-25T18:17:44+00:00",
+    "time": "2026-11-20T16:46:24+00:00",
     "code": {
-      "commit": "4fc4e676ef82fd2bb4ea3bddc5f4471bc12f3e93",
-      "dirty": true
+      "commit": "654a85beb02f1d156184aefbe6749deac073c169",
+      "dirty": false,
+      "changed": []
     },
     "env": {
       "python": "3.12.11",
-      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "platform": "macOS-27.0.1-arm64-arm-64bit",
       "machine": "arm64",
       "mlx": "0.32.2",
-      "device": "Device(cpu, 0)"
+      "device": "Device(gpu, 0)"
     },
     "data": {
       "data/world-a": "befab6f0a218e36f48e7ae53539eef4e3fe9fab49eaae9a2d603ee01b86df106"
@@ -45,7 +46,7 @@
         "n": 91
       },
       "2hop": {
-        "acc": 0.7542857142857143,
+        "acc": 0.7485714285714286,
         "n": 175
       },
       "3hop": {
@@ -53,7 +54,7 @@
         "n": 234
       },
       "all": {
-        "acc": 0.754,
+        "acc": 0.752,
         "n": 500
       }
     },

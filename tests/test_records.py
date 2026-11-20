@@ -256,3 +256,16 @@ def test_inserted_tokens_counts_store_replies():
     from hemispheres.evaluate import inserted_tokens
     out = ["[LOOKUP]", "Ka", "@born_in", "[RESULT]", "Bo", "##ra", "[END]", "Bo", "##ra", "[EOS]"]
     assert inserted_tokens(out) == 3 and inserted_tokens(["Bo", "[EOS]"]) == 0
+
+
+def test_cost_table_uses_edit_evaluations_and_a_stopped_runs_latest_checkpoint(tmp_path):
+    edits = {"data": "data/world-a", "checkpoint": "final", "seed": 0, "edits": 100}
+    recs = [{"set": "direct", "hops": 1, "correct": True, "prompt_tokens": 10, "output_tokens": 3}]
+    _fake_run(tmp_path, "dense-k", {"data": "data/world-a"}, [(100, 1.0)], {"world-a-k100-final": (edits, recs)})
+    latest = {"data": "data/world-a", "checkpoint": "latest", "seed": 0}
+    _fake_run(tmp_path, "stopped", {"data": "data/world-a", "steps": 1000}, [(30, 0.1), (60, 0.1)],
+              {"world-a-latest": (latest, _one_hop(1, n=4))})
+    runs = report.load_runs(tmp_path)
+    cost = "\n".join(report.cost_table(runs, {"data/world-a": {"build": {"persons": 10}, "facts": 50}}))
+    assert "| dense-k | world-a | all, 100 edits | 1 |" in cost
+    assert "| stopped | world-a | one-hop held-out | 4 |" in cost

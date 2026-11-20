@@ -7,7 +7,27 @@
     "sets": null,
     "n": 500,
     "seed": 0,
-    "name": null
+    "name": null,
+    "store": null
+  },
+  "provenance": {
+    "time": "2026-11-20T16:47:49+00:00",
+    "code": {
+      "commit": "654a85beb02f1d156184aefbe6749deac073c169",
+      "dirty": false,
+      "changed": []
+    },
+    "env": {
+      "python": "3.12.11",
+      "platform": "macOS-27.0.1-arm64-arm-64bit",
+      "machine": "arm64",
+      "mlx": "0.32.2",
+      "device": "Device(gpu, 0)"
+    },
+    "data": {
+      "data/world-a": "befab6f0a218e36f48e7ae53539eef4e3fe9fab49eaae9a2d603ee01b86df106"
+    },
+    "checkpoint_sha256": "f4f3b1fbe96a1e08b0cc384a7df6b2e4da7555eb3c4f029206b97845ca42eff0"
   },
   "summary": {
     "direct": {

@@ -232,18 +232,22 @@ def world_info(worlds: dict) -> dict[str, dict]:
     return {Path(k).name: {"people": w["build"]["persons"], "facts": w.get("facts")} for k, w in worlds.items()}
 
 
-def final_eval(run: Run, world: str, sets: tuple[str, ...] = ("test_1hop_ood",)) -> tuple[str, dict, list] | None:
-    """The run's measurement of its final weights on `world`: the evaluation of the final checkpoint with the
-    most records in `sets`, preferring `hemispheres.evaluate` over the training loop's last-step evaluation."""
+def final_eval(run: Run, world: str, sets: tuple[str, ...] = ("test_1hop_ood",),
+               edits_ok: bool = False) -> tuple[str, dict, list] | None:
+    """The run's measurement of its final weights on `world`: the evaluation of the final checkpoint (the
+    latest one for a run stopped early) with the most records in `sets`, preferring `hemispheres.evaluate`
+    over the training loop's last-step evaluation. Evaluations with edits applied count only if `edits_ok`."""
+    stopped = bool(run.metrics) and run.last_step < run.config["steps"]
+    last = run.last_step if stopped else run.config["steps"]
     best = None
     for name, (ev, records) in run.evals.items():
         a = ev["args"]
-        if (records is None or Path(a["data"]).name != world or a.get("edits", 0)
+        if (records is None or Path(a["data"]).name != world or (a.get("edits", 0) and not edits_ok)
                 or a.get("store") not in (None, "")):
             continue
-        if "step" in a and a["step"] != run.config["steps"]:
+        if "step" in a and a["step"] != last:
             continue
-        if "step" not in a and a.get("checkpoint") != "final":
+        if "step" not in a and a.get("checkpoint") != ("latest" if stopped else "final"):
             continue
         n = sum(r["set"] in sets for r in records)
         key = (n, "step" not in a)
@@ -447,7 +451,8 @@ def cost_table(runs: dict[str, Run], worlds: dict) -> list[str]:
     for r in runs.values():
         names = {Path(ev["args"]["data"]).name for ev, _ in r.evals.values()}
         for w in sorted(names, key=lambda w: (info.get(w, {}).get("facts") or 0, w)):
-            picked = final_eval(r, w, sets=("test_1hop_ood", "test_ood", "test_id", "all", "direct"))
+            picked = (final_eval(r, w, sets=("test_1hop_ood", "test_ood", "test_id", "all"))
+                      or final_eval(r, w, sets=("direct", "ripple", "locality"), edits_ok=True))
             if not picked or "prompt_tokens" not in picked[2][0]:
                 continue
             one_hop_recs = [x for x in picked[2] if x["set"] == "test_1hop_ood"]
@@ -457,7 +462,9 @@ def cost_table(runs: dict[str, Run], worlds: dict) -> list[str]:
             mean = {k: (None if any(c[k] is None for c in costs) else sum(c[k] for c in costs) / len(costs))
                     for k in costs[0]}
             fmt = lambda v, unit: "—" if v is None else f"{v / unit:,.1f}"
-            rows.append([r.name, w, "one-hop held-out" if one_hop_recs else "all evaluated", str(len(recs)),
+            label = "one-hop held-out" if one_hop_recs else (
+                f"all, {picked[1]['args']['edits']} edits" if picked[1]["args"].get("edits") else "all evaluated")
+            rows.append([r.name, w, label, str(len(recs)),
                          f"{r.config['params'] / 1e6:.2f}M",
                          f"{sum(x['prompt_tokens'] + x['output_tokens'] + x.get('inserted_tokens', 0) for x in recs) / len(recs):.1f}",
                          fmt(mean["model_flops"], 1e6), fmt(mean["store_flops"], 1e6),
