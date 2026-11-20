@@ -356,9 +356,9 @@ def capacity_svg(chart: dict) -> str:
     pts = [(f, p) for f, p, ok in chart["dense"] if p] + [(f, p) for p, xs in chart["latent"].values() for f, _ in xs]
     facts = [f for f, _ in pts] or [1]
     params = [p for _, p in pts] + [p for _, p, _ in chart["dense"] if p] or [1]
-    W, H, L, R, T, B = 640, 400, 80, 200, 30, 50
+    W, H, L, R, T, B = 720, 400, 80, 270, 30, 50
     fx = (math.log10(min(facts)) - 0.1, math.log10(max(facts)) + 0.1)
-    fy = (math.log10(min(params)) - 0.3, math.log10(max(params)) + 0.3)
+    fy = (min(5.0, math.log10(min(params)) - 0.3), max(8.0, math.log10(max(params)) + 0.3))  # 0.1M to 100M
     X = lambda f: L + (math.log10(f) - fx[0]) / (fx[1] - fx[0]) * (W - L - R)
     Y = lambda p: H - B - (math.log10(p) - fy[0]) / (fy[1] - fy[0]) * (H - T - B)
     o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" font-family="sans-serif" font-size="12">',
@@ -368,9 +368,10 @@ def capacity_svg(chart: dict) -> str:
          f'<text x="{(L + W - R) / 2}" y="{H - 12}" text-anchor="middle">facts in the world (log scale)</text>',
          f'<text x="18" y="{(T + H - B) / 2}" text-anchor="middle" transform="rotate(-90 18 {(T + H - B) / 2})">'
          'parameters (log scale)</text>']
-    for e in range(math.ceil(fy[0]), math.floor(fy[1]) + 1):
-        o += [f'<line x1="{L - 4}" y1="{Y(10 ** e):.1f}" x2="{L}" y2="{Y(10 ** e):.1f}" stroke="#444"/>',
-              f'<text x="{L - 8}" y="{Y(10 ** e) + 4:.1f}" text-anchor="end">{10 ** e / 1e6:g}M</text>']
+    ticks = [m * 10 ** e for e in range(math.floor(fy[0]), math.ceil(fy[1]) + 1) for m in (1, 3)]
+    for t in [t for t in ticks if fy[0] <= math.log10(t) <= fy[1]]:
+        o += [f'<line x1="{L - 4}" y1="{Y(t):.1f}" x2="{W - R}" y2="{Y(t):.1f}" stroke="#ddd"/>',
+              f'<text x="{L - 8}" y="{Y(t) + 4:.1f}" text-anchor="end">{t / 1e6:g}M</text>']
     for w, people, f in chart["worlds"]:
         if f:
             o += [f'<line x1="{X(f):.1f}" y1="{H - B}" x2="{X(f):.1f}" y2="{H - B + 4}" stroke="#444"/>',
@@ -389,7 +390,7 @@ def capacity_svg(chart: dict) -> str:
                  f'stroke="{c}" stroke-width="2" stroke-dasharray="6 4"/>')
         o += [f'<circle cx="{X(f):.1f}" cy="{Y(p):.1f}" r="5" fill="{c if ok else "white"}" stroke="{c}" '
               'stroke-width="2"/>' for f, ok in xs]
-        legend.append((c, f"latent {name}: core size (hollow = fails)"))
+        legend.append((c, f"{name} (hollow = fails)"))
     for i, (c, text) in enumerate(legend):
         y = T + 10 + 18 * i
         o += [f'<rect x="{W - R + 10}" y="{y - 9}" width="12" height="12" fill="{c}"/>',
@@ -426,7 +427,8 @@ def question_cost(config: dict, prompt_tokens: int, output_tokens: int, facts: i
 def cost_table(runs: dict[str, Run], worlds: dict) -> list[str]:
     info, rows = world_info(worlds), []
     for r in runs.values():
-        for w in sorted({Path(ev["args"]["data"]).name for ev, _ in r.evals.values()}):
+        names = {Path(ev["args"]["data"]).name for ev, _ in r.evals.values()}
+        for w in sorted(names, key=lambda w: (info.get(w, {}).get("facts") or 0, w)):
             picked = final_eval(r, w, sets=("test_1hop_ood", "test_ood", "test_id", "all", "direct"))
             if not picked or "prompt_tokens" not in picked[2][0]:
                 continue

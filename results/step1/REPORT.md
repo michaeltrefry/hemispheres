@@ -57,9 +57,21 @@ Smallest model that holds each world's facts. A model passes at 95% one-hop accu
 
 | world | people | facts | smallest passing dense size | largest failing size below it | latent cores: one-hop % |
 |---|---|---|---|---|---|
-| world-b | 10,000 | — | not run | — | latent-multi 100 |
-| world-b-30k | 30,000 | — | not run | — | latent-multi 100 |
-| world-b-100k | 100,000 | — | not run | — | latent-multi 100 |
+| world-b | 10,000 | 62,615 | not run | — | latent-multi 100 |
+| world-b-30k | 30,000 | 182,381 | not run | — | latent-multi 100 |
+| world-b-100k | 100,000 | 601,640 | not run | — | latent-multi 100 |
+
+![Parameters needed versus facts known](capacity.svg)
+
+## Cost per answered question
+
+Calculated from each model's shape and the store size, averaged over the questions of each run's final evaluation on that world, as if generating one question at a time with a key-value cache. Compute counts 2 operations per parameter per token, attention, and scoring every store key at every read layer; memory read counts every parameter and every store key once per forward pass. Key-value cache reads and encoding the store's keys are left out. Only evaluations that record token counts appear.
+
+| run | world | params | tokens per question | model MFLOP | store MFLOP | weights MB read | store MB read | source |
+|---|---|---|---|---|---|---|---|---|
+| latent-multi | world-b | 29.16M | 21.9 | 1,220.6 | 1,003.3 | 423.3 | 349.0 | `evals/world-b-heldout-final.jsonl` |
+| latent-multi | world-b-30k | 29.16M | 21.7 | 1,212.1 | 2,902.2 | 412.2 | 990.1 | `evals/world-b-30k-heldout-final.jsonl` |
+| latent-multi | world-b-100k | 29.16M | 21.8 | 1,219.7 | 9,633.5 | 421.9 | 3,342.5 | `evals/world-b-100k-heldout-final.jsonl` |
 
 ## Hop supervision
 
