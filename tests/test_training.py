@@ -110,3 +110,38 @@ def test_untrained_model_runs_end_to_end(world_dir):
     model = GPT(config_for("tiny", vocab_size=576))
     summary, records = evaluate(model, tok, data, "lookup", ["test_id"], n=4)
     assert records and "test_id" in summary
+
+
+def test_ladder_sizes_double_and_build_for_both_arms():
+    from hemispheres.latent import LatentConfig, LatentGPT
+    from hemispheres.model import LADDER, SIZES
+    nominal = {"250k": 0.25e6, "500k": 0.5e6, "1m": 1e6, "2m": 2e6, "4m": 4e6, "8m": 8e6, "16m": 16e6}
+    counts = [GPT(config_for(s, vocab_size=576)).num_params() for s in LADDER]
+    for s, n in zip(LADDER, counts):
+        assert 0.8 <= n / nominal[s] <= 1.25, (s, n)
+    for a, b in zip(counts, counts[1:]):
+        assert 1.6 <= b / a <= 2.5
+    latent = [LatentGPT(LatentConfig(**SIZES[s], vocab_size=576)).num_params() for s in LADDER]
+    for d, n in zip(counts, latent):
+        assert 1.05 <= n / d <= 1.45  # read layers and key encoder on top of the dense core
+    for a, b in zip(latent, latent[1:]):
+        assert 1.6 <= b / a <= 2.5
+    depths = [SIZES[s]["n_layer"] for s in LADDER]
+    assert depths == sorted(depths)
+
+
+def test_bio_passes_sets_and_records_the_step_count(world_dir, tmp_path, monkeypatch):
+    import math
+    import sys
+
+    from hemispheres import train
+    out = tmp_path / "run"
+    monkeypatch.setattr(sys, "argv", ["train", "--arm", "dense", "--data", str(world_dir), "--out", str(out),
+                                      "--size", "250k", "--bio-passes", "0.05", "--batch-size", "4",
+                                      "--seq-len", "128", "--eval-every", "0", "--save-every", "0", "--log-every", "1"])
+    train.main()
+    config = json.loads((out / "config.json").read_text())
+    est = config["bio_passes_estimate"]
+    assert config["bio_passes"] == 0.05 and est["entities"] == len(WorldData(world_dir).world.entities)
+    assert config["steps"] == est["steps"] == math.ceil(0.05 * est["entities"] / est["bios_per_step"])
+    assert max(json.loads(line)["step"] for line in (out / "metrics.jsonl").read_text().splitlines()) == config["steps"]
