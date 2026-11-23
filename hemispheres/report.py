@@ -224,6 +224,7 @@ def hop_supervision_table(runs: dict[str, Run]) -> list[str]:
 CAPACITY_WORLDS = ("world-b", "world-b-30k", "world-b-100k")  # world B at 10,000, 30,000 and 100,000 people
 PASS_MARK = 0.95  # a model passes a world at 95% one-hop held-out accuracy
 MIN_QUESTIONS = 1000  # ... measured on at least this many questions
+QUANT_NORM_BYTES = 8  # quantize.NORM_BYTES: a compressed key's two 32-bit norms (quantize.py imports MLX)
 READ_NAME_TOKENS = 8  # store.MAX_NAME_LEN: tokens per retrieved name (store.py imports MLX, so it is copied here)
 
 
@@ -243,7 +244,7 @@ def final_eval(run: Run, world: str, sets: tuple[str, ...] = ("test_1hop_ood",),
     for name, (ev, records) in run.evals.items():
         a = ev["args"]
         if (records is None or Path(a["data"]).name != world or (a.get("edits", 0) and not edits_ok)
-                or a.get("store") not in (None, "")):
+                or a.get("store") not in (None, "") or a.get("key_bits") is not None):
             continue
         if "step" in a and a["step"] != last:
             continue
@@ -415,7 +416,7 @@ def capacity_svg(chart: dict) -> str:
 # ---------------------------------------------------------------- cost per answered question (E4)
 
 def question_cost(config: dict, prompt_tokens: int, output_tokens: int, facts: int | None,
-                  inserted_tokens: int = 0) -> dict:
+                  inserted_tokens: int = 0, key_bits: int | None = None) -> dict:
     """Compute and memory read for one question, generating one question at a time with a key-value cache:
     one forward pass over the prompt, then one per further token the model generates. Tokens a lookup-arm
     store inserts go through the model but need no pass of their own.
@@ -442,8 +443,32 @@ def question_cost(config: dict, prompt_tokens: int, output_tokens: int, facts: i
             retrieved = m["top_k"] * READ_NAME_TOKENS + 1
             out["store_flops"] = (2 * m["n_reads"] * facts * m["key_dim"] * tokens
                                   + 4 * m["n_reads"] * m["d_model"] * retrieved * tokens)
-            out["store_bytes"] = m["n_reads"] * facts * m["key_dim"] * width * passes
+            key_bytes = (m["key_dim"] * key_bits / 8 + QUANT_NORM_BYTES if key_bits and key_bits < 32
+                         else m["key_dim"] * width)  # TurboQuant-compressed keys (evaluate --key-bits) or plain
+            out["store_bytes"] = m["n_reads"] * facts * key_bytes * passes
     return out
+
+
+def _cost_row(r: Run, w: str, name: str, ev: dict, recs: list[dict], facts: int | None) -> list[list[str]]:
+    """The cost-table row for one evaluation, or none when it records no token counts."""
+    if "prompt_tokens" not in recs[0]:
+        return []
+    bits = ev["args"].get("key_bits")
+    one_hop_recs = [x for x in recs if x["set"] == "test_1hop_ood"]
+    recs = one_hop_recs or recs
+    costs = [question_cost(r.config, x["prompt_tokens"], x["output_tokens"], facts, x.get("inserted_tokens", 0), bits)
+             for x in recs]
+    mean = {k: (None if any(c[k] is None for c in costs) else sum(c[k] for c in costs) / len(costs))
+            for k in costs[0]}
+    fmt = lambda v, unit: "—" if v is None else f"{v / unit:,.1f}"
+    label = "one-hop held-out" if one_hop_recs else (
+        f"all, {ev['args']['edits']} edits" if ev["args"].get("edits") else "all evaluated")
+    if bits is not None:
+        label += ", stored keys" + (f" at {bits} bits" if bits < 32 else "")
+    return [[r.name, w, label, str(len(recs)), f"{r.config['params'] / 1e6:.2f}M",
+             f"{sum(x['prompt_tokens'] + x['output_tokens'] + x.get('inserted_tokens', 0) for x in recs) / len(recs):.1f}",
+             fmt(mean["model_flops"], 1e6), fmt(mean["store_flops"], 1e6),
+             fmt(mean["weight_bytes"], 1e6), fmt(mean["store_bytes"], 1e6), f"`evals/{name}.jsonl`"]]
 
 
 def cost_table(runs: dict[str, Run], worlds: dict) -> list[str]:
@@ -453,22 +478,13 @@ def cost_table(runs: dict[str, Run], worlds: dict) -> list[str]:
         for w in sorted(names, key=lambda w: (info.get(w, {}).get("facts") or 0, w)):
             picked = (final_eval(r, w, sets=("test_1hop_ood", "test_ood", "test_id", "all"))
                       or final_eval(r, w, sets=("direct", "ripple", "locality"), edits_ok=True))
-            if not picked or "prompt_tokens" not in picked[2][0]:
-                continue
-            one_hop_recs = [x for x in picked[2] if x["set"] == "test_1hop_ood"]
-            recs = one_hop_recs or picked[2]
-            costs = [question_cost(r.config, x["prompt_tokens"], x["output_tokens"], info.get(w, {}).get("facts"),
-                                   x.get("inserted_tokens", 0)) for x in recs]
-            mean = {k: (None if any(c[k] is None for c in costs) else sum(c[k] for c in costs) / len(costs))
-                    for k in costs[0]}
-            fmt = lambda v, unit: "—" if v is None else f"{v / unit:,.1f}"
-            label = "one-hop held-out" if one_hop_recs else (
-                f"all, {picked[1]['args']['edits']} edits" if picked[1]["args"].get("edits") else "all evaluated")
-            rows.append([r.name, w, label, str(len(recs)),
-                         f"{r.config['params'] / 1e6:.2f}M",
-                         f"{sum(x['prompt_tokens'] + x['output_tokens'] + x.get('inserted_tokens', 0) for x in recs) / len(recs):.1f}",
-                         fmt(mean["model_flops"], 1e6), fmt(mean["store_flops"], 1e6),
-                         fmt(mean["weight_bytes"], 1e6), fmt(mean["store_bytes"], 1e6), f"`evals/{picked[0]}.jsonl`"])
+            stored_keys = sorted(((n, ev, rs) for n, (ev, rs) in r.evals.items()
+                                  if rs and Path(ev["args"]["data"]).name == w
+                                  and ev["args"].get("key_bits") is not None and "step" not in ev["args"]
+                                  and not ev["args"].get("edits") and ev["args"].get("store") in (None, "")),
+                                 key=lambda e: -e[1]["args"]["key_bits"])
+            for name, ev, recs in ([picked] if picked else []) + stored_keys:
+                rows += _cost_row(r, w, name, ev, recs, info.get(w, {}).get("facts"))
     if not rows:
         return []
     return ["Per question asked, right or wrong, calculated from each model's shape and the store size: the mean "
@@ -479,6 +495,8 @@ def cost_table(runs: dict[str, Run], worlds: dict) -> list[str]:
             "every parameter and every store key once per forward pass. Left out: key-value cache reads, "
             "encoding the store's keys (once per store write) and the lookup arm's external store. Tokens per "
             "question include the prompt, the generated answer with [EOS], and any store-inserted tokens. "
+            "Rows with stored keys at N bits score queries against keys compressed with TurboQuant: N bits per "
+            "number plus two 32-bit norms per key (evaluate --key-bits). "
             "Only evaluations that record token counts appear.", "",
             *table(["run", "world", "questions", "n", "params", "tokens per question", "model MFLOP", "store MFLOP",
                     "weights MB read", "store MB read", "source"], rows)]
@@ -608,7 +626,7 @@ def eval_command(run: Run, args: dict) -> str | None:
     if "step" in args:  # written by the training loop
         return None
     parts = [flag("run", f"runs/{run.name}")]
-    for k in ("checkpoint", "data", "edits", "sets", "n", "seed", "store", "name"):
+    for k in ("checkpoint", "data", "edits", "sets", "n", "seed", "store", "key_bits", "name"):
         v = args.get(k)
         if v not in (None, 0, "") or k == "seed":
             parts.append(flag(k, v))
