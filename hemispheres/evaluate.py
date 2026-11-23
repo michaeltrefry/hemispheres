@@ -223,7 +223,7 @@ def evaluate(model, tok: Tokenizer, data: WorldData, arm: str, sets: list[str], 
             keys = model.encode_keys(store.arrays)
             if key_bits < 32:
                 from .quantize import TurboQuant
-                keys = TurboQuant(keys.shape[-1], key_bits, seed).compress(keys)
+                keys = TurboQuant(keys.shape[-1], key_bits, seed=0).compress(keys)  # one fixed rotation
             mx.eval(keys)  # computed once here, not lazily on every forward pass
             store.arrays = {**store.arrays, "keys": keys}  # also used by the retrieval diagnostics
         arrays = store.arrays

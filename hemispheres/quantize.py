@@ -41,14 +41,18 @@ def _cdf_inv(p: float) -> float:
     return (lo + hi) / 2
 
 
-def lloyd_max_gaussian(bits: int, iterations: int = 500) -> list[float]:
-    """The 2^bits levels minimizing mean squared error for a standard Gaussian, in increasing order."""
+def lloyd_max_gaussian(bits: int, tolerance: float = 1e-12, max_iterations: int = 200_000) -> list[float]:
+    """The 2^bits levels minimizing mean squared error for a standard Gaussian, in increasing order,
+    iterated until no level moves by more than `tolerance`."""
     n = 2 ** bits
     levels = [_cdf_inv((i + 0.5) / n) for i in range(n)]
-    for _ in range(iterations):
+    for _ in range(max_iterations):
         edges = [-math.inf] + [(a + b) / 2 for a, b in zip(levels, levels[1:])] + [math.inf]
-        levels = [(_phi(a) - _phi(b)) / (_cdf(b) - _cdf(a)) for a, b in zip(edges, edges[1:])]
-    return levels
+        new = [(_phi(a) - _phi(b)) / (_cdf(b) - _cdf(a)) for a, b in zip(edges, edges[1:])]
+        if max(abs(a - b) for a, b in zip(new, levels)) < tolerance:
+            return new
+        levels = new
+    raise RuntimeError(f"Lloyd-Max at {bits} bits did not converge in {max_iterations} iterations")
 
 
 class TurboQuant:

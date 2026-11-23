@@ -480,7 +480,8 @@ def cost_table(runs: dict[str, Run], worlds: dict) -> list[str]:
                       or final_eval(r, w, sets=("direct", "ripple", "locality"), edits_ok=True))
             stored_keys = sorted(((n, ev, rs) for n, (ev, rs) in r.evals.items()
                                   if rs and Path(ev["args"]["data"]).name == w
-                                  and ev["args"].get("key_bits") is not None),
+                                  and ev["args"].get("key_bits") is not None and "step" not in ev["args"]
+                                  and not ev["args"].get("edits") and ev["args"].get("store") in (None, "")),
                                  key=lambda e: -e[1]["args"]["key_bits"])
             for name, ev, recs in ([picked] if picked else []) + stored_keys:
                 rows += _cost_row(r, w, name, ev, recs, info.get(w, {}).get("facts"))

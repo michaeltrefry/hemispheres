@@ -12,26 +12,48 @@ def test_lloyd_max_levels_match_the_known_gaussian_quantizers():
 
 
 @pytest.mark.parametrize("bits", [3, 4, 8])
-def test_codes_fit_the_bit_budget(bits):
+def test_decompressing_uses_only_the_stored_bits(bits):
     tq = TurboQuant(dim=32, bits=bits, seed=1)
-    q = tq.quantize(mx.random.normal((50, 32), key=mx.random.key(2)) * 3)
-    assert int(q["codes"].max()) < 2 ** (bits - 1) and int(q["codes"].min()) >= 0
-    assert set(q["signs"].flatten().tolist()) <= {-1, 1}
-    assert q["norm"].shape == q["residual_norm"].shape == (50, 1)
+    x = mx.random.normal((4000, 32), key=mx.random.key(2)) * 3
+    q = tq.quantize(x)
+    # bits - 1 bits per rounded coordinate (nearly every level used; the outermost are rare), 1 sign bit, two norms.
+    used = set(q["codes"].flatten().tolist())
+    assert used <= set(range(2 ** (bits - 1))) and len(used) >= 2 ** (bits - 1) - 2
+    assert set(q["signs"].flatten().tolist()) == {-1, 1}
+    assert set(q) == {"codes", "signs", "norm", "residual_norm"}
+    assert q["norm"].shape == q["residual_norm"].shape == (4000, 1)
+    assert mx.allclose(tq.dequantize({k: q[k] for k in ("codes", "signs", "norm", "residual_norm")}), tq.compress(x))
     assert tq.bytes_per_vector() == 32 * bits / 8 + NORM_BYTES
 
 
-def test_inner_product_estimates_are_unbiased_and_tighten_with_bits():
-    x = mx.random.normal((1, 64), key=mx.random.key(3))
-    y = mx.random.normal((64,), key=mx.random.key(4))
-    true = float((x @ y).item())
-    spread = {}
-    for bits in (3, 4, 8):
-        est = [float((TurboQuant(64, bits, seed=s).compress(x) @ y).item()) for s in range(300)]
-        mean = sum(est) / len(est)
-        sd = math.sqrt(sum((e - mean) ** 2 for e in est) / (len(est) - 1))
-        assert abs(mean - true) < 4 * sd / math.sqrt(len(est)) + 1e-6  # no bias beyond sampling error
-        spread[bits] = sd
+def _relative_errors(bits, coarse_only=False, pairs=40, seeds=60):
+    """(estimate - true) / true over many quantizer seeds and correlated vector pairs (true dot products are
+    positive, so rounding's shrinkage toward zero shows as a negative mean instead of cancelling out)."""
+    xs = mx.random.normal((pairs, 64), key=mx.random.key(5))
+    ys = xs + 0.5 * mx.random.normal((pairs, 64), key=mx.random.key(6))
+    true = (xs * ys).sum(-1)
+    scale = true
+    errs = []
+    for s in range(seeds):
+        tq = TurboQuant(64, bits, seed=s)
+        q = tq.quantize(xs)
+        est = (q["norm"] * (tq.levels[q["codes"]] @ tq.rotation) if coarse_only else tq.dequantize(q))
+        errs += (((est * ys).sum(-1) - true) / scale).tolist()
+    mean = sum(errs) / len(errs)
+    se = math.sqrt(sum((e - mean) ** 2 for e in errs) / (len(errs) - 1) / len(errs))
+    return mean, se
+
+
+@pytest.mark.parametrize("bits", [3, 4])
+def test_inner_product_estimates_are_unbiased_unlike_plain_rounding(bits):
+    mean, se = _relative_errors(bits)
+    assert abs(mean) < 4 * se                      # TurboQuant: no bias beyond sampling error
+    coarse_mean, coarse_se = _relative_errors(bits, coarse_only=True)
+    assert coarse_mean < -6 * coarse_se            # rounding alone shrinks dot products: detectably biased
+
+
+def test_estimates_tighten_with_bits():
+    spread = {b: _relative_errors(b, pairs=20, seeds=20)[1] for b in (3, 4, 8)}
     assert spread[3] > spread[4] > spread[8]
 
 
