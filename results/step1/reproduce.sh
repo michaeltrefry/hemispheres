@@ -89,6 +89,10 @@ PYTHON="${PYTHON:-.venv/bin/python}"
 "$PYTHON" -m hemispheres.evaluate --run runs/latent-multi --checkpoint final --data data/world-a --sets test_id,test_1hop_ood --n 300 --seed 0 --store none
 "$PYTHON" -m hemispheres.evaluate --run runs/latent-multi --checkpoint final --data data/world-a --sets test_id,test_1hop_ood --n 300 --seed 0 --store data/world-c
 "$PYTHON" -m hemispheres.evaluate --run runs/latent-multi --checkpoint final --data data/world-b-100k --sets test_1hop_ood,test_ood --n 1000 --seed 0 --name world-b-100k-heldout-final
+"$PYTHON" -m hemispheres.evaluate --run runs/latent-multi --checkpoint final --data data/world-b-100k --sets test_1hop_ood,test_ood --n 1000 --seed 0 --key-bits 3
+"$PYTHON" -m hemispheres.evaluate --run runs/latent-multi --checkpoint final --data data/world-b-100k --sets test_1hop_ood,test_ood --n 1000 --seed 0 --key-bits 32
+"$PYTHON" -m hemispheres.evaluate --run runs/latent-multi --checkpoint final --data data/world-b-100k --sets test_1hop_ood,test_ood --n 1000 --seed 0 --key-bits 4
+"$PYTHON" -m hemispheres.evaluate --run runs/latent-multi --checkpoint final --data data/world-b-100k --sets test_1hop_ood,test_ood --n 1000 --seed 0 --key-bits 8
 "$PYTHON" -m hemispheres.evaluate --run runs/latent-multi --checkpoint final --data data/world-b-30k --sets test_1hop_ood,test_ood --n 1000 --seed 0 --name world-b-30k-heldout-final
 "$PYTHON" -m hemispheres.evaluate --run runs/latent-multi --checkpoint final --data data/world-b --sets all --n 300 --seed 0
 "$PYTHON" -m hemispheres.evaluate --run runs/latent-multi --checkpoint final --data data/world-b --sets test_1hop_ood,test_ood --n 1000 --seed 0 --name world-b-heldout-final

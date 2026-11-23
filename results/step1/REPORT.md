@@ -95,6 +95,10 @@ Per question asked, right or wrong, calculated from each model's shape and the s
 | latent-multi | world-b | one-hop held-out | 1000 | 29.16M | 18.3 | 1,011.3 | 835.3 | 437.4 | 360.7 | `evals/world-b-heldout-final.jsonl` |
 | latent-multi | world-b-30k | one-hop held-out | 1000 | 29.16M | 18.2 | 1,005.9 | 2,413.4 | 430.4 | 1,033.7 | `evals/world-b-30k-heldout-final.jsonl` |
 | latent-multi | world-b-100k | one-hop held-out | 1000 | 29.16M | 18.4 | 1,014.8 | 8,023.5 | 443.6 | 3,514.4 | `evals/world-b-100k-heldout-final.jsonl` |
+| latent-multi | world-b-100k | one-hop held-out, stored keys | 1000 | 29.16M | 18.4 | 1,014.8 | 8,023.5 | 443.6 | 3,514.4 | `evals/world-b-100k-keys32-final.jsonl` |
+| latent-multi | world-b-100k | one-hop held-out, stored keys at 8 bits | 1000 | 29.16M | 18.4 | 1,014.8 | 8,023.5 | 443.6 | 933.5 | `evals/world-b-100k-keys8-final.jsonl` |
+| latent-multi | world-b-100k | one-hop held-out, stored keys at 4 bits | 1000 | 29.16M | 18.4 | 1,015.0 | 8,024.9 | 443.9 | 494.6 | `evals/world-b-100k-keys4-final.jsonl` |
+| latent-multi | world-b-100k | one-hop held-out, stored keys at 3 bits | 1000 | 29.16M | 18.4 | 1,015.6 | 8,029.5 | 445.1 | 385.7 | `evals/world-b-100k-keys3-final.jsonl` |
 | latent-multi-nohop | world-a | one-hop held-out | 200 | 29.16M | 18.3 | 1,014.1 | 837.5 | 439.7 | 362.6 | `evals/world-a-latest.jsonl` |
 | lookup-a | world-c | all evaluated | 900 | 25.47M | 46.2 | 2,320.8 | 0.0 | 1,949.7 | 0.0 | `evals/world-c-final.jsonl` |
 | lookup-a | world-a | one-hop held-out | 200 | 25.47M | 30.0 | 1,485.0 | 0.0 | 1,206.7 | 0.0 | `evals/world-a-final.jsonl` |
@@ -135,7 +139,7 @@ Every flag, seed and model shape is in `runs/<run>/config.json`; checkpoint hash
 
 ## Integrity
 
-- 82 evaluation files: every summary recounted from its per-question records matches.
+- 86 evaluation files: every summary recounted from its per-question records matches.
 - Evaluations logged during training, rerun from the saved checkpoint on the same questions (context-a, context-multi-bios, context-multi-bios-20k, dense-a, dense-a-k100, dense-a-to-b, latent-a, latent-a-all, latent-multi, latent-multi-nohop, lookup-a): 90 of 90 cells identical.
 - 0 cells come from logged summaries only (†).
 - Worlds: `worlds.json` holds each world's build config and file hashes. `python -m hemispheres.records verify-data data/<world>` checks a rebuilt world against them.
