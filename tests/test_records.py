@@ -198,18 +198,20 @@ def test_capacity_picks_the_smallest_passing_size_and_charts_it(tmp_path):
               {"world-b-final": (final, _one_hop(1000))})
     _fake_run(tmp_path, "latent-x", {"arm": "latent", "data": "data/world-a", "params": 3e5, "model_type": "latent",
                                      "model": {"n_layer": 2, "d_model": 8, "n_reads": 3, "key_dim": 4, "top_k": 4}},
-              [], {"world-b-heldout-final": (final, _one_hop(1000))})
+              [], {"world-b-heldout-final": (final, _one_hop(1000)),
+                   "world-b-keys4-final": ({**final, "key_bits": 4}, _one_hop(970))})
     runs = report.load_runs(tmp_path)
     worlds = {"data/world-b": {"build": {"persons": 10000}, "facts": 62000}}
     md, cells, chart = report.capacity(runs, worlds)
     summary = next(line for line in md if line.startswith("| world-b |"))
-    assert "a3 (0.40M)" in summary and "| a2 |" in summary and "latent-x 100" in summary
+    assert "a3 (0.40M)" in summary and "| a2 |" in summary and "latent-x (0.30M) 97 (100)" in summary
     row = {line.split(" |")[0][2:]: line for line in md if line.startswith("| a")}
     assert row["a0"].endswith("100 (n=200) fail |") and row["a1"].endswith("12 fail |")
     assert row["a2"].endswith("100* fail |") and row["a3"].endswith("100 / 100 pass |")
     assert row["a4"].endswith("100? fail |")
     assert {c.source for _, _, c in cells} >= {"evals/world-b-final.jsonl", "evals/world-b-step100.jsonl"}
     assert chart["dense"] == [(62000, 4e5, True)] and chart["latent"] == {"latent-x": (3e5, [(62000, True)])}
+    assert ("capacity: world-b 1 hop, 4-bit keys", "latent-x") in {(label, r) for label, r, _ in cells}
     assert report.capacity_svg(chart).startswith("<svg")
     cost = "\n".join(report.cost_table(runs, worlds))
     assert "| latent-x | world-b | one-hop held-out | 1000 | 0.30M | 16.0 |" in cost

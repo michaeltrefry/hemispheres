@@ -53,13 +53,13 @@ Pooled over world-A `test_id` and `test_1hop_ood` (lower is better for the last 
 
 ## Capacity: parameters needed versus facts known
 
-Smallest model that holds each world's facts. A model passes at 95% one-hop accuracy on held-out people (at least 1,000 questions) with its last two training evaluations within 1 point. Dense models store the facts in their weights; latent cores read them from the world's store and are evaluated on the larger worlds with no further training. Sources: [every cell](#every-cell).
+Smallest model that holds each world's facts. A model passes at 95% one-hop accuracy on held-out people (at least 1,000 questions) with its last two training evaluations within 1 point. Dense models store the facts in their weights; latent cores read them from the world's store and are evaluated on the larger worlds with no further training, judged with their store keys compressed to 4 bits (TurboQuant; full-precision keys in brackets). Sources: [every cell](#every-cell).
 
-| world | people | facts | smallest passing dense size | largest failing size below it | latent cores: one-hop % |
+| world | people | facts | smallest passing dense size | largest failing size below it | latent cores: one-hop % with 4-bit keys (full precision) |
 |---|---|---|---|---|---|
-| world-b | 10,000 | 62,615 | not run | — | latent-multi 100 |
-| world-b-30k | 30,000 | 182,381 | not run | — | latent-multi 100 |
-| world-b-100k | 100,000 | 601,640 | not run | — | latent-multi 100 |
+| world-b | 10,000 | 62,615 | not run | — | latent-multi (29.16M) — (100) |
+| world-b-30k | 30,000 | 182,381 | not run | — | latent-multi (29.16M) — (100) |
+| world-b-100k | 100,000 | 601,640 | not run | — | latent-multi (29.16M) 98.5 (100) |
 
 ![Parameters needed versus facts known](capacity.svg)
 
@@ -284,4 +284,5 @@ The weights are on the Hugging Face Hub at [SceneWorks/hemispheres-step1](https:
 | World A, world C's store (lower is better) | latent-multi | 10/900 | 1.1 | 0.6–2 | `evals/world-a-store-world-c-final.jsonl` |
 | capacity: world-b 1 hop | latent-multi | 1000/1000 | 100 | 99.6–100 | `evals/world-b-heldout-final.jsonl` |
 | capacity: world-b-30k 1 hop | latent-multi | 1000/1000 | 100 | 99.6–100 | `evals/world-b-30k-heldout-final.jsonl` |
+| capacity: world-b-100k 1 hop, 4-bit keys | latent-multi | 985/1000 | 98.5 | 97.5–99.1 | `evals/world-b-100k-keys4-final.jsonl` |
 | capacity: world-b-100k 1 hop | latent-multi | 1000/1000 | 100 | 99.6–100 | `evals/world-b-100k-heldout-final.jsonl` |
