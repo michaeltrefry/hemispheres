@@ -1,6 +1,6 @@
 # Direction: where Hemispheres goes next
 
-*Written 2026-11-20 from design conversations between Michael Trefry and Claude, October to November 2026. It records Michael's direction for the project, how it relates to Zak Keown's original plan, and the reasoning and evidence behind each step. Confidence levels are Claude's assessments at the time of writing.*
+*Written 2026-11-20 and updated 2026-11-23, from design conversations between Michael Trefry and Claude, October to November 2026. It records Michael's direction for the project, how it relates to Zak Keown's original plan, and the reasoning and evidence behind each step. Confidence levels are Claude's assessments at the time of writing.*
 
 ## 1. The goal
 
@@ -94,11 +94,34 @@ Cautions:
 
 **The test of separability** for any module is a double dissociation: unplug it and only its skill collapses; plug it back and the skill returns; plug in a separately trained module and it works with no retraining of the core. Step 1's world swaps and emptied-store tests already run this test for facts.
 
-## 9. Roadmap
+## 9. Compressed store keys and looped reasoning (added 2026-11-23)
+
+**Compressed keys.** Each fact's search key is 128 numbers. TurboQuant (Google Research, ICLR 2026, arXiv 2504.19874) compresses vectors to a few bits per number with no training: a random rotation, rounding each number to an optimal level, and a 1-bit correction that keeps dot products unbiased. Measured in HEM-F3 on `latent-multi` with 100,000 people (601,640 facts), 1,000 held-out questions per hop:
+
+| stored keys | one-hop | 2-hop | 3-hop | memory read per question, weights plus store |
+|---|---:|---:|---:|---:|
+| 32-bit | 100% | 99.7% | 99.9% | 3,958 MB |
+| 8-bit | 100% | 99.7% | 99.9% | 1,378 MB |
+| 4-bit | 98.5% | 97.3% | 96.0% | 939 MB |
+| 3-bit | 83.1% | 69.0% | 64.5% | 830 MB |
+
+4-bit keys are the working setting from here on (HEM-F1 requirement E12). Memory read is calculated, not measured; a real speedup needs scoring that reads the compressed keys directly, and every key is still checked on every lookup.
+
+**Looped reasoning.** Inkling 2 Mini (Thinking Machines, Nov 20, 2026; 26.4B parameters, 3.4B active) runs its middle 12 of 24 layers three times with shared weights, in hidden states, with a gated message from each pass to the next. Its release post reports, without a paper and with chart values given only in images:
+- a non-looped model of the same family cost 7.5% less to train but needed 140% more inference compute to match the looped model;
+- looping the middle layers beat looping the last layers on 27 of 28 evaluations;
+- multi-hop lookup kept improving out to 10 passes, while closed-book factual recall was "nearly invariant" to the pass count;
+- more passes cut written reasoning from 3,703 tokens at one pass to 1,731 at three;
+- the gate between passes starts closed, so training begins like a normal model, and a variable-pass variant trained with 1 to 5 passes runs at any of them.
+
+Claude's assessment (moderate confidence, since these are a company's claims): this supports the Hemispheres split directly. Loops buy reasoning depth with compute instead of parameters, and they help chaining but not recall, so recall belongs in the store and reasoning in a compact looped core. For Hemispheres the natural form is the looped re-query block Zak's brief already proposed (option B): one shared read block run once per hop. Today's reasoner has exactly 3 read layers and so can chain at most 3 facts; a looped read block would chain as many facts as it runs passes, with no new weights. Two costs come with it: every pass re-reads the store keys, which makes compressed keys and faster search more important, and a loop needs a stopping rule, which Inkling does not have.
+
+## 10. Roadmap
 
 1. **Capacity curve (current, feature HEM-F1).** On synthetic worlds of 10,000, 30,000 and 100,000 people, find how many parameters a model needs to hold the facts when they live in its weights, versus when a fixed-size core reads them from a store. This is the energy argument in one picture. The first step needs no training: evaluate the existing `latent-multi` checkpoint, trained on 10,000-person worlds, against larger worlds' stores.
 2. **Step-1 de-risking.** Test whether retrieval needs its training signal only early (`--hop-until 2000`), then a harder toy: varied phrasings, noisy name mentions, missing facts to abstain on, and 4-hop questions with 3 read layers.
-3. **Synthetic-skills toy.** Made-up languages, arithmetic skills and formatting styles as modules on a small core, tested for the four properties: adding a module gains its skill, removing it loses only that skill, two modules compose, and memory scales with what is loaded.
-4. **Faster store search**, so lookup cost grows slower than the store.
-5. **Real models.** The store reader on a frozen open model such as Qwen3-1.7B or OLMo-2-1B, evaluated against retrieval-augmented generation on editing and multi-hop benchmarks; then real skill modules on the same base.
-6. **A skill-light, knowledge-light core trained from scratch** at 125M to 1B parameters, only if the earlier steps work. This is where the memory and energy claims are proven or disproven.
+3. **Looped read block.** Replace the 3 separate read layers with one shared, gated read block run once per pass; train on questions of up to 3 facts with a varying pass count, and test 4- and 5-fact questions at matched parameters, reporting accuracy and compute per question.
+4. **Synthetic-skills toy.** Made-up languages, arithmetic skills and formatting styles as modules on a small core, tested for the four properties: adding a module gains its skill, removing it loses only that skill, two modules compose, and memory scales with what is loaded.
+5. **Faster store search.** 4-bit TurboQuant keys are done (HEM-F3); next is an index that checks only a fraction of the keys, so lookup cost grows slower than the store.
+6. **Real models.** The store reader on a frozen open model such as Qwen3-1.7B or OLMo-2-1B, evaluated against retrieval-augmented generation on editing and multi-hop benchmarks; then real skill modules on the same base.
+7. **A skill-light, knowledge-light core trained from scratch** at 125M to 1B parameters, only if the earlier steps work. This is where the memory and energy claims are proven or disproven.
