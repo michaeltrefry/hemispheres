@@ -1,0 +1,138 @@
+{
+  "args": {
+    "data": "data/world-a",
+    "edits": 0,
+    "sets": "test_id,test_ood,test_1hop_ood",
+    "n": 200,
+    "seed": 1,
+    "step": 10000
+  },
+  "summary": {
+    "test_1hop_ood": {
+      "1hop": {
+        "acc": 1.0,
+        "n": 200,
+        "retrieval": {
+          "h0": {
+            "top1": 1.0,
+            "topk": 1.0
+          }
+        }
+      },
+      "all": {
+        "acc": 1.0,
+        "n": 200,
+        "retrieval": {
+          "h0": {
+            "top1": 1.0,
+            "topk": 1.0
+          }
+        }
+      }
+    },
+    "test_id": {
+      "2hop": {
+        "acc": 1.0,
+        "n": 200,
+        "retrieval": {
+          "h0": {
+            "top1": 1.0,
+            "topk": 1.0
+          },
+          "h1": {
+            "top1": 1.0,
+            "topk": 1.0
+          }
+        }
+      },
+      "3hop": {
+        "acc": 1.0,
+        "n": 200,
+        "retrieval": {
+          "h0": {
+            "top1": 1.0,
+            "topk": 1.0
+          },
+          "h1": {
+            "top1": 1.0,
+            "topk": 1.0
+          },
+          "h2": {
+            "top1": 1.0,
+            "topk": 1.0
+          }
+        }
+      },
+      "all": {
+        "acc": 1.0,
+        "n": 400,
+        "retrieval": {
+          "h0": {
+            "top1": 1.0,
+            "topk": 1.0
+          },
+          "h1": {
+            "top1": 1.0,
+            "topk": 1.0
+          },
+          "h2": {
+            "top1": 1.0,
+            "topk": 1.0
+          }
+        }
+      }
+    },
+    "test_ood": {
+      "2hop": {
+        "acc": 1.0,
+        "n": 200,
+        "retrieval": {
+          "h0": {
+            "top1": 1.0,
+            "topk": 1.0
+          },
+          "h1": {
+            "top1": 1.0,
+            "topk": 1.0
+          }
+        }
+      },
+      "3hop": {
+        "acc": 1.0,
+        "n": 200,
+        "retrieval": {
+          "h0": {
+            "top1": 1.0,
+            "topk": 1.0
+          },
+          "h1": {
+            "top1": 1.0,
+            "topk": 1.0
+          },
+          "h2": {
+            "top1": 1.0,
+            "topk": 1.0
+          }
+        }
+      },
+      "all": {
+        "acc": 1.0,
+        "n": 400,
+        "retrieval": {
+          "h0": {
+            "top1": 1.0,
+            "topk": 1.0
+          },
+          "h1": {
+            "top1": 1.0,
+            "topk": 1.0
+          },
+          "h2": {
+            "top1": 1.0,
+            "topk": 1.0
+          }
+        }
+      }
+    }
+  }
+}

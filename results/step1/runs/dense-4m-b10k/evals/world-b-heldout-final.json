@@ -1,0 +1,58 @@
+{
+  "args": {
+    "run": "runs/dense-4m-b10k",
+    "checkpoint": "final",
+    "data": "data/world-b",
+    "edits": 0,
+    "sets": "test_1hop_ood,test_ood",
+    "n": 1000,
+    "seed": 0,
+    "name": "world-b-heldout-final",
+    "store": null
+  },
+  "provenance": {
+    "time": "2026-11-20T22:05:03+00:00",
+    "code": {
+      "commit": "ffef081b4ac4743f0170f1f943ec1b73061e1c4b",
+      "dirty": false,
+      "changed": []
+    },
+    "env": {
+      "python": "3.12.11",
+      "platform": "macOS-27.0.1-arm64-arm-64bit",
+      "machine": "arm64",
+      "mlx": "0.32.2",
+      "device": "Device(gpu, 0)"
+    },
+    "data": {
+      "data/world-b": "50834522443f999a571ee256c020ea98b336422e34fc14775adbe9805d880818"
+    },
+    "checkpoint_sha256": "2ffcc8bfc11c6116f56c0def8cc573d9981c8a5f9e46dd8d2401edf015fcd658"
+  },
+  "summary": {
+    "test_1hop_ood": {
+      "1hop": {
+        "acc": 1.0,
+        "n": 1000
+      },
+      "all": {
+        "acc": 1.0,
+        "n": 1000
+      }
+    },
+    "test_ood": {
+      "2hop": {
+        "acc": 0.088,
+        "n": 1000
+      },
+      "3hop": {
+        "acc": 0.129,
+        "n": 1000
+      },
+      "all": {
+        "acc": 0.1085,
+        "n": 2000
+      }
+    }
+  }
+}

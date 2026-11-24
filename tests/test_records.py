@@ -1,4 +1,5 @@
 import json
+import re
 from pathlib import Path
 
 import pytest
@@ -198,21 +199,57 @@ def test_capacity_picks_the_smallest_passing_size_and_charts_it(tmp_path):
               {"world-b-final": (final, _one_hop(1000))})
     _fake_run(tmp_path, "latent-x", {"arm": "latent", "data": "data/world-a", "params": 3e5, "model_type": "latent",
                                      "model": {"n_layer": 2, "d_model": 8, "n_reads": 3, "key_dim": 4, "top_k": 4}},
-              [], {"world-b-heldout-final": (final, _one_hop(1000))})
+              [], {"world-b-heldout-final": (final, _one_hop(1000)),
+                   "world-b-keys4-final": ({**final, "key_bits": 4}, _one_hop(970))})
     runs = report.load_runs(tmp_path)
     worlds = {"data/world-b": {"build": {"persons": 10000}, "facts": 62000}}
     md, cells, chart = report.capacity(runs, worlds)
     summary = next(line for line in md if line.startswith("| world-b |"))
-    assert "a3 (0.40M)" in summary and "| a2 |" in summary and "latent-x 100" in summary
+    assert "a3 (0.40M)" in summary and "| a2 |" in summary and "latent-x (0.30M) 97 (100) pass" in summary
+    assert "| latent-x (0.30M) | — |" in summary
     row = {line.split(" |")[0][2:]: line for line in md if line.startswith("| a")}
     assert row["a0"].endswith("100 (n=200) fail |") and row["a1"].endswith("12 fail |")
     assert row["a2"].endswith("100* fail |") and row["a3"].endswith("100 / 100 pass |")
     assert row["a4"].endswith("100? fail |")
     assert {c.source for _, _, c in cells} >= {"evals/world-b-final.jsonl", "evals/world-b-step100.jsonl"}
     assert chart["dense"] == [(62000, 4e5, True)] and chart["latent"] == {"latent-x": (3e5, [(62000, True)])}
+    assert ("capacity: world-b 1 hop, 4-bit keys", "latent-x") in {(label, r) for label, r, _ in cells}
     assert report.capacity_svg(chart).startswith("<svg")
     cost = "\n".join(report.cost_table(runs, worlds))
     assert "| latent-x | world-b | one-hop held-out | 1000 | 0.30M | 16.0 |" in cost
+
+
+def test_capacity_judges_latent_cores_by_4_bit_keys_on_every_seed(tmp_path):
+    final = {"data": "data/world-b", "checkpoint": "final", "seed": 0}
+    keys4 = {**final, "key_bits": 4}
+
+    def latent(name, params, evals, seed=0):
+        _fake_run(tmp_path, name, {"arm": "latent", "data": "data/world-a", "params": params, "seed": seed,
+                                   "model_type": "latent",
+                                   "model": {"n_layer": 2, "d_model": 8, "n_reads": 3, "key_dim": 4, "top_k": 4}},
+                  [], evals)
+
+    full = ("world-b-heldout-final", (final, _one_hop(1000)))
+    latent("latent-y", 1e5, dict([full, ("world-b-keys4-final", (keys4, _one_hop(900)))]))  # 4-bit fails
+    latent("latent-y-s1", 1e5, dict([full, ("world-b-keys4-final", (keys4, _one_hop(990)))]), seed=1)
+    latent("latent-z", 2e5, dict([full, ("world-b-keys4-final", (keys4, _one_hop(300, n=300)))]))  # too few
+    latent("latent-v", 4e5, dict([full, ("world-b-keys4-final", (keys4, _one_hop(980)))]))
+    latent("latent-v-s1", 4e5, dict([full, ("world-b-keys4-final", (keys4, _one_hop(960)))]), seed=1)
+    latent("latent-w", 5e5, dict([full]))  # full precision only: shown, not judged
+    runs = report.load_runs(tmp_path)
+    worlds = {"data/world-b": {"build": {"persons": 10000}, "facts": 62000}}
+    md, cells, chart = report.capacity(runs, worlds)
+    summary = next(line for line in md if line.startswith("| world-b |"))
+    assert "| latent-v (0.40M) | latent-z |" in summary
+    assert "latent-y (0.10M) 90 / 99 (100 / 100) fail" in summary
+    assert "latent-z (0.20M) 100 (n=300) (100) fail" in summary
+    assert "latent-v (0.40M) 98 / 96 (100 / 100) pass" in summary
+    assert "latent-w (0.50M) — (100);" not in summary and summary.endswith("latent-w (0.50M) — (100) |")
+    assert chart["latent"] == {"latent-y": (1e5, [(62000, False)]), "latent-z": (2e5, [(62000, False)]),
+                               "latent-v": (4e5, [(62000, True)])}
+    svg = report.capacity_svg(chart)
+    assert svg.count("stroke-dasharray") == 3 and len(set(re.findall(r'stroke="(#[0-9a-f]{6})" stroke-width="2" '
+                                                                     r'stroke-dasharray', svg))) == 3
 
 
 def test_capacity_chart_marks_worlds_where_no_dense_size_passes(tmp_path):

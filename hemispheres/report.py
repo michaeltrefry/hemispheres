@@ -224,6 +224,7 @@ def hop_supervision_table(runs: dict[str, Run]) -> list[str]:
 CAPACITY_WORLDS = ("world-b", "world-b-30k", "world-b-100k")  # world B at 10,000, 30,000 and 100,000 people
 PASS_MARK = 0.95  # a model passes a world at 95% one-hop held-out accuracy
 MIN_QUESTIONS = 1000  # ... measured on at least this many questions
+LATENT_KEY_BITS = 4  # E12: latent cores are judged with TurboQuant 4-bit stored keys; full precision is the reference
 QUANT_NORM_BYTES = 8  # quantize.NORM_BYTES: a compressed key's two 32-bit norms (quantize.py imports MLX)
 READ_NAME_TOKENS = 8  # store.MAX_NAME_LEN: tokens per retrieved name (store.py imports MLX, so it is copied here)
 
@@ -234,17 +235,18 @@ def world_info(worlds: dict) -> dict[str, dict]:
 
 
 def final_eval(run: Run, world: str, sets: tuple[str, ...] = ("test_1hop_ood",),
-               edits_ok: bool = False) -> tuple[str, dict, list] | None:
+               edits_ok: bool = False, key_bits: int | None = None) -> tuple[str, dict, list] | None:
     """The run's measurement of its final weights on `world`: the evaluation of the final checkpoint (the
     latest one for a run stopped early) with the most records in `sets`, preferring `hemispheres.evaluate`
-    over the training loop's last-step evaluation. Evaluations with edits applied count only if `edits_ok`."""
+    over the training loop's last-step evaluation. Evaluations with edits applied count only if `edits_ok`.
+    `key_bits` picks evaluations with stored keys at that precision (evaluate --key-bits); None excludes them."""
     stopped = bool(run.metrics) and run.last_step < run.config["steps"]
     last = run.last_step if stopped else run.config["steps"]
     best = None
     for name, (ev, records) in run.evals.items():
         a = ev["args"]
         if (records is None or Path(a["data"]).name != world or (a.get("edits", 0) and not edits_ok)
-                or a.get("store") not in (None, "") or a.get("key_bits") is not None):
+                or a.get("store") not in (None, "") or a.get("key_bits") != key_bits):
             continue
         if "step" in a and a["step"] != last:
             continue
@@ -257,8 +259,8 @@ def final_eval(run: Run, world: str, sets: tuple[str, ...] = ("test_1hop_ood",),
     return best and best[1:]
 
 
-def one_hop(run: Run, world: str) -> Cell | None:
-    picked = final_eval(run, world)
+def one_hop(run: Run, world: str, key_bits: int | None = None) -> Cell | None:
+    picked = final_eval(run, world, key_bits=key_bits)
     if not picked:
         return None
     name, _, records = picked
@@ -291,12 +293,33 @@ def passes(entries: list[tuple[Run, Cell]]) -> bool:
     return all(c.acc >= PASS_MARK and c.n >= MIN_QUESTIONS and converged(r) is True for r, c in entries)
 
 
+def latent_cores(runs: dict[str, Run], worlds: list[str]) -> list[list[Run]]:
+    """Latent runs with a one-hop evaluation on any of `worlds`, grouped into the seeds of one recipe (configs
+    equal apart from seed and output directory), each group in seed order, smallest model first."""
+    groups: dict[str, list[Run]] = {}
+    for r in runs.values():
+        if r.config["arm"] == "latent" and any(one_hop(r, w) or one_hop(r, w, LATENT_KEY_BITS) for w in worlds):
+            key = json.dumps({k: v for k, v in r.config.items() if k not in ("seed", "out", "provenance")},
+                             sort_keys=True)
+            groups.setdefault(key, []).append(r)
+    return sorted((sorted(g, key=lambda r: r.config.get("seed", 0)) for g in groups.values()),
+                  key=lambda g: g[0].config["params"])
+
+
+def latent_passes(cells: list[Cell | None]) -> bool | None:
+    """Whether a latent core passes a world (E12): every seed has a 4-bit evaluation scoring at least the pass
+    mark on at least MIN_QUESTIONS questions. None when no seed has a 4-bit evaluation there (not judged)."""
+    if not any(cells):
+        return None
+    return all(c is not None and c.acc >= PASS_MARK and c.n >= MIN_QUESTIONS for c in cells)
+
+
 def capacity(runs: dict[str, Run], worlds: dict) -> tuple[list[str], list[tuple], dict]:
     """(markdown, cells for the every-cell table, chart data)."""
     info = world_info(worlds)
     present = [w for w in CAPACITY_WORLDS if w in info]
     ladders = {w: dense_ladder(runs, w) for w in present}
-    latents = [r for r in runs.values() if r.config["arm"] == "latent" and any(one_hop(r, w) for w in present)]
+    latents = latent_cores(runs, present)
     if not any(ladders.values()) and not latents:
         return [], [], {}
     cells, chart = [], {"worlds": [], "dense": [], "latent": {}}
@@ -332,24 +355,42 @@ def capacity(runs: dict[str, Run], worlds: dict) -> tuple[list[str], list[tuple]
         if info[w]["facts"]:  # the chart's x axis; worlds exported before facts were recorded are left out
             chart["worlds"].append((w, info[w]["people"], info[w]["facts"]))
             chart["dense"].append((info[w]["facts"], params, smallest is not None))
-        lat = []
-        for r in latents:
-            c = one_hop(r, w)
-            if c:
-                cells.append((f"capacity: {w} 1 hop", r.name, c))
-                lat.append(f"{r.name} {pct(c.acc)}")
+        lat, verdicts = [], []
+        for group in latents:
+            c4s, fulls = [one_hop(r, w, LATENT_KEY_BITS) for r in group], [one_hop(r, w) for r in group]
+            for r, c4, full in zip(group, c4s, fulls):
+                for label, c in ((f"capacity: {w} 1 hop, {LATENT_KEY_BITS}-bit keys", c4),
+                                 (f"capacity: {w} 1 hop", full)):
+                    if c:
+                        cells.append((label, r.name, c))
+            if not any(c4s) and not any(fulls):
+                continue
+            ok, name, prm = latent_passes(c4s), group[0].name, group[0].config["params"]
+            show4 = " / ".join((pct(c.acc) + (f" (n={c.n})" if c.n < MIN_QUESTIONS else "")) if c else "—"
+                               for c in c4s)
+            lat.append(f"{name} ({prm / 1e6:.2f}M) {show4} ({' / '.join(pct(c.acc) if c else '—' for c in fulls)})"
+                       + {True: " pass", False: " fail", None: ""}[ok])
+            if ok is not None:
+                verdicts.append((name, prm, ok))
                 if info[w]["facts"]:
-                    chart["latent"].setdefault(r.name, (r.config["params"], []))[1].append(
-                        (info[w]["facts"], c.acc >= PASS_MARK))
+                    chart["latent"].setdefault(name, (prm, []))[1].append((info[w]["facts"], ok))
+        lat_pass = next(((n, p) for n, p, ok in verdicts if ok), None)
+        lat_fail = [n for n, p, ok in verdicts if not ok and (lat_pass is None or p < lat_pass[1])]
         summary.append([f"{w}", f"{info[w]['people']:,}", f"{info[w]['facts']:,}" if info[w]["facts"] else "—",
                         f"{smallest} ({params / 1e6:.2f}M)" if smallest else ("none on the ladder" if lad else "not run"),
-                        failing[-1] if failing else "—", "; ".join(lat) or "—"])
+                        failing[-1] if failing else "—",
+                        f"{lat_pass[0]} ({lat_pass[1] / 1e6:.2f}M)" if lat_pass else ("none" if verdicts else "—"),
+                        lat_fail[-1] if lat_fail else "—", "; ".join(lat) or "—"])
     md = ["Smallest model that holds each world's facts. A model passes at 95% one-hop accuracy on held-out "
           "people (at least 1,000 questions) with its last two training evaluations within 1 point. Dense "
           "models store the facts in their weights; latent cores read them from the world's store and are "
-          "evaluated on the larger worlds with no further training. Sources: [every cell](#every-cell).", "",
+          "evaluated on the larger worlds with no further training, judged with their store keys compressed to "
+          f"{LATENT_KEY_BITS} bits (TurboQuant; full-precision keys in brackets): a latent core passes when every "
+          f"seed passes with {LATENT_KEY_BITS}-bit keys. Seeds are separated by /. "
+          "Sources: [every cell](#every-cell).", "",
           *table(["world", "people", "facts", "smallest passing dense size", "largest failing size below it",
-                  "latent cores: one-hop %"], summary)]
+                  f"smallest passing latent core ({LATENT_KEY_BITS}-bit keys)", "largest failing core below it",
+                  f"latent cores: one-hop % with {LATENT_KEY_BITS}-bit keys (full precision)"], summary)]
     if rows:
         md += ["", "Dense ladder, one-hop held-out accuracy in % (seeds separated by /; * = not converged, "
                "? = convergence unknown, n = shown when under 1,000 questions):", "",
@@ -394,7 +435,7 @@ def capacity_svg(chart: dict) -> str:
         o.append('<polyline fill="none" stroke="#c0392b" stroke-width="2" points="'
                  + " ".join(f"{X(f):.1f},{Y(p):.1f}" for f, p in dense) + '"/>')
         o += [f'<circle cx="{X(f):.1f}" cy="{Y(p):.1f}" r="5" fill="#c0392b"/>' for f, p in dense]
-    colors = ["#2471a3", "#1e8449", "#7d3c98", "#b9770e"]
+    colors = ["#2471a3", "#1e8449", "#7d3c98", "#b9770e", "#17a589", "#a04000", "#5d6d7e", "#d4ac0d"]
     legend = [("#c0392b", "dense: smallest passing size")] if dense else []
     if failing:
         legend.append(("#c0392b", "dense: no ladder size passes (top)"))
@@ -405,7 +446,7 @@ def capacity_svg(chart: dict) -> str:
                  f'stroke="{c}" stroke-width="2" stroke-dasharray="6 4"/>')
         o += [f'<circle cx="{X(f):.1f}" cy="{Y(p):.1f}" r="5" fill="{c if ok else "white"}" stroke="{c}" '
               'stroke-width="2"/>' for f, ok in xs]
-        legend.append((c, f"{name} (hollow = fails)"))
+        legend.append((c, f"{name}, every seed (hollow = fails)"))
     for i, (c, text) in enumerate(legend):
         y = T + 10 + 18 * i
         o += [f'<rect x="{W - R + 10}" y="{y - 9}" width="12" height="12" fill="{c}"/>',
