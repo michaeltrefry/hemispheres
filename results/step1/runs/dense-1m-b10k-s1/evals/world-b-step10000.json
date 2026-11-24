@@ -1,0 +1,22 @@
+{
+  "args": {
+    "data": "data/world-b",
+    "edits": 0,
+    "sets": "test_1hop_ood",
+    "n": 1000,
+    "seed": 1,
+    "step": 10000
+  },
+  "summary": {
+    "test_1hop_ood": {
+      "1hop": {
+        "acc": 0.499,
+        "n": 1000
+      },
+      "all": {
+        "acc": 0.499,
+        "n": 1000
+      }
+    }
+  }
+}

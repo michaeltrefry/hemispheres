@@ -1,0 +1,20 @@
+{
+  "code": {
+    "commit": "b09ad1b37bb5184f6456c9950e2b524427e42c32",
+    "dirty": false,
+    "changed": []
+  },
+  "checkpoints": {
+    "final": {
+      "sha256": "66c39598024facafea06bdda0dad7b83e4e9d9cadc7e57c666d8f6ca2c0b5e0e",
+      "bytes": 30248689
+    },
+    "latest": {
+      "sha256": "66c39598024facafea06bdda0dad7b83e4e9d9cadc7e57c666d8f6ca2c0b5e0e",
+      "bytes": 30248689
+    }
+  },
+  "data": {
+    "data/world-b-30k": "df7f3d3cf85ed366712cccba48adc6ee44740a49e765f9cd3ba5ba20730d8f4a"
+  }
+}

@@ -1,0 +1,1000 @@
+{"set": "test_1hop_ood", "subject": "person:1219", "path": "major", "hops": 1, "answer": "biology", "output": "biology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:13820", "path": "major", "hops": 1, "answer": "theology", "output": "theology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:1184", "path": "major", "hops": 1, "answer": "finance", "output": "sculpture [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:23549", "path": "mentor", "hops": 1, "answer": "Bones Thashema", "output": "Pokra Nisir [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:4004", "path": "major", "hops": 1, "answer": "psychology", "output": "psychology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:20415", "path": "major", "hops": 1, "answer": "engineering", "output": "chemistry [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:7740", "path": "birth_year", "hops": 1, "answer": "1977", "output": "1977 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:11285", "path": "major", "hops": 1, "answer": "theology", "output": "theology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:24635", "path": "major", "hops": 1, "answer": "philosophy", "output": "philosophy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:24176", "path": "birth_year", "hops": 1, "answer": "1906", "output": "1906 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:14220", "path": "mentor", "hops": 1, "answer": "Vaku Luvor", "output": "Sebre Nudrustath [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:25667", "path": "studied_at", "hops": 1, "answer": "Lathe Academy", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:21417", "path": "mentor", "hops": 1, "answer": "Rosos Rese", "output": "Moron Thiro [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:22054", "path": "born_in", "hops": 1, "answer": "Kazidron", "output": "Kazidron [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:8840", "path": "mentor", "hops": 1, "answer": "Drekri Geleth", "output": "Krishan Redriru [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:27810", "path": "major", "hops": 1, "answer": "finance", "output": "finance [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:21333", "path": "works_at", "hops": 1, "answer": "Theshi Group", "output": "Krotho Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:22065", "path": "major", "hops": 1, "answer": "biology", "output": "biology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:16222", "path": "born_in", "hops": 1, "answer": "Fala", "output": "Zathupo [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:19510", "path": "mentor", "hops": 1, "answer": "Shibrer Gazifa", "output": "Lava Braval [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:2182", "path": "works_at", "hops": 1, "answer": "Dizo Trading", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:2584", "path": "major", "hops": 1, "answer": "linguistics", "output": "linguistics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:23848", "path": "works_at", "hops": 1, "answer": "Karos Partners", "output": "Dekrith Works [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:25505", "path": "mentor", "hops": 1, "answer": "Subrin Sedran", "output": "Rudan Zufeth [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:3516", "path": "studied_at", "hops": 1, "answer": "Feshox Academy", "output": "Feshox Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:14002", "path": "born_in", "hops": 1, "answer": "Thastal", "output": "Topel [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:17248", "path": "major", "hops": 1, "answer": "botany", "output": "botany [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:23813", "path": "birth_year", "hops": 1, "answer": "1969", "output": "1969 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:16816", "path": "born_in", "hops": 1, "answer": "Dradrulul", "output": "Dradrulul [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:4344", "path": "works_at", "hops": 1, "answer": "Fifu Collective", "output": "Thathas Trading [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:23848", "path": "major", "hops": 1, "answer": "engineering", "output": "engineering [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:25805", "path": "works_at", "hops": 1, "answer": "Stakos Collective", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:24978", "path": "works_at", "hops": 1, "answer": "Theshi Group", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:8934", "path": "studied_at", "hops": 1, "answer": "Fabus Institute", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:13465", "path": "works_at", "hops": 1, "answer": "Stefo Partners", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:11416", "path": "mentor", "hops": 1, "answer": "Lubro Papath", "output": "Labro Thoza [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:18031", "path": "mentor", "hops": 1, "answer": "Mebis Tabodath", "output": "Shife Rastosa [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:15696", "path": "birth_year", "hops": 1, "answer": "1964", "output": "1964 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:16486", "path": "studied_at", "hops": 1, "answer": "Dines Academy", "output": "Dines Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:26373", "path": "born_in", "hops": 1, "answer": "Dradrulul", "output": "Dradrulul [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:24592", "path": "works_at", "hops": 1, "answer": "Stoba Dynamics", "output": "Stoba Dynamics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:1756", "path": "works_at", "hops": 1, "answer": "Stakos Collective", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:873", "path": "major", "hops": 1, "answer": "physics", "output": "physics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:14962", "path": "major", "hops": 1, "answer": "music", "output": "psychology [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:1919", "path": "mentor", "hops": 1, "answer": "Nane Shinex", "output": "Shustu Krezas [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:13547", "path": "mentor", "hops": 1, "answer": "Kribre Zobo", "output": "Laga Droluve [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:19693", "path": "birth_year", "hops": 1, "answer": "1973", "output": "1973 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:3389", "path": "works_at", "hops": 1, "answer": "Drasto Group", "output": "Theshi Group [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:12416", "path": "mentor", "hops": 1, "answer": "Pise Drathe", "output": "Gobro Vigol [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:24701", "path": "studied_at", "hops": 1, "answer": "Feshox Academy", "output": "Tila Institute [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:20551", "path": "works_at", "hops": 1, "answer": "Broshe Collective", "output": "Fozo Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:20589", "path": "works_at", "hops": 1, "answer": "Lithix Group", "output": "Boza Trading [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:20120", "path": "born_in", "hops": 1, "answer": "Firipor", "output": "Destudro [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:20673", "path": "mentor", "hops": 1, "answer": "Vaboth Kipo", "output": "Lasha Zabux [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:8071", "path": "studied_at", "hops": 1, "answer": "Misho University", "output": "Misho University [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:12347", "path": "birth_year", "hops": 1, "answer": "1992", "output": "1992 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:5178", "path": "studied_at", "hops": 1, "answer": "Zovas Academy", "output": "Pode Institute [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:6075", "path": "major", "hops": 1, "answer": "architecture", "output": "architecture [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:6966", "path": "studied_at", "hops": 1, "answer": "Tila Institute", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:13651", "path": "mentor", "hops": 1, "answer": "Shotux Fele", "output": "Pokre Kridrusil [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:87", "path": "works_at", "hops": 1, "answer": "Lizo Collective", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:25563", "path": "major", "hops": 1, "answer": "zoology", "output": "economics [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:29898", "path": "major", "hops": 1, "answer": "linguistics", "output": "linguistics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:24257", "path": "works_at", "hops": 1, "answer": "Teso Group", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:26302", "path": "studied_at", "hops": 1, "answer": "Nevu University", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:16765", "path": "born_in", "hops": 1, "answer": "Leruva", "output": "Loli [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:23931", "path": "born_in", "hops": 1, "answer": "Leruva", "output": "Leruva [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:25837", "path": "works_at", "hops": 1, "answer": "Tavin Industries", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:12279", "path": "born_in", "hops": 1, "answer": "Vipaputh", "output": "Bobrex [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:4479", "path": "birth_year", "hops": 1, "answer": "1979", "output": "1979 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:20364", "path": "studied_at", "hops": 1, "answer": "Nevu University", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:5888", "path": "born_in", "hops": 1, "answer": "Pigobru", "output": "Furi [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:4931", "path": "major", "hops": 1, "answer": "linguistics", "output": "linguistics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:14525", "path": "born_in", "hops": 1, "answer": "Shalikru", "output": "Fakra [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:28475", "path": "major", "hops": 1, "answer": "engineering", "output": "engineering [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:16965", "path": "studied_at", "hops": 1, "answer": "Drava College", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:22570", "path": "born_in", "hops": 1, "answer": "Furi", "output": "Vipaputh [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:5843", "path": "birth_year", "hops": 1, "answer": "1960", "output": "1932 [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:26123", "path": "studied_at", "hops": 1, "answer": "Thoga University", "output": "Bizir College [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:13774", "path": "studied_at", "hops": 1, "answer": "Feshox Academy", "output": "Dipe University [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:7086", "path": "birth_year", "hops": 1, "answer": "1917", "output": "1917 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:9900", "path": "born_in", "hops": 1, "answer": "Ravo", "output": "Ravo [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:20555", "path": "birth_year", "hops": 1, "answer": "1964", "output": "1964 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:12665", "path": "studied_at", "hops": 1, "answer": "Volo Institute", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:6338", "path": "mentor", "hops": 1, "answer": "Drugo Kreridru", "output": "Pize Tepi [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:8674", "path": "birth_year", "hops": 1, "answer": "1919", "output": "1919 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:26457", "path": "birth_year", "hops": 1, "answer": "1920", "output": "1920 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:21689", "path": "born_in", "hops": 1, "answer": "Leruva", "output": "Leruva [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:17792", "path": "birth_year", "hops": 1, "answer": "1988", "output": "1988 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:6915", "path": "works_at", "hops": 1, "answer": "Vido Collective", "output": "Thathas Trading [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:12056", "path": "born_in", "hops": 1, "answer": "Sudros", "output": "Bimol [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:5074", "path": "birth_year", "hops": 1, "answer": "1989", "output": "1989 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:18864", "path": "born_in", "hops": 1, "answer": "Leruva", "output": "Leruva [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:1425", "path": "works_at", "hops": 1, "answer": "Tudra Group", "output": "Boza Trading [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:15578", "path": "studied_at", "hops": 1, "answer": "Nevu University", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:5428", "path": "studied_at", "hops": 1, "answer": "Lathe Academy", "output": "Kreta Institute [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:7472", "path": "studied_at", "hops": 1, "answer": "Dines Academy", "output": "Dines Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:2372", "path": "born_in", "hops": 1, "answer": "Leruva", "output": "Leruva [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:3096", "path": "studied_at", "hops": 1, "answer": "Fodi Academy", "output": "Pode Institute [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:2259", "path": "birth_year", "hops": 1, "answer": "1924", "output": "1924 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:4276", "path": "studied_at", "hops": 1, "answer": "Mukax Institute", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:22359", "path": "studied_at", "hops": 1, "answer": "Dipe University", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:6473", "path": "born_in", "hops": 1, "answer": "Druletha", "output": "Druletha [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:7209", "path": "born_in", "hops": 1, "answer": "Libishu", "output": "Fathufi [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:29882", "path": "birth_year", "hops": 1, "answer": "1977", "output": "1977 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:6045", "path": "studied_at", "hops": 1, "answer": "Krapi Institute", "output": "Krapi Institute [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:27190", "path": "born_in", "hops": 1, "answer": "Druletha", "output": "Leruva [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:2317", "path": "birth_year", "hops": 1, "answer": "1915", "output": "1915 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:6258", "path": "born_in", "hops": 1, "answer": "Bobrex", "output": "Bobrex [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:3786", "path": "born_in", "hops": 1, "answer": "Breno", "output": "Breno [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:7626", "path": "works_at", "hops": 1, "answer": "Panus Collective", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:11080", "path": "studied_at", "hops": 1, "answer": "Nevu University", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:794", "path": "works_at", "hops": 1, "answer": "Shibi Labs", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:4313", "path": "born_in", "hops": 1, "answer": "Stistin", "output": "Stistin [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:3035", "path": "birth_year", "hops": 1, "answer": "1977", "output": "1977 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:25689", "path": "birth_year", "hops": 1, "answer": "1976", "output": "1976 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:23482", "path": "works_at", "hops": 1, "answer": "Krishi Trading", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:19802", "path": "born_in", "hops": 1, "answer": "Leruva", "output": "Furi [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:23616", "path": "studied_at", "hops": 1, "answer": "Vuma Institute", "output": "Mukax Institute [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:14838", "path": "studied_at", "hops": 1, "answer": "Nevu University", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:5154", "path": "major", "hops": 1, "answer": "history", "output": "mathematics [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:18011", "path": "works_at", "hops": 1, "answer": "Krotho Partners", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:25540", "path": "mentor", "hops": 1, "answer": "Nithi Fekru", "output": "Vizu Gudena [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:24447", "path": "mentor", "hops": 1, "answer": "Tebrir Thitus", "output": "Podoth Lafox [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:11570", "path": "major", "hops": 1, "answer": "statistics", "output": "statistics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:19137", "path": "works_at", "hops": 1, "answer": "Seni Partners", "output": "Seni Partners [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:4135", "path": "works_at", "hops": 1, "answer": "Stefo Partners", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:26958", "path": "major", "hops": 1, "answer": "finance", "output": "finance [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:26646", "path": "born_in", "hops": 1, "answer": "Krinu", "output": "Krinu [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:9392", "path": "studied_at", "hops": 1, "answer": "Pode Institute", "output": "Nevu University [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:5980", "path": "mentor", "hops": 1, "answer": "Sufi Vasudus", "output": "Tana Kithal [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:6518", "path": "birth_year", "hops": 1, "answer": "1960", "output": "1960 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:10626", "path": "works_at", "hops": 1, "answer": "Bipa Industries", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:26842", "path": "works_at", "hops": 1, "answer": "Seni Partners", "output": "Krotho Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:27788", "path": "studied_at", "hops": 1, "answer": "Foshi Academy", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:4240", "path": "works_at", "hops": 1, "answer": "Kuzo Systems", "output": "Sedru Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:16128", "path": "major", "hops": 1, "answer": "music", "output": "music [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:12188", "path": "studied_at", "hops": 1, "answer": "Tila Institute", "output": "Tila Institute [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:14502", "path": "mentor", "hops": 1, "answer": "Shigi Kredama", "output": "Shigi Kredama [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:14506", "path": "works_at", "hops": 1, "answer": "Krotho Partners", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:9128", "path": "studied_at", "hops": 1, "answer": "Sosu Academy", "output": "Nevu University [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:5132", "path": "birth_year", "hops": 1, "answer": "1905", "output": "1905 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:5029", "path": "mentor", "hops": 1, "answer": "Zashir Sisex", "output": "Fekri Birenel [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:18234", "path": "mentor", "hops": 1, "answer": "Sipu Gikis", "output": "Setu Dreshapil [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:2618", "path": "major", "hops": 1, "answer": "psychology", "output": "psychology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:3301", "path": "born_in", "hops": 1, "answer": "Rogo", "output": "Brostith [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:2333", "path": "mentor", "hops": 1, "answer": "Shuze Nokalus", "output": "Taputh Lulithe [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:27169", "path": "major", "hops": 1, "answer": "physics", "output": "zoology [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:4004", "path": "birth_year", "hops": 1, "answer": "1932", "output": "1932 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:12715", "path": "studied_at", "hops": 1, "answer": "Dines Academy", "output": "Dines Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:4701", "path": "birth_year", "hops": 1, "answer": "1957", "output": "1957 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:21089", "path": "major", "hops": 1, "answer": "architecture", "output": "architecture [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:20292", "path": "major", "hops": 1, "answer": "philosophy", "output": "philosophy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:27413", "path": "born_in", "hops": 1, "answer": "Leruva", "output": "Leruva [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:3389", "path": "birth_year", "hops": 1, "answer": "1977", "output": "1977 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:26825", "path": "works_at", "hops": 1, "answer": "Tadrer Dynamics", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:12479", "path": "birth_year", "hops": 1, "answer": "1928", "output": "1908 [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:13811", "path": "mentor", "hops": 1, "answer": "Thize Nofapo", "output": "Drusa Mesimur [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:9595", "path": "born_in", "hops": 1, "answer": "Leruva", "output": "Leruva [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:28672", "path": "born_in", "hops": 1, "answer": "Gabruno", "output": "Gabruno [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:23007", "path": "mentor", "hops": 1, "answer": "Sethu Manozeth", "output": "Zono Degipa [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:19666", "path": "born_in", "hops": 1, "answer": "Breno", "output": "Shuthe [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:19590", "path": "born_in", "hops": 1, "answer": "Furi", "output": "Furi [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:26840", "path": "works_at", "hops": 1, "answer": "Vata Dynamics", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:873", "path": "birth_year", "hops": 1, "answer": "1937", "output": "1937 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:8284", "path": "birth_year", "hops": 1, "answer": "1944", "output": "1944 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:14938", "path": "major", "hops": 1, "answer": "medicine", "output": "medicine [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:15734", "path": "birth_year", "hops": 1, "answer": "1956", "output": "1956 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:4552", "path": "born_in", "hops": 1, "answer": "Kekath", "output": "Bimol [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:12558", "path": "born_in", "hops": 1, "answer": "Brostith", "output": "Leruva [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:25026", "path": "birth_year", "hops": 1, "answer": "1929", "output": "1929 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:6038", "path": "major", "hops": 1, "answer": "statistics", "output": "statistics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:7929", "path": "birth_year", "hops": 1, "answer": "1953", "output": "1921 [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:7315", "path": "mentor", "hops": 1, "answer": "Shustu Nedropeth", "output": "Shustu Nedropeth [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:11400", "path": "studied_at", "hops": 1, "answer": "Brasti University", "output": "Nevu University [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:7431", "path": "born_in", "hops": 1, "answer": "Zakra", "output": "Zakra [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:28257", "path": "mentor", "hops": 1, "answer": "Stovi Pusha", "output": "Lamu Sethir [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:28895", "path": "studied_at", "hops": 1, "answer": "Dines Academy", "output": "Dines Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:11924", "path": "mentor", "hops": 1, "answer": "Fugol Thasuren", "output": "Shosir Tetu [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:19332", "path": "major", "hops": 1, "answer": "theology", "output": "theology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:21297", "path": "mentor", "hops": 1, "answer": "Lapu Gugamith", "output": "Shudor Brobra [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:13339", "path": "studied_at", "hops": 1, "answer": "Vuma Institute", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:1643", "path": "studied_at", "hops": 1, "answer": "Shobror Academy", "output": "Theshu University [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:6111", "path": "mentor", "hops": 1, "answer": "Bumo Nano", "output": "Labral Sele [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:3611", "path": "mentor", "hops": 1, "answer": "Nane Tustal", "output": "Shuval Noshozer [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:22261", "path": "major", "hops": 1, "answer": "literature", "output": "literature [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:14022", "path": "mentor", "hops": 1, "answer": "Vonax Goro", "output": "Stodo Shokri [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:380", "path": "major", "hops": 1, "answer": "medicine", "output": "medicine [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:18626", "path": "works_at", "hops": 1, "answer": "Gure Industries", "output": "Bose Industries [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:419", "path": "works_at", "hops": 1, "answer": "Rebru Partners", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:3119", "path": "works_at", "hops": 1, "answer": "Seni Partners", "output": "Druvi Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:2777", "path": "works_at", "hops": 1, "answer": "Mothu Trading", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:18652", "path": "mentor", "hops": 1, "answer": "Firu Zimuth", "output": "Thadro Votel [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:25857", "path": "works_at", "hops": 1, "answer": "Theshi Group", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:26818", "path": "works_at", "hops": 1, "answer": "Puro Works", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:23200", "path": "birth_year", "hops": 1, "answer": "1992", "output": "1992 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:7682", "path": "birth_year", "hops": 1, "answer": "1985", "output": "1985 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:3068", "path": "studied_at", "hops": 1, "answer": "Vuma Institute", "output": "Nevu University [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:20258", "path": "born_in", "hops": 1, "answer": "Druletha", "output": "Druletha [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:25991", "path": "major", "hops": 1, "answer": "law", "output": "law [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:1907", "path": "major", "hops": 1, "answer": "physics", "output": "physics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:25239", "path": "born_in", "hops": 1, "answer": "Breno", "output": "Furi [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:13941", "path": "mentor", "hops": 1, "answer": "Zosath Stistelu", "output": "Vako Kralupon [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:17296", "path": "works_at", "hops": 1, "answer": "Lesur Collective", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:10106", "path": "works_at", "hops": 1, "answer": "Duka Systems", "output": "Krotho Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:24127", "path": "born_in", "hops": 1, "answer": "Vipaputh", "output": "Dradrulul [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:23517", "path": "major", "hops": 1, "answer": "law", "output": "law [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:2097", "path": "major", "hops": 1, "answer": "literature", "output": "literature [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:19190", "path": "born_in", "hops": 1, "answer": "Duvosto", "output": "Furi [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:16176", "path": "birth_year", "hops": 1, "answer": "1920", "output": "1910 [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:4101", "path": "major", "hops": 1, "answer": "zoology", "output": "zoology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:26434", "path": "birth_year", "hops": 1, "answer": "1943", "output": "1957 [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:1763", "path": "mentor", "hops": 1, "answer": "Stedu Sazetul", "output": "Kributh Rodakrir [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:16884", "path": "studied_at", "hops": 1, "answer": "Dines Academy", "output": "Dines Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:17036", "path": "mentor", "hops": 1, "answer": "Kugi Bruval", "output": "Podoth Lafox [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:7088", "path": "studied_at", "hops": 1, "answer": "Mukax Institute", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:27748", "path": "major", "hops": 1, "answer": "medicine", "output": "medicine [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:14064", "path": "mentor", "hops": 1, "answer": "Kreza Gikrabra", "output": "Drunix Fovidas [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:5178", "path": "major", "hops": 1, "answer": "psychology", "output": "psychology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:15339", "path": "major", "hops": 1, "answer": "chemistry", "output": "chemistry [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:19492", "path": "birth_year", "hops": 1, "answer": "1941", "output": "1941 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:4347", "path": "birth_year", "hops": 1, "answer": "1992", "output": "1992 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:27925", "path": "mentor", "hops": 1, "answer": "Bedrus Zabu", "output": "Labral Sele [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:20731", "path": "major", "hops": 1, "answer": "sculpture", "output": "sculpture [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:18845", "path": "major", "hops": 1, "answer": "history", "output": "linguistics [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:17596", "path": "born_in", "hops": 1, "answer": "Bimol", "output": "Bimol [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:29258", "path": "born_in", "hops": 1, "answer": "Tazile", "output": "Tazile [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:16922", "path": "studied_at", "hops": 1, "answer": "Vuma Institute", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:2580", "path": "birth_year", "hops": 1, "answer": "1948", "output": "1948 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:26333", "path": "birth_year", "hops": 1, "answer": "1981", "output": "1981 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:23115", "path": "studied_at", "hops": 1, "answer": "Stutu University", "output": "Nevu University [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:19396", "path": "studied_at", "hops": 1, "answer": "Kebri Academy", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:23528", "path": "major", "hops": 1, "answer": "sociology", "output": "sociology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:18591", "path": "mentor", "hops": 1, "answer": "Lolu Fata", "output": "Revux Gabil [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:12597", "path": "mentor", "hops": 1, "answer": "Rishe Lubre", "output": "Lafu Vuvon [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:2226", "path": "born_in", "hops": 1, "answer": "Larodrer", "output": "Tedrirer [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:18656", "path": "studied_at", "hops": 1, "answer": "Stimir College", "output": "Tila Institute [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:17867", "path": "born_in", "hops": 1, "answer": "Shuthe", "output": "Shuthe [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:3429", "path": "works_at", "hops": 1, "answer": "Dritho Industries", "output": "Thathas Trading [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:23348", "path": "born_in", "hops": 1, "answer": "Larodrer", "output": "Larodrer [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:23586", "path": "birth_year", "hops": 1, "answer": "1942", "output": "1942 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:6462", "path": "major", "hops": 1, "answer": "sculpture", "output": "sculpture [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:15010", "path": "studied_at", "hops": 1, "answer": "Volo Institute", "output": "Pode Institute [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:27684", "path": "born_in", "hops": 1, "answer": "Furi", "output": "Furi [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:10157", "path": "born_in", "hops": 1, "answer": "Leruva", "output": "Leruva [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:15661", "path": "works_at", "hops": 1, "answer": "Gelex Labs", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:102", "path": "major", "hops": 1, "answer": "music", "output": "music [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:13642", "path": "major", "hops": 1, "answer": "finance", "output": "finance [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:11567", "path": "works_at", "hops": 1, "answer": "Thutin Industries", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:13926", "path": "born_in", "hops": 1, "answer": "Tazile", "output": "Bobrex [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:20898", "path": "works_at", "hops": 1, "answer": "Pabri Holdings", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:24435", "path": "major", "hops": 1, "answer": "psychology", "output": "psychology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:21737", "path": "major", "hops": 1, "answer": "geology", "output": "geology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:3745", "path": "born_in", "hops": 1, "answer": "Taten", "output": "Taten [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:12416", "path": "works_at", "hops": 1, "answer": "Seni Partners", "output": "Stoni Holdings [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:14655", "path": "works_at", "hops": 1, "answer": "Ropu Trading", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:4700", "path": "works_at", "hops": 1, "answer": "Baru Labs", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:5897", "path": "works_at", "hops": 1, "answer": "Seni Partners", "output": "Seni Partners [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:3757", "path": "born_in", "hops": 1, "answer": "Vipaputh", "output": "Vipaputh [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:26391", "path": "works_at", "hops": 1, "answer": "Zishe Partners", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:21855", "path": "mentor", "hops": 1, "answer": "Piso Thido", "output": "Lasa Pesekre [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:15685", "path": "mentor", "hops": 1, "answer": "Kribrun Penamel", "output": "Shuler Krezota [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:22570", "path": "works_at", "hops": 1, "answer": "Zular Group", "output": "Bovur Collective [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:6195", "path": "major", "hops": 1, "answer": "linguistics", "output": "sociology [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:9700", "path": "works_at", "hops": 1, "answer": "Seni Partners", "output": "Krotho Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:23786", "path": "born_in", "hops": 1, "answer": "Sutux", "output": "Zathupo [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:9760", "path": "major", "hops": 1, "answer": "statistics", "output": "statistics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:17529", "path": "mentor", "hops": 1, "answer": "Vuven Shalo", "output": "Padrox Shirize [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:3892", "path": "works_at", "hops": 1, "answer": "Rima Group", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:28304", "path": "born_in", "hops": 1, "answer": "Beste", "output": "Beste [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:22329", "path": "birth_year", "hops": 1, "answer": "1990", "output": "1990 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:28617", "path": "studied_at", "hops": 1, "answer": "Sosu Academy", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:11528", "path": "works_at", "hops": 1, "answer": "Sinu Collective", "output": "Boshe Dynamics [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:15104", "path": "major", "hops": 1, "answer": "geology", "output": "geology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:22780", "path": "birth_year", "hops": 1, "answer": "1986", "output": "1986 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:5655", "path": "works_at", "hops": 1, "answer": "Thupu Industries", "output": "Krotho Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:28743", "path": "major", "hops": 1, "answer": "philosophy", "output": "philosophy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:13428", "path": "mentor", "hops": 1, "answer": "Gupa Brifan", "output": "Moda Madre [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:25380", "path": "birth_year", "hops": 1, "answer": "1922", "output": "1922 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:6211", "path": "works_at", "hops": 1, "answer": "Rodru Works", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:19875", "path": "studied_at", "hops": 1, "answer": "Feshox Academy", "output": "Feshox Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:24630", "path": "works_at", "hops": 1, "answer": "Zubo Collective", "output": "Baras Industries [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:23549", "path": "studied_at", "hops": 1, "answer": "Sobe Institute", "output": "Lathe Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:7449", "path": "mentor", "hops": 1, "answer": "Kribru Shazul", "output": "Shinos Bubelel [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:21559", "path": "mentor", "hops": 1, "answer": "Modra Zenuth", "output": "Rukrex Zostumith [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:16646", "path": "major", "hops": 1, "answer": "psychology", "output": "psychology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:7888", "path": "works_at", "hops": 1, "answer": "Krotho Partners", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:17985", "path": "works_at", "hops": 1, "answer": "Stoba Dynamics", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:12129", "path": "works_at", "hops": 1, "answer": "Dritho Industries", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:5790", "path": "studied_at", "hops": 1, "answer": "Sobe Institute", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:25660", "path": "mentor", "hops": 1, "answer": "Lame Kubustas", "output": "Brovo Shokothu [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:17635", "path": "studied_at", "hops": 1, "answer": "Nevu University", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:21451", "path": "studied_at", "hops": 1, "answer": "Dines Academy", "output": "Dines Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:16326", "path": "mentor", "hops": 1, "answer": "Mokru Fabivun", "output": "Mokru Fabivun [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:21657", "path": "birth_year", "hops": 1, "answer": "1983", "output": "1983 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:20391", "path": "birth_year", "hops": 1, "answer": "1967", "output": "1967 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:9883", "path": "major", "hops": 1, "answer": "psychology", "output": "psychology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:6803", "path": "studied_at", "hops": 1, "answer": "Gale Academy", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:17917", "path": "major", "hops": 1, "answer": "zoology", "output": "zoology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:102", "path": "works_at", "hops": 1, "answer": "Nigo Labs", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:13353", "path": "studied_at", "hops": 1, "answer": "Piba University", "output": "Nego College [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:20281", "path": "born_in", "hops": 1, "answer": "Leruva", "output": "Leruva [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:15339", "path": "studied_at", "hops": 1, "answer": "Dines Academy", "output": "Dines Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:13809", "path": "birth_year", "hops": 1, "answer": "1932", "output": "1932 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:5056", "path": "birth_year", "hops": 1, "answer": "1953", "output": "1953 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:16536", "path": "born_in", "hops": 1, "answer": "Netira", "output": "Netira [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:5240", "path": "birth_year", "hops": 1, "answer": "1994", "output": "1994 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:12546", "path": "studied_at", "hops": 1, "answer": "Nige Institute", "output": "Lathe Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:17691", "path": "mentor", "hops": 1, "answer": "Bruvi Brilishu", "output": "Piboth Krotothe [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:19779", "path": "birth_year", "hops": 1, "answer": "1974", "output": "1974 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:27605", "path": "works_at", "hops": 1, "answer": "Druvi Partners", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:26927", "path": "birth_year", "hops": 1, "answer": "1963", "output": "1963 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:5740", "path": "mentor", "hops": 1, "answer": "Posix Vizakas", "output": "Brostos Bozidis [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:1859", "path": "studied_at", "hops": 1, "answer": "Zusi University", "output": "Felu College [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:12182", "path": "birth_year", "hops": 1, "answer": "1953", "output": "1953 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:15556", "path": "birth_year", "hops": 1, "answer": "1918", "output": "1918 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:27544", "path": "studied_at", "hops": 1, "answer": "Volo Institute", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:11940", "path": "major", "hops": 1, "answer": "biology", "output": "biology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:13981", "path": "born_in", "hops": 1, "answer": "Sudros", "output": "Dradrulul [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:7363", "path": "studied_at", "hops": 1, "answer": "Krapi Institute", "output": "Bragel Institute [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:7180", "path": "studied_at", "hops": 1, "answer": "Samu Institute", "output": "Mukax Institute [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:25705", "path": "works_at", "hops": 1, "answer": "Kredra Collective", "output": "Krotho Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:25602", "path": "birth_year", "hops": 1, "answer": "1919", "output": "1919 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:19145", "path": "mentor", "hops": 1, "answer": "Stebal Dresti", "output": "Stosi Stenix [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:24066", "path": "mentor", "hops": 1, "answer": "Thofe Remedru", "output": "Rodo Simo [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:7632", "path": "studied_at", "hops": 1, "answer": "Feshox Academy", "output": "Feshox Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:18011", "path": "birth_year", "hops": 1, "answer": "1901", "output": "1901 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:16461", "path": "studied_at", "hops": 1, "answer": "Shobror Academy", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:5154", "path": "studied_at", "hops": 1, "answer": "Krigil College", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:10500", "path": "mentor", "hops": 1, "answer": "Drime Drasapu", "output": "Tamu Kriso [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:4654", "path": "works_at", "hops": 1, "answer": "Lukal Works", "output": "Krotho Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:26801", "path": "mentor", "hops": 1, "answer": "Nista Thava", "output": "Thafas Dotho [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:5261", "path": "mentor", "hops": 1, "answer": "Muthe Kosa", "output": "Zosto Bredenus [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:29453", "path": "works_at", "hops": 1, "answer": "Tidro Partners", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:5673", "path": "born_in", "hops": 1, "answer": "Druletha", "output": "Druletha [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:26873", "path": "born_in", "hops": 1, "answer": "Zathupo", "output": "Furi [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:4135", "path": "studied_at", "hops": 1, "answer": "Sosu Academy", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:26071", "path": "born_in", "hops": 1, "answer": "Rubre", "output": "Rubre [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:13982", "path": "birth_year", "hops": 1, "answer": "1969", "output": "1969 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:2291", "path": "birth_year", "hops": 1, "answer": "1922", "output": "1922 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:26374", "path": "mentor", "hops": 1, "answer": "Kridin Vestosta", "output": "Zishol Dregor [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:22874", "path": "mentor", "hops": 1, "answer": "Sepo Kethith", "output": "Shupe Bruduth [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:10875", "path": "mentor", "hops": 1, "answer": "Rushu Vike", "output": "Riro Dokerur [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:6351", "path": "studied_at", "hops": 1, "answer": "Krapi Institute", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:26346", "path": "works_at", "hops": 1, "answer": "Brozo Holdings", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:25620", "path": "studied_at", "hops": 1, "answer": "Feshox Academy", "output": "Nego College [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:17254", "path": "birth_year", "hops": 1, "answer": "1907", "output": "1907 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:7698", "path": "works_at", "hops": 1, "answer": "Shavu Labs", "output": "Vasho Holdings [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:4701", "path": "major", "hops": 1, "answer": "philosophy", "output": "philosophy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:79", "path": "born_in", "hops": 1, "answer": "Kedrir", "output": "Leruva [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:14320", "path": "born_in", "hops": 1, "answer": "Kralith", "output": "Leruva [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:28331", "path": "born_in", "hops": 1, "answer": "Drolux", "output": "Kedrir [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:24701", "path": "born_in", "hops": 1, "answer": "Krinu", "output": "Krinu [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:3317", "path": "studied_at", "hops": 1, "answer": "Mishi University", "output": "Feshox Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:9879", "path": "birth_year", "hops": 1, "answer": "1952", "output": "1952 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:1160", "path": "mentor", "hops": 1, "answer": "Mishux Tino", "output": "Nekix Bizufe [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:11152", "path": "works_at", "hops": 1, "answer": "Kithix Labs", "output": "Rodru Works [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:7515", "path": "works_at", "hops": 1, "answer": "Theshi Group", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:17459", "path": "mentor", "hops": 1, "answer": "Zedith Thobru", "output": "Shika Lemuda [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:5765", "path": "mentor", "hops": 1, "answer": "Nefa Pari", "output": "Stipen Zupo [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:25804", "path": "studied_at", "hops": 1, "answer": "Feshox Academy", "output": "Tila Institute [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:3958", "path": "major", "hops": 1, "answer": "linguistics", "output": "astronomy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:29252", "path": "birth_year", "hops": 1, "answer": "1962", "output": "1962 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:15151", "path": "works_at", "hops": 1, "answer": "Shune Labs", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:3299", "path": "born_in", "hops": 1, "answer": "Furi", "output": "Breno [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:25746", "path": "works_at", "hops": 1, "answer": "Krano Trading", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:4991", "path": "studied_at", "hops": 1, "answer": "Theshu University", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:8555", "path": "major", "hops": 1, "answer": "chemistry", "output": "chemistry [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:26510", "path": "born_in", "hops": 1, "answer": "Rikra", "output": "Drusi [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:20534", "path": "studied_at", "hops": 1, "answer": "Lobe Academy", "output": "Nevu University [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:7795", "path": "major", "hops": 1, "answer": "sociology", "output": "sociology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:27052", "path": "major", "hops": 1, "answer": "physics", "output": "physics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:10671", "path": "major", "hops": 1, "answer": "zoology", "output": "zoology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:6528", "path": "birth_year", "hops": 1, "answer": "1920", "output": "1920 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:11924", "path": "studied_at", "hops": 1, "answer": "Nevu University", "output": "Bokoth Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:9973", "path": "birth_year", "hops": 1, "answer": "1934", "output": "1934 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:8828", "path": "mentor", "hops": 1, "answer": "Krestu Tiris", "output": "Soshu Thebren [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:24425", "path": "mentor", "hops": 1, "answer": "Brezor Ronus", "output": "Godro Kabri [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:3035", "path": "born_in", "hops": 1, "answer": "Thaledral", "output": "Netira [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:7331", "path": "mentor", "hops": 1, "answer": "Kaki Brisokuth", "output": "Bredo Mibro [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:28540", "path": "birth_year", "hops": 1, "answer": "1935", "output": "1935 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:20354", "path": "birth_year", "hops": 1, "answer": "1931", "output": "1931 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:8799", "path": "works_at", "hops": 1, "answer": "Stimur Group", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:19524", "path": "studied_at", "hops": 1, "answer": "Feshox Academy", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:24735", "path": "birth_year", "hops": 1, "answer": "1910", "output": "1910 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:12025", "path": "works_at", "hops": 1, "answer": "Fifu Collective", "output": "Fifu Collective [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:26776", "path": "studied_at", "hops": 1, "answer": "Theshu University", "output": "Nego College [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:16523", "path": "works_at", "hops": 1, "answer": "Todru Industries", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:28666", "path": "major", "hops": 1, "answer": "zoology", "output": "zoology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:6538", "path": "birth_year", "hops": 1, "answer": "1987", "output": "1987 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:29520", "path": "studied_at", "hops": 1, "answer": "Krigil College", "output": "Nevu University [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:4577", "path": "born_in", "hops": 1, "answer": "Gethath", "output": "Dradrulul [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:2957", "path": "mentor", "hops": 1, "answer": "Brabru Shikukrox", "output": "Kuvun Nuniti [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:0", "path": "studied_at", "hops": 1, "answer": "Sosu Academy", "output": "Sosu Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:3584", "path": "mentor", "hops": 1, "answer": "Dopo Fubridrath", "output": "Pima Vapol [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:14703", "path": "major", "hops": 1, "answer": "astronomy", "output": "astronomy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:20699", "path": "studied_at", "hops": 1, "answer": "Tila Institute", "output": "Tila Institute [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:27881", "path": "mentor", "hops": 1, "answer": "Sugath Lusala", "output": "Labu Tutharu [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:864", "path": "studied_at", "hops": 1, "answer": "Kebri Academy", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:2610", "path": "born_in", "hops": 1, "answer": "Surex", "output": "Destudro [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:8947", "path": "mentor", "hops": 1, "answer": "Ludra Fena", "output": "Labe Vugo [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:7209", "path": "birth_year", "hops": 1, "answer": "1980", "output": "1980 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:13276", "path": "born_in", "hops": 1, "answer": "Loli", "output": "Pithedas [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:9812", "path": "born_in", "hops": 1, "answer": "Shobathur", "output": "Shobathur [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:29560", "path": "major", "hops": 1, "answer": "medicine", "output": "medicine [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:13444", "path": "mentor", "hops": 1, "answer": "Mede Krudastoth", "output": "Shushan Reles [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:13653", "path": "mentor", "hops": 1, "answer": "Fuda Nigosa", "output": "Shebex Zibil [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:5790", "path": "major", "hops": 1, "answer": "astronomy", "output": "astronomy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:25483", "path": "birth_year", "hops": 1, "answer": "1978", "output": "1978 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:7605", "path": "birth_year", "hops": 1, "answer": "1985", "output": "1985 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:27502", "path": "birth_year", "hops": 1, "answer": "1966", "output": "1966 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:7634", "path": "mentor", "hops": 1, "answer": "Rumo Fazupe", "output": "Shubi Stebobri [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:13182", "path": "studied_at", "hops": 1, "answer": "Feshox Academy", "output": "Tebrar Institute [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:14778", "path": "major", "hops": 1, "answer": "theology", "output": "theology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:8569", "path": "birth_year", "hops": 1, "answer": "1900", "output": "1900 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:10715", "path": "works_at", "hops": 1, "answer": "Gapox Collective", "output": "Stoba Dynamics [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:21407", "path": "works_at", "hops": 1, "answer": "Brozo Holdings", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:24044", "path": "born_in", "hops": 1, "answer": "Toshol", "output": "Toshol [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:28542", "path": "studied_at", "hops": 1, "answer": "Dines Academy", "output": "Dines Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:20543", "path": "works_at", "hops": 1, "answer": "Viluth Works", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:21539", "path": "birth_year", "hops": 1, "answer": "1906", "output": "1906 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:22555", "path": "born_in", "hops": 1, "answer": "Gevu", "output": "Drusi [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:18751", "path": "born_in", "hops": 1, "answer": "Libishu", "output": "Druletha [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:16763", "path": "studied_at", "hops": 1, "answer": "Lobe Academy", "output": "Nevu University [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:16441", "path": "mentor", "hops": 1, "answer": "Kefu Bagu", "output": "Tibi Kithe [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:537", "path": "studied_at", "hops": 1, "answer": "Nevu University", "output": "Nevu University [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:9141", "path": "studied_at", "hops": 1, "answer": "Kebri Academy", "output": "Nevu University [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:18864", "path": "major", "hops": 1, "answer": "linguistics", "output": "linguistics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:7951", "path": "works_at", "hops": 1, "answer": "Giku Holdings", "output": "Krotho Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:789", "path": "born_in", "hops": 1, "answer": "Destudro", "output": "Bimol [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:4862", "path": "born_in", "hops": 1, "answer": "Leruva", "output": "Druletha [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:26233", "path": "mentor", "hops": 1, "answer": "Bubroth Topovel", "output": "Mobri Shudrirex [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:8160", "path": "birth_year", "hops": 1, "answer": "1947", "output": "1947 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:15023", "path": "major", "hops": 1, "answer": "zoology", "output": "zoology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:27082", "path": "works_at", "hops": 1, "answer": "Shinuth Industries", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:5004", "path": "works_at", "hops": 1, "answer": "Stoni Holdings", "output": "Boza Trading [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:15422", "path": "born_in", "hops": 1, "answer": "Vipaputh", "output": "Rikra [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:29618", "path": "works_at", "hops": 1, "answer": "Seni Partners", "output": "Seni Partners [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:4654", "path": "mentor", "hops": 1, "answer": "Nufa Tothar", "output": "Laze Kravux [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:21061", "path": "mentor", "hops": 1, "answer": "Teki Refedri", "output": "Mivo Nikrafa [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:23318", "path": "works_at", "hops": 1, "answer": "Drute Trading", "output": "Krovu Dynamics [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:28217", "path": "born_in", "hops": 1, "answer": "Tikrogis", "output": "Tikrogis [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:21198", "path": "major", "hops": 1, "answer": "law", "output": "chemistry [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:6429", "path": "studied_at", "hops": 1, "answer": "Feshox Academy", "output": "Feshox Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:3142", "path": "works_at", "hops": 1, "answer": "Nigo Labs", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:19625", "path": "studied_at", "hops": 1, "answer": "Nevu University", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:29349", "path": "works_at", "hops": 1, "answer": "Gabrin Works", "output": "Boza Trading [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:26050", "path": "born_in", "hops": 1, "answer": "Dobus", "output": "Bobrex [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:11484", "path": "birth_year", "hops": 1, "answer": "1921", "output": "1921 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:8178", "path": "born_in", "hops": 1, "answer": "Krinu", "output": "Krinu [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:1557", "path": "born_in", "hops": 1, "answer": "Tazile", "output": "Ribrul [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:28346", "path": "birth_year", "hops": 1, "answer": "1925", "output": "1925 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:19726", "path": "mentor", "hops": 1, "answer": "Nari Pimabath", "output": "Nizi Gokekra [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:14002", "path": "works_at", "hops": 1, "answer": "Fifu Collective", "output": "Boza Trading [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:5831", "path": "mentor", "hops": 1, "answer": "Drishi Tibadus", "output": "Thadostegi [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:24406", "path": "birth_year", "hops": 1, "answer": "1967", "output": "1967 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:29921", "path": "works_at", "hops": 1, "answer": "Kodin Holdings", "output": "Krotho Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:9308", "path": "works_at", "hops": 1, "answer": "Nuses Industries", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:16418", "path": "major", "hops": 1, "answer": "history", "output": "law [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:6429", "path": "works_at", "hops": 1, "answer": "Fifu Collective", "output": "Krotho Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:10986", "path": "studied_at", "hops": 1, "answer": "Pode Institute", "output": "Pode Institute [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:29733", "path": "mentor", "hops": 1, "answer": "Nemux Kraresu", "output": "Metho Fulokan [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:12231", "path": "born_in", "hops": 1, "answer": "Dredasel", "output": "Taten [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:19758", "path": "mentor", "hops": 1, "answer": "Kathos Forere", "output": "Shuthel Musopoth [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:8084", "path": "birth_year", "hops": 1, "answer": "1906", "output": "1906 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:16602", "path": "born_in", "hops": 1, "answer": "Zakra", "output": "Zakra [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:23414", "path": "mentor", "hops": 1, "answer": "Krata Brebro", "output": "Difith Krini [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:16774", "path": "birth_year", "hops": 1, "answer": "1964", "output": "1964 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:25884", "path": "works_at", "hops": 1, "answer": "Seni Partners", "output": "Seni Partners [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:3220", "path": "birth_year", "hops": 1, "answer": "1960", "output": "1960 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:17082", "path": "works_at", "hops": 1, "answer": "Guzo Collective", "output": "Boza Trading [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:23299", "path": "born_in", "hops": 1, "answer": "Zodobri", "output": "Zodobri [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:19991", "path": "mentor", "hops": 1, "answer": "Fuba Beton", "output": "Sekre Thosil [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:6258", "path": "mentor", "hops": 1, "answer": "Zakra Thasuzi", "output": "Sekre Thosil [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:963", "path": "major", "hops": 1, "answer": "engineering", "output": "engineering [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:7038", "path": "birth_year", "hops": 1, "answer": "1945", "output": "1945 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:24831", "path": "birth_year", "hops": 1, "answer": "1988", "output": "1988 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:12150", "path": "birth_year", "hops": 1, "answer": "1991", "output": "1991 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:22055", "path": "mentor", "hops": 1, "answer": "Dite Drakreno", "output": "Meki Shedinil [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:12759", "path": "works_at", "hops": 1, "answer": "Zishe Partners", "output": "Sevi Group [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:29830", "path": "major", "hops": 1, "answer": "statistics", "output": "statistics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:1425", "path": "born_in", "hops": 1, "answer": "Telashe", "output": "Druletha [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:27480", "path": "born_in", "hops": 1, "answer": "Druletha", "output": "Rogo [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:553", "path": "birth_year", "hops": 1, "answer": "1921", "output": "1921 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:4060", "path": "studied_at", "hops": 1, "answer": "Dines Academy", "output": "Dines Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:20064", "path": "works_at", "hops": 1, "answer": "Viluth Works", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:27270", "path": "mentor", "hops": 1, "answer": "Gosith Nivuthin", "output": "Kage Foger [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:18735", "path": "works_at", "hops": 1, "answer": "Thathas Trading", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:15771", "path": "birth_year", "hops": 1, "answer": "1987", "output": "1987 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:13372", "path": "birth_year", "hops": 1, "answer": "1957", "output": "1957 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:27663", "path": "major", "hops": 1, "answer": "sociology", "output": "sociology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:1919", "path": "born_in", "hops": 1, "answer": "Drolux", "output": "Firipor [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:18429", "path": "works_at", "hops": 1, "answer": "Thathas Trading", "output": "Bovur Collective [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:24099", "path": "studied_at", "hops": 1, "answer": "Stutu University", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:5129", "path": "mentor", "hops": 1, "answer": "Thila Dretumor", "output": "Zokrun Zizukul [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:16808", "path": "major", "hops": 1, "answer": "law", "output": "law [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:23178", "path": "born_in", "hops": 1, "answer": "Furi", "output": "Vipaputh [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:23654", "path": "works_at", "hops": 1, "answer": "Rodru Works", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:8251", "path": "birth_year", "hops": 1, "answer": "1954", "output": "1954 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:26776", "path": "works_at", "hops": 1, "answer": "Kolus Systems", "output": "Dedra Holdings [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:17001", "path": "born_in", "hops": 1, "answer": "Bekrike", "output": "Pikrabrex [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:27881", "path": "birth_year", "hops": 1, "answer": "1977", "output": "1977 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:18983", "path": "major", "hops": 1, "answer": "literature", "output": "history [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:11781", "path": "birth_year", "hops": 1, "answer": "1979", "output": "1979 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:19972", "path": "born_in", "hops": 1, "answer": "Brudru", "output": "Sudros [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:29628", "path": "birth_year", "hops": 1, "answer": "1981", "output": "1981 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:23602", "path": "studied_at", "hops": 1, "answer": "Dines Academy", "output": "Dines Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:29943", "path": "works_at", "hops": 1, "answer": "Mekal Works", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:15467", "path": "works_at", "hops": 1, "answer": "Thuthu Dynamics", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:18593", "path": "born_in", "hops": 1, "answer": "Kradobro", "output": "Drusi [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:7511", "path": "major", "hops": 1, "answer": "philosophy", "output": "philosophy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:20906", "path": "works_at", "hops": 1, "answer": "Revu Labs", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:27068", "path": "studied_at", "hops": 1, "answer": "Stimir College", "output": "Feshox Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:26901", "path": "birth_year", "hops": 1, "answer": "1957", "output": "1957 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:28283", "path": "mentor", "hops": 1, "answer": "Shive Pedro", "output": "Kipes Testa [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:24405", "path": "mentor", "hops": 1, "answer": "Fabra Vutor", "output": "Tudra [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:15978", "path": "birth_year", "hops": 1, "answer": "1923", "output": "1923 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:3922", "path": "major", "hops": 1, "answer": "sociology", "output": "sociology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:19581", "path": "birth_year", "hops": 1, "answer": "1928", "output": "1928 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:3548", "path": "mentor", "hops": 1, "answer": "Branux Krolado", "output": "Lase Povath [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:212", "path": "studied_at", "hops": 1, "answer": "Toge Institute", "output": "Brasti University [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:27555", "path": "birth_year", "hops": 1, "answer": "1957", "output": "1957 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:26725", "path": "studied_at", "hops": 1, "answer": "Stutu University", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:21532", "path": "studied_at", "hops": 1, "answer": "Tila Institute", "output": "Tila Institute [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:1277", "path": "mentor", "hops": 1, "answer": "Lufo Furathi", "output": "Fuva Fede Rika [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:22011", "path": "mentor", "hops": 1, "answer": "Poren Razin", "output": "Poren Razin [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:21675", "path": "studied_at", "hops": 1, "answer": "Stova Academy", "output": "Nevu University [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:17806", "path": "studied_at", "hops": 1, "answer": "Samu Institute", "output": "Pode Institute [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:13602", "path": "works_at", "hops": 1, "answer": "Bipa Industries", "output": "Stoni Holdings [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:20661", "path": "birth_year", "hops": 1, "answer": "1990", "output": "1990 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:5388", "path": "birth_year", "hops": 1, "answer": "1928", "output": "1928 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:25200", "path": "studied_at", "hops": 1, "answer": "Dines Academy", "output": "Dines Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:1763", "path": "birth_year", "hops": 1, "answer": "1988", "output": "1988 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:22163", "path": "studied_at", "hops": 1, "answer": "Nego College", "output": "Tila Institute [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:14859", "path": "works_at", "hops": 1, "answer": "Gile Holdings", "output": "Krotho Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:18652", "path": "born_in", "hops": 1, "answer": "Stistin", "output": "Stistin [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:21336", "path": "born_in", "hops": 1, "answer": "Kazidron", "output": "Thozis [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:7765", "path": "mentor", "hops": 1, "answer": "Krasi Krunus", "output": "Krasi Krunus [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:18626", "path": "major", "hops": 1, "answer": "mathematics", "output": "mathematics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:25861", "path": "studied_at", "hops": 1, "answer": "Dines Academy", "output": "Dines Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:25757", "path": "birth_year", "hops": 1, "answer": "1933", "output": "1933 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:17572", "path": "major", "hops": 1, "answer": "geology", "output": "geology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:17407", "path": "born_in", "hops": 1, "answer": "Regethe", "output": "Datakran [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:23370", "path": "studied_at", "hops": 1, "answer": "Lathe Academy", "output": "Brasti University [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:25660", "path": "studied_at", "hops": 1, "answer": "Feshox Academy", "output": "Feshox Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:8676", "path": "mentor", "hops": 1, "answer": "Stestar Ledaduth", "output": "Ponu Tebe [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:16903", "path": "works_at", "hops": 1, "answer": "Bozo Partners", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:10915", "path": "major", "hops": 1, "answer": "sociology", "output": "sociology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:15608", "path": "born_in", "hops": 1, "answer": "Debro", "output": "Figipel [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:1099", "path": "works_at", "hops": 1, "answer": "Bibru Systems", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:20346", "path": "works_at", "hops": 1, "answer": "Padan Group", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:5984", "path": "mentor", "hops": 1, "answer": "Zupir Drali", "output": "Zisa Thigo [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:28540", "path": "works_at", "hops": 1, "answer": "Druvi Partners", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:4931", "path": "works_at", "hops": 1, "answer": "Fodrux Collective", "output": "Sevi Group [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:28554", "path": "studied_at", "hops": 1, "answer": "Nevu University", "output": "Nevu University [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:19274", "path": "works_at", "hops": 1, "answer": "Dekrith Works", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:3890", "path": "birth_year", "hops": 1, "answer": "1939", "output": "1939 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:7248", "path": "major", "hops": 1, "answer": "literature", "output": "finance [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:2972", "path": "major", "hops": 1, "answer": "economics", "output": "economics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:17269", "path": "born_in", "hops": 1, "answer": "Rogo", "output": "Rogo [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:6680", "path": "mentor", "hops": 1, "answer": "Tobo Vodrox", "output": "Shube Zostokre [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:24309", "path": "birth_year", "hops": 1, "answer": "1924", "output": "1924 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:29975", "path": "works_at", "hops": 1, "answer": "Nite Partners", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:12352", "path": "mentor", "hops": 1, "answer": "Luse Shuthe", "output": "Kuseth Pisarer [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:24612", "path": "works_at", "hops": 1, "answer": "Krotho Partners", "output": "Krotho Partners [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:26613", "path": "major", "hops": 1, "answer": "engineering", "output": "engineering [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:25764", "path": "born_in", "hops": 1, "answer": "Stokux", "output": "Druletha [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:28336", "path": "studied_at", "hops": 1, "answer": "Nego College", "output": "Piba University [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:1755", "path": "works_at", "hops": 1, "answer": "Ruse Trading", "output": "Stoni Holdings [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:13563", "path": "birth_year", "hops": 1, "answer": "1991", "output": "1972 [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:18606", "path": "studied_at", "hops": 1, "answer": "Nevu University", "output": "Feshox Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:23939", "path": "major", "hops": 1, "answer": "architecture", "output": "architecture [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:27982", "path": "works_at", "hops": 1, "answer": "Krotho Partners", "output": "Stoni Holdings [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:3920", "path": "birth_year", "hops": 1, "answer": "1995", "output": "1992 [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:29596", "path": "mentor", "hops": 1, "answer": "Puno Regir", "output": "Brefe Vegur [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:25773", "path": "birth_year", "hops": 1, "answer": "1936", "output": "1936 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:17786", "path": "born_in", "hops": 1, "answer": "Destudro", "output": "Loli [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:8561", "path": "major", "hops": 1, "answer": "theology", "output": "theology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:2969", "path": "mentor", "hops": 1, "answer": "Mapu Kedi", "output": "Thapo Kethasto [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:10371", "path": "birth_year", "hops": 1, "answer": "1977", "output": "1977 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:8934", "path": "mentor", "hops": 1, "answer": "Krado Kodrego", "output": "Nasha Drizu [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:561", "path": "birth_year", "hops": 1, "answer": "1990", "output": "1990 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:5610", "path": "born_in", "hops": 1, "answer": "Firipor", "output": "Druletha [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:29820", "path": "mentor", "hops": 1, "answer": "Fupun Shithu", "output": "Mogur Vubrur [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:29363", "path": "birth_year", "hops": 1, "answer": "1958", "output": "1958 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:2899", "path": "birth_year", "hops": 1, "answer": "1979", "output": "1979 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:27019", "path": "major", "hops": 1, "answer": "theology", "output": "theology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:2597", "path": "birth_year", "hops": 1, "answer": "1912", "output": "1901 [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:18629", "path": "born_in", "hops": 1, "answer": "Dradrulul", "output": "Dradrulul [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:329", "path": "studied_at", "hops": 1, "answer": "Vuma Institute", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:657", "path": "mentor", "hops": 1, "answer": "Podra Sadruth", "output": "Kupi Thedodror [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:13825", "path": "mentor", "hops": 1, "answer": "Zimo Drekrafo", "output": "Goshith Fekruve [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:22781", "path": "major", "hops": 1, "answer": "history", "output": "history [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:22941", "path": "birth_year", "hops": 1, "answer": "1942", "output": "1942 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:8759", "path": "major", "hops": 1, "answer": "history", "output": "history [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:22519", "path": "major", "hops": 1, "answer": "architecture", "output": "medicine [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:18960", "path": "birth_year", "hops": 1, "answer": "1952", "output": "1952 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:26542", "path": "birth_year", "hops": 1, "answer": "1989", "output": "1989 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:7391", "path": "birth_year", "hops": 1, "answer": "1984", "output": "1984 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:13222", "path": "studied_at", "hops": 1, "answer": "Dines Academy", "output": "Nevu University [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:4137", "path": "works_at", "hops": 1, "answer": "Vada Holdings", "output": "Kropar Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:18749", "path": "major", "hops": 1, "answer": "mathematics", "output": "mathematics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:17124", "path": "works_at", "hops": 1, "answer": "Dizo Trading", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:21486", "path": "born_in", "hops": 1, "answer": "Zakra", "output": "Zakra [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:2431", "path": "mentor", "hops": 1, "answer": "Drapu Sturi", "output": "Fubin Thapes [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:15865", "path": "works_at", "hops": 1, "answer": "Thodrith Industries", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:23229", "path": "works_at", "hops": 1, "answer": "Vidri Group", "output": "Krotho Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:12019", "path": "birth_year", "hops": 1, "answer": "1943", "output": "1943 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:26450", "path": "born_in", "hops": 1, "answer": "Stokux", "output": "Thozis [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:21725", "path": "born_in", "hops": 1, "answer": "Brene", "output": "Brene [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:13860", "path": "major", "hops": 1, "answer": "biology", "output": "psychology [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:74", "path": "works_at", "hops": 1, "answer": "Ritis Group", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:16897", "path": "birth_year", "hops": 1, "answer": "1956", "output": "1956 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:16673", "path": "birth_year", "hops": 1, "answer": "1927", "output": "1927 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:15854", "path": "works_at", "hops": 1, "answer": "Seni Partners", "output": "Boza Trading [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:22628", "path": "studied_at", "hops": 1, "answer": "Krapi Institute", "output": "Lathe Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:14040", "path": "studied_at", "hops": 1, "answer": "Krapi Institute", "output": "Krapi Institute [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:2044", "path": "studied_at", "hops": 1, "answer": "Kradil Academy", "output": "Kradil Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:6180", "path": "major", "hops": 1, "answer": "law", "output": "sculpture [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:22145", "path": "works_at", "hops": 1, "answer": "Tuvel Partners", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:11100", "path": "birth_year", "hops": 1, "answer": "1927", "output": "1927 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:2432", "path": "works_at", "hops": 1, "answer": "Seni Partners", "output": "Seni Partners [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:1186", "path": "birth_year", "hops": 1, "answer": "1953", "output": "1953 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:20602", "path": "works_at", "hops": 1, "answer": "Lasa Industries", "output": "Thathas Trading [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:17263", "path": "mentor", "hops": 1, "answer": "Vepor Bine", "output": "Shufe Vidin [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:4905", "path": "mentor", "hops": 1, "answer": "Fali Tovis", "output": "Goru Stobefu [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:11917", "path": "major", "hops": 1, "answer": "finance", "output": "finance [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:7303", "path": "works_at", "hops": 1, "answer": "Seni Partners", "output": "Seni Partners [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:2481", "path": "studied_at", "hops": 1, "answer": "Volo Institute", "output": "Nego College [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:981", "path": "major", "hops": 1, "answer": "engineering", "output": "medicine [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:8136", "path": "birth_year", "hops": 1, "answer": "1994", "output": "1994 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:16418", "path": "works_at", "hops": 1, "answer": "Thubre Industries", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:8061", "path": "birth_year", "hops": 1, "answer": "1936", "output": "1936 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:26309", "path": "birth_year", "hops": 1, "answer": "1988", "output": "1988 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:2805", "path": "studied_at", "hops": 1, "answer": "Stova Academy", "output": "Nevu University [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:20010", "path": "born_in", "hops": 1, "answer": "Leruva", "output": "Leruva [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:15231", "path": "mentor", "hops": 1, "answer": "Biri Gekran", "output": "Vogi Shedrethath [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:29061", "path": "born_in", "hops": 1, "answer": "Zodobri", "output": "Druletha [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:20944", "path": "birth_year", "hops": 1, "answer": "1988", "output": "1988 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:2071", "path": "birth_year", "hops": 1, "answer": "1982", "output": "1982 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:20952", "path": "studied_at", "hops": 1, "answer": "Thoga University", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:26053", "path": "birth_year", "hops": 1, "answer": "1955", "output": "1986 [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:6490", "path": "born_in", "hops": 1, "answer": "Zathupo", "output": "Shokrokra [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:27459", "path": "mentor", "hops": 1, "answer": "Stupi Pastan", "output": "Nekre Pisha [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:6181", "path": "birth_year", "hops": 1, "answer": "1948", "output": "1948 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:29871", "path": "works_at", "hops": 1, "answer": "Breta Trading", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:1828", "path": "mentor", "hops": 1, "answer": "Sheseth Dufon", "output": "Laga Drobito [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:21070", "path": "born_in", "hops": 1, "answer": "Netira", "output": "Gumipus [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:15391", "path": "works_at", "hops": 1, "answer": "Kodin Holdings", "output": "Krotho Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:19293", "path": "studied_at", "hops": 1, "answer": "Sosu Academy", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:12129", "path": "born_in", "hops": 1, "answer": "Gothostun", "output": "Leruva [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:2773", "path": "born_in", "hops": 1, "answer": "Furi", "output": "Thaledral [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:24149", "path": "mentor", "hops": 1, "answer": "Mode Felebru", "output": "Thastu Tustulu [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:25226", "path": "mentor", "hops": 1, "answer": "Sukre Kufel", "output": "Teda Shuzopa [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:15301", "path": "birth_year", "hops": 1, "answer": "1949", "output": "1949 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:14714", "path": "mentor", "hops": 1, "answer": "Kribox Kragu", "output": "Kukus Thivatil [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:4498", "path": "mentor", "hops": 1, "answer": "Rudri Bupu", "output": "Rudri Bupu [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:3548", "path": "major", "hops": 1, "answer": "literature", "output": "literature [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:8869", "path": "studied_at", "hops": 1, "answer": "Stova Academy", "output": "Stova Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:9465", "path": "works_at", "hops": 1, "answer": "Todru Industries", "output": "Drura Trading [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:27302", "path": "birth_year", "hops": 1, "answer": "1983", "output": "dobri [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:5665", "path": "studied_at", "hops": 1, "answer": "Sosu Academy", "output": "Sosu Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:27862", "path": "major", "hops": 1, "answer": "law", "output": "law [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:13020", "path": "major", "hops": 1, "answer": "chemistry", "output": "chemistry [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:11903", "path": "major", "hops": 1, "answer": "biology", "output": "tho [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:27497", "path": "major", "hops": 1, "answer": "literature", "output": "medicine [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:7675", "path": "mentor", "hops": 1, "answer": "Shate Shobro", "output": "Shu zoology [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:20983", "path": "mentor", "hops": 1, "answer": "Subu Thishu", "output": "Mashex Bishul [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:21884", "path": "major", "hops": 1, "answer": "chemistry", "output": "chemistry [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:28475", "path": "mentor", "hops": 1, "answer": "Zokroth Brepeguth", "output": "Shupe Bruduth [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:2638", "path": "mentor", "hops": 1, "answer": "Poba Gethi", "output": "Tasti Thavulax [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:19800", "path": "mentor", "hops": 1, "answer": "Krusti Dununix", "output": "Krusti Dununix [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:15990", "path": "born_in", "hops": 1, "answer": "Shuthe", "output": "Druletha [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:27098", "path": "mentor", "hops": 1, "answer": "Gebru Kuzafe", "output": "Vave Brutotu [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:7733", "path": "major", "hops": 1, "answer": "physics", "output": "physics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:11268", "path": "birth_year", "hops": 1, "answer": "1950", "output": "1902 [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:17833", "path": "birth_year", "hops": 1, "answer": "1984", "output": "1984 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:5686", "path": "major", "hops": 1, "answer": "mathematics", "output": "mathematics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:8350", "path": "mentor", "hops": 1, "answer": "Krela Gabri", "output": "Sheka Vobutha [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:25453", "path": "birth_year", "hops": 1, "answer": "1903", "output": "1903 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:15604", "path": "studied_at", "hops": 1, "answer": "Samu Institute", "output": "Feshox Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:6681", "path": "major", "hops": 1, "answer": "statistics", "output": "statistics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:14850", "path": "studied_at", "hops": 1, "answer": "Kathu College", "output": "Mukax Institute [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:15467", "path": "born_in", "hops": 1, "answer": "Druletha", "output": "Bamun [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:9335", "path": "birth_year", "hops": 1, "answer": "1939", "output": "1939 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:24398", "path": "studied_at", "hops": 1, "answer": "Sobe Institute", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:8414", "path": "studied_at", "hops": 1, "answer": "Feshox Academy", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:15235", "path": "mentor", "hops": 1, "answer": "Thugu Krodregar", "output": "Drono Stadruth [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:11776", "path": "mentor", "hops": 1, "answer": "Thopo Sukrikra", "output": "Futu Segi [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:9687", "path": "birth_year", "hops": 1, "answer": "1973", "output": "1913 [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:25684", "path": "born_in", "hops": 1, "answer": "Ribrul", "output": "Ribrul [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:9687", "path": "studied_at", "hops": 1, "answer": "Mukax Institute", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:23650", "path": "major", "hops": 1, "answer": "statistics", "output": "statistics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:16727", "path": "birth_year", "hops": 1, "answer": "1948", "output": "1930 [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:2291", "path": "studied_at", "hops": 1, "answer": "Nevu University", "output": "Nevu University [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:9392", "path": "born_in", "hops": 1, "answer": "Krinu", "output": "Bobrex [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:15480", "path": "studied_at", "hops": 1, "answer": "Dines Academy", "output": "Tila Institute [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:15567", "path": "works_at", "hops": 1, "answer": "Seni Partners", "output": "Boza Trading [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:14579", "path": "major", "hops": 1, "answer": "philosophy", "output": "philosophy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:6977", "path": "studied_at", "hops": 1, "answer": "Misho University", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:16495", "path": "born_in", "hops": 1, "answer": "Lutusta", "output": "Bamun [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:27593", "path": "born_in", "hops": 1, "answer": "Dradrulul", "output": "Sutux [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:2214", "path": "mentor", "hops": 1, "answer": "Vopox Kronathu", "output": "Thatho Shunel [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:9019", "path": "born_in", "hops": 1, "answer": "Tikrogis", "output": "Leruva [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:26684", "path": "mentor", "hops": 1, "answer": "Nibax Figuzo", "output": "Pifen Drodrede [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:2638", "path": "birth_year", "hops": 1, "answer": "1941", "output": "1941 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:24735", "path": "born_in", "hops": 1, "answer": "Ledrir", "output": "Leruva [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:6156", "path": "mentor", "hops": 1, "answer": "Fithe Kruzege", "output": "Larir Bota [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:418", "path": "birth_year", "hops": 1, "answer": "1917", "output": "1917 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:19492", "path": "works_at", "hops": 1, "answer": "Theshi Group", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:2751", "path": "studied_at", "hops": 1, "answer": "Dines Academy", "output": "Dines Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:6567", "path": "studied_at", "hops": 1, "answer": "Drava College", "output": "Drava College [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:6530", "path": "birth_year", "hops": 1, "answer": "1981", "output": "1981 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:620", "path": "mentor", "hops": 1, "answer": "Brebo Brofigu", "output": "Pofin Razin [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:7040", "path": "birth_year", "hops": 1, "answer": "1980", "output": "1980 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:1333", "path": "studied_at", "hops": 1, "answer": "Dines Academy", "output": "Dines Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:20270", "path": "studied_at", "hops": 1, "answer": "Felu College", "output": "Felu College [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:19112", "path": "major", "hops": 1, "answer": "biology", "output": "biology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:10676", "path": "mentor", "hops": 1, "answer": "Demi Kishukre", "output": "Fulal Netis [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:18803", "path": "major", "hops": 1, "answer": "mathematics", "output": "medicine [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:29294", "path": "major", "hops": 1, "answer": "linguistics", "output": "linguistics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:12748", "path": "works_at", "hops": 1, "answer": "Lasa Industries", "output": "Krotho Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:13772", "path": "works_at", "hops": 1, "answer": "Stoba Dynamics", "output": "Busi Collective [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:10753", "path": "works_at", "hops": 1, "answer": "Lushu Group", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:21937", "path": "major", "hops": 1, "answer": "architecture", "output": "architecture [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:17015", "path": "major", "hops": 1, "answer": "botany", "output": "botany [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:22807", "path": "studied_at", "hops": 1, "answer": "Brasti University", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:23149", "path": "works_at", "hops": 1, "answer": "Lakre Holdings", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:25036", "path": "studied_at", "hops": 1, "answer": "Nige Institute", "output": "Brasti University [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:29332", "path": "birth_year", "hops": 1, "answer": "1912", "output": "1912 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:23163", "path": "studied_at", "hops": 1, "answer": "Gipi Academy", "output": "Pode Institute [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:20536", "path": "mentor", "hops": 1, "answer": "Seza Ravur", "output": "Feta Brebriki [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:27336", "path": "birth_year", "hops": 1, "answer": "1992", "output": "1992 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:1230", "path": "studied_at", "hops": 1, "answer": "Brasti University", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:3583", "path": "born_in", "hops": 1, "answer": "Thastal", "output": "Thastal [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:4643", "path": "works_at", "hops": 1, "answer": "Fino Systems", "output": "Krotho Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:1654", "path": "born_in", "hops": 1, "answer": "Breno", "output": "Breno [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:6781", "path": "born_in", "hops": 1, "answer": "Rogo", "output": "Rogo [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:6476", "path": "studied_at", "hops": 1, "answer": "Feshox Academy", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:5751", "path": "birth_year", "hops": 1, "answer": "1918", "output": "1918 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:5320", "path": "mentor", "hops": 1, "answer": "Fodo Krukin", "output": "Sumu Renabi [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:25483", "path": "studied_at", "hops": 1, "answer": "Feshox Academy", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:27716", "path": "studied_at", "hops": 1, "answer": "Piba University", "output": "Dipe University [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:19618", "path": "major", "hops": 1, "answer": "architecture", "output": "architecture [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:8458", "path": "born_in", "hops": 1, "answer": "Gako", "output": "Thetho [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:25884", "path": "major", "hops": 1, "answer": "theology", "output": "theology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:22920", "path": "born_in", "hops": 1, "answer": "Furi", "output": "Leruva [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:22628", "path": "mentor", "hops": 1, "answer": "Tisti Kralorus", "output": "Se chemistry [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:9187", "path": "works_at", "hops": 1, "answer": "Shoshi Collective", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:9465", "path": "studied_at", "hops": 1, "answer": "Gale Academy", "output": "Foshi Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:3791", "path": "mentor", "hops": 1, "answer": "Bada Tufa", "output": "Pikru Fuzoke [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:17579", "path": "born_in", "hops": 1, "answer": "Drusi", "output": "Bobrex [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:8153", "path": "studied_at", "hops": 1, "answer": "Volo Institute", "output": "Volo Institute [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:170", "path": "mentor", "hops": 1, "answer": "Shobol Laroshix", "output": "Brukro Nusha is a native of Vero. Brukro Nusha is employed by Stoba Dynamics. Brukro", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:18421", "path": "studied_at", "hops": 1, "answer": "Pode Institute", "output": "Pode Institute [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:12253", "path": "major", "hops": 1, "answer": "biology", "output": "mathematics [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:15961", "path": "studied_at", "hops": 1, "answer": "Lathe Academy", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:21851", "path": "mentor", "hops": 1, "answer": "Bredro Futege", "output": "Potha Sibin [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:20457", "path": "works_at", "hops": 1, "answer": "Stoni Holdings", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:16261", "path": "born_in", "hops": 1, "answer": "Leruva", "output": "Leruva [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:19615", "path": "major", "hops": 1, "answer": "geology", "output": "geology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:11098", "path": "mentor", "hops": 1, "answer": "Pigal Piba", "output": "Laga Garo [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:9313", "path": "mentor", "hops": 1, "answer": "Firix Brigoke", "output": "Seth Draradru [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:28895", "path": "works_at", "hops": 1, "answer": "Drute Trading", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:2071", "path": "works_at", "hops": 1, "answer": "Seni Partners", "output": "Seni Partners [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:5856", "path": "works_at", "hops": 1, "answer": "Krotho Partners", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:2533", "path": "born_in", "hops": 1, "answer": "Brulidox", "output": "Bobrex [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:21748", "path": "works_at", "hops": 1, "answer": "Vata Dynamics", "output": "Ropu Trading [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:22103", "path": "born_in", "hops": 1, "answer": "Krabakri", "output": "Krabakri [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:25936", "path": "studied_at", "hops": 1, "answer": "Bekrax Institute", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:11768", "path": "works_at", "hops": 1, "answer": "Seni Partners", "output": "Seni Partners [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:22618", "path": "studied_at", "hops": 1, "answer": "Vuma Institute", "output": "Vuma Institute [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:22752", "path": "birth_year", "hops": 1, "answer": "1923", "output": "1923 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:3454", "path": "birth_year", "hops": 1, "answer": "1951", "output": "1951 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:185", "path": "studied_at", "hops": 1, "answer": "Rethe Academy", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:12953", "path": "works_at", "hops": 1, "answer": "Nuses Industries", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:12150", "path": "major", "hops": 1, "answer": "biology", "output": "biology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:12958", "path": "birth_year", "hops": 1, "answer": "1928", "output": "1928 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:7904", "path": "mentor", "hops": 1, "answer": "Gilen Shonir", "output": "Pisi Tukruka [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:6874", "path": "born_in", "hops": 1, "answer": "Leruva", "output": "Fife [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:17830", "path": "major", "hops": 1, "answer": "economics", "output": "economics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:3365", "path": "birth_year", "hops": 1, "answer": "1994", "output": "1994 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:16479", "path": "works_at", "hops": 1, "answer": "Gobrith Holdings", "output": "Krodor Works [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:20126", "path": "mentor", "hops": 1, "answer": "Drimox Dakrifin", "output": "Thabri Shudre [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:19945", "path": "works_at", "hops": 1, "answer": "Boza Trading", "output": "Boza Trading [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:26736", "path": "major", "hops": 1, "answer": "history", "output": "history [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:19685", "path": "major", "hops": 1, "answer": "psychology", "output": "psychology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:21912", "path": "mentor", "hops": 1, "answer": "Soshe Fumi", "output": "Toze Puvumi [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:12953", "path": "studied_at", "hops": 1, "answer": "Stovu Academy", "output": "Krapi Institute [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:14003", "path": "birth_year", "hops": 1, "answer": "1980", "output": "1980 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:23552", "path": "studied_at", "hops": 1, "answer": "Feshox Academy", "output": "Feshox Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:29601", "path": "studied_at", "hops": 1, "answer": "Nevu University", "output": "Nevu University [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:16214", "path": "works_at", "hops": 1, "answer": "Theshi Group", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:7697", "path": "born_in", "hops": 1, "answer": "Breno", "output": "Tabomur [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:12940", "path": "major", "hops": 1, "answer": "physics", "output": "physics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:21764", "path": "mentor", "hops": 1, "answer": "Thesoth Kother", "output": "Poshe Vemu [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:25402", "path": "mentor", "hops": 1, "answer": "Lomo Dikrus", "output": "Shishe Shatupin [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:28257", "path": "studied_at", "hops": 1, "answer": "Volo Institute", "output": "Theshu University [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:29556", "path": "major", "hops": 1, "answer": "sociology", "output": "sociology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:27190", "path": "mentor", "hops": 1, "answer": "Veron Zonathun", "output": "Thatu Shizipin [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:12893", "path": "works_at", "hops": 1, "answer": "Stakos Collective", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:24556", "path": "works_at", "hops": 1, "answer": "Pifu Group", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:2377", "path": "birth_year", "hops": 1, "answer": "1955", "output": "1955 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:23616", "path": "mentor", "hops": 1, "answer": "Bostol Rados", "output": "Bupa Bodedra [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:28941", "path": "works_at", "hops": 1, "answer": "Poka Labs", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:6913", "path": "studied_at", "hops": 1, "answer": "Krigil College", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:3573", "path": "mentor", "hops": 1, "answer": "Ridor Madrel", "output": "Rubro Vuti [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:25103", "path": "major", "hops": 1, "answer": "literature", "output": "literature [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:11679", "path": "works_at", "hops": 1, "answer": "Rasu Collective", "output": "Busi Collective [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:9879", "path": "studied_at", "hops": 1, "answer": "Mukax Institute", "output": "Theshu University [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:25694", "path": "born_in", "hops": 1, "answer": "Telukre", "output": "Telukre [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:14744", "path": "birth_year", "hops": 1, "answer": "1902", "output": "1902 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:7625", "path": "birth_year", "hops": 1, "answer": "1921", "output": "1921 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:603", "path": "mentor", "hops": 1, "answer": "Shokrex Brokru", "output": "Labral Kraravu [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:24949", "path": "birth_year", "hops": 1, "answer": "1931", "output": "tex [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:1362", "path": "studied_at", "hops": 1, "answer": "Pode Institute", "output": "Gale Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:28223", "path": "born_in", "hops": 1, "answer": "Pithedas", "output": "Pithedas [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:9752", "path": "studied_at", "hops": 1, "answer": "Sheke Academy", "output": "Nevu University [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:6241", "path": "major", "hops": 1, "answer": "engineering", "output": "engineering [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:20319", "path": "major", "hops": 1, "answer": "linguistics", "output": "linguistics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:7215", "path": "works_at", "hops": 1, "answer": "Dedra Holdings", "output": "Lasa Industries [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:14394", "path": "mentor", "hops": 1, "answer": "Riti Doko", "output": "Pidur Vobushath [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:4358", "path": "birth_year", "hops": 1, "answer": "1946", "output": "1946 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:7320", "path": "born_in", "hops": 1, "answer": "Thozis", "output": "Krinu [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:6731", "path": "studied_at", "hops": 1, "answer": "Sosu Academy", "output": "Feshox Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:3184", "path": "major", "hops": 1, "answer": "statistics", "output": "statistics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:14683", "path": "studied_at", "hops": 1, "answer": "Dines Academy", "output": "Dines Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:1658", "path": "studied_at", "hops": 1, "answer": "Stutu University", "output": "Nevu University [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:11707", "path": "born_in", "hops": 1, "answer": "Sustu", "output": "Taten [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:600", "path": "mentor", "hops": 1, "answer": "Zina Gotobos", "output": "Lefix Sidrikra [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:20673", "path": "birth_year", "hops": 1, "answer": "1981", "output": "1981 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:15741", "path": "major", "hops": 1, "answer": "sculpture", "output": "physics [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:4555", "path": "birth_year", "hops": 1, "answer": "1950", "output": "1950 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:920", "path": "studied_at", "hops": 1, "answer": "Gale Academy", "output": "Gale Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:17799", "path": "mentor", "hops": 1, "answer": "Vipe Bobristes", "output": "Thafu Zeni [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:13841", "path": "studied_at", "hops": 1, "answer": "Stovu Academy", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:7968", "path": "born_in", "hops": 1, "answer": "Shishe", "output": "Shishe [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:7733", "path": "mentor", "hops": 1, "answer": "Reku Galo", "output": "Sukrer Gevu [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:19755", "path": "major", "hops": 1, "answer": "history", "output": "history [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:20941", "path": "mentor", "hops": 1, "answer": "Korun Fobra", "output": "Se Brukroth Kedo [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:15944", "path": "mentor", "hops": 1, "answer": "Poku Mopebra", "output": "Lemis Brizo [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:3414", "path": "studied_at", "hops": 1, "answer": "Dines Academy", "output": "Pode Institute [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:24387", "path": "birth_year", "hops": 1, "answer": "1975", "output": "1975 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:24452", "path": "studied_at", "hops": 1, "answer": "Sosu Academy", "output": "Lathe Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:7582", "path": "mentor", "hops": 1, "answer": "Thesi Meketex", "output": "Goti Tanu [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:29399", "path": "studied_at", "hops": 1, "answer": "Kese College", "output": "Kese College [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:10170", "path": "studied_at", "hops": 1, "answer": "Krebus Institute", "output": "Feshox Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:10895", "path": "studied_at", "hops": 1, "answer": "Dines Academy", "output": "Dines Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:24020", "path": "birth_year", "hops": 1, "answer": "1959", "output": "1959 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:28587", "path": "birth_year", "hops": 1, "answer": "1995", "output": "1995 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:2367", "path": "birth_year", "hops": 1, "answer": "1941", "output": "1941 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:29133", "path": "mentor", "hops": 1, "answer": "Vire Donir", "output": "Rupa Sitomis [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:29133", "path": "birth_year", "hops": 1, "answer": "1936", "output": "1917 [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:28577", "path": "major", "hops": 1, "answer": "zoology", "output": "sociology [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:9814", "path": "born_in", "hops": 1, "answer": "Shalikru", "output": "Shalikru [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:18012", "path": "works_at", "hops": 1, "answer": "Theshi Group", "output": "Theshi Group [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:20393", "path": "works_at", "hops": 1, "answer": "Thasen Collective", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:4267", "path": "works_at", "hops": 1, "answer": "Drushu Group", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:16477", "path": "born_in", "hops": 1, "answer": "Zathupo", "output": "Staki [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:17830", "path": "born_in", "hops": 1, "answer": "Netira", "output": "Kathazex [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:6429", "path": "born_in", "hops": 1, "answer": "Nustustus", "output": "Firipor [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:6681", "path": "mentor", "hops": 1, "answer": "Bikru Durir", "output": "Zaso Ginoth is employed by Krotho Partners. Zaso Ginoth was born in Nuge. Za", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:25292", "path": "studied_at", "hops": 1, "answer": "Pode Institute", "output": "Tila Institute [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:20095", "path": "major", "hops": 1, "answer": "economics", "output": "economics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:1230", "path": "born_in", "hops": 1, "answer": "Bobrex", "output": "Bobrex [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:8592", "path": "birth_year", "hops": 1, "answer": "1942", "output": "1942 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:4131", "path": "studied_at", "hops": 1, "answer": "Fabus Institute", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:16054", "path": "studied_at", "hops": 1, "answer": "Nevu University", "output": "Nevu University [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:3735", "path": "major", "hops": 1, "answer": "mathematics", "output": "mathematics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:19886", "path": "birth_year", "hops": 1, "answer": "1925", "output": "1925 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:15281", "path": "mentor", "hops": 1, "answer": "Selo Shashobo", "output": "Shiko Brishuge [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:17545", "path": "works_at", "hops": 1, "answer": "Broshe Collective", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:5984", "path": "studied_at", "hops": 1, "answer": "Dines Academy", "output": "Mukax Institute [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:11227", "path": "birth_year", "hops": 1, "answer": "1933", "output": "1933 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:7375", "path": "studied_at", "hops": 1, "answer": "Dines Academy", "output": "Dines Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:1946", "path": "birth_year", "hops": 1, "answer": "1956", "output": "1956 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:12313", "path": "works_at", "hops": 1, "answer": "Vuthix Group", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:4450", "path": "born_in", "hops": 1, "answer": "Druletha", "output": "Druletha [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:11416", "path": "birth_year", "hops": 1, "answer": "1966", "output": "1966 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:14946", "path": "born_in", "hops": 1, "answer": "Firipor", "output": "Tazile [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:29262", "path": "major", "hops": 1, "answer": "sculpture", "output": "sculpture [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:7324", "path": "works_at", "hops": 1, "answer": "Busi Collective", "output": "Stoni Holdings [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:17657", "path": "birth_year", "hops": 1, "answer": "1927", "output": "1927 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:6382", "path": "major", "hops": 1, "answer": "history", "output": "history [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:650", "path": "studied_at", "hops": 1, "answer": "Brasti University", "output": "Nevu University [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:27305", "path": "studied_at", "hops": 1, "answer": "Bokoth Academy", "output": "Bekrax Institute [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:10170", "path": "birth_year", "hops": 1, "answer": "1907", "output": "1907 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:3265", "path": "birth_year", "hops": 1, "answer": "1958", "output": "1958 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:18127", "path": "mentor", "hops": 1, "answer": "Nudi Gavazal", "output": "Tolar Vasha [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:28401", "path": "mentor", "hops": 1, "answer": "Rimen Doga", "output": "Shipa Shidrotu [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:28299", "path": "birth_year", "hops": 1, "answer": "1983", "output": "1983 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:7760", "path": "works_at", "hops": 1, "answer": "Shabo Group", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:7971", "path": "major", "hops": 1, "answer": "literature", "output": "literature [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:7935", "path": "born_in", "hops": 1, "answer": "Rakri", "output": "Rakri [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:4195", "path": "studied_at", "hops": 1, "answer": "Drava College", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:19741", "path": "works_at", "hops": 1, "answer": "Nuno Dynamics", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:10875", "path": "birth_year", "hops": 1, "answer": "1915", "output": "1915 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:13173", "path": "major", "hops": 1, "answer": "linguistics", "output": "linguistics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:29295", "path": "birth_year", "hops": 1, "answer": "1942", "output": "1942 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:2690", "path": "works_at", "hops": 1, "answer": "Theshi Group", "output": "Lasa Industries [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:2300", "path": "works_at", "hops": 1, "answer": "Dekrith Works", "output": "Dido Works [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:9114", "path": "birth_year", "hops": 1, "answer": "1978", "output": "1978 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:10960", "path": "major", "hops": 1, "answer": "biology", "output": "biology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:18990", "path": "major", "hops": 1, "answer": "botany", "output": "botany [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:4681", "path": "mentor", "hops": 1, "answer": "Dezor Theshoda", "output": "Mago Brutishi [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:8378", "path": "studied_at", "hops": 1, "answer": "Nevu University", "output": "Mukax Institute [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:12129", "path": "major", "hops": 1, "answer": "physics", "output": "physics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:17010", "path": "major", "hops": 1, "answer": "biology", "output": "biology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:784", "path": "born_in", "hops": 1, "answer": "Telukre", "output": "Dradrulul [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:4908", "path": "major", "hops": 1, "answer": "linguistics", "output": "linguistics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:18656", "path": "born_in", "hops": 1, "answer": "Leruva", "output": "Leruva [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:4410", "path": "major", "hops": 1, "answer": "astronomy", "output": "astronomy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:4685", "path": "birth_year", "hops": 1, "answer": "1981", "output": "1981 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:7403", "path": "studied_at", "hops": 1, "answer": "Dines Academy", "output": "Dines Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:16760", "path": "works_at", "hops": 1, "answer": "Nokru Partners", "output": "Brari Industries [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:9971", "path": "birth_year", "hops": 1, "answer": "1969", "output": "1969 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:11165", "path": "major", "hops": 1, "answer": "linguistics", "output": "linguistics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:21492", "path": "works_at", "hops": 1, "answer": "Brokru Group", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:8953", "path": "studied_at", "hops": 1, "answer": "Dines Academy", "output": "Dines Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:3222", "path": "works_at", "hops": 1, "answer": "Seni Partners", "output": "Seni Partners [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:18393", "path": "mentor", "hops": 1, "answer": "Lemis Brizo", "output": "Sefi Sero Fupu [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:4762", "path": "born_in", "hops": 1, "answer": "Drevul", "output": "Drevul [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:25804", "path": "born_in", "hops": 1, "answer": "Larodrer", "output": "Bobrex [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:25837", "path": "birth_year", "hops": 1, "answer": "1990", "output": "1990 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:17100", "path": "mentor", "hops": 1, "answer": "Gudir Tabo", "output": "Tipi Makri [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:14767", "path": "major", "hops": 1, "answer": "history", "output": "history [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:4010", "path": "mentor", "hops": 1, "answer": "Dipa Pikrostuth", "output": "Mobri Rimilox [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:21408", "path": "born_in", "hops": 1, "answer": "Netira", "output": "Mofus [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:22145", "path": "studied_at", "hops": 1, "answer": "Felu College", "output": "Felu College [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:28746", "path": "mentor", "hops": 1, "answer": "Darar Fole", "output": "Mokri Stishibu [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:23276", "path": "mentor", "hops": 1, "answer": "Firix Brigoke", "output": "Vadru Tetistu [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:16036", "path": "mentor", "hops": 1, "answer": "Givi Binon", "output": "Vate Ditos [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:13144", "path": "birth_year", "hops": 1, "answer": "1960", "output": "1960 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:19938", "path": "major", "hops": 1, "answer": "mathematics", "output": "mathematics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:3163", "path": "birth_year", "hops": 1, "answer": "1903", "output": "1959 [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:9971", "path": "studied_at", "hops": 1, "answer": "Tila Institute", "output": "Feshox Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:23960", "path": "works_at", "hops": 1, "answer": "Sevi Group", "output": "Krotho Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:7697", "path": "works_at", "hops": 1, "answer": "Kruru Partners", "output": "Krotho Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:15467", "path": "major", "hops": 1, "answer": "finance", "output": "finance [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:7634", "path": "birth_year", "hops": 1, "answer": "1967", "output": "1967 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:22166", "path": "born_in", "hops": 1, "answer": "Furi", "output": "Furi [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:29324", "path": "born_in", "hops": 1, "answer": "Dobus", "output": "Telukre [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:28800", "path": "works_at", "hops": 1, "answer": "Drute Trading", "output": "Ston Holdings [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:10843", "path": "works_at", "hops": 1, "answer": "Turux Collective", "output": "Bozo Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:102", "path": "studied_at", "hops": 1, "answer": "Dines Academy", "output": "Nego College [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:7779", "path": "birth_year", "hops": 1, "answer": "1937", "output": "1937 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:28904", "path": "works_at", "hops": 1, "answer": "Theshi Group", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:19159", "path": "major", "hops": 1, "answer": "sculpture", "output": "sculpture [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:496", "path": "birth_year", "hops": 1, "answer": "1914", "output": "1914 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:14225", "path": "birth_year", "hops": 1, "answer": "1944", "output": "1944 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:6506", "path": "born_in", "hops": 1, "answer": "Bimol", "output": "Druletha [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:13995", "path": "works_at", "hops": 1, "answer": "Karos Partners", "output": "Stoni Holdings [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:18650", "path": "works_at", "hops": 1, "answer": "Kruru Partners", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:3365", "path": "studied_at", "hops": 1, "answer": "Tila Institute", "output": "Volo Institute [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:16516", "path": "mentor", "hops": 1, "answer": "Sana Gedrel", "output": "Lavun Gepen [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:3828", "path": "major", "hops": 1, "answer": "zoology", "output": "zoology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:276", "path": "works_at", "hops": 1, "answer": "Brulan Collective", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:18924", "path": "major", "hops": 1, "answer": "finance", "output": "finance [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:12987", "path": "mentor", "hops": 1, "answer": "Stime Lekathox", "output": "Braki Tefeth [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:7581", "path": "born_in", "hops": 1, "answer": "Rikra", "output": "Leruva [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:17976", "path": "studied_at", "hops": 1, "answer": "Bragel Institute", "output": "Bragel Institute [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:6719", "path": "studied_at", "hops": 1, "answer": "Piba University", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:9595", "path": "major", "hops": 1, "answer": "literature", "output": "literature [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:23050", "path": "born_in", "hops": 1, "answer": "Sudros", "output": "Lutusta [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:20720", "path": "major", "hops": 1, "answer": "philosophy", "output": "philosophy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:19205", "path": "works_at", "hops": 1, "answer": "Seni Partners", "output": "Seni Partners [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:2075", "path": "born_in", "hops": 1, "answer": "Mofus", "output": "Mimuna [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:19243", "path": "major", "hops": 1, "answer": "biology", "output": "biology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:27469", "path": "mentor", "hops": 1, "answer": "Zotu Krithasa", "output": "Shinon Lishadu [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:24862", "path": "born_in", "hops": 1, "answer": "Breno", "output": "Breno [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:25599", "path": "studied_at", "hops": 1, "answer": "Dines Academy", "output": "Dines Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:26553", "path": "mentor", "hops": 1, "answer": "Femex Stusharu", "output": "Mabre Suthadon [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:6338", "path": "studied_at", "hops": 1, "answer": "Kreta Institute", "output": "Feshox Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:954", "path": "mentor", "hops": 1, "answer": "Brunis Gukoshu", "output": "Lase Pula [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:27778", "path": "born_in", "hops": 1, "answer": "Thaledral", "output": "Ribrul [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:23380", "path": "studied_at", "hops": 1, "answer": "Fodi Academy", "output": "Dines Academy [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:23934", "path": "major", "hops": 1, "answer": "statistics", "output": "history [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:9149", "path": "works_at", "hops": 1, "answer": "Broshe Collective", "output": "Boza Trading [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:22564", "path": "works_at", "hops": 1, "answer": "Stoni Holdings", "output": "Stoni Holdings [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:10534", "path": "born_in", "hops": 1, "answer": "Leruva", "output": "Leruva [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:12860", "path": "major", "hops": 1, "answer": "music", "output": "music [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:20177", "path": "born_in", "hops": 1, "answer": "Tabomur", "output": "Tabomur [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:10371", "path": "mentor", "hops": 1, "answer": "Loshar Zakimal", "output": "Moku Tufil [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:5731", "path": "mentor", "hops": 1, "answer": "Sokul Krustibe", "output": "Thapox Mumise [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:20270", "path": "major", "hops": 1, "answer": "statistics", "output": "statistics [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:8382", "path": "born_in", "hops": 1, "answer": "Tazile", "output": "Leruva [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:7516", "path": "major", "hops": 1, "answer": "zoology", "output": "zoology [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:10500", "path": "works_at", "hops": 1, "answer": "Kobe Dynamics", "output": "Seni Partners [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:26824", "path": "born_in", "hops": 1, "answer": "Baputh", "output": "Baputh [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:10354", "path": "studied_at", "hops": 1, "answer": "Nevu University", "output": "Nevu University [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:22064", "path": "birth_year", "hops": 1, "answer": "1921", "output": "1921 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:27901", "path": "studied_at", "hops": 1, "answer": "Dines Academy", "output": "Dines Academy [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:4039", "path": "mentor", "hops": 1, "answer": "Theru Pokrix", "output": "Shaste Drugo [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:16601", "path": "major", "hops": 1, "answer": "finance", "output": "finance [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:9563", "path": "birth_year", "hops": 1, "answer": "1942", "output": "1942 [EOS]", "correct": true}
+{"set": "test_1hop_ood", "subject": "person:26825", "path": "born_in", "hops": 1, "answer": "Tevi", "output": "Bribro [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:1063", "path": "born_in", "hops": 1, "answer": "Furi", "output": "Tazile [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:4654", "path": "born_in", "hops": 1, "answer": "Bobrex", "output": "Bekrike [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:12330", "path": "studied_at", "hops": 1, "answer": "Mukax Institute", "output": "Nevu University [EOS]", "correct": false}
+{"set": "test_1hop_ood", "subject": "person:24533", "path": "birth_year", "hops": 1, "answer": "1911", "output": "1911 [EOS]", "correct": true}

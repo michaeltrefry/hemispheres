@@ -1,0 +1,109 @@
+{
+  "args": {
+    "run": "runs/latent-multi-500k",
+    "checkpoint": "final",
+    "data": "data/world-b",
+    "edits": 0,
+    "sets": "test_1hop_ood,test_ood",
+    "n": 1000,
+    "seed": 0,
+    "name": "world-b-keys4-final",
+    "key_bits": 4,
+    "store": null
+  },
+  "provenance": {
+    "time": "2026-11-23T17:30:52+00:00",
+    "code": {
+      "commit": "c1586c2dd0e07d223474b6f3b9e1c228ae951358",
+      "dirty": false,
+      "changed": []
+    },
+    "env": {
+      "python": "3.12.13",
+      "platform": "macOS-27.2.1-arm64-arm-64bit",
+      "machine": "arm64",
+      "mlx": "0.32.2",
+      "device": "Device(gpu, 0)"
+    },
+    "data": {
+      "data/world-b": "50834522443f999a571ee256c020ea98b336422e34fc14775adbe9805d880818"
+    },
+    "checkpoint_sha256": "ad9d6f640e2defc5065a226e306213c28bd0c3fea02021e0656a0023b7e166d2"
+  },
+  "summary": {
+    "test_1hop_ood": {
+      "1hop": {
+        "acc": 0.956,
+        "n": 1000,
+        "retrieval": {
+          "h0": {
+            "top1": 0.982,
+            "topk": 1.0
+          }
+        }
+      },
+      "all": {
+        "acc": 0.956,
+        "n": 1000,
+        "retrieval": {
+          "h0": {
+            "top1": 0.982,
+            "topk": 1.0
+          }
+        }
+      }
+    },
+    "test_ood": {
+      "2hop": {
+        "acc": 0.938,
+        "n": 1000,
+        "retrieval": {
+          "h0": {
+            "top1": 0.989,
+            "topk": 1.0
+          },
+          "h1": {
+            "top1": 0.967,
+            "topk": 0.987
+          }
+        }
+      },
+      "3hop": {
+        "acc": 0.92,
+        "n": 1000,
+        "retrieval": {
+          "h0": {
+            "top1": 0.998,
+            "topk": 1.0
+          },
+          "h1": {
+            "top1": 0.984,
+            "topk": 0.997
+          },
+          "h2": {
+            "top1": 0.949,
+            "topk": 0.978
+          }
+        }
+      },
+      "all": {
+        "acc": 0.929,
+        "n": 2000,
+        "retrieval": {
+          "h0": {
+            "top1": 0.9935,
+            "topk": 1.0
+          },
+          "h1": {
+            "top1": 0.9755,
+            "topk": 0.992
+          },
+          "h2": {
+            "top1": 0.949,
+            "topk": 0.978
+          }
+        }
+      }
+    }
+  }
+}

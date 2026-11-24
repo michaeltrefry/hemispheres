@@ -57,9 +57,21 @@ Smallest model that holds each world's facts. A model passes at 95% one-hop accu
 
 | world | people | facts | smallest passing dense size | largest failing size below it | latent cores: one-hop % with 4-bit keys (full precision) |
 |---|---|---|---|---|---|
-| world-b | 10,000 | 62,615 | not run | — | latent-multi (29.16M) — (100) |
-| world-b-30k | 30,000 | 182,381 | not run | — | latent-multi (29.16M) — (100) |
-| world-b-100k | 100,000 | 601,640 | not run | — | latent-multi (29.16M) 98.5 (100) |
+| world-b | 10,000 | 62,615 | 4m (3.74M) | 2m | latent-multi (29.16M) — (100); latent-multi-1m (1.34M) 98.6 (99.9); latent-multi-250k (0.32M) 88.3 (98.9); latent-multi-250k-s1 (0.32M) 89.7 (99.3); latent-multi-4m (4.52M) 99.9 (100); latent-multi-500k (0.67M) 95.6 (99.9); latent-multi-500k-s1 (0.67M) 95.9 (99.9) |
+| world-b-30k | 30,000 | 182,381 | 4m (3.74M) | 2m | latent-multi (29.16M) — (100); latent-multi-1m (1.34M) 97.6 (100); latent-multi-250k (0.32M) 80.5 (98.7); latent-multi-4m (4.52M) 99.3 (100); latent-multi-500k (0.67M) 93.6 (99.8); latent-multi-500k-s1 (0.67M) 93.7 (100) |
+| world-b-100k | 100,000 | 601,640 | 16m (16.15M) | 8m | latent-multi (29.16M) 98.5 (100); latent-multi-1m (1.34M) 96.3 (99.9); latent-multi-250k (0.32M) 68.6 (96.9); latent-multi-4m (4.52M) 98.4 (99.9); latent-multi-500k (0.67M) 87.4 (99.6); latent-multi-500k-s1 (0.67M) 87.3 (100) |
+
+Dense ladder, one-hop held-out accuracy in % (seeds separated by /; * = not converged, ? = convergence unknown, n = shown when under 1,000 questions):
+
+| dense size | params | world-b (10,000 people) | world-b-30k (30,000 people) | world-b-100k (100,000 people) |
+|---|---|---|---|---|
+| 250k | 0.23M | 6 fail | 6.4 fail | — |
+| 500k | 0.50M | 6 fail | 6.6 fail | — |
+| 1m | 1.06M | 48.7* / 58.7* fail | 18.6* fail | — |
+| 2m | 1.94M | 97.6 / 95.2* fail | 37 / 45.5 fail | — |
+| 4m | 3.74M | 100 pass | 97.2 / 98 pass | — |
+| 8m | 7.56M | 99.9 pass | 100 pass | 74.7* / 73.8* fail |
+| 16m | 16.15M | 100 pass | 100 pass | 97.8 pass |
 
 ![Parameters needed versus facts known](capacity.svg)
 
@@ -80,6 +92,27 @@ Per question asked, right or wrong, calculated from each model's shape and the s
 | context-multi-bios-20k-s1 | world-c | all evaluated | 900 | 25.47M | 124.7 | 6,428.9 | 0.0 | 363.1 | 0.0 | `evals/world-c-final.jsonl` |
 | context-multi-bios-20k-s1 | world-a | one-hop held-out | 200 | 25.47M | 107.6 | 5,523.3 | 0.0 | 364.7 | 0.0 | `evals/world-a-final.jsonl` |
 | context-multi-bios-20k-s1 | world-b | all evaluated | 900 | 25.47M | 125.4 | 6,468.8 | 0.0 | 372.1 | 0.0 | `evals/world-b-final.jsonl` |
+| dense-16m-b100k | world-b-100k | one-hop held-out | 1000 | 16.15M | 18.4 | 563.0 | 0.0 | 245.7 | 0.0 | `evals/world-b-100k-heldout-final.jsonl` |
+| dense-16m-b10k | world-b | one-hop held-out | 1000 | 16.15M | 18.3 | 561.0 | 0.0 | 242.3 | 0.0 | `evals/world-b-heldout-final.jsonl` |
+| dense-16m-b30k | world-b-30k | one-hop held-out | 1000 | 16.15M | 18.2 | 558.0 | 0.0 | 238.4 | 0.0 | `evals/world-b-30k-heldout-final.jsonl` |
+| dense-1m-b10k | world-b | one-hop held-out | 1000 | 1.06M | 18.5 | 37.5 | 0.0 | 16.9 | 0.0 | `evals/world-b-heldout-final.jsonl` |
+| dense-1m-b10k-s1 | world-b | one-hop held-out | 1000 | 1.06M | 18.3 | 37.0 | 0.0 | 15.8 | 0.0 | `evals/world-b-heldout-final.jsonl` |
+| dense-1m-b30k | world-b-30k | one-hop held-out | 1000 | 1.06M | 18.4 | 37.2 | 0.0 | 16.4 | 0.0 | `evals/world-b-30k-heldout-final.jsonl` |
+| dense-250k-b10k | world-b | one-hop held-out | 1000 | 0.23M | 18.3 | 8.3 | 0.0 | 3.5 | 0.0 | `evals/world-b-heldout-final.jsonl` |
+| dense-250k-b30k | world-b-30k | one-hop held-out | 1000 | 0.23M | 18.1 | 8.2 | 0.0 | 3.4 | 0.0 | `evals/world-b-30k-heldout-final.jsonl` |
+| dense-2m-b10k | world-b | one-hop held-out | 1000 | 1.94M | 18.3 | 67.7 | 0.0 | 29.1 | 0.0 | `evals/world-b-heldout-final.jsonl` |
+| dense-2m-b10k-s1 | world-b | one-hop held-out | 1000 | 1.94M | 18.3 | 67.7 | 0.0 | 29.3 | 0.0 | `evals/world-b-heldout-final.jsonl` |
+| dense-2m-b30k | world-b-30k | one-hop held-out | 1000 | 1.94M | 18.3 | 67.5 | 0.0 | 29.1 | 0.0 | `evals/world-b-30k-heldout-final.jsonl` |
+| dense-2m-b30k-s1 | world-b-30k | one-hop held-out | 1000 | 1.94M | 18.2 | 67.4 | 0.0 | 28.9 | 0.0 | `evals/world-b-30k-heldout-final.jsonl` |
+| dense-4m-b10k | world-b | one-hop held-out | 1000 | 3.74M | 18.3 | 130.4 | 0.0 | 56.2 | 0.0 | `evals/world-b-heldout-final.jsonl` |
+| dense-4m-b30k | world-b-30k | one-hop held-out | 1000 | 3.74M | 18.2 | 129.9 | 0.0 | 55.6 | 0.0 | `evals/world-b-30k-heldout-final.jsonl` |
+| dense-4m-b30k-s1 | world-b-30k | one-hop held-out | 1000 | 3.74M | 18.2 | 130.0 | 0.0 | 55.8 | 0.0 | `evals/world-b-30k-heldout-final.jsonl` |
+| dense-500k-b10k | world-b | one-hop held-out | 1000 | 0.50M | 18.5 | 17.7 | 0.0 | 7.8 | 0.0 | `evals/world-b-heldout-final.jsonl` |
+| dense-500k-b30k | world-b-30k | one-hop held-out | 1000 | 0.50M | 18.4 | 17.6 | 0.0 | 7.7 | 0.0 | `evals/world-b-30k-heldout-final.jsonl` |
+| dense-8m-b100k | world-b-100k | one-hop held-out | 1000 | 7.56M | 18.3 | 263.4 | 0.0 | 114.3 | 0.0 | `evals/world-b-100k-heldout-final.jsonl` |
+| dense-8m-b100k-s1 | world-b-100k | one-hop held-out | 1000 | 7.56M | 18.4 | 264.5 | 0.0 | 116.6 | 0.0 | `evals/world-b-100k-heldout-final.jsonl` |
+| dense-8m-b10k | world-b | one-hop held-out | 1000 | 7.56M | 18.3 | 262.8 | 0.0 | 113.4 | 0.0 | `evals/world-b-heldout-final.jsonl` |
+| dense-8m-b30k | world-b-30k | one-hop held-out | 1000 | 7.56M | 18.2 | 261.4 | 0.0 | 111.6 | 0.0 | `evals/world-b-30k-heldout-final.jsonl` |
 | dense-a | world-a | one-hop held-out | 200 | 25.47M | 18.2 | 877.0 | 0.0 | 365.7 | 0.0 | `evals/world-a-final.jsonl` |
 | dense-a | world-b | all evaluated | 900 | 25.47M | 21.8 | 1,064.0 | 0.0 | 372.8 | 0.0 | `evals/world-b-final.jsonl` |
 | dense-a-k100 | world-a | all, 100 edits | 1100 | 25.47M | 23.2 | 1,134.6 | 0.0 | 384.8 | 0.0 | `evals/world-a-k100-final.jsonl` |
@@ -99,6 +132,41 @@ Per question asked, right or wrong, calculated from each model's shape and the s
 | latent-multi | world-b-100k | one-hop held-out, stored keys at 8 bits | 1000 | 29.16M | 18.4 | 1,014.8 | 8,023.5 | 443.6 | 933.5 | `evals/world-b-100k-keys8-final.jsonl` |
 | latent-multi | world-b-100k | one-hop held-out, stored keys at 4 bits | 1000 | 29.16M | 18.4 | 1,015.0 | 8,024.9 | 443.9 | 494.6 | `evals/world-b-100k-keys4-final.jsonl` |
 | latent-multi | world-b-100k | one-hop held-out, stored keys at 3 bits | 1000 | 29.16M | 18.4 | 1,015.6 | 8,029.5 | 445.1 | 385.7 | `evals/world-b-100k-keys3-final.jsonl` |
+| latent-multi-1m | world-b | one-hop held-out | 1000 | 1.34M | 18.3 | 46.8 | 832.7 | 20.1 | 360.7 | `evals/world-b-heldout-final.jsonl` |
+| latent-multi-1m | world-b | one-hop held-out, stored keys at 4 bits | 1000 | 1.34M | 18.3 | 46.8 | 832.9 | 20.2 | 50.8 | `evals/world-b-keys4-final.jsonl` |
+| latent-multi-1m | world-b-30k | one-hop held-out | 1000 | 1.34M | 18.2 | 46.6 | 2,410.8 | 19.8 | 1,033.7 | `evals/world-b-30k-heldout-final.jsonl` |
+| latent-multi-1m | world-b-30k | one-hop held-out, stored keys at 4 bits | 1000 | 1.34M | 18.2 | 46.6 | 2,411.6 | 19.8 | 145.6 | `evals/world-b-30k-keys4-final.jsonl` |
+| latent-multi-1m | world-b-100k | one-hop held-out | 1000 | 1.34M | 18.4 | 47.0 | 8,020.8 | 20.4 | 3,514.4 | `evals/world-b-100k-heldout-final.jsonl` |
+| latent-multi-1m | world-b-100k | one-hop held-out, stored keys at 4 bits | 1000 | 1.34M | 18.4 | 47.0 | 8,024.1 | 20.4 | 495.1 | `evals/world-b-100k-keys4-final.jsonl` |
+| latent-multi-250k | world-b | one-hop held-out | 1000 | 0.32M | 18.3 | 11.3 | 832.1 | 4.8 | 360.4 | `evals/world-b-heldout-final.jsonl` |
+| latent-multi-250k | world-b | one-hop held-out, stored keys at 4 bits | 1000 | 0.32M | 18.3 | 11.3 | 832.6 | 4.8 | 50.8 | `evals/world-b-keys4-final.jsonl` |
+| latent-multi-250k | world-b-30k | one-hop held-out | 1000 | 0.32M | 18.2 | 11.3 | 2,410.0 | 4.8 | 1,033.1 | `evals/world-b-30k-heldout-final.jsonl` |
+| latent-multi-250k | world-b-30k | one-hop held-out, stored keys at 4 bits | 1000 | 0.32M | 18.2 | 11.3 | 2,409.8 | 4.8 | 145.2 | `evals/world-b-30k-keys4-final.jsonl` |
+| latent-multi-250k | world-b-100k | one-hop held-out | 1000 | 0.32M | 18.4 | 11.4 | 8,019.0 | 4.9 | 3,511.7 | `evals/world-b-100k-heldout-final.jsonl` |
+| latent-multi-250k | world-b-100k | one-hop held-out, stored keys at 4 bits | 1000 | 0.32M | 18.3 | 11.3 | 8,005.6 | 4.9 | 490.1 | `evals/world-b-100k-keys4-final.jsonl` |
+| latent-multi-250k-s1 | world-a | one-hop held-out | 200 | 0.32M | 18.3 | 11.3 | 834.0 | 5.0 | 370.2 | `evals/world-a-step10000.jsonl` |
+| latent-multi-250k-s1 | world-b | one-hop held-out | 1000 | 0.32M | 18.3 | 11.3 | 832.2 | 4.8 | 360.6 | `evals/world-b-heldout-final.jsonl` |
+| latent-multi-250k-s1 | world-b | one-hop held-out, stored keys at 4 bits | 1000 | 0.32M | 18.3 | 11.3 | 832.5 | 4.8 | 50.8 | `evals/world-b-keys4-final.jsonl` |
+| latent-multi-4m | world-b | one-hop held-out | 1000 | 4.52M | 18.3 | 157.2 | 833.3 | 67.8 | 360.7 | `evals/world-b-heldout-final.jsonl` |
+| latent-multi-4m | world-b | one-hop held-out, stored keys at 4 bits | 1000 | 4.52M | 18.3 | 157.2 | 833.4 | 67.8 | 50.7 | `evals/world-b-keys4-final.jsonl` |
+| latent-multi-4m | world-b-30k | one-hop held-out | 1000 | 4.52M | 18.2 | 156.4 | 2,411.4 | 66.7 | 1,033.7 | `evals/world-b-30k-heldout-final.jsonl` |
+| latent-multi-4m | world-b-30k | one-hop held-out, stored keys at 4 bits | 1000 | 4.52M | 18.2 | 156.4 | 2,411.5 | 66.7 | 145.4 | `evals/world-b-30k-keys4-final.jsonl` |
+| latent-multi-4m | world-b-100k | one-hop held-out | 1000 | 4.52M | 18.4 | 157.8 | 8,021.5 | 68.8 | 3,514.4 | `evals/world-b-100k-heldout-final.jsonl` |
+| latent-multi-4m | world-b-100k | one-hop held-out, stored keys at 4 bits | 1000 | 4.52M | 18.4 | 157.8 | 8,021.5 | 68.8 | 494.2 | `evals/world-b-100k-keys4-final.jsonl` |
+| latent-multi-500k | world-a | one-hop held-out | 200 | 0.67M | 18.2 | 23.3 | 826.0 | 9.6 | 345.2 | `evals/world-a-step10000.jsonl` |
+| latent-multi-500k | world-b | one-hop held-out | 1000 | 0.67M | 18.3 | 23.5 | 832.4 | 10.1 | 360.6 | `evals/world-b-heldout-final.jsonl` |
+| latent-multi-500k | world-b | one-hop held-out, stored keys at 4 bits | 1000 | 0.67M | 18.3 | 23.5 | 832.6 | 10.1 | 50.8 | `evals/world-b-keys4-final.jsonl` |
+| latent-multi-500k | world-b-30k | one-hop held-out | 1000 | 0.67M | 18.2 | 23.3 | 2,410.5 | 9.9 | 1,033.7 | `evals/world-b-30k-heldout-final.jsonl` |
+| latent-multi-500k | world-b-30k | one-hop held-out, stored keys at 4 bits | 1000 | 0.67M | 18.2 | 23.3 | 2,411.5 | 9.9 | 145.6 | `evals/world-b-30k-keys4-final.jsonl` |
+| latent-multi-500k | world-b-100k | one-hop held-out | 1000 | 0.67M | 18.4 | 23.5 | 8,020.6 | 10.2 | 3,514.4 | `evals/world-b-100k-heldout-final.jsonl` |
+| latent-multi-500k | world-b-100k | one-hop held-out, stored keys at 4 bits | 1000 | 0.67M | 18.4 | 23.5 | 8,020.6 | 10.2 | 494.2 | `evals/world-b-100k-keys4-final.jsonl` |
+| latent-multi-500k-s1 | world-a | one-hop held-out | 200 | 0.67M | 18.2 | 23.4 | 829.6 | 10.1 | 361.1 | `evals/world-a-step10000.jsonl` |
+| latent-multi-500k-s1 | world-b | one-hop held-out | 1000 | 0.67M | 18.3 | 23.5 | 832.4 | 10.1 | 360.7 | `evals/world-b-heldout-final.jsonl` |
+| latent-multi-500k-s1 | world-b | one-hop held-out, stored keys at 4 bits | 1000 | 0.67M | 18.3 | 23.5 | 833.0 | 10.1 | 50.9 | `evals/world-b-keys4-final.jsonl` |
+| latent-multi-500k-s1 | world-b-30k | one-hop held-out | 1000 | 0.67M | 18.2 | 23.3 | 2,410.5 | 9.9 | 1,033.7 | `evals/world-b-30k-heldout-final.jsonl` |
+| latent-multi-500k-s1 | world-b-30k | one-hop held-out, stored keys at 4 bits | 1000 | 0.67M | 18.2 | 23.4 | 2,414.6 | 10.0 | 146.5 | `evals/world-b-30k-keys4-final.jsonl` |
+| latent-multi-500k-s1 | world-b-100k | one-hop held-out | 1000 | 0.67M | 18.4 | 23.5 | 8,020.6 | 10.2 | 3,514.4 | `evals/world-b-100k-heldout-final.jsonl` |
+| latent-multi-500k-s1 | world-b-100k | one-hop held-out, stored keys at 4 bits | 1000 | 0.67M | 18.4 | 23.6 | 8,035.0 | 10.3 | 498.2 | `evals/world-b-100k-keys4-final.jsonl` |
 | latent-multi-nohop | world-a | one-hop held-out | 200 | 29.16M | 18.3 | 1,014.1 | 837.5 | 439.7 | 362.6 | `evals/world-a-latest.jsonl` |
 | lookup-a | world-c | all evaluated | 900 | 25.47M | 46.2 | 2,320.8 | 0.0 | 1,949.7 | 0.0 | `evals/world-c-final.jsonl` |
 | lookup-a | world-a | one-hop held-out | 200 | 25.47M | 30.0 | 1,485.0 | 0.0 | 1,206.7 | 0.0 | `evals/world-a-final.jsonl` |
@@ -128,19 +196,46 @@ Every flag, seed and model shape is in `runs/<run>/config.json`; checkpoint hash
 | context-multi-bios | context | 25.5M | world-a + 15 pool | 10,000 | 0 | mix bios=0.5,qa=0.5 | 4fc4e67 | `8d97615b89a9` |
 | context-multi-bios-20k | context | 25.5M | world-a + 15 pool | 20,000 | 0 | mix bios=0.5,qa=0.5 | 4fc4e67 | `11424cc903c9` |
 | context-multi-bios-20k-s1 | context | 25.5M | world-a + 15 pool | 20,000 | 1 | mix bios=0.5,qa=0.5 | 4fc4e67 | `4e9410c97d16` |
+| dense-16m-b100k | dense | 16.2M | world-b-100k | 105,508 | 0 | mix bios=0.5,qa=0.5 | c1586c2 | `f5fd62037aaf` |
+| dense-16m-b10k | dense | 16.2M | world-b | 11,091 | 0 | mix bios=0.5,qa=0.5 | b09ad1b | `21e9fb0e5b76` |
+| dense-16m-b30k | dense | 16.2M | world-b-30k | 32,067 | 0 | mix bios=0.5,qa=0.5 | b09ad1b | `3c8eae1507ef` |
+| dense-1m-b10k | dense | 1.1M | world-b | 11,091 | 0 | mix bios=0.5,qa=0.5 | b09ad1b | `6fb6a59ed930` |
+| dense-1m-b10k-s1 | dense | 1.1M | world-b | 11,091 | 1 | mix bios=0.5,qa=0.5 | b09ad1b | `c6d88ee5768f` |
+| dense-1m-b30k | dense | 1.1M | world-b-30k | 32,067 | 0 | mix bios=0.5,qa=0.5 | b09ad1b | `6f8c5dd9ea76` |
+| dense-250k-b10k | dense | 0.2M | world-b | 11,091 | 0 | mix bios=0.5,qa=0.5 | b09ad1b | `673b3e95bd00` |
+| dense-250k-b30k | dense | 0.2M | world-b-30k | 32,067 | 0 | mix bios=0.5,qa=0.5 | b09ad1b | `0a5544b64438` |
+| dense-2m-b10k | dense | 1.9M | world-b | 11,091 | 0 | mix bios=0.5,qa=0.5 | b09ad1b | `5467be843fbe` |
+| dense-2m-b10k-s1 | dense | 1.9M | world-b | 11,091 | 1 | mix bios=0.5,qa=0.5 | b09ad1b | `27715654e151` |
+| dense-2m-b30k | dense | 1.9M | world-b-30k | 32,067 | 0 | mix bios=0.5,qa=0.5 | b09ad1b | `76d558f2877b` |
+| dense-2m-b30k-s1 | dense | 1.9M | world-b-30k | 32,067 | 1 | mix bios=0.5,qa=0.5 | b09ad1b | `df7c4f58a50a` |
+| dense-4m-b10k | dense | 3.7M | world-b | 11,091 | 0 | mix bios=0.5,qa=0.5 | b09ad1b | `2ffcc8bfc11c` |
+| dense-4m-b30k | dense | 3.7M | world-b-30k | 32,067 | 0 | mix bios=0.5,qa=0.5 | b09ad1b | `2e69664606b4` |
+| dense-4m-b30k-s1 | dense | 3.7M | world-b-30k | 32,067 | 1 | mix bios=0.5,qa=0.5 | 663b2a2 | `9dbb9b238f08` |
+| dense-500k-b10k | dense | 0.5M | world-b | 11,091 | 0 | mix bios=0.5,qa=0.5 | b09ad1b | `d05c3f295557` |
+| dense-500k-b30k | dense | 0.5M | world-b-30k | 32,067 | 0 | mix bios=0.5,qa=0.5 | b09ad1b | `f7103992a37e` |
+| dense-8m-b100k | dense | 7.6M | world-b-100k | 105,508 | 0 | mix bios=0.5,qa=0.5 | c1586c2 | `888b1fd6b324` |
+| dense-8m-b100k-s1 | dense | 7.6M | world-b-100k | 105,508 | 1 | mix bios=0.5,qa=0.5 | c1586c2 | `b038ed2a9b46` |
+| dense-8m-b10k | dense | 7.6M | world-b | 11,091 | 0 | mix bios=0.5,qa=0.5 | b09ad1b | `637f80d5f36d` |
+| dense-8m-b30k | dense | 7.6M | world-b-30k | 32,067 | 0 | mix bios=0.5,qa=0.5 | b09ad1b | `66c39598024f` |
 | dense-a | dense | 25.5M | world-a | 10,000 | 0 | mix bios=0.5,qa=0.5 | 2858beb (inferred) | `81e8eb4ac912` |
 | dense-a-k100 | dense | 25.5M | world-a | 200 | 0 | mix edit_facts=1,edit_qa=1; init dense-a; edits 100 | 2858beb (inferred) | `c2535e281e08` |
 | dense-a-to-b | dense | 25.5M | world-b | 2,000 | 0 | mix bios=1; init dense-a | 2858beb (inferred) | `17c630e69033` |
 | latent-a | latent | 29.2M | world-a | 10,000 | 0 | mix bios=0.5,qa=0.5; hop weight 0.5; supervise first | 2858beb (inferred) | `f4f3b1fbe96a` |
 | latent-a-all | latent | 29.2M | world-a | 10,000 | 0 | mix bios=0.5,qa=0.5; hop weight 0.5; supervise all | d98359c (inferred) | `57dc7d12714c` |
 | latent-multi | latent | 29.2M | world-a + 15 pool | 10,000 | 0 | mix bios=0.5,qa=0.5; hop weight 0.5; supervise all | d98359c (inferred) | `1b2490e51d93` |
+| latent-multi-1m | latent | 1.3M | world-a + 15 pool | 10,000 | 0 | mix bios=0.5,qa=0.5; hop weight 0.5; supervise all | b09ad1b | `74e883b60ed3` |
+| latent-multi-250k | latent | 0.3M | world-a + 15 pool | 10,000 | 0 | mix bios=0.5,qa=0.5; hop weight 0.5; supervise all | b09ad1b | `4b2faf794e0a` |
+| latent-multi-250k-s1 | latent | 0.3M | world-a + 15 pool | 10,000 | 1 | mix bios=0.5,qa=0.5; hop weight 0.5; supervise all | c1586c2 | `973636992adb` |
+| latent-multi-4m | latent | 4.5M | world-a + 15 pool | 10,000 | 0 | mix bios=0.5,qa=0.5; hop weight 0.5; supervise all | b09ad1b | `b0a5f2d97c3e` |
+| latent-multi-500k | latent | 0.7M | world-a + 15 pool | 10,000 | 0 | mix bios=0.5,qa=0.5; hop weight 0.5; supervise all | c1586c2 | `ad9d6f640e2d` |
+| latent-multi-500k-s1 | latent | 0.7M | world-a + 15 pool | 10,000 | 1 | mix bios=0.5,qa=0.5; hop weight 0.5; supervise all | c1586c2 | `768acb3051ac` |
 | latent-multi-nohop | latent | 29.2M | world-a + 15 pool | 3,300 of 10,000 | 0 | mix bios=0.5,qa=0.5; hop weight 0; supervise all | 910fcdb (inferred) | `dc2494c38336` |
 | lookup-a | lookup | 25.5M | world-a | 10,000 | 0 | mix bios=0.5,qa=0.5 | 07088fd (inferred) | `e06385a28712` |
 
 ## Integrity
 
-- 86 evaluation files: every summary recounted from its per-question records matches.
-- Evaluations logged during training, rerun from the saved checkpoint on the same questions (context-a, context-multi-bios, context-multi-bios-20k, dense-a, dense-a-k100, dense-a-to-b, latent-a, latent-a-all, latent-multi, latent-multi-nohop, lookup-a): 90 of 90 cells identical.
+- 337 evaluation files: every summary recounted from its per-question records matches.
+- Evaluations logged during training, rerun from the saved checkpoint on the same questions (context-a, context-multi-bios, context-multi-bios-20k, dense-16m-b100k, dense-16m-b10k, dense-16m-b30k, dense-1m-b10k, dense-1m-b30k, dense-250k-b10k, dense-250k-b30k, dense-2m-b10k, dense-2m-b30k, dense-4m-b10k, dense-4m-b30k, dense-500k-b10k, dense-500k-b30k, dense-8m-b100k, dense-8m-b10k, dense-8m-b30k, dense-a, dense-a-k100, dense-a-to-b, latent-a, latent-a-all, latent-multi, latent-multi-nohop, lookup-a): 122 of 122 cells identical.
 - 0 cells come from logged summaries only (†).
 - Worlds: `worlds.json` holds each world's build config and file hashes. `python -m hemispheres.records verify-data data/<world>` checks a rebuilt world against them.
 
@@ -282,7 +377,60 @@ The weights are on the Hugging Face Hub at [SceneWorks/hemispheres-step1](https:
 | World A, world C's store (lower is better) | latent-a | 12/900 | 1.3 | 0.8–2.3 | `evals/world-a-store-world-c-final.jsonl` |
 | World A, world C's store (lower is better) | latent-a-all | 11/900 | 1.2 | 0.7–2.2 | `evals/world-a-store-world-c-final.jsonl` |
 | World A, world C's store (lower is better) | latent-multi | 10/900 | 1.1 | 0.6–2 | `evals/world-a-store-world-c-final.jsonl` |
+| capacity: world-b 1 hop | dense-250k-b10k | 60/1000 | 6 | 4.7–7.6 | `evals/world-b-heldout-final.jsonl` |
+| capacity: world-b-30k 1 hop | dense-250k-b30k | 64/1000 | 6.4 | 5–8.1 | `evals/world-b-30k-heldout-final.jsonl` |
+| capacity: world-b 1 hop | dense-500k-b10k | 60/1000 | 6 | 4.7–7.6 | `evals/world-b-heldout-final.jsonl` |
+| capacity: world-b-30k 1 hop | dense-500k-b30k | 66/1000 | 6.6 | 5.2–8.3 | `evals/world-b-30k-heldout-final.jsonl` |
+| capacity: world-b 1 hop | dense-1m-b10k | 487/1000 | 48.7 | 45.6–51.8 | `evals/world-b-heldout-final.jsonl` |
+| capacity: world-b 1 hop | dense-1m-b10k-s1 | 587/1000 | 58.7 | 55.6–61.7 | `evals/world-b-heldout-final.jsonl` |
+| capacity: world-b-30k 1 hop | dense-1m-b30k | 186/1000 | 18.6 | 16.3–21.1 | `evals/world-b-30k-heldout-final.jsonl` |
+| capacity: world-b 1 hop | dense-2m-b10k | 976/1000 | 97.6 | 96.5–98.4 | `evals/world-b-heldout-final.jsonl` |
+| capacity: world-b 1 hop | dense-2m-b10k-s1 | 952/1000 | 95.2 | 93.7–96.4 | `evals/world-b-heldout-final.jsonl` |
+| capacity: world-b-30k 1 hop | dense-2m-b30k | 370/1000 | 37 | 34.1–40 | `evals/world-b-30k-heldout-final.jsonl` |
+| capacity: world-b-30k 1 hop | dense-2m-b30k-s1 | 455/1000 | 45.5 | 42.4–48.6 | `evals/world-b-30k-heldout-final.jsonl` |
+| capacity: world-b 1 hop | dense-4m-b10k | 1000/1000 | 100 | 99.6–100 | `evals/world-b-heldout-final.jsonl` |
+| capacity: world-b-30k 1 hop | dense-4m-b30k | 972/1000 | 97.2 | 96–98.1 | `evals/world-b-30k-heldout-final.jsonl` |
+| capacity: world-b-30k 1 hop | dense-4m-b30k-s1 | 980/1000 | 98 | 96.9–98.7 | `evals/world-b-30k-heldout-final.jsonl` |
+| capacity: world-b 1 hop | dense-8m-b10k | 999/1000 | 99.9 | 99.4–100 | `evals/world-b-heldout-final.jsonl` |
+| capacity: world-b-30k 1 hop | dense-8m-b30k | 1000/1000 | 100 | 99.6–100 | `evals/world-b-30k-heldout-final.jsonl` |
+| capacity: world-b-100k 1 hop | dense-8m-b100k | 747/1000 | 74.7 | 71.9–77.3 | `evals/world-b-100k-heldout-final.jsonl` |
+| capacity: world-b-100k 1 hop | dense-8m-b100k-s1 | 738/1000 | 73.8 | 71–76.4 | `evals/world-b-100k-heldout-final.jsonl` |
+| capacity: world-b 1 hop | dense-16m-b10k | 1000/1000 | 100 | 99.6–100 | `evals/world-b-heldout-final.jsonl` |
+| capacity: world-b-30k 1 hop | dense-16m-b30k | 1000/1000 | 100 | 99.6–100 | `evals/world-b-30k-heldout-final.jsonl` |
+| capacity: world-b-100k 1 hop | dense-16m-b100k | 978/1000 | 97.8 | 96.7–98.5 | `evals/world-b-100k-heldout-final.jsonl` |
 | capacity: world-b 1 hop | latent-multi | 1000/1000 | 100 | 99.6–100 | `evals/world-b-heldout-final.jsonl` |
+| capacity: world-b 1 hop, 4-bit keys | latent-multi-1m | 986/1000 | 98.6 | 97.7–99.2 | `evals/world-b-keys4-final.jsonl` |
+| capacity: world-b 1 hop | latent-multi-1m | 999/1000 | 99.9 | 99.4–100 | `evals/world-b-heldout-final.jsonl` |
+| capacity: world-b 1 hop, 4-bit keys | latent-multi-250k | 883/1000 | 88.3 | 86.2–90.1 | `evals/world-b-keys4-final.jsonl` |
+| capacity: world-b 1 hop | latent-multi-250k | 989/1000 | 98.9 | 98–99.4 | `evals/world-b-heldout-final.jsonl` |
+| capacity: world-b 1 hop, 4-bit keys | latent-multi-250k-s1 | 897/1000 | 89.7 | 87.7–91.4 | `evals/world-b-keys4-final.jsonl` |
+| capacity: world-b 1 hop | latent-multi-250k-s1 | 993/1000 | 99.3 | 98.6–99.7 | `evals/world-b-heldout-final.jsonl` |
+| capacity: world-b 1 hop, 4-bit keys | latent-multi-4m | 999/1000 | 99.9 | 99.4–100 | `evals/world-b-keys4-final.jsonl` |
+| capacity: world-b 1 hop | latent-multi-4m | 1000/1000 | 100 | 99.6–100 | `evals/world-b-heldout-final.jsonl` |
+| capacity: world-b 1 hop, 4-bit keys | latent-multi-500k | 956/1000 | 95.6 | 94.1–96.7 | `evals/world-b-keys4-final.jsonl` |
+| capacity: world-b 1 hop | latent-multi-500k | 999/1000 | 99.9 | 99.4–100 | `evals/world-b-heldout-final.jsonl` |
+| capacity: world-b 1 hop, 4-bit keys | latent-multi-500k-s1 | 959/1000 | 95.9 | 94.5–97 | `evals/world-b-keys4-final.jsonl` |
+| capacity: world-b 1 hop | latent-multi-500k-s1 | 999/1000 | 99.9 | 99.4–100 | `evals/world-b-heldout-final.jsonl` |
 | capacity: world-b-30k 1 hop | latent-multi | 1000/1000 | 100 | 99.6–100 | `evals/world-b-30k-heldout-final.jsonl` |
+| capacity: world-b-30k 1 hop, 4-bit keys | latent-multi-1m | 976/1000 | 97.6 | 96.5–98.4 | `evals/world-b-30k-keys4-final.jsonl` |
+| capacity: world-b-30k 1 hop | latent-multi-1m | 1000/1000 | 100 | 99.6–100 | `evals/world-b-30k-heldout-final.jsonl` |
+| capacity: world-b-30k 1 hop, 4-bit keys | latent-multi-250k | 805/1000 | 80.5 | 77.9–82.8 | `evals/world-b-30k-keys4-final.jsonl` |
+| capacity: world-b-30k 1 hop | latent-multi-250k | 987/1000 | 98.7 | 97.8–99.2 | `evals/world-b-30k-heldout-final.jsonl` |
+| capacity: world-b-30k 1 hop, 4-bit keys | latent-multi-4m | 993/1000 | 99.3 | 98.6–99.7 | `evals/world-b-30k-keys4-final.jsonl` |
+| capacity: world-b-30k 1 hop | latent-multi-4m | 1000/1000 | 100 | 99.6–100 | `evals/world-b-30k-heldout-final.jsonl` |
+| capacity: world-b-30k 1 hop, 4-bit keys | latent-multi-500k | 936/1000 | 93.6 | 91.9–95 | `evals/world-b-30k-keys4-final.jsonl` |
+| capacity: world-b-30k 1 hop | latent-multi-500k | 998/1000 | 99.8 | 99.3–99.9 | `evals/world-b-30k-heldout-final.jsonl` |
+| capacity: world-b-30k 1 hop, 4-bit keys | latent-multi-500k-s1 | 937/1000 | 93.7 | 92–95 | `evals/world-b-30k-keys4-final.jsonl` |
+| capacity: world-b-30k 1 hop | latent-multi-500k-s1 | 1000/1000 | 100 | 99.6–100 | `evals/world-b-30k-heldout-final.jsonl` |
 | capacity: world-b-100k 1 hop, 4-bit keys | latent-multi | 985/1000 | 98.5 | 97.5–99.1 | `evals/world-b-100k-keys4-final.jsonl` |
 | capacity: world-b-100k 1 hop | latent-multi | 1000/1000 | 100 | 99.6–100 | `evals/world-b-100k-heldout-final.jsonl` |
+| capacity: world-b-100k 1 hop, 4-bit keys | latent-multi-1m | 963/1000 | 96.3 | 94.9–97.3 | `evals/world-b-100k-keys4-final.jsonl` |
+| capacity: world-b-100k 1 hop | latent-multi-1m | 999/1000 | 99.9 | 99.4–100 | `evals/world-b-100k-heldout-final.jsonl` |
+| capacity: world-b-100k 1 hop, 4-bit keys | latent-multi-250k | 686/1000 | 68.6 | 65.7–71.4 | `evals/world-b-100k-keys4-final.jsonl` |
+| capacity: world-b-100k 1 hop | latent-multi-250k | 969/1000 | 96.9 | 95.6–97.8 | `evals/world-b-100k-heldout-final.jsonl` |
+| capacity: world-b-100k 1 hop, 4-bit keys | latent-multi-4m | 984/1000 | 98.4 | 97.4–99 | `evals/world-b-100k-keys4-final.jsonl` |
+| capacity: world-b-100k 1 hop | latent-multi-4m | 999/1000 | 99.9 | 99.4–100 | `evals/world-b-100k-heldout-final.jsonl` |
+| capacity: world-b-100k 1 hop, 4-bit keys | latent-multi-500k | 874/1000 | 87.4 | 85.2–89.3 | `evals/world-b-100k-keys4-final.jsonl` |
+| capacity: world-b-100k 1 hop | latent-multi-500k | 996/1000 | 99.6 | 99–99.8 | `evals/world-b-100k-heldout-final.jsonl` |
+| capacity: world-b-100k 1 hop, 4-bit keys | latent-multi-500k-s1 | 873/1000 | 87.3 | 85.1–89.2 | `evals/world-b-100k-keys4-final.jsonl` |
+| capacity: world-b-100k 1 hop | latent-multi-500k-s1 | 1000/1000 | 100 | 99.6–100 | `evals/world-b-100k-heldout-final.jsonl` |
