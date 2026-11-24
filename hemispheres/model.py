@@ -43,10 +43,6 @@ SIZES = {
     "16m": dict(n_layer=9, n_head=12, d_model=384),       # 16.15M
 }
 LADDER = ("250k", "500k", "1m", "2m", "4m", "8m", "16m")
-# Below the ladder, for finding where the latent core stops passing (HEM-4): the 250k core already passes.
-# Latent parameters with the default key_dim 128: 125k 0.17M, 60k 0.07M.
-SIZES["125k"] = dict(n_layer=3, n_head=3, d_model=48)  # 0.11M dense
-SIZES["60k"] = dict(n_layer=2, n_head=2, d_model=32)   # 0.04M dense
 
 
 def config_for(size: str, **overrides) -> GPTConfig:
