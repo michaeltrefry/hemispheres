@@ -136,35 +136,38 @@ Per question asked, right or wrong, calculated from each model's shape and the s
 | latent-multi | world-b-100k | one-hop held-out, stored keys at 8 bits | 1000 | 29.16M | 18.4 | 1,014.8 | 8,023.5 | 443.6 | 933.5 | `evals/world-b-100k-keys8-final.jsonl` |
 | latent-multi | world-b-100k | one-hop held-out, stored keys at 4 bits | 1000 | 29.16M | 18.4 | 1,015.0 | 8,024.9 | 443.9 | 494.6 | `evals/world-b-100k-keys4-final.jsonl` |
 | latent-multi | world-b-100k | one-hop held-out, stored keys at 3 bits | 1000 | 29.16M | 18.4 | 1,015.6 | 8,029.5 | 445.1 | 385.7 | `evals/world-b-100k-keys3-final.jsonl` |
+| latent-multi-1m | world-a | one-hop held-out | 200 | 1.34M | 18.2 | 46.5 | 826.2 | 19.3 | 345.2 | `evals/world-a-final.jsonl` |
 | latent-multi-1m | world-b | one-hop held-out | 1000 | 1.34M | 18.3 | 46.8 | 832.7 | 20.1 | 360.7 | `evals/world-b-heldout-final.jsonl` |
 | latent-multi-1m | world-b | one-hop held-out, stored keys at 4 bits | 1000 | 1.34M | 18.3 | 46.8 | 832.9 | 20.2 | 50.8 | `evals/world-b-keys4-final.jsonl` |
 | latent-multi-1m | world-b-30k | one-hop held-out | 1000 | 1.34M | 18.2 | 46.6 | 2,410.8 | 19.8 | 1,033.7 | `evals/world-b-30k-heldout-final.jsonl` |
 | latent-multi-1m | world-b-30k | one-hop held-out, stored keys at 4 bits | 1000 | 1.34M | 18.2 | 46.6 | 2,411.6 | 19.8 | 145.6 | `evals/world-b-30k-keys4-final.jsonl` |
 | latent-multi-1m | world-b-100k | one-hop held-out | 1000 | 1.34M | 18.4 | 47.0 | 8,020.8 | 20.4 | 3,514.4 | `evals/world-b-100k-heldout-final.jsonl` |
 | latent-multi-1m | world-b-100k | one-hop held-out, stored keys at 4 bits | 1000 | 1.34M | 18.4 | 47.0 | 8,024.1 | 20.4 | 495.1 | `evals/world-b-100k-keys4-final.jsonl` |
+| latent-multi-250k | world-a | one-hop held-out | 200 | 0.32M | 18.2 | 11.2 | 825.8 | 4.6 | 345.2 | `evals/world-a-final.jsonl` |
 | latent-multi-250k | world-b | one-hop held-out | 1000 | 0.32M | 18.3 | 11.3 | 832.1 | 4.8 | 360.4 | `evals/world-b-heldout-final.jsonl` |
 | latent-multi-250k | world-b | one-hop held-out, stored keys at 4 bits | 1000 | 0.32M | 18.3 | 11.3 | 832.6 | 4.8 | 50.8 | `evals/world-b-keys4-final.jsonl` |
 | latent-multi-250k | world-b-30k | one-hop held-out | 1000 | 0.32M | 18.2 | 11.3 | 2,410.0 | 4.8 | 1,033.1 | `evals/world-b-30k-heldout-final.jsonl` |
 | latent-multi-250k | world-b-30k | one-hop held-out, stored keys at 4 bits | 1000 | 0.32M | 18.2 | 11.3 | 2,409.8 | 4.8 | 145.2 | `evals/world-b-30k-keys4-final.jsonl` |
 | latent-multi-250k | world-b-100k | one-hop held-out | 1000 | 0.32M | 18.4 | 11.4 | 8,019.0 | 4.9 | 3,511.7 | `evals/world-b-100k-heldout-final.jsonl` |
 | latent-multi-250k | world-b-100k | one-hop held-out, stored keys at 4 bits | 1000 | 0.32M | 18.3 | 11.3 | 8,005.6 | 4.9 | 490.1 | `evals/world-b-100k-keys4-final.jsonl` |
-| latent-multi-250k-s1 | world-a | one-hop held-out | 200 | 0.32M | 18.3 | 11.3 | 834.0 | 5.0 | 370.2 | `evals/world-a-step10000.jsonl` |
+| latent-multi-250k-s1 | world-a | one-hop held-out | 200 | 0.32M | 18.3 | 11.3 | 834.0 | 5.0 | 370.2 | `evals/world-a-seed1-final.jsonl` |
 | latent-multi-250k-s1 | world-b | one-hop held-out | 1000 | 0.32M | 18.3 | 11.3 | 832.2 | 4.8 | 360.6 | `evals/world-b-heldout-final.jsonl` |
 | latent-multi-250k-s1 | world-b | one-hop held-out, stored keys at 4 bits | 1000 | 0.32M | 18.3 | 11.3 | 832.5 | 4.8 | 50.8 | `evals/world-b-keys4-final.jsonl` |
+| latent-multi-4m | world-a | one-hop held-out | 200 | 4.52M | 18.2 | 156.0 | 826.9 | 64.9 | 345.2 | `evals/world-a-final.jsonl` |
 | latent-multi-4m | world-b | one-hop held-out | 1000 | 4.52M | 18.3 | 157.2 | 833.3 | 67.8 | 360.7 | `evals/world-b-heldout-final.jsonl` |
 | latent-multi-4m | world-b | one-hop held-out, stored keys at 4 bits | 1000 | 4.52M | 18.3 | 157.2 | 833.4 | 67.8 | 50.7 | `evals/world-b-keys4-final.jsonl` |
 | latent-multi-4m | world-b-30k | one-hop held-out | 1000 | 4.52M | 18.2 | 156.4 | 2,411.4 | 66.7 | 1,033.7 | `evals/world-b-30k-heldout-final.jsonl` |
 | latent-multi-4m | world-b-30k | one-hop held-out, stored keys at 4 bits | 1000 | 4.52M | 18.2 | 156.4 | 2,411.5 | 66.7 | 145.4 | `evals/world-b-30k-keys4-final.jsonl` |
 | latent-multi-4m | world-b-100k | one-hop held-out | 1000 | 4.52M | 18.4 | 157.8 | 8,021.5 | 68.8 | 3,514.4 | `evals/world-b-100k-heldout-final.jsonl` |
 | latent-multi-4m | world-b-100k | one-hop held-out, stored keys at 4 bits | 1000 | 4.52M | 18.4 | 157.8 | 8,021.5 | 68.8 | 494.2 | `evals/world-b-100k-keys4-final.jsonl` |
-| latent-multi-500k | world-a | one-hop held-out | 200 | 0.67M | 18.2 | 23.3 | 826.0 | 9.6 | 345.2 | `evals/world-a-step10000.jsonl` |
+| latent-multi-500k | world-a | one-hop held-out | 200 | 0.67M | 18.2 | 23.3 | 826.0 | 9.6 | 345.2 | `evals/world-a-final.jsonl` |
 | latent-multi-500k | world-b | one-hop held-out | 1000 | 0.67M | 18.3 | 23.5 | 832.4 | 10.1 | 360.6 | `evals/world-b-heldout-final.jsonl` |
 | latent-multi-500k | world-b | one-hop held-out, stored keys at 4 bits | 1000 | 0.67M | 18.3 | 23.5 | 832.6 | 10.1 | 50.8 | `evals/world-b-keys4-final.jsonl` |
 | latent-multi-500k | world-b-30k | one-hop held-out | 1000 | 0.67M | 18.2 | 23.3 | 2,410.5 | 9.9 | 1,033.7 | `evals/world-b-30k-heldout-final.jsonl` |
 | latent-multi-500k | world-b-30k | one-hop held-out, stored keys at 4 bits | 1000 | 0.67M | 18.2 | 23.3 | 2,411.5 | 9.9 | 145.6 | `evals/world-b-30k-keys4-final.jsonl` |
 | latent-multi-500k | world-b-100k | one-hop held-out | 1000 | 0.67M | 18.4 | 23.5 | 8,020.6 | 10.2 | 3,514.4 | `evals/world-b-100k-heldout-final.jsonl` |
 | latent-multi-500k | world-b-100k | one-hop held-out, stored keys at 4 bits | 1000 | 0.67M | 18.4 | 23.5 | 8,020.6 | 10.2 | 494.2 | `evals/world-b-100k-keys4-final.jsonl` |
-| latent-multi-500k-s1 | world-a | one-hop held-out | 200 | 0.67M | 18.2 | 23.4 | 829.6 | 10.1 | 361.1 | `evals/world-a-step10000.jsonl` |
+| latent-multi-500k-s1 | world-a | one-hop held-out | 200 | 0.67M | 18.2 | 23.4 | 829.6 | 10.1 | 361.1 | `evals/world-a-seed1-final.jsonl` |
 | latent-multi-500k-s1 | world-b | one-hop held-out | 1000 | 0.67M | 18.3 | 23.5 | 832.4 | 10.1 | 360.7 | `evals/world-b-heldout-final.jsonl` |
 | latent-multi-500k-s1 | world-b | one-hop held-out, stored keys at 4 bits | 1000 | 0.67M | 18.3 | 23.5 | 833.0 | 10.1 | 50.9 | `evals/world-b-keys4-final.jsonl` |
 | latent-multi-500k-s1 | world-b-30k | one-hop held-out | 1000 | 0.67M | 18.2 | 23.3 | 2,410.5 | 9.9 | 1,033.7 | `evals/world-b-30k-heldout-final.jsonl` |
@@ -240,8 +243,8 @@ Every flag, seed and model shape is in `runs/<run>/config.json`; checkpoint hash
 
 ## Integrity
 
-- 358 evaluation files: every summary recounted from its per-question records matches.
-- Evaluations logged during training, rerun from the saved checkpoint on the same questions (context-a, context-multi-bios, context-multi-bios-20k, dense-16m-b100k, dense-16m-b10k, dense-16m-b30k, dense-1m-b10k, dense-1m-b30k, dense-250k-b10k, dense-250k-b30k, dense-2m-b10k, dense-2m-b30k, dense-4m-b10k, dense-4m-b30k, dense-500k-b10k, dense-500k-b30k, dense-8m-b100k, dense-8m-b10k, dense-8m-b30k, dense-a, dense-a-k100, dense-a-to-b, latent-a, latent-a-all, latent-multi, latent-multi-nohop, lookup-a): 122 of 122 cells identical.
+- 372 evaluation files: every summary recounted from its per-question records matches.
+- Evaluations logged during training, rerun from the saved checkpoint on the same questions (context-a, context-multi-bios, context-multi-bios-20k, context-multi-bios-20k-s1, dense-16m-b100k, dense-16m-b100k-s1, dense-16m-b10k, dense-16m-b30k, dense-1m-b10k, dense-1m-b10k-s1, dense-1m-b30k, dense-250k-b10k, dense-250k-b30k, dense-2m-b10k, dense-2m-b10k-s1, dense-2m-b30k, dense-2m-b30k-s1, dense-4m-b10k, dense-4m-b10k-s1, dense-4m-b30k, dense-4m-b30k-s1, dense-500k-b10k, dense-500k-b30k, dense-8m-b100k, dense-8m-b100k-s1, dense-8m-b10k, dense-8m-b30k, dense-a, dense-a-k100, dense-a-to-b, latent-a, latent-a-all, latent-multi, latent-multi-1m, latent-multi-250k, latent-multi-250k-s1, latent-multi-4m, latent-multi-500k, latent-multi-500k-s1, latent-multi-nohop, lookup-a): 192 of 192 cells identical.
 - 0 cells come from logged summaries only (†).
 - Worlds: `worlds.json` holds each world's build config and file hashes. `python -m hemispheres.records verify-data data/<world>` checks a rebuilt world against them.
 

@@ -1,0 +1,45 @@
+{
+  "args": {
+    "run": "runs/dense-2m-b30k-s1",
+    "checkpoint": "final",
+    "data": "data/world-b-30k",
+    "edits": 0,
+    "sets": "test_1hop_ood",
+    "n": 1000,
+    "seed": 1,
+    "name": "world-b-30k-seed1-final",
+    "key_bits": null,
+    "store": null
+  },
+  "provenance": {
+    "time": "2026-11-25T11:43:53+00:00",
+    "code": {
+      "commit": "be82eb780826d6708ec7a1241c9af62ffe91fbcf",
+      "dirty": false,
+      "changed": []
+    },
+    "env": {
+      "python": "3.12.13",
+      "platform": "macOS-27.2.1-arm64-arm-64bit",
+      "machine": "arm64",
+      "mlx": "0.32.2",
+      "device": "Device(gpu, 0)"
+    },
+    "data": {
+      "data/world-b-30k": "df7f3d3cf85ed366712cccba48adc6ee44740a49e765f9cd3ba5ba20730d8f4a"
+    },
+    "checkpoint_sha256": "df7c4f58a50a59fd0f42342ef2b292006931449ee27bcef739b48442925ccb59"
+  },
+  "summary": {
+    "test_1hop_ood": {
+      "1hop": {
+        "acc": 0.433,
+        "n": 1000
+      },
+      "all": {
+        "acc": 0.433,
+        "n": 1000
+      }
+    }
+  }
+}
