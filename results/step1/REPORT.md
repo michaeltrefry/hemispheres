@@ -69,7 +69,7 @@ Dense ladder, one-hop held-out accuracy in % (seeds separated by /; * = not conv
 | 500k | 0.50M | 6 fail | 6.6 fail | — |
 | 1m | 1.06M | 48.7* / 58.7* fail | 18.6* fail | — |
 | 2m | 1.94M | 97.6 / 95.2* fail | 37 / 45.5 fail | — |
-| 4m | 3.74M | 100 pass | 97.2 / 98 pass | — |
+| 4m | 3.74M | 100 / 99.9 pass | 97.2 / 98 pass | — |
 | 8m | 7.56M | 99.9 pass | 100 pass | 74.7* / 73.8* fail |
 | 16m | 16.15M | 100 pass | 100 pass | 97.8 / 98.2 pass |
 
@@ -106,6 +106,7 @@ Per question asked, right or wrong, calculated from each model's shape and the s
 | dense-2m-b30k | world-b-30k | one-hop held-out | 1000 | 1.94M | 18.3 | 67.5 | 0.0 | 29.1 | 0.0 | `evals/world-b-30k-heldout-final.jsonl` |
 | dense-2m-b30k-s1 | world-b-30k | one-hop held-out | 1000 | 1.94M | 18.2 | 67.4 | 0.0 | 28.9 | 0.0 | `evals/world-b-30k-heldout-final.jsonl` |
 | dense-4m-b10k | world-b | one-hop held-out | 1000 | 3.74M | 18.3 | 130.4 | 0.0 | 56.2 | 0.0 | `evals/world-b-heldout-final.jsonl` |
+| dense-4m-b10k-s1 | world-b | one-hop held-out | 1000 | 3.74M | 18.3 | 130.4 | 0.0 | 56.2 | 0.0 | `evals/world-b-heldout-final.jsonl` |
 | dense-4m-b30k | world-b-30k | one-hop held-out | 1000 | 3.74M | 18.2 | 129.9 | 0.0 | 55.6 | 0.0 | `evals/world-b-30k-heldout-final.jsonl` |
 | dense-4m-b30k-s1 | world-b-30k | one-hop held-out | 1000 | 3.74M | 18.2 | 130.0 | 0.0 | 55.8 | 0.0 | `evals/world-b-30k-heldout-final.jsonl` |
 | dense-500k-b10k | world-b | one-hop held-out | 1000 | 0.50M | 18.5 | 17.7 | 0.0 | 7.8 | 0.0 | `evals/world-b-heldout-final.jsonl` |
@@ -213,6 +214,7 @@ Every flag, seed and model shape is in `runs/<run>/config.json`; checkpoint hash
 | dense-2m-b30k | dense | 1.9M | world-b-30k | 32,067 | 0 | mix bios=0.5,qa=0.5 | b09ad1b | `76d558f2877b` |
 | dense-2m-b30k-s1 | dense | 1.9M | world-b-30k | 32,067 | 1 | mix bios=0.5,qa=0.5 | b09ad1b | `df7c4f58a50a` |
 | dense-4m-b10k | dense | 3.7M | world-b | 11,091 | 0 | mix bios=0.5,qa=0.5 | b09ad1b | `2ffcc8bfc11c` |
+| dense-4m-b10k-s1 | dense | 3.7M | world-b | 11,091 | 1 | mix bios=0.5,qa=0.5 | be82eb7 | `d920fc98c6e9` |
 | dense-4m-b30k | dense | 3.7M | world-b-30k | 32,067 | 0 | mix bios=0.5,qa=0.5 | b09ad1b | `2e69664606b4` |
 | dense-4m-b30k-s1 | dense | 3.7M | world-b-30k | 32,067 | 1 | mix bios=0.5,qa=0.5 | 663b2a2 | `9dbb9b238f08` |
 | dense-500k-b10k | dense | 0.5M | world-b | 11,091 | 0 | mix bios=0.5,qa=0.5 | b09ad1b | `d05c3f295557` |
@@ -238,7 +240,7 @@ Every flag, seed and model shape is in `runs/<run>/config.json`; checkpoint hash
 
 ## Integrity
 
-- 351 evaluation files: every summary recounted from its per-question records matches.
+- 358 evaluation files: every summary recounted from its per-question records matches.
 - Evaluations logged during training, rerun from the saved checkpoint on the same questions (context-a, context-multi-bios, context-multi-bios-20k, dense-16m-b100k, dense-16m-b10k, dense-16m-b30k, dense-1m-b10k, dense-1m-b30k, dense-250k-b10k, dense-250k-b30k, dense-2m-b10k, dense-2m-b30k, dense-4m-b10k, dense-4m-b30k, dense-500k-b10k, dense-500k-b30k, dense-8m-b100k, dense-8m-b10k, dense-8m-b30k, dense-a, dense-a-k100, dense-a-to-b, latent-a, latent-a-all, latent-multi, latent-multi-nohop, lookup-a): 122 of 122 cells identical.
 - 0 cells come from logged summaries only (†).
 - Worlds: `worlds.json` holds each world's build config and file hashes. `python -m hemispheres.records verify-data data/<world>` checks a rebuilt world against them.
@@ -393,6 +395,7 @@ The weights are on the Hugging Face Hub at [SceneWorks/hemispheres-step1](https:
 | capacity: world-b-30k 1 hop | dense-2m-b30k | 370/1000 | 37 | 34.1–40 | `evals/world-b-30k-heldout-final.jsonl` |
 | capacity: world-b-30k 1 hop | dense-2m-b30k-s1 | 455/1000 | 45.5 | 42.4–48.6 | `evals/world-b-30k-heldout-final.jsonl` |
 | capacity: world-b 1 hop | dense-4m-b10k | 1000/1000 | 100 | 99.6–100 | `evals/world-b-heldout-final.jsonl` |
+| capacity: world-b 1 hop | dense-4m-b10k-s1 | 999/1000 | 99.9 | 99.4–100 | `evals/world-b-heldout-final.jsonl` |
 | capacity: world-b-30k 1 hop | dense-4m-b30k | 972/1000 | 97.2 | 96–98.1 | `evals/world-b-30k-heldout-final.jsonl` |
 | capacity: world-b-30k 1 hop | dense-4m-b30k-s1 | 980/1000 | 98 | 96.9–98.7 | `evals/world-b-30k-heldout-final.jsonl` |
 | capacity: world-b 1 hop | dense-8m-b10k | 999/1000 | 99.9 | 99.4–100 | `evals/world-b-heldout-final.jsonl` |
