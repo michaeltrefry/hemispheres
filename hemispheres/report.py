@@ -238,7 +238,8 @@ def final_eval(run: Run, world: str, sets: tuple[str, ...] = ("test_1hop_ood",),
                edits_ok: bool = False, key_bits: int | None = None) -> tuple[str, dict, list] | None:
     """The run's measurement of its final weights on `world`: the evaluation of the final checkpoint (the
     latest one for a run stopped early) with the most records in `sets`, preferring `hemispheres.evaluate`
-    over the training loop's last-step evaluation. Evaluations with edits applied count only if `edits_ok`.
+    over the training loop's last-step evaluation, then question seed 0 (the sample every run is reported on)
+    over a rerun of a training evaluation with the run's own seed. Evaluations with edits applied count only if `edits_ok`.
     `key_bits` picks evaluations with stored keys at that precision (evaluate --key-bits); None excludes them."""
     stopped = bool(run.metrics) and run.last_step < run.config["steps"]
     last = run.last_step if stopped else run.config["steps"]
@@ -253,7 +254,7 @@ def final_eval(run: Run, world: str, sets: tuple[str, ...] = ("test_1hop_ood",),
         if "step" not in a and a.get("checkpoint") != ("latest" if stopped else "final"):
             continue
         n = sum(r["set"] in sets for r in records)
-        key = (n, "step" not in a)
+        key = (n, "step" not in a, a.get("seed", 0) == 0)
         if n and (best is None or key > best[0]):
             best = (key, name, ev, records)
     return best and best[1:]
