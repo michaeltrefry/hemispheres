@@ -57,9 +57,9 @@ Smallest model that holds each world's facts. Dense models store the facts in th
 
 | world | people | facts | smallest passing dense size | largest failing size below it | smallest passing latent core (4-bit keys) | largest failing core below it | latent cores: one-hop % with 4-bit keys (full precision) |
 |---|---|---|---|---|---|---|---|
-| world-b | 10,000 | 62,615 | 4m (3.74M) | 2m | latent-multi-500k (0.67M) | latent-multi-250k | latent-multi-250k (0.32M) 88.3 / 89.7 (98.9 / 99.3) fail; latent-multi-500k (0.67M) 95.6 / 95.9 (99.9 / 99.9) pass; latent-multi-1m (1.34M) 98.6 (99.9) pass; latent-multi-4m (4.52M) 99.9 (100) pass; latent-multi (29.16M) 99.7 (100) pass |
-| world-b-30k | 30,000 | 182,381 | 4m (3.74M) | 2m | latent-multi-1m (1.34M) | latent-multi-500k | latent-multi-250k (0.32M) 80.5 / — (98.7 / —) fail; latent-multi-500k (0.67M) 93.6 / 93.7 (99.8 / 100) fail; latent-multi-1m (1.34M) 97.6 (100) pass; latent-multi-4m (4.52M) 99.3 (100) pass; latent-multi (29.16M) 99.3 (100) pass |
-| world-b-100k | 100,000 | 601,640 | 16m (16.15M) | 8m | latent-multi-1m (1.34M) | latent-multi-500k | latent-multi-250k (0.32M) 68.6 / — (96.9 / —) fail; latent-multi-500k (0.67M) 87.4 / 87.3 (99.6 / 100) fail; latent-multi-1m (1.34M) 96.3 (99.9) pass; latent-multi-4m (4.52M) 98.4 (99.9) pass; latent-multi (29.16M) 98.5 (100) pass |
+| world-b | 10,000 | 62,615 | 4m (3.74M) | 2m | latent-multi-500k (0.67M) | latent-multi-250k | latent-multi-250k (0.32M) 88.3 / 89.7 (98.9 / 99.3) fail; latent-multi-500k (0.67M) 95.6 / 95.9 (99.9 / 99.9) pass; latent-multi-1m (1.34M) 98.6 / 98.5 (99.9 / 100) pass; latent-multi-4m (4.52M) 99.9 (100) pass; latent-multi (29.16M) 99.7 (100) pass |
+| world-b-30k | 30,000 | 182,381 | 4m (3.74M) | 2m | latent-multi-1m (1.34M) | latent-multi-500k | latent-multi-250k (0.32M) 80.5 / 79.8 (98.7 / 98.8) fail; latent-multi-500k (0.67M) 93.6 / 93.7 (99.8 / 100) fail; latent-multi-1m (1.34M) 97.6 / 96.9 (100 / 100) pass; latent-multi-4m (4.52M) 99.3 (100) pass; latent-multi (29.16M) 99.3 (100) pass |
+| world-b-100k | 100,000 | 601,640 | 16m (16.15M) | 8m | latent-multi-1m (1.34M) | latent-multi-500k | latent-multi-250k (0.32M) 68.6 / 67.5 (96.9 / 97.1) fail; latent-multi-500k (0.67M) 87.4 / 87.3 (99.6 / 100) fail; latent-multi-1m (1.34M) 96.3 / 95.9 (99.9 / 100) pass; latent-multi-4m (4.52M) 98.4 (99.9) pass; latent-multi (29.16M) 98.5 (100) pass |
 
 Dense ladder, one-hop held-out accuracy in % (seeds separated by /; * = not converged, ? = convergence unknown, n = shown when under 1,000 questions):
 
@@ -143,6 +143,13 @@ Per question asked, right or wrong, calculated from each model's shape and the s
 | latent-multi-1m | world-b-30k | one-hop held-out, stored keys at 4 bits | 1000 | 1.34M | 18.2 | 46.6 | 2,411.6 | 19.8 | 145.6 | `evals/world-b-30k-keys4-final.jsonl` |
 | latent-multi-1m | world-b-100k | one-hop held-out | 1000 | 1.34M | 18.4 | 47.0 | 8,020.8 | 20.4 | 3,514.4 | `evals/world-b-100k-heldout-final.jsonl` |
 | latent-multi-1m | world-b-100k | one-hop held-out, stored keys at 4 bits | 1000 | 1.34M | 18.4 | 47.0 | 8,024.1 | 20.4 | 495.1 | `evals/world-b-100k-keys4-final.jsonl` |
+| latent-multi-1m-s1 | world-a | one-hop held-out | 200 | 1.34M | 18.2 | 46.7 | 829.8 | 20.1 | 361.1 | `evals/world-a-seed1-final.jsonl` |
+| latent-multi-1m-s1 | world-b | one-hop held-out | 1000 | 1.34M | 18.3 | 46.8 | 832.7 | 20.1 | 360.7 | `evals/world-b-heldout-final.jsonl` |
+| latent-multi-1m-s1 | world-b | one-hop held-out, stored keys at 4 bits | 1000 | 1.34M | 18.3 | 46.8 | 832.8 | 20.1 | 50.8 | `evals/world-b-keys4-final.jsonl` |
+| latent-multi-1m-s1 | world-b-30k | one-hop held-out | 1000 | 1.34M | 18.2 | 46.6 | 2,410.8 | 19.8 | 1,033.7 | `evals/world-b-30k-heldout-final.jsonl` |
+| latent-multi-1m-s1 | world-b-30k | one-hop held-out, stored keys at 4 bits | 1000 | 1.34M | 18.2 | 46.6 | 2,411.9 | 19.8 | 145.7 | `evals/world-b-30k-keys4-final.jsonl` |
+| latent-multi-1m-s1 | world-b-100k | one-hop held-out | 1000 | 1.34M | 18.4 | 47.0 | 8,020.8 | 20.4 | 3,514.4 | `evals/world-b-100k-heldout-final.jsonl` |
+| latent-multi-1m-s1 | world-b-100k | one-hop held-out, stored keys at 4 bits | 1000 | 1.34M | 18.4 | 47.0 | 8,019.0 | 20.4 | 493.7 | `evals/world-b-100k-keys4-final.jsonl` |
 | latent-multi-250k | world-a | one-hop held-out | 200 | 0.32M | 18.2 | 11.2 | 825.8 | 4.6 | 345.2 | `evals/world-a-final.jsonl` |
 | latent-multi-250k | world-b | one-hop held-out | 1000 | 0.32M | 18.3 | 11.3 | 832.1 | 4.8 | 360.4 | `evals/world-b-heldout-final.jsonl` |
 | latent-multi-250k | world-b | one-hop held-out, stored keys at 4 bits | 1000 | 0.32M | 18.3 | 11.3 | 832.6 | 4.8 | 50.8 | `evals/world-b-keys4-final.jsonl` |
@@ -153,6 +160,10 @@ Per question asked, right or wrong, calculated from each model's shape and the s
 | latent-multi-250k-s1 | world-a | one-hop held-out | 200 | 0.32M | 18.3 | 11.3 | 834.0 | 5.0 | 370.2 | `evals/world-a-seed1-final.jsonl` |
 | latent-multi-250k-s1 | world-b | one-hop held-out | 1000 | 0.32M | 18.3 | 11.3 | 832.2 | 4.8 | 360.6 | `evals/world-b-heldout-final.jsonl` |
 | latent-multi-250k-s1 | world-b | one-hop held-out, stored keys at 4 bits | 1000 | 0.32M | 18.3 | 11.3 | 832.5 | 4.8 | 50.8 | `evals/world-b-keys4-final.jsonl` |
+| latent-multi-250k-s1 | world-b-30k | one-hop held-out | 1000 | 0.32M | 18.2 | 11.3 | 2,409.9 | 4.8 | 1,032.9 | `evals/world-b-30k-heldout-final.jsonl` |
+| latent-multi-250k-s1 | world-b-30k | one-hop held-out, stored keys at 4 bits | 1000 | 0.32M | 18.2 | 11.3 | 2,410.3 | 4.8 | 145.4 | `evals/world-b-30k-keys4-final.jsonl` |
+| latent-multi-250k-s1 | world-b-100k | one-hop held-out | 1000 | 0.32M | 18.4 | 11.4 | 8,019.0 | 4.9 | 3,511.7 | `evals/world-b-100k-heldout-final.jsonl` |
+| latent-multi-250k-s1 | world-b-100k | one-hop held-out, stored keys at 4 bits | 1000 | 0.32M | 18.3 | 11.3 | 8,012.1 | 4.9 | 491.9 | `evals/world-b-100k-keys4-final.jsonl` |
 | latent-multi-4m | world-a | one-hop held-out | 200 | 4.52M | 18.2 | 156.0 | 826.9 | 64.9 | 345.2 | `evals/world-a-final.jsonl` |
 | latent-multi-4m | world-b | one-hop held-out | 1000 | 4.52M | 18.3 | 157.2 | 833.3 | 67.8 | 360.7 | `evals/world-b-heldout-final.jsonl` |
 | latent-multi-4m | world-b | one-hop held-out, stored keys at 4 bits | 1000 | 4.52M | 18.3 | 157.2 | 833.4 | 67.8 | 50.7 | `evals/world-b-keys4-final.jsonl` |
@@ -233,6 +244,7 @@ Every flag, seed and model shape is in `runs/<run>/config.json`; checkpoint hash
 | latent-a-all | latent | 29.2M | world-a | 10,000 | 0 | mix bios=0.5,qa=0.5; hop weight 0.5; supervise all | d98359c (inferred) | `57dc7d12714c` |
 | latent-multi | latent | 29.2M | world-a + 15 pool | 10,000 | 0 | mix bios=0.5,qa=0.5; hop weight 0.5; supervise all | d98359c (inferred) | `1b2490e51d93` |
 | latent-multi-1m | latent | 1.3M | world-a + 15 pool | 10,000 | 0 | mix bios=0.5,qa=0.5; hop weight 0.5; supervise all | b09ad1b | `74e883b60ed3` |
+| latent-multi-1m-s1 | latent | 1.3M | world-a + 15 pool | 10,000 | 1 | mix bios=0.5,qa=0.5; hop weight 0.5; supervise all | be82eb7 | `135214e90815` |
 | latent-multi-250k | latent | 0.3M | world-a + 15 pool | 10,000 | 0 | mix bios=0.5,qa=0.5; hop weight 0.5; supervise all | b09ad1b | `4b2faf794e0a` |
 | latent-multi-250k-s1 | latent | 0.3M | world-a + 15 pool | 10,000 | 1 | mix bios=0.5,qa=0.5; hop weight 0.5; supervise all | c1586c2 | `973636992adb` |
 | latent-multi-4m | latent | 4.5M | world-a + 15 pool | 10,000 | 0 | mix bios=0.5,qa=0.5; hop weight 0.5; supervise all | b09ad1b | `b0a5f2d97c3e` |
@@ -243,8 +255,8 @@ Every flag, seed and model shape is in `runs/<run>/config.json`; checkpoint hash
 
 ## Integrity
 
-- 372 evaluation files: every summary recounted from its per-question records matches.
-- Evaluations logged during training, rerun from the saved checkpoint on the same questions (context-a, context-multi-bios, context-multi-bios-20k, context-multi-bios-20k-s1, dense-16m-b100k, dense-16m-b100k-s1, dense-16m-b10k, dense-16m-b30k, dense-1m-b10k, dense-1m-b10k-s1, dense-1m-b30k, dense-250k-b10k, dense-250k-b30k, dense-2m-b10k, dense-2m-b10k-s1, dense-2m-b30k, dense-2m-b30k-s1, dense-4m-b10k, dense-4m-b10k-s1, dense-4m-b30k, dense-4m-b30k-s1, dense-500k-b10k, dense-500k-b30k, dense-8m-b100k, dense-8m-b100k-s1, dense-8m-b10k, dense-8m-b30k, dense-a, dense-a-k100, dense-a-to-b, latent-a, latent-a-all, latent-multi, latent-multi-1m, latent-multi-250k, latent-multi-250k-s1, latent-multi-4m, latent-multi-500k, latent-multi-500k-s1, latent-multi-nohop, lookup-a): 192 of 192 cells identical.
+- 388 evaluation files: every summary recounted from its per-question records matches.
+- Evaluations logged during training, rerun from the saved checkpoint on the same questions (context-a, context-multi-bios, context-multi-bios-20k, context-multi-bios-20k-s1, dense-16m-b100k, dense-16m-b100k-s1, dense-16m-b10k, dense-16m-b30k, dense-1m-b10k, dense-1m-b10k-s1, dense-1m-b30k, dense-250k-b10k, dense-250k-b30k, dense-2m-b10k, dense-2m-b10k-s1, dense-2m-b30k, dense-2m-b30k-s1, dense-4m-b10k, dense-4m-b10k-s1, dense-4m-b30k, dense-4m-b30k-s1, dense-500k-b10k, dense-500k-b30k, dense-8m-b100k, dense-8m-b100k-s1, dense-8m-b10k, dense-8m-b30k, dense-a, dense-a-k100, dense-a-to-b, latent-a, latent-a-all, latent-multi, latent-multi-1m, latent-multi-1m-s1, latent-multi-250k, latent-multi-250k-s1, latent-multi-4m, latent-multi-500k, latent-multi-500k-s1, latent-multi-nohop, lookup-a): 200 of 200 cells identical.
 - 0 cells come from logged summaries only (†).
 - Worlds: `worlds.json` holds each world's build config and file hashes. `python -m hemispheres.records verify-data data/<world>` checks a rebuilt world against them.
 
@@ -419,30 +431,40 @@ The weights are on the Hugging Face Hub at [SceneWorks/hemispheres-step1](https:
 | capacity: world-b 1 hop | latent-multi-500k-s1 | 999/1000 | 99.9 | 99.4–100 | `evals/world-b-heldout-final.jsonl` |
 | capacity: world-b 1 hop, 4-bit keys | latent-multi-1m | 986/1000 | 98.6 | 97.7–99.2 | `evals/world-b-keys4-final.jsonl` |
 | capacity: world-b 1 hop | latent-multi-1m | 999/1000 | 99.9 | 99.4–100 | `evals/world-b-heldout-final.jsonl` |
+| capacity: world-b 1 hop, 4-bit keys | latent-multi-1m-s1 | 985/1000 | 98.5 | 97.5–99.1 | `evals/world-b-keys4-final.jsonl` |
+| capacity: world-b 1 hop | latent-multi-1m-s1 | 1000/1000 | 100 | 99.6–100 | `evals/world-b-heldout-final.jsonl` |
 | capacity: world-b 1 hop, 4-bit keys | latent-multi-4m | 999/1000 | 99.9 | 99.4–100 | `evals/world-b-keys4-final.jsonl` |
 | capacity: world-b 1 hop | latent-multi-4m | 1000/1000 | 100 | 99.6–100 | `evals/world-b-heldout-final.jsonl` |
 | capacity: world-b 1 hop, 4-bit keys | latent-multi | 997/1000 | 99.7 | 99.1–99.9 | `evals/world-b-keys4-final.jsonl` |
 | capacity: world-b 1 hop | latent-multi | 1000/1000 | 100 | 99.6–100 | `evals/world-b-heldout-final.jsonl` |
 | capacity: world-b-30k 1 hop, 4-bit keys | latent-multi-250k | 805/1000 | 80.5 | 77.9–82.8 | `evals/world-b-30k-keys4-final.jsonl` |
 | capacity: world-b-30k 1 hop | latent-multi-250k | 987/1000 | 98.7 | 97.8–99.2 | `evals/world-b-30k-heldout-final.jsonl` |
+| capacity: world-b-30k 1 hop, 4-bit keys | latent-multi-250k-s1 | 798/1000 | 79.8 | 77.2–82.2 | `evals/world-b-30k-keys4-final.jsonl` |
+| capacity: world-b-30k 1 hop | latent-multi-250k-s1 | 988/1000 | 98.8 | 97.9–99.3 | `evals/world-b-30k-heldout-final.jsonl` |
 | capacity: world-b-30k 1 hop, 4-bit keys | latent-multi-500k | 936/1000 | 93.6 | 91.9–95 | `evals/world-b-30k-keys4-final.jsonl` |
 | capacity: world-b-30k 1 hop | latent-multi-500k | 998/1000 | 99.8 | 99.3–99.9 | `evals/world-b-30k-heldout-final.jsonl` |
 | capacity: world-b-30k 1 hop, 4-bit keys | latent-multi-500k-s1 | 937/1000 | 93.7 | 92–95 | `evals/world-b-30k-keys4-final.jsonl` |
 | capacity: world-b-30k 1 hop | latent-multi-500k-s1 | 1000/1000 | 100 | 99.6–100 | `evals/world-b-30k-heldout-final.jsonl` |
 | capacity: world-b-30k 1 hop, 4-bit keys | latent-multi-1m | 976/1000 | 97.6 | 96.5–98.4 | `evals/world-b-30k-keys4-final.jsonl` |
 | capacity: world-b-30k 1 hop | latent-multi-1m | 1000/1000 | 100 | 99.6–100 | `evals/world-b-30k-heldout-final.jsonl` |
+| capacity: world-b-30k 1 hop, 4-bit keys | latent-multi-1m-s1 | 969/1000 | 96.9 | 95.6–97.8 | `evals/world-b-30k-keys4-final.jsonl` |
+| capacity: world-b-30k 1 hop | latent-multi-1m-s1 | 1000/1000 | 100 | 99.6–100 | `evals/world-b-30k-heldout-final.jsonl` |
 | capacity: world-b-30k 1 hop, 4-bit keys | latent-multi-4m | 993/1000 | 99.3 | 98.6–99.7 | `evals/world-b-30k-keys4-final.jsonl` |
 | capacity: world-b-30k 1 hop | latent-multi-4m | 1000/1000 | 100 | 99.6–100 | `evals/world-b-30k-heldout-final.jsonl` |
 | capacity: world-b-30k 1 hop, 4-bit keys | latent-multi | 993/1000 | 99.3 | 98.6–99.7 | `evals/world-b-30k-keys4-final.jsonl` |
 | capacity: world-b-30k 1 hop | latent-multi | 1000/1000 | 100 | 99.6–100 | `evals/world-b-30k-heldout-final.jsonl` |
 | capacity: world-b-100k 1 hop, 4-bit keys | latent-multi-250k | 686/1000 | 68.6 | 65.7–71.4 | `evals/world-b-100k-keys4-final.jsonl` |
 | capacity: world-b-100k 1 hop | latent-multi-250k | 969/1000 | 96.9 | 95.6–97.8 | `evals/world-b-100k-heldout-final.jsonl` |
+| capacity: world-b-100k 1 hop, 4-bit keys | latent-multi-250k-s1 | 675/1000 | 67.5 | 64.5–70.3 | `evals/world-b-100k-keys4-final.jsonl` |
+| capacity: world-b-100k 1 hop | latent-multi-250k-s1 | 971/1000 | 97.1 | 95.9–98 | `evals/world-b-100k-heldout-final.jsonl` |
 | capacity: world-b-100k 1 hop, 4-bit keys | latent-multi-500k | 874/1000 | 87.4 | 85.2–89.3 | `evals/world-b-100k-keys4-final.jsonl` |
 | capacity: world-b-100k 1 hop | latent-multi-500k | 996/1000 | 99.6 | 99–99.8 | `evals/world-b-100k-heldout-final.jsonl` |
 | capacity: world-b-100k 1 hop, 4-bit keys | latent-multi-500k-s1 | 873/1000 | 87.3 | 85.1–89.2 | `evals/world-b-100k-keys4-final.jsonl` |
 | capacity: world-b-100k 1 hop | latent-multi-500k-s1 | 1000/1000 | 100 | 99.6–100 | `evals/world-b-100k-heldout-final.jsonl` |
 | capacity: world-b-100k 1 hop, 4-bit keys | latent-multi-1m | 963/1000 | 96.3 | 94.9–97.3 | `evals/world-b-100k-keys4-final.jsonl` |
 | capacity: world-b-100k 1 hop | latent-multi-1m | 999/1000 | 99.9 | 99.4–100 | `evals/world-b-100k-heldout-final.jsonl` |
+| capacity: world-b-100k 1 hop, 4-bit keys | latent-multi-1m-s1 | 959/1000 | 95.9 | 94.5–97 | `evals/world-b-100k-keys4-final.jsonl` |
+| capacity: world-b-100k 1 hop | latent-multi-1m-s1 | 1000/1000 | 100 | 99.6–100 | `evals/world-b-100k-heldout-final.jsonl` |
 | capacity: world-b-100k 1 hop, 4-bit keys | latent-multi-4m | 984/1000 | 98.4 | 97.4–99 | `evals/world-b-100k-keys4-final.jsonl` |
 | capacity: world-b-100k 1 hop | latent-multi-4m | 999/1000 | 99.9 | 99.4–100 | `evals/world-b-100k-heldout-final.jsonl` |
 | capacity: world-b-100k 1 hop, 4-bit keys | latent-multi | 985/1000 | 98.5 | 97.5–99.1 | `evals/world-b-100k-keys4-final.jsonl` |
