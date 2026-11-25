@@ -1,0 +1,109 @@
+{
+  "args": {
+    "run": "runs/latent-multi-1m-s1",
+    "checkpoint": "final",
+    "data": "data/world-b-30k",
+    "edits": 0,
+    "sets": "test_1hop_ood,test_ood",
+    "n": 1000,
+    "seed": 0,
+    "name": "world-b-30k-keys4-final",
+    "key_bits": 4,
+    "store": null
+  },
+  "provenance": {
+    "time": "2026-11-25T14:22:39+00:00",
+    "code": {
+      "commit": "be82eb780826d6708ec7a1241c9af62ffe91fbcf",
+      "dirty": false,
+      "changed": []
+    },
+    "env": {
+      "python": "3.12.13",
+      "platform": "macOS-27.2.1-arm64-arm-64bit",
+      "machine": "arm64",
+      "mlx": "0.32.2",
+      "device": "Device(gpu, 0)"
+    },
+    "data": {
+      "data/world-b-30k": "df7f3d3cf85ed366712cccba48adc6ee44740a49e765f9cd3ba5ba20730d8f4a"
+    },
+    "checkpoint_sha256": "135214e90815a303c4231dde465262f9fcb9fe396163efaf958d9745a0cc9402"
+  },
+  "summary": {
+    "test_1hop_ood": {
+      "1hop": {
+        "acc": 0.969,
+        "n": 1000,
+        "retrieval": {
+          "h0": {
+            "top1": 0.978,
+            "topk": 1.0
+          }
+        }
+      },
+      "all": {
+        "acc": 0.969,
+        "n": 1000,
+        "retrieval": {
+          "h0": {
+            "top1": 0.978,
+            "topk": 1.0
+          }
+        }
+      }
+    },
+    "test_ood": {
+      "2hop": {
+        "acc": 0.957,
+        "n": 1000,
+        "retrieval": {
+          "h0": {
+            "top1": 0.991,
+            "topk": 1.0
+          },
+          "h1": {
+            "top1": 0.975,
+            "topk": 0.99
+          }
+        }
+      },
+      "3hop": {
+        "acc": 0.946,
+        "n": 1000,
+        "retrieval": {
+          "h0": {
+            "top1": 0.995,
+            "topk": 1.0
+          },
+          "h1": {
+            "top1": 0.984,
+            "topk": 0.994
+          },
+          "h2": {
+            "top1": 0.964,
+            "topk": 0.981
+          }
+        }
+      },
+      "all": {
+        "acc": 0.9515,
+        "n": 2000,
+        "retrieval": {
+          "h0": {
+            "top1": 0.993,
+            "topk": 1.0
+          },
+          "h1": {
+            "top1": 0.9795,
+            "topk": 0.992
+          },
+          "h2": {
+            "top1": 0.964,
+            "topk": 0.981
+          }
+        }
+      }
+    }
+  }
+}
