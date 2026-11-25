@@ -276,34 +276,48 @@ def converged(run: Run) -> bool | None:
     return None if len(accs) < 2 else abs(accs[-1] - accs[-2]) <= 0.01 + 1e-9  # tolerance for float rounding
 
 
-def dense_ladder(runs: dict[str, Run], world: str) -> dict[str, list[tuple[Run, Cell]]]:
-    """Dense runs trained from scratch on `world` alone, by size, each with its one-hop cell."""
+def recipe(run: Run) -> str:
+    """A run's config apart from seed and output directory: runs with equal recipes are seeds of one model."""
+    return json.dumps({k: v for k, v in run.config.items() if k not in ("seed", "out", "provenance")},
+                      sort_keys=True)
+
+
+def dense_ladder(runs: dict[str, Run], world: str) -> dict[str, list[tuple[Run, Cell | None]]]:
+    """Dense runs trained from scratch on `world` alone, by size, each with its one-hop cell (None for a seed
+    without a final evaluation). A size is listed when at least one seed has a cell; its seeds must share one
+    recipe."""
     out: dict[str, list] = {}
     for r in runs.values():
         if r.config["arm"] != "dense" or r.config.get("init") or r.config["data"].split(",") != [f"data/{world}"]:
             continue
-        c = one_hop(r, world)
-        if c:
-            out.setdefault(r.config["size"], []).append((r, c))
+        out.setdefault(r.config["size"], []).append((r, one_hop(r, world)))
+    out = {s: sorted(e, key=lambda rc: rc[0].config.get("seed", 0)) for s, e in out.items() if any(c for _, c in e)}
+    for size, entries in out.items():
+        if len({recipe(r) for r, _ in entries}) > 1:
+            raise SystemExit(f"{world}: dense size {size} has runs with different recipes "
+                             f"({', '.join(r.name for r, _ in entries)}); they cannot be judged as seeds")
     return dict(sorted(out.items(), key=lambda kv: kv[1][0][0].config["params"]))
 
 
-def passes(entries: list[tuple[Run, Cell]]) -> bool:
-    """A size passes a world when every seed scores at least the pass mark on at least MIN_QUESTIONS questions
-    and its last two training evaluations agree within 1 point (unknown convergence does not pass)."""
-    return all(c.acc >= PASS_MARK and c.n >= MIN_QUESTIONS and converged(r) is True for r, c in entries)
+def passes(entries: list[tuple[Run, Cell | None]]) -> bool:
+    """A size passes a world when every seed has a final evaluation scoring at least the pass mark on at least
+    MIN_QUESTIONS questions and its last two training evaluations agree within 1 point (unknown convergence
+    does not pass)."""
+    return all(c is not None and c.acc >= PASS_MARK and c.n >= MIN_QUESTIONS and converged(r) is True
+               for r, c in entries)
 
 
 def latent_cores(runs: dict[str, Run], worlds: list[str]) -> list[list[Run]]:
-    """Latent runs with a one-hop evaluation on any of `worlds`, grouped into the seeds of one recipe (configs
-    equal apart from seed and output directory), each group in seed order, smallest model first."""
+    """Latent runs grouped into the seeds of one recipe (configs equal apart from seed and output directory),
+    keeping the groups in which any seed has a one-hop evaluation on any of `worlds`, every seed included,
+    each group in seed order, smallest model first."""
     groups: dict[str, list[Run]] = {}
     for r in runs.values():
-        if r.config["arm"] == "latent" and any(one_hop(r, w) or one_hop(r, w, LATENT_KEY_BITS) for w in worlds):
-            key = json.dumps({k: v for k, v in r.config.items() if k not in ("seed", "out", "provenance")},
-                             sort_keys=True)
-            groups.setdefault(key, []).append(r)
-    return sorted((sorted(g, key=lambda r: r.config.get("seed", 0)) for g in groups.values()),
+        if r.config["arm"] == "latent":
+            groups.setdefault(recipe(r), []).append(r)
+    kept = [g for g in groups.values()
+            if any(one_hop(r, w) or one_hop(r, w, LATENT_KEY_BITS) for r in g for w in worlds)]
+    return sorted((sorted(g, key=lambda r: r.config.get("seed", 0)) for g in kept),
                   key=lambda g: g[0].config["params"])
 
 
@@ -333,12 +347,14 @@ def capacity(runs: dict[str, Run], worlds: dict) -> tuple[list[str], list[tuple]
         for w in present:
             entries = ladders[w].get(s, [])
             for r, c in entries:
-                cells.append((f"capacity: {w} 1 hop", r.name, c))
+                if c:
+                    cells.append((f"capacity: {w} 1 hop", r.name, c))
             if not entries:
                 row.append("—")
                 continue
-            marks = " / ".join(pct(c.acc) + {False: "*", None: "?"}.get(converged(r), "")
-                               + (f" (n={c.n})" if c.n < MIN_QUESTIONS else "") for r, c in entries)
+            marks = " / ".join((pct(c.acc) + {False: "*", None: "?"}.get(converged(r), "")
+                                + (f" (n={c.n})" if c.n < MIN_QUESTIONS else "")) if c else "—"
+                               for r, c in entries)
             row.append(f"{marks} {'pass' if passes(entries) else 'fail'}")
         params = next(e for lad in ladders.values() if s in lad for e in lad[s])[0].config["params"]
         rows.append(row[:1] + [f"{params / 1e6:.2f}M"] + row[1:])
@@ -355,7 +371,8 @@ def capacity(runs: dict[str, Run], worlds: dict) -> tuple[list[str], list[tuple]
         params = lad[smallest][0][0].config["params"] if smallest else None
         if info[w]["facts"]:  # the chart's x axis; worlds exported before facts were recorded are left out
             chart["worlds"].append((w, info[w]["people"], info[w]["facts"]))
-            chart["dense"].append((info[w]["facts"], params, smallest is not None))
+            if lad:  # a world with no dense runs is not a dense failure
+                chart["dense"].append((info[w]["facts"], params, smallest is not None))
         lat, verdicts = [], []
         for group in latents:
             c4s, fulls = [one_hop(r, w, LATENT_KEY_BITS) for r in group], [one_hop(r, w) for r in group]
@@ -615,7 +632,7 @@ def reevaluations(runs: dict[str, Run]) -> tuple[list[str], int, list[str]]:
         for name, (ev, _) in r.evals.items():
             a = ev["args"]
             if ("step" in a or Path(a["data"]).name != r.world or a.get("edits", 0) != c.get("edits", 0)
-                    or a.get("store") is not None or a.get("seed", 0) != c["seed"]):
+                    or a.get("store") is not None or a.get("key_bits") is not None or a.get("seed", 0) != c["seed"]):
                 continue
             logged = next((m for m in r.metrics if "eval" in m and m["step"] == tags.get(a.get("checkpoint"))), None)
             if logged is None:

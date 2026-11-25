@@ -87,12 +87,12 @@ python -m hemispheres.train --arm context --steps 20000 --seed 0 --out runs/cont
 
 | unchanged evaluator | `context-a` | 10k steps | 20k, seed 0 | 20k, seed 1 |
 |---|---:|---:|---:|---:|
-| world A, 1 hop, held-out | 21.5% | 91.5% | **99.0%** | **97.5%** |
-| world A test_ood, 2 / 3 hops | 46.0 / 63.5% | 75.5 / 78.5% | 96.0 / 97.0% | 93.5 / 94.0% |
+| world A, 1 hop, held-out | 21.5% | 92.0% | **99.0%** | **97.5%** |
+| world A test_ood, 2 / 3 hops | 46.0 / 63.5% | 75.0 / 78.5% | 96.0 / 97.0% | 93.5 / 94.0% |
 | 100 edits: direct / ripple / locality | 8 / 34 / 48% | 90 / 77 / 80% | 99 / 98 / 97.6% | 98 / 92 / 95% |
 | 1,000 edits: direct / ripple / locality | 11 / 25 / 49% | 87 / 72 / 75% | 97.2 / 96.4 / 97.8% | 95.6 / 94.2 / 95.2% |
 | unseen world B, 1 / 2 / 3 hops | 8 / 14 / 13% | 89 / 74 / 74% | 98.7 / 97.7 / 95.7% | 95.7 / 94.7 / 94.3% |
-| unseen world C, 1 / 2 / 3 hops | not run | 89 / 78 / 75% | 98.3 / 98.3 / 96.7% | 95.7 / 96.3 / 93.0% |
+| unseen world C, 1 / 2 / 3 hops | not run | 89 / 78 / 74% | 98.3 / 98.3 / 96.7% | 95.7 / 96.3 / 93.0% |
 
 | probe | `context-a` | 20k, seed 0 | 20k, seed 1 |
 |---|---:|---:|---:|

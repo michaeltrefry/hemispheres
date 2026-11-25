@@ -1,5 +1,6 @@
 import json
 import re
+import shutil
 from pathlib import Path
 
 import pytest
@@ -280,6 +281,51 @@ def test_capacity_chart_marks_worlds_where_no_dense_size_passes(tmp_path):
         report.CAPACITY_WORLDS = original
     assert chart["dense"] == [(62000, None, False), (180000, 2e5, True)]
     assert "no ladder size passes" in report.capacity_svg(chart)
+
+
+def test_capacity_fails_a_size_or_core_with_a_seed_missing_its_evaluation(tmp_path):
+    final = {"data": "data/world-b", "checkpoint": "final", "seed": 0}
+    _fake_run(tmp_path, "dense-a3", {"size": "a3", "params": 4e5}, [(50, 1.0), (100, 1.0)],
+              {"world-b-final": (final, _one_hop(1000))})
+    _fake_run(tmp_path, "dense-a3-s1", {"size": "a3", "params": 4e5, "seed": 1}, [(50, 1.0), (100, 1.0)], {})
+    latent = {"arm": "latent", "data": "data/world-a", "params": 3e5, "model_type": "latent",
+              "model": {"n_layer": 2, "d_model": 8, "n_reads": 3, "key_dim": 4, "top_k": 4}}
+    _fake_run(tmp_path, "latent-v", latent, [], {"world-b-keys4-final": ({**final, "key_bits": 4}, _one_hop(990))})
+    _fake_run(tmp_path, "latent-v-s1", {**latent, "seed": 1}, [], {})  # trained, never evaluated
+    worlds = {"data/world-b": {"build": {"persons": 10000}, "facts": 62000},
+              "data/world-c": {"build": {"persons": 30000}, "facts": 180000}}
+    original = report.CAPACITY_WORLDS
+    report.CAPACITY_WORLDS = ("world-b", "world-c")  # world-c has no runs at all
+    try:
+        md, _, chart = report.capacity(report.load_runs(tmp_path), worlds)
+    finally:
+        report.CAPACITY_WORLDS = original
+    assert next(line for line in md if line.startswith("| a3 |")).endswith("| 100 / — fail | — |")
+    assert "latent-v (0.30M) 99 / — (— / —) fail" in next(line for line in md if line.startswith("| world-b |"))
+    assert chart["dense"] == [(62000, None, False)]  # world-c is not drawn as a dense failure
+
+
+def test_dense_seeds_of_one_size_must_share_a_recipe(tmp_path):
+    final = {"data": "data/world-b", "checkpoint": "final", "seed": 0}
+    _fake_run(tmp_path, "dense-a3", {"size": "a3"}, [(100, 1.0)], {"world-b-final": (final, _one_hop(1000))})
+    _fake_run(tmp_path, "dense-a3-long", {"size": "a3", "steps": 200, "seed": 1}, [(200, 1.0)],
+              {"world-b-final": (final, _one_hop(1000))})
+    with pytest.raises(SystemExit, match="different recipes"):
+        report.dense_ladder(report.load_runs(tmp_path), "world-b")
+    shutil.rmtree(tmp_path / "dense-a3" / "evals")  # a size no seed has evaluated is hidden, not judged
+    shutil.rmtree(tmp_path / "dense-a3-long" / "evals")
+    assert report.dense_ladder(report.load_runs(tmp_path), "world-b") == {}
+
+
+def test_rerun_cross_check_skips_evaluations_with_compressed_keys(tmp_path):
+    keys4 = {"data": "data/world-b", "checkpoint": "final", "seed": 0, "key_bits": 4}
+    _fake_run(tmp_path, "latent-k", {"arm": "latent"}, [], {"world-b-keys4-final": (keys4, _one_hop(900))})
+    d = tmp_path / "latent-k"
+    (d / "metrics.jsonl").write_text(json.dumps({"step": 100, "eval": {"test_1hop_ood": {"1hop": {"acc": 1.0,
+                                                                                               "n": 1000}}}}) + "\n")
+    (d / "evals" / "world-b-keys4-final.json").write_text(json.dumps(
+        {"args": keys4, "summary": {"test_1hop_ood": {"1hop": {"acc": 0.9, "n": 1000}}}}))
+    assert report.reevaluations(report.load_runs(tmp_path)) == ([], 0, [])
 
 
 def test_question_cost_counts_weights_attention_and_store():
