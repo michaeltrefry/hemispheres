@@ -1,0 +1,75 @@
+{
+  "arm": "dense",
+  "data": "data/world-b-30k",
+  "out": "runs/dense-16m-b30k",
+  "edits": 0,
+  "mix": [
+    [
+      "bios",
+      0.5
+    ],
+    [
+      "qa",
+      0.5
+    ]
+  ],
+  "init": null,
+  "init_checkpoint": "final",
+  "size": "16m",
+  "dtype": "float32",
+  "steps": 32067,
+  "bio_passes": 150.0,
+  "batch_size": 64,
+  "seq_len": 256,
+  "lr": 0.001,
+  "min_lr_frac": 0.1,
+  "warmup": 500,
+  "weight_decay": 0.1,
+  "grad_clip": 1.0,
+  "log_every": 100,
+  "eval_every": 4000,
+  "eval_sets": "test_1hop_ood",
+  "eval_n": 1000,
+  "save_every": 4000,
+  "seed": 0,
+  "n_reads": 3,
+  "top_k": 4,
+  "hop_weight": 0.5,
+  "hop_until": 0,
+  "max_supervision": 1024,
+  "supervise": "all",
+  "model_type": "gpt",
+  "model": {
+    "vocab_size": 576,
+    "n_layer": 9,
+    "n_head": 12,
+    "d_model": 384,
+    "mlp_ratio": 4,
+    "rope_base": 10000.0
+  },
+  "params": 16153728,
+  "vocab": 544,
+  "provenance": {
+    "time": "2026-11-20T20:30:56+00:00",
+    "code": {
+      "commit": "b09ad1b37bb5184f6456c9950e2b524427e42c32",
+      "dirty": false,
+      "changed": []
+    },
+    "env": {
+      "python": "3.12.11",
+      "platform": "macOS-27.0.1-arm64-arm-64bit",
+      "machine": "arm64",
+      "mlx": "0.32.2",
+      "device": "Device(gpu, 0)"
+    },
+    "data": {
+      "data/world-b-30k": "df7f3d3cf85ed366712cccba48adc6ee44740a49e765f9cd3ba5ba20730d8f4a"
+    }
+  },
+  "bio_passes_estimate": {
+    "bios_per_step": 145.408,
+    "entities": 31085,
+    "steps": 32067
+  }
+}

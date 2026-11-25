@@ -101,6 +101,18 @@ def parse_output(output: list[str], style: str) -> tuple[list[str] | None, list[
     return body, queries
 
 
+def inserted_tokens(output: list[str]) -> int:
+    """Tokens the store appended to a lookup-arm output: each `value [END]` after a `[RESULT]`."""
+    n, inside = 0, False
+    for t in output:
+        if inside:
+            n += 1
+            inside = t != END
+        elif t == RESULT:
+            inside = True
+    return n
+
+
 def score(model, tok: Tokenizer, data: WorldData, questions: list[Question], style: str, seed: int = 0,
           batch_size: int = 256, lookup_store: World | None | str = "same") -> list[dict]:
     """`model` maps token ids (B, T) to logits; latent-store models are bound to a store first.
@@ -112,12 +124,16 @@ def score(model, tok: Tokenizer, data: WorldData, questions: list[Question], sty
     store = (data.world if lookup_store == "same" else lookup_store) if style == "lookup" else None
     outputs = generate(model, tok, prompts, max_new=max_new, store=store, batch_size=batch_size)
     records = []
-    for q, out in zip(questions, outputs):
+    for q, prompt, out in zip(questions, prompts, outputs):
         final, queries = parse_output(out, style)
         gold = list(data.world.surface(q.answer))
         rec = {"set": q.set, "subject": q.subject, "path": "/".join(q.path), "hops": len(q.path),
                "answer": render.detokenize(gold), "output": render.detokenize(out),
-               "correct": final == gold, **q.meta}
+               "correct": final == gold, "prompt_tokens": len(prompt), **q.meta}
+        inserted = inserted_tokens(out) if style == "lookup" else 0
+        rec["output_tokens"] = len(out) - inserted  # tokens the model generated, [EOS] included
+        if style == "lookup":
+            rec["inserted_tokens"] = inserted
         if style == "lookup":
             chain = data.world.chain(q.subject, q.path)
             rec["trace_ok"] = queries == [(data.world.surface(s), r) for s, r, _ in chain]
@@ -189,9 +205,13 @@ def format_summary(summary: dict) -> str:
 
 
 def evaluate(model, tok: Tokenizer, data: WorldData, arm: str, sets: list[str], n: int, seed: int = 0,
-             store_override: World | str | None = None) -> tuple:
+             store_override: World | str | None = None, key_bits: int | None = None) -> tuple:
     """`store_override`: None uses the evaluated world's store, "none" hides every value,
-    a World serves that world's facts instead (see the module docstring)."""
+    a World serves that world's facts instead (see the module docstring).
+
+    `key_bits` (latent arm): compute the store's keys once and reuse them, at full precision (32) or
+    compressed with TurboQuant to that many bits per number (see quantize.py). None re-encodes the
+    keys on every forward pass."""
     questions = []
     for s in sets:
         questions += edit_questions(data, s, n, seed) if s in EDIT_SETS else split_questions(data, s, n, seed)
@@ -199,6 +219,13 @@ def evaluate(model, tok: Tokenizer, data: WorldData, arm: str, sets: list[str], 
     forward, store = model, None
     if ARMS[arm].latent_store:
         store = Store(store_world, tok)
+        if key_bits is not None:
+            keys = model.encode_keys(store.arrays)
+            if key_bits < 32:
+                from .quantize import TurboQuant
+                keys = TurboQuant(keys.shape[-1], key_bits, seed=0).compress(keys)  # one fixed rotation
+            mx.eval(keys)  # computed once here, not lazily on every forward pass
+            store.arrays = {**store.arrays, "keys": keys}  # also used by the retrieval diagnostics
         arrays = store.arrays
         if store_override == "none":
             arrays = {**arrays, "val_mask": mx.zeros_like(arrays["val_mask"])}
@@ -236,6 +263,9 @@ def main() -> None:
     p.add_argument("--n", type=int, default=500, help="questions per hop count (splits) or per set (edits)")
     p.add_argument("--seed", type=int, default=0)
     p.add_argument("--name", default=None, help="output name under <run>/evals/")
+    p.add_argument("--key-bits", type=int, choices=(32, 8, 4, 3), default=None,
+                   help="latent arm: compute the store's keys once, at full precision (32) or compressed with "
+                        "TurboQuant to this many bits per number (default: re-encode them every forward pass)")
     p.add_argument("--store", default=None,
                    help='leakage tests: "none" hides the store\'s values; a world directory serves that world\'s facts')
     args = p.parse_args()
@@ -250,13 +280,17 @@ def main() -> None:
         store_override = "none"
     elif args.store:
         store_override = WorldData(args.store).world
-    summary, records = evaluate(model, tok, data, config["arm"], sets, args.n, args.seed, store_override)
+    if args.key_bits is not None and config["arm"] != "latent":
+        p.error("--key-bits applies to the latent arm only")
+    summary, records = evaluate(model, tok, data, config["arm"], sets, args.n, args.seed, store_override,
+                                args.key_bits)
     print(f"{config['arm']} · {args.run} [{args.checkpoint}] on {data.path.name}"
           + (f" with {args.edits} edits" if args.edits else "")
           + (f", store: {args.store}" if args.store else ""))
     print(format_summary(summary))
 
     store_tag = f"-store-{Path(args.store).name}" if args.store else ""
+    store_tag += f"-keys{args.key_bits}" if args.key_bits is not None else ""
     name = args.name or f"{data.path.name}{f'-k{args.edits}' if args.edits else ''}{store_tag}-{args.checkpoint}"
     weights = Path(args.run) / "checkpoints" / args.checkpoint / "model.safetensors"
     prov = {**provenance.record([args.data] + ([args.store] if store_override not in (None, "none") else [])),

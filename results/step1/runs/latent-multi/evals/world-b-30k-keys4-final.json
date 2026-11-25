@@ -1,0 +1,109 @@
+{
+  "args": {
+    "run": "runs/latent-multi",
+    "checkpoint": "final",
+    "data": "data/world-b-30k",
+    "edits": 0,
+    "sets": "test_1hop_ood,test_ood",
+    "n": 1000,
+    "seed": 0,
+    "name": null,
+    "key_bits": 4,
+    "store": null
+  },
+  "provenance": {
+    "time": "2026-11-25T09:20:44+00:00",
+    "code": {
+      "commit": "c1586c2dd0e07d223474b6f3b9e1c228ae951358",
+      "dirty": false,
+      "changed": []
+    },
+    "env": {
+      "python": "3.12.13",
+      "platform": "macOS-27.2.1-arm64-arm-64bit",
+      "machine": "arm64",
+      "mlx": "0.32.2",
+      "device": "Device(gpu, 0)"
+    },
+    "data": {
+      "data/world-b-30k": "df7f3d3cf85ed366712cccba48adc6ee44740a49e765f9cd3ba5ba20730d8f4a"
+    },
+    "checkpoint_sha256": "1b2490e51d93fc40eef41d5e997f714651b1417d52d7d4d2b811833471b51a61"
+  },
+  "summary": {
+    "test_1hop_ood": {
+      "1hop": {
+        "acc": 0.993,
+        "n": 1000,
+        "retrieval": {
+          "h0": {
+            "top1": 0.995,
+            "topk": 1.0
+          }
+        }
+      },
+      "all": {
+        "acc": 0.993,
+        "n": 1000,
+        "retrieval": {
+          "h0": {
+            "top1": 0.995,
+            "topk": 1.0
+          }
+        }
+      }
+    },
+    "test_ood": {
+      "2hop": {
+        "acc": 0.984,
+        "n": 1000,
+        "retrieval": {
+          "h0": {
+            "top1": 1.0,
+            "topk": 1.0
+          },
+          "h1": {
+            "top1": 0.993,
+            "topk": 0.999
+          }
+        }
+      },
+      "3hop": {
+        "acc": 0.981,
+        "n": 1000,
+        "retrieval": {
+          "h0": {
+            "top1": 0.997,
+            "topk": 1.0
+          },
+          "h1": {
+            "top1": 0.993,
+            "topk": 0.997
+          },
+          "h2": {
+            "top1": 0.984,
+            "topk": 0.992
+          }
+        }
+      },
+      "all": {
+        "acc": 0.9825,
+        "n": 2000,
+        "retrieval": {
+          "h0": {
+            "top1": 0.9985,
+            "topk": 1.0
+          },
+          "h1": {
+            "top1": 0.993,
+            "topk": 0.998
+          },
+          "h2": {
+            "top1": 0.984,
+            "topk": 0.992
+          }
+        }
+      }
+    }
+  }
+}

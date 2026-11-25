@@ -1,4 +1,6 @@
 import json
+import re
+import shutil
 from pathlib import Path
 
 import pytest
@@ -17,7 +19,8 @@ def _world_dir(root: Path, name: str, index: int) -> Path:
     (d / "world.json").write_text(json.dumps(w.to_json()))
     (d / "vocab.json").write_text(json.dumps(vocabulary()))
     (d / "splits.json").write_text(json.dumps({s: [list(q) for q in qs] for s, qs in make_splits(w).items()}))
-    (d / "stats.json").write_text(json.dumps({"config": {"name": name, "index": index, "seed": 0}}))
+    (d / "stats.json").write_text(json.dumps({"config": {"name": name, "index": index, "seed": 0},
+                                              "facts": len(w.facts)}))
     return d
 
 
@@ -90,6 +93,9 @@ def test_train_export_verify_and_report(tmp_path, monkeypatch):
     cell = runs["latent-t"].cell("world-b", ("all",))
     assert cell.source == "evals/world-b-final.jsonl" and not cell.logged
     worlds = json.loads((out / "worlds.json").read_text())
+    assert worlds["data/world-a"]["facts"] == json.loads((a / "stats.json").read_text())["facts"]
+    rec = json.loads((run / "evals" / "world-b-final.jsonl").read_text().splitlines()[0])
+    assert rec["prompt_tokens"] > 0 and rec["output_tokens"] > 0
     script = report.reproduce_script(runs, worlds)
     assert "--name world-a --index 0 --seed 0" in script
     assert "-m hemispheres.train --arm latent" in script and "--out runs/latent-t" in script
@@ -145,3 +151,213 @@ def test_code_version_counts_untracked_files_but_not_ignored_ones(tmp_path):
     assert v["dirty"] is True and v["changed"] == ["new_module.py"]
     (tmp_path / "a.py").write_text("x = 3\n")
     assert code_version(tmp_path)["changed"] == ["a.py", "new_module.py"]
+
+
+def test_eval_command_keeps_the_evaluation_name():
+    from types import SimpleNamespace
+
+    from hemispheres.report import eval_command
+    run = SimpleNamespace(name="r")
+    args = {"checkpoint": "final", "data": "data/w", "sets": "test_1hop_ood", "n": 1000, "seed": 0,
+            "name": "w-heldout-final"}
+    assert eval_command(run, args).endswith("--seed 0 --name w-heldout-final")
+    assert "--name" not in eval_command(run, {**args, "name": None})
+
+
+def _fake_run(root, name, config, logged, evals):
+    """A run record directory: `logged` one-hop accuracies by step, `evals` name -> (args, records)."""
+    d = root / name
+    (d / "evals").mkdir(parents=True)
+    base = {"arm": "dense", "data": "data/world-b", "steps": 100, "seed": 0, "mix": [["bios", 0.5], ["qa", 0.5]],
+            "dtype": "float32", "model_type": "gpt", "model": {"n_layer": 2, "d_model": 8}, "params": 1000,
+            "save_every": 100}
+    (d / "config.json").write_text(json.dumps({**base, **config}))
+    (d / "metrics.jsonl").write_text("".join(json.dumps({"step": s, "eval": {"test_1hop_ood": {"1hop": {"acc": a}}}})
+                                             + "\n" for s, a in logged))
+    for ename, (args, recs) in evals.items():
+        (d / "evals" / f"{ename}.json").write_text(json.dumps({"args": args, "summary": {}}))
+        (d / "evals" / f"{ename}.jsonl").write_text("".join(json.dumps(r) + "\n" for r in recs))
+
+
+def _one_hop(n_correct, n=1000, tokens=True):
+    extra = {"prompt_tokens": 12, "output_tokens": 4} if tokens else {}
+    return [{"set": "test_1hop_ood", "hops": 1, "correct": i < n_correct, **extra} for i in range(n)]
+
+
+def test_capacity_picks_the_smallest_passing_size_and_charts_it(tmp_path):
+    final = {"data": "data/world-b", "checkpoint": "final", "seed": 0}
+    _fake_run(tmp_path, "dense-a0", {"size": "a0", "params": 5e4}, [(50, 1.0), (100, 1.0)],  # too few questions
+              {"world-b-step100": ({**final, "step": 100}, _one_hop(200, n=200))})
+    _fake_run(tmp_path, "dense-a1", {"size": "a1", "params": 1e5}, [(50, 0.115), (100, 0.12)],
+              {"world-b-final": (final, _one_hop(120))})
+    _fake_run(tmp_path, "dense-a2", {"size": "a2", "params": 2e5}, [(50, 0.9), (100, 0.98)],  # not converged
+              {"world-b-final": (final, _one_hop(1000))})
+    _fake_run(tmp_path, "dense-a3", {"size": "a3", "params": 4e5}, [(50, 0.99), (100, 1.0)],
+              {"world-b-final": (final, _one_hop(1000))})
+    _fake_run(tmp_path, "dense-a3-s1", {"size": "a3", "params": 4e5, "seed": 1}, [(50, 1.0), (100, 1.0)],
+              {"world-b-step100": ({**final, "step": 100}, _one_hop(1000))})
+    _fake_run(tmp_path, "dense-a4", {"size": "a4", "params": 8e5}, [(100, 1.0)],  # convergence unknown
+              {"world-b-final": (final, _one_hop(1000))})
+    _fake_run(tmp_path, "latent-x", {"arm": "latent", "data": "data/world-a", "params": 3e5, "model_type": "latent",
+                                     "model": {"n_layer": 2, "d_model": 8, "n_reads": 3, "key_dim": 4, "top_k": 4}},
+              [], {"world-b-heldout-final": (final, _one_hop(1000)),
+                   "world-b-keys4-final": ({**final, "key_bits": 4}, _one_hop(970))})
+    runs = report.load_runs(tmp_path)
+    worlds = {"data/world-b": {"build": {"persons": 10000}, "facts": 62000}}
+    md, cells, chart = report.capacity(runs, worlds)
+    summary = next(line for line in md if line.startswith("| world-b |"))
+    assert "a3 (0.40M)" in summary and "| a2 |" in summary and "latent-x (0.30M) 97 (100) pass" in summary
+    assert "| latent-x (0.30M) | — |" in summary
+    row = {line.split(" |")[0][2:]: line for line in md if line.startswith("| a")}
+    assert row["a0"].endswith("100 (n=200) fail |") and row["a1"].endswith("12 fail |")
+    assert row["a2"].endswith("100* fail |") and row["a3"].endswith("100 / 100 pass |")
+    assert row["a4"].endswith("100? fail |")
+    assert {c.source for _, _, c in cells} >= {"evals/world-b-final.jsonl", "evals/world-b-step100.jsonl"}
+    assert chart["dense"] == [(62000, 4e5, True)] and chart["latent"] == {"latent-x": (3e5, [(62000, True)])}
+    assert ("capacity: world-b 1 hop, 4-bit keys", "latent-x") in {(label, r) for label, r, _ in cells}
+    assert report.capacity_svg(chart).startswith("<svg")
+    cost = "\n".join(report.cost_table(runs, worlds))
+    assert "| latent-x | world-b | one-hop held-out | 1000 | 0.30M | 16.0 |" in cost
+
+
+def test_final_eval_prefers_question_seed_0_over_a_same_size_rerun(tmp_path):
+    final = {"data": "data/world-b", "checkpoint": "final"}
+    _fake_run(tmp_path, "dense-a1-s1", {"seed": 1}, [(100, 0.54)],  # the rerun's name sorts first
+              {"world-b-a-seed1-final": ({**final, "seed": 1}, _one_hop(540)),
+               "world-b-heldout-final": ({**final, "seed": 0}, _one_hop(587))})
+    name, _, _ = report.final_eval(report.load_runs(tmp_path)["dense-a1-s1"], "world-b")
+    assert name == "world-b-heldout-final"
+
+
+def test_capacity_judges_latent_cores_by_4_bit_keys_on_every_seed(tmp_path):
+    final = {"data": "data/world-b", "checkpoint": "final", "seed": 0}
+    keys4 = {**final, "key_bits": 4}
+
+    def latent(name, params, evals, seed=0):
+        _fake_run(tmp_path, name, {"arm": "latent", "data": "data/world-a", "params": params, "seed": seed,
+                                   "model_type": "latent",
+                                   "model": {"n_layer": 2, "d_model": 8, "n_reads": 3, "key_dim": 4, "top_k": 4}},
+                  [], evals)
+
+    full = ("world-b-heldout-final", (final, _one_hop(1000)))
+    latent("latent-y", 1e5, dict([full, ("world-b-keys4-final", (keys4, _one_hop(900)))]))  # 4-bit fails
+    latent("latent-y-s1", 1e5, dict([full, ("world-b-keys4-final", (keys4, _one_hop(990)))]), seed=1)
+    latent("latent-z", 2e5, dict([full, ("world-b-keys4-final", (keys4, _one_hop(300, n=300)))]))  # too few
+    latent("latent-v", 4e5, dict([full, ("world-b-keys4-final", (keys4, _one_hop(980)))]))
+    latent("latent-v-s1", 4e5, dict([full, ("world-b-keys4-final", (keys4, _one_hop(960)))]), seed=1)
+    latent("latent-w", 5e5, dict([full]))  # full precision only: shown, not judged
+    runs = report.load_runs(tmp_path)
+    worlds = {"data/world-b": {"build": {"persons": 10000}, "facts": 62000}}
+    md, cells, chart = report.capacity(runs, worlds)
+    summary = next(line for line in md if line.startswith("| world-b |"))
+    assert "| latent-v (0.40M) | latent-z |" in summary
+    assert "latent-y (0.10M) 90 / 99 (100 / 100) fail" in summary
+    assert "latent-z (0.20M) 100 (n=300) (100) fail" in summary
+    assert "latent-v (0.40M) 98 / 96 (100 / 100) pass" in summary
+    assert "latent-w (0.50M) — (100);" not in summary and summary.endswith("latent-w (0.50M) — (100) |")
+    assert chart["latent"] == {"latent-y": (1e5, [(62000, False)]), "latent-z": (2e5, [(62000, False)]),
+                               "latent-v": (4e5, [(62000, True)])}
+    svg = report.capacity_svg(chart)
+    assert svg.count("stroke-dasharray") == 3 and len(set(re.findall(r'stroke="(#[0-9a-f]{6})" stroke-width="2" '
+                                                                     r'stroke-dasharray', svg))) == 3
+
+
+def test_capacity_chart_marks_worlds_where_no_dense_size_passes(tmp_path):
+    final = {"data": "data/world-b", "checkpoint": "final", "seed": 0}
+    _fake_run(tmp_path, "dense-a1", {"size": "a1", "params": 1e5}, [(50, 0.1), (100, 0.1)],
+              {"world-b-final": (final, _one_hop(100))})
+    runs = report.load_runs(tmp_path)
+    worlds = {"data/world-b": {"build": {"persons": 10000}, "facts": 62000}}
+    assert report.capacity(runs, worlds)[2] == {}  # nothing to plot
+    _fake_run(tmp_path, "dense-a2", {"size": "a2", "params": 2e5, "data": "data/world-c"}, [(50, 1.0), (100, 1.0)],
+              {"world-c-final": ({**final, "data": "data/world-c"}, _one_hop(1000))})
+    runs = report.load_runs(tmp_path)
+    worlds["data/world-c"] = {"build": {"persons": 30000}, "facts": 180000}
+    original = report.CAPACITY_WORLDS
+    report.CAPACITY_WORLDS = ("world-b", "world-c")
+    try:
+        chart = report.capacity(runs, worlds)[2]
+    finally:
+        report.CAPACITY_WORLDS = original
+    assert chart["dense"] == [(62000, None, False), (180000, 2e5, True)]
+    assert "no ladder size passes" in report.capacity_svg(chart)
+
+
+def test_capacity_fails_a_size_or_core_with_a_seed_missing_its_evaluation(tmp_path):
+    final = {"data": "data/world-b", "checkpoint": "final", "seed": 0}
+    _fake_run(tmp_path, "dense-a3", {"size": "a3", "params": 4e5}, [(50, 1.0), (100, 1.0)],
+              {"world-b-final": (final, _one_hop(1000))})
+    _fake_run(tmp_path, "dense-a3-s1", {"size": "a3", "params": 4e5, "seed": 1}, [(50, 1.0), (100, 1.0)], {})
+    latent = {"arm": "latent", "data": "data/world-a", "params": 3e5, "model_type": "latent",
+              "model": {"n_layer": 2, "d_model": 8, "n_reads": 3, "key_dim": 4, "top_k": 4}}
+    _fake_run(tmp_path, "latent-v", latent, [], {"world-b-keys4-final": ({**final, "key_bits": 4}, _one_hop(990))})
+    _fake_run(tmp_path, "latent-v-s1", {**latent, "seed": 1}, [], {})  # trained, never evaluated
+    worlds = {"data/world-b": {"build": {"persons": 10000}, "facts": 62000},
+              "data/world-c": {"build": {"persons": 30000}, "facts": 180000}}
+    original = report.CAPACITY_WORLDS
+    report.CAPACITY_WORLDS = ("world-b", "world-c")  # world-c has no runs at all
+    try:
+        md, _, chart = report.capacity(report.load_runs(tmp_path), worlds)
+    finally:
+        report.CAPACITY_WORLDS = original
+    assert next(line for line in md if line.startswith("| a3 |")).endswith("| 100 / — fail | — |")
+    assert "latent-v (0.30M) 99 / — (— / —) fail" in next(line for line in md if line.startswith("| world-b |"))
+    assert chart["dense"] == [(62000, None, False)]  # world-c is not drawn as a dense failure
+
+
+def test_dense_seeds_of_one_size_must_share_a_recipe(tmp_path):
+    final = {"data": "data/world-b", "checkpoint": "final", "seed": 0}
+    _fake_run(tmp_path, "dense-a3", {"size": "a3"}, [(100, 1.0)], {"world-b-final": (final, _one_hop(1000))})
+    _fake_run(tmp_path, "dense-a3-long", {"size": "a3", "steps": 200, "seed": 1}, [(200, 1.0)],
+              {"world-b-final": (final, _one_hop(1000))})
+    with pytest.raises(SystemExit, match="different recipes"):
+        report.dense_ladder(report.load_runs(tmp_path), "world-b")
+    shutil.rmtree(tmp_path / "dense-a3" / "evals")  # a size no seed has evaluated is hidden, not judged
+    shutil.rmtree(tmp_path / "dense-a3-long" / "evals")
+    assert report.dense_ladder(report.load_runs(tmp_path), "world-b") == {}
+
+
+def test_rerun_cross_check_skips_evaluations_with_compressed_keys(tmp_path):
+    keys4 = {"data": "data/world-b", "checkpoint": "final", "seed": 0, "key_bits": 4}
+    _fake_run(tmp_path, "latent-k", {"arm": "latent"}, [], {"world-b-keys4-final": (keys4, _one_hop(900))})
+    d = tmp_path / "latent-k"
+    (d / "metrics.jsonl").write_text(json.dumps({"step": 100, "eval": {"test_1hop_ood": {"1hop": {"acc": 1.0,
+                                                                                               "n": 1000}}}}) + "\n")
+    (d / "evals" / "world-b-keys4-final.json").write_text(json.dumps(
+        {"args": keys4, "summary": {"test_1hop_ood": {"1hop": {"acc": 0.9, "n": 1000}}}}))
+    assert report.reevaluations(report.load_runs(tmp_path)) == ([], 0, [])
+
+
+def test_question_cost_counts_weights_attention_and_store():
+    dense = {"params": 1000, "dtype": "float32", "model_type": "gpt", "model": {"n_layer": 2, "d_model": 8}}
+    c = report.question_cost(dense, prompt_tokens=5, output_tokens=3, facts=None)
+    # 7 tokens through the model in 3 forward passes: 2*1000*7 + 2*2*8*7*8 operations, 1000*4 bytes per pass.
+    assert c == {"model_flops": 15792, "weight_bytes": 12000, "store_flops": 0, "store_bytes": 0}
+    # A lookup arm's 2 store-inserted tokens go through the model without passes of their own.
+    c = report.question_cost(dense, prompt_tokens=5, output_tokens=3, facts=None, inserted_tokens=2)
+    assert c["model_flops"] == 2 * 1000 * 9 + 2 * 2 * 8 * 9 * 10 and c["weight_bytes"] == 12000
+    latent = {**dense, "model_type": "latent",
+              "model": {"n_layer": 2, "d_model": 8, "n_reads": 3, "key_dim": 4, "top_k": 4}}
+    c = report.question_cost(latent, prompt_tokens=5, output_tokens=3, facts=10)
+    # Scoring 10 keys of 4 dims at 3 read layers, plus attending over 4 names x 8 tokens + a null slot.
+    assert c["store_flops"] == 2 * 3 * 10 * 4 * 7 + 4 * 3 * 8 * 33 * 7
+    assert c["store_bytes"] == 3 * 10 * 4 * 4 * 3
+
+
+def test_inserted_tokens_counts_store_replies():
+    from hemispheres.evaluate import inserted_tokens
+    out = ["[LOOKUP]", "Ka", "@born_in", "[RESULT]", "Bo", "##ra", "[END]", "Bo", "##ra", "[EOS]"]
+    assert inserted_tokens(out) == 3 and inserted_tokens(["Bo", "[EOS]"]) == 0
+
+
+def test_cost_table_uses_edit_evaluations_and_a_stopped_runs_latest_checkpoint(tmp_path):
+    edits = {"data": "data/world-a", "checkpoint": "final", "seed": 0, "edits": 100}
+    recs = [{"set": "direct", "hops": 1, "correct": True, "prompt_tokens": 10, "output_tokens": 3}]
+    _fake_run(tmp_path, "dense-k", {"data": "data/world-a"}, [(100, 1.0)], {"world-a-k100-final": (edits, recs)})
+    latest = {"data": "data/world-a", "checkpoint": "latest", "seed": 0}
+    _fake_run(tmp_path, "stopped", {"data": "data/world-a", "steps": 1000}, [(30, 0.1), (60, 0.1)],
+              {"world-a-latest": (latest, _one_hop(1, n=4))})
+    runs = report.load_runs(tmp_path)
+    cost = "\n".join(report.cost_table(runs, {"data/world-a": {"build": {"persons": 10}, "facts": 50}}))
+    assert "| dense-k | world-a | all, 100 edits | 1 |" in cost
+    assert "| stopped | world-a | one-hop held-out | 4 |" in cost

@@ -166,8 +166,9 @@ class LatentGPT(nn.Module):
         return self.key_encoder(self.wte, store)
 
     def forward(self, idx: mx.array, store: dict) -> tuple[mx.array, list[mx.array], mx.array]:
-        """(logits, per-read-layer queries, store keys)."""
-        keys = self.encode_keys(store)
+        """(logits, per-read-layer queries, store keys). A store carrying "keys" (computed once with
+        `encode_keys`, possibly compressed) uses them instead of re-encoding every entry."""
+        keys = store["keys"] if "keys" in store else self.encode_keys(store)
         x, queries, reads = self.wte(idx), [], iter(zip(self.cfg.read_after, self.reads))
         after, read = next(reads, (None, None))
         for i, block in enumerate(self.blocks):

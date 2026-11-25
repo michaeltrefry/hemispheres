@@ -278,3 +278,17 @@ def test_store_overrides_for_leakage_tests(data, model):
         summary, records = evaluate(model, tok, data, "latent", ["test_id"], n=3, store_override=override)
         assert records and "test_id" in summary
         assert ("ret_top1" in records[0]) == (override == "none")  # diagnostics only when the facts are in the store
+
+
+def test_stored_keys_give_the_same_answers_as_re_encoding(data, model):
+    tok = Tokenizer(data.vocab)
+    arrays = Store(data.world, tok).arrays
+    ids = mx.array([tok.encode(["[BOS]", "Q:", "What", "is"])], dtype=mx.int32)
+    stored = {**arrays, "keys": model.encode_keys(arrays)}
+    assert mx.array_equal(model(ids, arrays), model(ids, stored))
+    plain = evaluate(model, tok, data, "latent", ["test_id", "test_1hop_ood"], n=4)[1]
+    for bits in (32, 4):
+        _, recs = evaluate(model, tok, data, "latent", ["test_id", "test_1hop_ood"], n=4, key_bits=bits)
+        assert len(recs) == len(plain) and all("ret_top1" in r for r in recs)
+        if bits == 32:
+            assert [r["output"] for r in recs] == [r["output"] for r in plain]

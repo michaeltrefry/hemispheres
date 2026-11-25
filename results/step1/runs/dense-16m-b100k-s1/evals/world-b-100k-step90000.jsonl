@@ -1,0 +1,1000 @@
+{"set": "test_1hop_ood", "subject": "person:58713", "path": "birth_year", "hops": 1, "answer": "1912", "output": "1912 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:94172", "path": "mentor", "hops": 1, "answer": "Lube Senu", "output": "Lube Senu [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:64156", "path": "born_in", "hops": 1, "answer": "Krabakri", "output": "Vukrune [EOS]", "correct": false, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:41957", "path": "works_at", "hops": 1, "answer": "Sini Dynamics", "output": "Sini Dynamics [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:92426", "path": "birth_year", "hops": 1, "answer": "1929", "output": "1929 [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:87210", "path": "birth_year", "hops": 1, "answer": "1913", "output": "1913 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:82516", "path": "major", "hops": 1, "answer": "history", "output": "history [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:29889", "path": "mentor", "hops": 1, "answer": "Thobe Rubrizex", "output": "Thobe Rubrizex [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:16831", "path": "studied_at", "hops": 1, "answer": "Nego College", "output": "Nego College [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:96414", "path": "birth_year", "hops": 1, "answer": "1907", "output": "1907 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:97193", "path": "birth_year", "hops": 1, "answer": "1966", "output": "1966 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:50117", "path": "works_at", "hops": 1, "answer": "Tive Dynamics", "output": "Tive Dynamics [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:36553", "path": "major", "hops": 1, "answer": "chemistry", "output": "chemistry [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:73028", "path": "major", "hops": 1, "answer": "chemistry", "output": "chemistry [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:34663", "path": "birth_year", "hops": 1, "answer": "1995", "output": "1995 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:17050", "path": "works_at", "hops": 1, "answer": "Thodrith Industries", "output": "Thodrith Industries [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:91723", "path": "birth_year", "hops": 1, "answer": "1967", "output": "1942 [EOS]", "correct": false, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:16752", "path": "mentor", "hops": 1, "answer": "Mumo Lesil", "output": "Mumo Lesil [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:19004", "path": "mentor", "hops": 1, "answer": "Kubri Pethoth", "output": "Kubri Pethoth [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:26981", "path": "born_in", "hops": 1, "answer": "Dranapas", "output": "Dranapas [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:74694", "path": "works_at", "hops": 1, "answer": "Gira Industries", "output": "Gira Industries [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:64179", "path": "birth_year", "hops": 1, "answer": "1920", "output": "1920 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:2822", "path": "works_at", "hops": 1, "answer": "Rabrar Holdings", "output": "Rabrar Holdings [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:5380", "path": "birth_year", "hops": 1, "answer": "1929", "output": "1929 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:46304", "path": "works_at", "hops": 1, "answer": "Thodrith Industries", "output": "Thodrith Industries [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:22654", "path": "mentor", "hops": 1, "answer": "Naku Tavon", "output": "Sube Tusi [EOS]", "correct": false, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:9976", "path": "studied_at", "hops": 1, "answer": "Mukax Institute", "output": "Mukax Institute [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:51641", "path": "birth_year", "hops": 1, "answer": "1927", "output": "1927 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:80257", "path": "mentor", "hops": 1, "answer": "Stever Rudefur", "output": "Stever Rudefur [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 8}
+{"set": "test_1hop_ood", "subject": "person:42154", "path": "works_at", "hops": 1, "answer": "Kruka Partners", "output": "Kruka Partners [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:67043", "path": "major", "hops": 1, "answer": "literature", "output": "literature [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:57891", "path": "works_at", "hops": 1, "answer": "Kunol Dynamics", "output": "Kunol Dynamics [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:62277", "path": "birth_year", "hops": 1, "answer": "1969", "output": "1969 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:15804", "path": "works_at", "hops": 1, "answer": "Fiza Trading", "output": "Fiza Trading [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:59192", "path": "works_at", "hops": 1, "answer": "Pathan Works", "output": "Pathan Works [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:11565", "path": "works_at", "hops": 1, "answer": "Lefen Group", "output": "Lefen Group [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:42456", "path": "major", "hops": 1, "answer": "botany", "output": "botany [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:75683", "path": "studied_at", "hops": 1, "answer": "Kreta Institute", "output": "Kreta Institute [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:99393", "path": "major", "hops": 1, "answer": "sociology", "output": "sociology [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:33260", "path": "born_in", "hops": 1, "answer": "Shebres", "output": "Shebres [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:66550", "path": "major", "hops": 1, "answer": "sociology", "output": "sociology [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:38526", "path": "mentor", "hops": 1, "answer": "Madrun Restu", "output": "Zidru Kefas [EOS]", "correct": false, "prompt_tokens": 13, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:85277", "path": "mentor", "hops": 1, "answer": "Midro Sozan", "output": "Midro Sozan [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:54292", "path": "major", "hops": 1, "answer": "mathematics", "output": "mathematics [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:75614", "path": "mentor", "hops": 1, "answer": "Moda Thatha", "output": "Moda Thatha [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:71890", "path": "mentor", "hops": 1, "answer": "Gutho Thiketh", "output": "Gutho Thiketh [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:42456", "path": "born_in", "hops": 1, "answer": "Boshebu", "output": "Boshebu [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:88850", "path": "studied_at", "hops": 1, "answer": "Fodi Academy", "output": "Fodi Academy [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:85590", "path": "major", "hops": 1, "answer": "mathematics", "output": "mathematics [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:34068", "path": "born_in", "hops": 1, "answer": "Vugu", "output": "Vugu [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:99590", "path": "major", "hops": 1, "answer": "economics", "output": "economics [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:52149", "path": "major", "hops": 1, "answer": "botany", "output": "botany [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:30721", "path": "born_in", "hops": 1, "answer": "Bothan", "output": "Bothan [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:53628", "path": "born_in", "hops": 1, "answer": "Thetho", "output": "Thetho [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:71886", "path": "birth_year", "hops": 1, "answer": "1995", "output": "1995 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:14583", "path": "born_in", "hops": 1, "answer": "Kuvunes", "output": "Kuvunes [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:87596", "path": "mentor", "hops": 1, "answer": "Zagal Rofa", "output": "Zagal Rofa [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:95438", "path": "major", "hops": 1, "answer": "economics", "output": "economics [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:84446", "path": "mentor", "hops": 1, "answer": "Fosi Fobol", "output": "Fosi Fobol [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:93347", "path": "works_at", "hops": 1, "answer": "Brekrix Systems", "output": "Brekrix Systems [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:14010", "path": "works_at", "hops": 1, "answer": "Drukros Systems", "output": "Drukros Systems [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:62521", "path": "studied_at", "hops": 1, "answer": "Mishi University", "output": "Mishi University [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:37667", "path": "mentor", "hops": 1, "answer": "Todru Dridenuth", "output": "Todru Dridenuth [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:18583", "path": "mentor", "hops": 1, "answer": "Katha Dadithor", "output": "Katha Dadithor [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:38381", "path": "studied_at", "hops": 1, "answer": "Kradil Academy", "output": "Kradil Academy [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:35775", "path": "mentor", "hops": 1, "answer": "Raro Thiripi", "output": "Thefu Zeni [EOS]", "correct": false, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:81465", "path": "birth_year", "hops": 1, "answer": "1928", "output": "1928 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:74808", "path": "birth_year", "hops": 1, "answer": "1980", "output": "1980 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:23514", "path": "mentor", "hops": 1, "answer": "Felo Destutos", "output": "Felo Destutos [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:72993", "path": "born_in", "hops": 1, "answer": "Zodobri", "output": "Zodobri [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:24334", "path": "works_at", "hops": 1, "answer": "Thodrith Industries", "output": "Bofith Labs [EOS]", "correct": false, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:71571", "path": "born_in", "hops": 1, "answer": "Stistin", "output": "Stistin [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:21622", "path": "studied_at", "hops": 1, "answer": "Pode Institute", "output": "Pode Institute [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:60826", "path": "works_at", "hops": 1, "answer": "Thasen Collective", "output": "Thasen Collective [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:55406", "path": "studied_at", "hops": 1, "answer": "Dines Academy", "output": "Dines Academy [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:66550", "path": "born_in", "hops": 1, "answer": "Vishakru", "output": "Vishakru [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:80633", "path": "born_in", "hops": 1, "answer": "Zakra", "output": "Zakra [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:38342", "path": "mentor", "hops": 1, "answer": "Bitha Livogur", "output": "Vinu Vuzufex [EOS]", "correct": false, "prompt_tokens": 14, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:78347", "path": "born_in", "hops": 1, "answer": "Tazile", "output": "Tazile [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:35236", "path": "works_at", "hops": 1, "answer": "Bozo Partners", "output": "Bozo Partners [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:53088", "path": "works_at", "hops": 1, "answer": "Thodrith Industries", "output": "Thodrith Industries [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:16809", "path": "birth_year", "hops": 1, "answer": "1956", "output": "1956 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:68", "path": "birth_year", "hops": 1, "answer": "1924", "output": "1924 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:52251", "path": "major", "hops": 1, "answer": "astronomy", "output": "astronomy [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:86946", "path": "mentor", "hops": 1, "answer": "Brulo Ristedror", "output": "Gipu Muru [EOS]", "correct": false, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:9985", "path": "mentor", "hops": 1, "answer": "Bodra Manufin", "output": "Bodra Manufin [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:46270", "path": "studied_at", "hops": 1, "answer": "Nego College", "output": "Nego College [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:39957", "path": "major", "hops": 1, "answer": "literature", "output": "literature [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:11830", "path": "mentor", "hops": 1, "answer": "Meko Nistosa", "output": "Thile Veva sculpture [EOS]", "correct": false, "prompt_tokens": 13, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:64410", "path": "works_at", "hops": 1, "answer": "Bafi Works", "output": "Bafi Works [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:60736", "path": "works_at", "hops": 1, "answer": "Shezeth Trading", "output": "Shezeth Trading [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:99873", "path": "mentor", "hops": 1, "answer": "Bemi Krores", "output": "Bemi Krores [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:44019", "path": "mentor", "hops": 1, "answer": "Vode Kaste", "output": "Vode Kaste [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:92090", "path": "born_in", "hops": 1, "answer": "Zathupo", "output": "Zathupo [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:40242", "path": "born_in", "hops": 1, "answer": "Tabomur", "output": "Tabomur [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:20895", "path": "mentor", "hops": 1, "answer": "Pukru Fifu", "output": "Kine Medre [EOS]", "correct": false, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:45280", "path": "works_at", "hops": 1, "answer": "Fukith Partners", "output": "Fukith Partners [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:98051", "path": "works_at", "hops": 1, "answer": "Zetha Works", "output": "Zetha Works [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:17840", "path": "mentor", "hops": 1, "answer": "Krikre Pupath", "output": "Krikre Pupath [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:23152", "path": "born_in", "hops": 1, "answer": "Vishakru", "output": "Vishakru [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:64528", "path": "major", "hops": 1, "answer": "philosophy", "output": "philosophy [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:9641", "path": "studied_at", "hops": 1, "answer": "Krova College", "output": "Krova College [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:72616", "path": "mentor", "hops": 1, "answer": "Kethu Sazezer", "output": "Kethu Sazezer [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:41984", "path": "mentor", "hops": 1, "answer": "Fani Gozale", "output": "Stala Krego [EOS]", "correct": false, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:22075", "path": "birth_year", "hops": 1, "answer": "1920", "output": "1920 [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:68010", "path": "mentor", "hops": 1, "answer": "Subath Ruthabros", "output": "Subath Ruthabros [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 8}
+{"set": "test_1hop_ood", "subject": "person:5569", "path": "studied_at", "hops": 1, "answer": "Drava College", "output": "Drava College [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:15902", "path": "major", "hops": 1, "answer": "medicine", "output": "medicine [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:36278", "path": "mentor", "hops": 1, "answer": "Buvo Nivado", "output": "Buvo Nivado [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:38815", "path": "studied_at", "hops": 1, "answer": "Nego College", "output": "Nego College [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:29412", "path": "born_in", "hops": 1, "answer": "Vukrune", "output": "Vukrune [EOS]", "correct": true, "prompt_tokens": 18, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:52435", "path": "works_at", "hops": 1, "answer": "Lisha Group", "output": "Lisha Group [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:97634", "path": "works_at", "hops": 1, "answer": "Zekal Trading", "output": "Zekal Trading [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:96216", "path": "major", "hops": 1, "answer": "architecture", "output": "architecture [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:39373", "path": "birth_year", "hops": 1, "answer": "1987", "output": "1987 [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:30108", "path": "mentor", "hops": 1, "answer": "Vovox Nokotu", "output": "Vovox Nokotu [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:37929", "path": "works_at", "hops": 1, "answer": "Gitex Holdings", "output": "Thadu Works [EOS]", "correct": false, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:23303", "path": "mentor", "hops": 1, "answer": "Tuger Zifuki", "output": "Tuger Zifuki [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:79412", "path": "born_in", "hops": 1, "answer": "Luthe", "output": "Luthe [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:39512", "path": "born_in", "hops": 1, "answer": "Zakra", "output": "Zakra [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:45731", "path": "works_at", "hops": 1, "answer": "Driti Dynamics", "output": "Driti Dynamics [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:7727", "path": "mentor", "hops": 1, "answer": "Mostoth Zagil", "output": "Mostoth Zagil [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:68868", "path": "studied_at", "hops": 1, "answer": "Samu Institute", "output": "Sastu Academy [EOS]", "correct": false, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:45334", "path": "mentor", "hops": 1, "answer": "Brokrel Tifufex", "output": "Brokrel Tifufex [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 8}
+{"set": "test_1hop_ood", "subject": "person:48173", "path": "studied_at", "hops": 1, "answer": "Volo Institute", "output": "Volo Institute [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:78843", "path": "mentor", "hops": 1, "answer": "Fuke Lekruful", "output": "Kreke Nonotar [EOS]", "correct": false, "prompt_tokens": 14, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:4260", "path": "studied_at", "hops": 1, "answer": "Nige Institute", "output": "Nige Institute [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:25855", "path": "mentor", "hops": 1, "answer": "Bepo Pabris", "output": "Gorax Shukru [EOS]", "correct": false, "prompt_tokens": 14, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:92690", "path": "major", "hops": 1, "answer": "zoology", "output": "zoology [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:53501", "path": "birth_year", "hops": 1, "answer": "1990", "output": "1990 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:50434", "path": "studied_at", "hops": 1, "answer": "Dipe University", "output": "Dipe University [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:68896", "path": "studied_at", "hops": 1, "answer": "Drava College", "output": "Drava College [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:66563", "path": "birth_year", "hops": 1, "answer": "1930", "output": "1930 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:2857", "path": "born_in", "hops": 1, "answer": "Ravo", "output": "Ravo [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:30889", "path": "works_at", "hops": 1, "answer": "Kruve Holdings", "output": "Kruve Holdings [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:90311", "path": "major", "hops": 1, "answer": "medicine", "output": "medicine [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:57840", "path": "birth_year", "hops": 1, "answer": "1994", "output": "1994 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:25576", "path": "birth_year", "hops": 1, "answer": "1949", "output": "1949 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:63060", "path": "works_at", "hops": 1, "answer": "Gefe Holdings", "output": "Gefe Holdings [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:21820", "path": "studied_at", "hops": 1, "answer": "Tebrar Institute", "output": "Tebrar Institute [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:67790", "path": "mentor", "hops": 1, "answer": "Nebro Mubeth", "output": "Nebro Mubeth [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:95913", "path": "born_in", "hops": 1, "answer": "Dube", "output": "Dube [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:71650", "path": "birth_year", "hops": 1, "answer": "1973", "output": "1973 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:51367", "path": "birth_year", "hops": 1, "answer": "1960", "output": "1960 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:93424", "path": "major", "hops": 1, "answer": "music", "output": "music [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:88265", "path": "studied_at", "hops": 1, "answer": "Mukax Institute", "output": "Mukax Institute [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:44307", "path": "studied_at", "hops": 1, "answer": "Piba University", "output": "Piba University [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:92845", "path": "birth_year", "hops": 1, "answer": "1931", "output": "1931 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:70761", "path": "works_at", "hops": 1, "answer": "Vivil Labs", "output": "Vivil Labs [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:28761", "path": "born_in", "hops": 1, "answer": "Mimuna", "output": "Mimuna [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:38393", "path": "works_at", "hops": 1, "answer": "Mani Partners", "output": "Mani Partners [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:73567", "path": "major", "hops": 1, "answer": "sculpture", "output": "sculpture [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:41518", "path": "born_in", "hops": 1, "answer": "Rasupe", "output": "Rasupe [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:85726", "path": "mentor", "hops": 1, "answer": "Shofo Brumolol", "output": "Shofo Brumolol [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:698", "path": "birth_year", "hops": 1, "answer": "1969", "output": "1969 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:57336", "path": "studied_at", "hops": 1, "answer": "Tebrar Institute", "output": "Tebrar Institute [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:81672", "path": "birth_year", "hops": 1, "answer": "1941", "output": "1941 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:40774", "path": "major", "hops": 1, "answer": "zoology", "output": "zoology [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:99847", "path": "studied_at", "hops": 1, "answer": "Tebrar Institute", "output": "Tebrar Institute [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:85915", "path": "major", "hops": 1, "answer": "literature", "output": "literature [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:96321", "path": "works_at", "hops": 1, "answer": "Tuvel Partners", "output": "Bofith Labs [EOS]", "correct": false, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:15755", "path": "mentor", "hops": 1, "answer": "Boro Stopesta", "output": "Boro Stopesta [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:24403", "path": "birth_year", "hops": 1, "answer": "1971", "output": "1971 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:55325", "path": "birth_year", "hops": 1, "answer": "1923", "output": "lifus [EOS]", "correct": false, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:73358", "path": "born_in", "hops": 1, "answer": "Shobathur", "output": "Shobathur [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:32296", "path": "studied_at", "hops": 1, "answer": "Volo Institute", "output": "Volo Institute [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:84454", "path": "works_at", "hops": 1, "answer": "Stoni Holdings", "output": "Stoni Holdings [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:78746", "path": "major", "hops": 1, "answer": "biology", "output": "biology [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:92999", "path": "studied_at", "hops": 1, "answer": "Piba University", "output": "Piba University [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:98145", "path": "birth_year", "hops": 1, "answer": "1968", "output": "1968 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:6653", "path": "birth_year", "hops": 1, "answer": "1911", "output": "1911 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:61629", "path": "born_in", "hops": 1, "answer": "Zathupo", "output": "Zathupo [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:17511", "path": "birth_year", "hops": 1, "answer": "1921", "output": "1921 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:62374", "path": "works_at", "hops": 1, "answer": "Brokru Group", "output": "Brokru Group [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:48329", "path": "works_at", "hops": 1, "answer": "Luzun Trading", "output": "Luzun Trading [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:30795", "path": "birth_year", "hops": 1, "answer": "1988", "output": "1988 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:96387", "path": "studied_at", "hops": 1, "answer": "Bekrax Institute", "output": "Bekrax Institute [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:59487", "path": "studied_at", "hops": 1, "answer": "Mukax Institute", "output": "Mukax Institute [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:28881", "path": "born_in", "hops": 1, "answer": "Dradrulul", "output": "Dradrulul [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:53034", "path": "studied_at", "hops": 1, "answer": "Mishi University", "output": "Mishi University [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:20952", "path": "birth_year", "hops": 1, "answer": "1957", "output": "1957 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:92378", "path": "works_at", "hops": 1, "answer": "Pono Group", "output": "Pono Group [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:61397", "path": "mentor", "hops": 1, "answer": "Rastol Kadumux", "output": "Rastol Kadumux [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 8}
+{"set": "test_1hop_ood", "subject": "person:20298", "path": "birth_year", "hops": 1, "answer": "1981", "output": "1981 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:37745", "path": "works_at", "hops": 1, "answer": "Miges Dynamics", "output": "Miges Dynamics [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:48005", "path": "works_at", "hops": 1, "answer": "Brubre Labs", "output": "Brubre Labs [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:41735", "path": "mentor", "hops": 1, "answer": "Betu Kastegal", "output": "Betu Kastegal [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:52713", "path": "born_in", "hops": 1, "answer": "Rasupe", "output": "Rasupe [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:15026", "path": "mentor", "hops": 1, "answer": "Kute Noli", "output": "Kute Noli [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:7426", "path": "works_at", "hops": 1, "answer": "Krope Works", "output": "Krope Works [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:53975", "path": "works_at", "hops": 1, "answer": "Gefe Holdings", "output": "Gefe Holdings [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:26047", "path": "born_in", "hops": 1, "answer": "Krabakri", "output": "Krabakri [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:35492", "path": "works_at", "hops": 1, "answer": "Tosho Systems", "output": "Tosho Systems [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:26057", "path": "mentor", "hops": 1, "answer": "Ziga Stusal", "output": "Ziga Stusal [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:64192", "path": "birth_year", "hops": 1, "answer": "1963", "output": "1963 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:10607", "path": "birth_year", "hops": 1, "answer": "1928", "output": "1928 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:92830", "path": "works_at", "hops": 1, "answer": "Mekal Works", "output": "Mekal Works [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:58731", "path": "born_in", "hops": 1, "answer": "Rikra", "output": "Rikra [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:37102", "path": "major", "hops": 1, "answer": "chemistry", "output": "chemistry [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:1443", "path": "studied_at", "hops": 1, "answer": "Mukax Institute", "output": "Mukax Institute [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:33598", "path": "major", "hops": 1, "answer": "philosophy", "output": "philosophy [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:96772", "path": "birth_year", "hops": 1, "answer": "1928", "output": "1928 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:23066", "path": "mentor", "hops": 1, "answer": "Krusal Borodrol", "output": "Krusal Borodrol [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 8}
+{"set": "test_1hop_ood", "subject": "person:71470", "path": "birth_year", "hops": 1, "answer": "1963", "output": "1963 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:68562", "path": "studied_at", "hops": 1, "answer": "Mukax Institute", "output": "Mukax Institute [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:88742", "path": "birth_year", "hops": 1, "answer": "1922", "output": "1922 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:74537", "path": "studied_at", "hops": 1, "answer": "Brasti University", "output": "Brasti University [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:69735", "path": "born_in", "hops": 1, "answer": "Gabruno", "output": "Gabruno [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:54290", "path": "mentor", "hops": 1, "answer": "Drofo Zikakrus", "output": "Drofo Zikakrus [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:75070", "path": "mentor", "hops": 1, "answer": "Brifeth Drubratin", "output": "Brifeth Drubratin [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 8}
+{"set": "test_1hop_ood", "subject": "person:59607", "path": "works_at", "hops": 1, "answer": "Kakral Partners", "output": "Kakral Partners [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:42890", "path": "born_in", "hops": 1, "answer": "Luve", "output": "Luve [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:27763", "path": "studied_at", "hops": 1, "answer": "Sastu Academy", "output": "Sastu Academy [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:31027", "path": "studied_at", "hops": 1, "answer": "Misho University", "output": "Misho University [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:50232", "path": "major", "hops": 1, "answer": "psychology", "output": "psychology [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:67219", "path": "born_in", "hops": 1, "answer": "Netira", "output": "Netira [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:71339", "path": "works_at", "hops": 1, "answer": "Drime Labs", "output": "Drime Labs [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:13026", "path": "birth_year", "hops": 1, "answer": "1903", "output": "1903 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:44655", "path": "born_in", "hops": 1, "answer": "Rudrope", "output": "Zezube [EOS]", "correct": false, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:90766", "path": "mentor", "hops": 1, "answer": "Simu Vekikror", "output": "Simu Vekikror [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:37946", "path": "mentor", "hops": 1, "answer": "Bridre Mivix", "output": "Dege Futhelel [EOS]", "correct": false, "prompt_tokens": 14, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:45891", "path": "studied_at", "hops": 1, "answer": "Foshi Academy", "output": "Foshi Academy [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:14574", "path": "works_at", "hops": 1, "answer": "Brubre Labs", "output": "Brubre Labs [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:39526", "path": "studied_at", "hops": 1, "answer": "Krebus Institute", "output": "Krebus Institute [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:14517", "path": "major", "hops": 1, "answer": "linguistics", "output": "linguistics [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:55999", "path": "major", "hops": 1, "answer": "finance", "output": "finance [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:85254", "path": "major", "hops": 1, "answer": "statistics", "output": "statistics [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:20160", "path": "born_in", "hops": 1, "answer": "Zakra", "output": "Zakra [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:78360", "path": "born_in", "hops": 1, "answer": "Vipaputh", "output": "Vipaputh [EOS]", "correct": true, "prompt_tokens": 18, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:93784", "path": "studied_at", "hops": 1, "answer": "Mukax Institute", "output": "Mukax Institute [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:28992", "path": "works_at", "hops": 1, "answer": "Drivu Dynamics", "output": "Drivu Dynamics [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:18363", "path": "major", "hops": 1, "answer": "psychology", "output": "psychology [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:64519", "path": "birth_year", "hops": 1, "answer": "1992", "output": "1992 [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:80699", "path": "major", "hops": 1, "answer": "chemistry", "output": "chemistry [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:93510", "path": "born_in", "hops": 1, "answer": "Kuvunes", "output": "Kuvunes [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:73692", "path": "birth_year", "hops": 1, "answer": "1970", "output": "1970 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:68768", "path": "studied_at", "hops": 1, "answer": "Brasti University", "output": "Brasti University [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:23944", "path": "works_at", "hops": 1, "answer": "Zenor Labs", "output": "Zenor Labs [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:67929", "path": "mentor", "hops": 1, "answer": "Nathu Pozusu", "output": "Krubros Molu [EOS]", "correct": false, "prompt_tokens": 17, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:81990", "path": "birth_year", "hops": 1, "answer": "1901", "output": "1901 [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:57316", "path": "mentor", "hops": 1, "answer": "Gido Bretidix", "output": "Gido Bretidix [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:66798", "path": "major", "hops": 1, "answer": "theology", "output": "theology [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:78379", "path": "mentor", "hops": 1, "answer": "Degi Drupa", "output": "Degi Drupa [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:70635", "path": "works_at", "hops": 1, "answer": "Brigar Partners", "output": "Brigar Partners [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:13525", "path": "works_at", "hops": 1, "answer": "Tisto Holdings", "output": "Tisto Holdings [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:23376", "path": "works_at", "hops": 1, "answer": "Barith Systems", "output": "Barith Systems [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:40863", "path": "mentor", "hops": 1, "answer": "Didi Zevele", "output": "Didi Zevele [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:95983", "path": "born_in", "hops": 1, "answer": "Ravo", "output": "Ravo [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:56041", "path": "studied_at", "hops": 1, "answer": "Bragel Institute", "output": "Bragel Institute [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:84480", "path": "born_in", "hops": 1, "answer": "Krubrago", "output": "Krubrago [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:91571", "path": "studied_at", "hops": 1, "answer": "Tebrar Institute", "output": "Tebrar Institute [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:75900", "path": "works_at", "hops": 1, "answer": "Bofith Labs", "output": "Bofith Labs [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:92779", "path": "born_in", "hops": 1, "answer": "Zakra", "output": "Zakra [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:69743", "path": "birth_year", "hops": 1, "answer": "1923", "output": "1923 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:46787", "path": "birth_year", "hops": 1, "answer": "1964", "output": "1964 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:93395", "path": "birth_year", "hops": 1, "answer": "1957", "output": "1957 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:50177", "path": "works_at", "hops": 1, "answer": "Drozer Group", "output": "Drozer Group [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:80051", "path": "works_at", "hops": 1, "answer": "Panus Collective", "output": "Panus Collective [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:54323", "path": "birth_year", "hops": 1, "answer": "1957", "output": "1957 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:41770", "path": "born_in", "hops": 1, "answer": "Drotus", "output": "Drotus [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:68301", "path": "works_at", "hops": 1, "answer": "Kista Holdings", "output": "Kista Holdings [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:1139", "path": "works_at", "hops": 1, "answer": "Krovur Dynamics", "output": "Krovur Dynamics [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:71853", "path": "studied_at", "hops": 1, "answer": "Stova Academy", "output": "Stova Academy [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:56766", "path": "mentor", "hops": 1, "answer": "Drutes Thopunu", "output": "Drutes Thopunu [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:61947", "path": "birth_year", "hops": 1, "answer": "1919", "output": "1919 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:5024", "path": "studied_at", "hops": 1, "answer": "Tebrar Institute", "output": "Tebrar Institute [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:50200", "path": "major", "hops": 1, "answer": "economics", "output": "economics [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:4086", "path": "mentor", "hops": 1, "answer": "Shides Geman", "output": "Shides Geman [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:26274", "path": "birth_year", "hops": 1, "answer": "1909", "output": "1909 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:23321", "path": "works_at", "hops": 1, "answer": "Lutho Holdings", "output": "Lutho Holdings [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:57671", "path": "works_at", "hops": 1, "answer": "Vudas Partners", "output": "Vudas Partners [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:90635", "path": "born_in", "hops": 1, "answer": "Figipel", "output": "Figipel [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:44176", "path": "studied_at", "hops": 1, "answer": "Kreta Institute", "output": "Bekrax Institute [EOS]", "correct": false, "prompt_tokens": 12, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:33377", "path": "birth_year", "hops": 1, "answer": "1900", "output": "1900 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:87011", "path": "mentor", "hops": 1, "answer": "Nepo Sipipil", "output": "Nepo Sipipil [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:25613", "path": "birth_year", "hops": 1, "answer": "1965", "output": "1965 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:39350", "path": "major", "hops": 1, "answer": "botany", "output": "botany [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:9095", "path": "works_at", "hops": 1, "answer": "Gumo Collective", "output": "Gumo Collective [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:20962", "path": "major", "hops": 1, "answer": "biology", "output": "biology [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:53469", "path": "mentor", "hops": 1, "answer": "Dake Bepithel", "output": "Dake Bepithel [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:88599", "path": "born_in", "hops": 1, "answer": "Zathupo", "output": "Zathupo [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:13887", "path": "mentor", "hops": 1, "answer": "Ribo Reshe", "output": "Ribo Reshe [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:92583", "path": "major", "hops": 1, "answer": "music", "output": "music [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:5091", "path": "major", "hops": 1, "answer": "economics", "output": "economics [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:11551", "path": "mentor", "hops": 1, "answer": "Stiku Gebusar", "output": "Stiku Gebusar [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:80342", "path": "major", "hops": 1, "answer": "zoology", "output": "zoology [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:50276", "path": "mentor", "hops": 1, "answer": "Stase Bruger", "output": "Stase Bruger [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:65998", "path": "studied_at", "hops": 1, "answer": "Tebrar Institute", "output": "Tebrar Institute [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:33862", "path": "major", "hops": 1, "answer": "sociology", "output": "sociology [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:75232", "path": "works_at", "hops": 1, "answer": "Kuzo Systems", "output": "Kuzo Systems [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:72161", "path": "studied_at", "hops": 1, "answer": "Mukax Institute", "output": "Mukax Institute [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:83114", "path": "major", "hops": 1, "answer": "music", "output": "music [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:92252", "path": "works_at", "hops": 1, "answer": "Bokal Holdings", "output": "Bokal Holdings [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:89397", "path": "mentor", "hops": 1, "answer": "Puthes Deshesi", "output": "Fithe Valith [EOS]", "correct": false, "prompt_tokens": 15, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:2504", "path": "works_at", "hops": 1, "answer": "Dabul Group", "output": "Dabul Group [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:25461", "path": "studied_at", "hops": 1, "answer": "Kreta Institute", "output": "Kreta Institute [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:97360", "path": "major", "hops": 1, "answer": "engineering", "output": "engineering [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:8301", "path": "studied_at", "hops": 1, "answer": "Zusi University", "output": "Zusi University [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:28941", "path": "works_at", "hops": 1, "answer": "Panus Collective", "output": "Panus Collective [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:6490", "path": "works_at", "hops": 1, "answer": "Nobra Collective", "output": "Nobra Collective [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:43994", "path": "studied_at", "hops": 1, "answer": "Tebrar Institute", "output": "Tebrar Institute [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:56457", "path": "studied_at", "hops": 1, "answer": "Volo Institute", "output": "Volo Institute [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:40184", "path": "major", "hops": 1, "answer": "linguistics", "output": "linguistics [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:85930", "path": "major", "hops": 1, "answer": "psychology", "output": "psychology [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:86248", "path": "studied_at", "hops": 1, "answer": "Bekrax Institute", "output": "Bekrax Institute [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:30992", "path": "major", "hops": 1, "answer": "finance", "output": "finance [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:20022", "path": "works_at", "hops": 1, "answer": "Breta Trading", "output": "Breta Trading [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:26289", "path": "studied_at", "hops": 1, "answer": "Tebrar Institute", "output": "Tebrar Institute [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:16652", "path": "major", "hops": 1, "answer": "finance", "output": "finance [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:1588", "path": "studied_at", "hops": 1, "answer": "Tebrar Institute", "output": "Tebrar Institute [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:64938", "path": "major", "hops": 1, "answer": "sculpture", "output": "sculpture [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:21151", "path": "born_in", "hops": 1, "answer": "Tathevil", "output": "Tathevil [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:16261", "path": "works_at", "hops": 1, "answer": "Momi Works", "output": "Momi Works [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:7820", "path": "major", "hops": 1, "answer": "literature", "output": "literature [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:2943", "path": "studied_at", "hops": 1, "answer": "Bragel Institute", "output": "Bragel Institute [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:48317", "path": "birth_year", "hops": 1, "answer": "1983", "output": "1983 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:91482", "path": "studied_at", "hops": 1, "answer": "Misho University", "output": "Misho University [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:87629", "path": "mentor", "hops": 1, "answer": "Sone Rustazas", "output": "Sone Rustazas [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:12726", "path": "studied_at", "hops": 1, "answer": "Gipi Academy", "output": "Gipi Academy [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:2659", "path": "major", "hops": 1, "answer": "engineering", "output": "engineering [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:20520", "path": "birth_year", "hops": 1, "answer": "1972", "output": "1972 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:55374", "path": "birth_year", "hops": 1, "answer": "1955", "output": "1955 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:87814", "path": "birth_year", "hops": 1, "answer": "1907", "output": "1907 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:20828", "path": "major", "hops": 1, "answer": "chemistry", "output": "chemistry [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:55262", "path": "mentor", "hops": 1, "answer": "Lepu Maste", "output": "Ludrar Tuke [EOS]", "correct": false, "prompt_tokens": 13, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:99856", "path": "works_at", "hops": 1, "answer": "Magu Collective", "output": "Magu Collective [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:84047", "path": "birth_year", "hops": 1, "answer": "1924", "output": "1924 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:22533", "path": "birth_year", "hops": 1, "answer": "1951", "output": "1951 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:21464", "path": "birth_year", "hops": 1, "answer": "1975", "output": "1975 [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:89391", "path": "mentor", "hops": 1, "answer": "Bratu Tosi", "output": "Bratu Tosi [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:71791", "path": "birth_year", "hops": 1, "answer": "1977", "output": "1977 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:11719", "path": "studied_at", "hops": 1, "answer": "Bekrax Institute", "output": "Bekrax Institute [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:71339", "path": "born_in", "hops": 1, "answer": "Zakra", "output": "Zakra [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:38065", "path": "major", "hops": 1, "answer": "biology", "output": "biology [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:68033", "path": "born_in", "hops": 1, "answer": "Makake", "output": "Makake [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:50446", "path": "major", "hops": 1, "answer": "engineering", "output": "engineering [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:54314", "path": "mentor", "hops": 1, "answer": "Dires Tathi", "output": "Dires Tathi [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:7386", "path": "works_at", "hops": 1, "answer": "Momi Works", "output": "Momi Works [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:73035", "path": "born_in", "hops": 1, "answer": "Vipaputh", "output": "Vipaputh [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:85016", "path": "mentor", "hops": 1, "answer": "Sazon Sozo", "output": "Sazon Sozo [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:75324", "path": "born_in", "hops": 1, "answer": "Kedrir", "output": "Kedrir [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:95662", "path": "mentor", "hops": 1, "answer": "Drusax Giku", "output": "Drusax Giku [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:41179", "path": "birth_year", "hops": 1, "answer": "1955", "output": "1955 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:11140", "path": "born_in", "hops": 1, "answer": "Vore", "output": "Vore [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:38443", "path": "mentor", "hops": 1, "answer": "Stosti Leti", "output": "Stosti Leti [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:28496", "path": "major", "hops": 1, "answer": "architecture", "output": "architecture [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:84776", "path": "mentor", "hops": 1, "answer": "Foza Vipefos", "output": "Foza Vipefos [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:87834", "path": "studied_at", "hops": 1, "answer": "Tebrar Institute", "output": "Tebrar Institute [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:8386", "path": "works_at", "hops": 1, "answer": "Drakron Group", "output": "Drakron Group [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:17787", "path": "born_in", "hops": 1, "answer": "Basaral", "output": "Basaral [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:38577", "path": "works_at", "hops": 1, "answer": "Kregu Systems", "output": "Kregu Systems [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:26628", "path": "works_at", "hops": 1, "answer": "Brubre Labs", "output": "Brubre Labs [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:82288", "path": "works_at", "hops": 1, "answer": "Brubre Labs", "output": "Brubre Labs [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:31461", "path": "birth_year", "hops": 1, "answer": "1940", "output": "1940 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:37632", "path": "major", "hops": 1, "answer": "botany", "output": "botany [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:6548", "path": "studied_at", "hops": 1, "answer": "Stova Academy", "output": "Stova Academy [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:67647", "path": "studied_at", "hops": 1, "answer": "Stekran College", "output": "Stekran College [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:39247", "path": "works_at", "hops": 1, "answer": "Bokal Holdings", "output": "Bokal Holdings [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:5706", "path": "born_in", "hops": 1, "answer": "Dridel", "output": "Dridel [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:53455", "path": "major", "hops": 1, "answer": "biology", "output": "biology [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:92293", "path": "born_in", "hops": 1, "answer": "Dradrulul", "output": "Dradrulul [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:94682", "path": "birth_year", "hops": 1, "answer": "1956", "output": "1956 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:19599", "path": "works_at", "hops": 1, "answer": "Zeru Industries", "output": "Zeru Industries [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:31213", "path": "mentor", "hops": 1, "answer": "Drukath Thatu", "output": "Drukath Thatu [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:32544", "path": "birth_year", "hops": 1, "answer": "1981", "output": "1981 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:47162", "path": "mentor", "hops": 1, "answer": "Kralo Brebisha", "output": "Kralo Brebisha [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:21171", "path": "major", "hops": 1, "answer": "mathematics", "output": "mathematics [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:12895", "path": "major", "hops": 1, "answer": "psychology", "output": "psychology [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:22441", "path": "birth_year", "hops": 1, "answer": "1924", "output": "1924 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:81475", "path": "born_in", "hops": 1, "answer": "Zathupo", "output": "Zathupo [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:27967", "path": "works_at", "hops": 1, "answer": "Fisti Systems", "output": "Fisti Systems [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:9461", "path": "studied_at", "hops": 1, "answer": "Nego College", "output": "Nego College [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:56292", "path": "birth_year", "hops": 1, "answer": "1934", "output": "1934 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:25427", "path": "major", "hops": 1, "answer": "sculpture", "output": "sculpture [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:85636", "path": "birth_year", "hops": 1, "answer": "1948", "output": "1948 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:9487", "path": "birth_year", "hops": 1, "answer": "1932", "output": "1932 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:63144", "path": "major", "hops": 1, "answer": "geology", "output": "geology [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:12211", "path": "birth_year", "hops": 1, "answer": "1919", "output": "1919 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:15569", "path": "born_in", "hops": 1, "answer": "Zakra", "output": "Zakra [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:80529", "path": "works_at", "hops": 1, "answer": "Stefu Dynamics", "output": "Stefu Dynamics [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:95932", "path": "studied_at", "hops": 1, "answer": "Nego College", "output": "Nego College [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:53060", "path": "major", "hops": 1, "answer": "geology", "output": "geology [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:62053", "path": "studied_at", "hops": 1, "answer": "Kebri Academy", "output": "Kebri Academy [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:37102", "path": "studied_at", "hops": 1, "answer": "Rethe Academy", "output": "Rethe Academy [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:86306", "path": "works_at", "hops": 1, "answer": "Miges Dynamics", "output": "Miges Dynamics [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:82930", "path": "born_in", "hops": 1, "answer": "Krubrago", "output": "Krubrago [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:31256", "path": "birth_year", "hops": 1, "answer": "1925", "output": "1925 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:4560", "path": "works_at", "hops": 1, "answer": "Pizi Trading", "output": "Pizi Trading [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:27670", "path": "major", "hops": 1, "answer": "botany", "output": "botany [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:93200", "path": "born_in", "hops": 1, "answer": "Datakran", "output": "Datakran [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:91137", "path": "birth_year", "hops": 1, "answer": "1943", "output": "1943 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:70329", "path": "major", "hops": 1, "answer": "history", "output": "psychology [EOS]", "correct": false, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:56386", "path": "works_at", "hops": 1, "answer": "Toka Trading", "output": "Toka Trading [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:49961", "path": "major", "hops": 1, "answer": "history", "output": "history [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:59926", "path": "works_at", "hops": 1, "answer": "Lada Systems", "output": "Lada Systems [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:67398", "path": "born_in", "hops": 1, "answer": "Fobrore", "output": "Fobrore [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:52749", "path": "birth_year", "hops": 1, "answer": "1943", "output": "1943 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:86122", "path": "studied_at", "hops": 1, "answer": "Sosu Academy", "output": "Sosu Academy [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:63992", "path": "birth_year", "hops": 1, "answer": "1938", "output": "1938 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:23581", "path": "studied_at", "hops": 1, "answer": "Bekrax Institute", "output": "Bekrax Institute [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:6089", "path": "born_in", "hops": 1, "answer": "Shuve", "output": "Shuve [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:26607", "path": "mentor", "hops": 1, "answer": "Pipu Sholol", "output": "Pipu Sholol [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:61040", "path": "born_in", "hops": 1, "answer": "Shebres", "output": "Shebres [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:81332", "path": "works_at", "hops": 1, "answer": "Stime Industries", "output": "Stime Industries [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:78907", "path": "works_at", "hops": 1, "answer": "Lidra Works", "output": "Lidra Works [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:98101", "path": "birth_year", "hops": 1, "answer": "1934", "output": "1934 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:80147", "path": "major", "hops": 1, "answer": "chemistry", "output": "chemistry [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:94255", "path": "mentor", "hops": 1, "answer": "Dele Papix", "output": "Dele Papix [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:4913", "path": "born_in", "hops": 1, "answer": "Masobri", "output": "Masobri [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:72180", "path": "mentor", "hops": 1, "answer": "Brino Bimu", "output": "Brino Bimu [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:33590", "path": "works_at", "hops": 1, "answer": "Stitho Industries", "output": "Stitho Industries [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:77822", "path": "born_in", "hops": 1, "answer": "Ravo", "output": "Ravo [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:63270", "path": "studied_at", "hops": 1, "answer": "Tebrar Institute", "output": "Tebrar Institute [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:81177", "path": "works_at", "hops": 1, "answer": "Mofe Dynamics", "output": "Mofe Dynamics [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:15739", "path": "works_at", "hops": 1, "answer": "Bafi Works", "output": "Bafi Works [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:12446", "path": "birth_year", "hops": 1, "answer": "1910", "output": "1910 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:72256", "path": "works_at", "hops": 1, "answer": "Druvi Partners", "output": "Druvi Partners [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:85661", "path": "works_at", "hops": 1, "answer": "Brubre Labs", "output": "Brubre Labs [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:96955", "path": "works_at", "hops": 1, "answer": "Nustan Partners", "output": "Nustan Partners [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:69958", "path": "works_at", "hops": 1, "answer": "Lada Systems", "output": "Lada Systems [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:92855", "path": "major", "hops": 1, "answer": "engineering", "output": "engineering [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:95442", "path": "born_in", "hops": 1, "answer": "Zakra", "output": "Zakra [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:60939", "path": "works_at", "hops": 1, "answer": "Kregu Systems", "output": "Kregu Systems [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:84694", "path": "studied_at", "hops": 1, "answer": "Nego College", "output": "Nego College [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:70257", "path": "mentor", "hops": 1, "answer": "Drekra Dragex", "output": "Drekra Dragex [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:47686", "path": "studied_at", "hops": 1, "answer": "Stova Academy", "output": "Stova Academy [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:36445", "path": "born_in", "hops": 1, "answer": "Zathupo", "output": "Zathupo [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:47162", "path": "born_in", "hops": 1, "answer": "Vipaputh", "output": "Vipaputh [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:15726", "path": "mentor", "hops": 1, "answer": "Shate Lazol", "output": "Shate Lazol [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:65866", "path": "birth_year", "hops": 1, "answer": "1955", "output": "1955 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:73221", "path": "works_at", "hops": 1, "answer": "Pikru Industries", "output": "Pikru Industries [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:8155", "path": "major", "hops": 1, "answer": "economics", "output": "economics [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:56287", "path": "mentor", "hops": 1, "answer": "Soze Braviba", "output": "Soze Braviba [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:23704", "path": "works_at", "hops": 1, "answer": "Pizi Trading", "output": "Pizi Trading [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:95819", "path": "studied_at", "hops": 1, "answer": "Tebrar Institute", "output": "Lathe Academy [EOS]", "correct": false, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:20449", "path": "born_in", "hops": 1, "answer": "Stibran", "output": "Stibran [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:86946", "path": "studied_at", "hops": 1, "answer": "Sosu Academy", "output": "Sosu Academy [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:90596", "path": "mentor", "hops": 1, "answer": "Mobath Stakrukrix", "output": "Mobath Stakrukrix [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 8}
+{"set": "test_1hop_ood", "subject": "person:27372", "path": "birth_year", "hops": 1, "answer": "1926", "output": "1926 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:90574", "path": "studied_at", "hops": 1, "answer": "Sosu Academy", "output": "Sosu Academy [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:47597", "path": "mentor", "hops": 1, "answer": "Brufe Krudri", "output": "Brufe Krudri [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:62087", "path": "studied_at", "hops": 1, "answer": "Tebrar Institute", "output": "Tebrar Institute [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:56575", "path": "studied_at", "hops": 1, "answer": "Zovas Academy", "output": "Zovas Academy [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:30572", "path": "birth_year", "hops": 1, "answer": "1916", "output": "1916 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:68259", "path": "works_at", "hops": 1, "answer": "Stapu Works", "output": "Stapu Works [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:25451", "path": "studied_at", "hops": 1, "answer": "Krapi Institute", "output": "Krapi Institute [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:38528", "path": "mentor", "hops": 1, "answer": "Brakru Setu", "output": "Brakru Setu [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:7758", "path": "works_at", "hops": 1, "answer": "Drotho Labs", "output": "Drotho Labs [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:28881", "path": "birth_year", "hops": 1, "answer": "1955", "output": "1955 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:45498", "path": "birth_year", "hops": 1, "answer": "1926", "output": "1926 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:47278", "path": "studied_at", "hops": 1, "answer": "Brasti University", "output": "Brasti University [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:6666", "path": "works_at", "hops": 1, "answer": "Gemi Dynamics", "output": "Gemi Dynamics [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:99353", "path": "born_in", "hops": 1, "answer": "Drotus", "output": "Drotus [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:84287", "path": "birth_year", "hops": 1, "answer": "1972", "output": "1972 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:98542", "path": "studied_at", "hops": 1, "answer": "Volo Institute", "output": "Volo Institute [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:78516", "path": "mentor", "hops": 1, "answer": "Sasus Silar", "output": "Sasus Silar [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:64038", "path": "major", "hops": 1, "answer": "history", "output": "history [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:186", "path": "works_at", "hops": 1, "answer": "Zaboth Partners", "output": "Zaboth Partners [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:48892", "path": "mentor", "hops": 1, "answer": "Dome Kuro", "output": "Dome Kuro [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:22376", "path": "mentor", "hops": 1, "answer": "Thesus Zebrodus", "output": "Thesus Zebrodus [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 8}
+{"set": "test_1hop_ood", "subject": "person:94628", "path": "works_at", "hops": 1, "answer": "Kebruth Trading", "output": "Kebruth Trading [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:44", "path": "major", "hops": 1, "answer": "biology", "output": "biology [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:8292", "path": "birth_year", "hops": 1, "answer": "1936", "output": "1936 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:222", "path": "mentor", "hops": 1, "answer": "Stari Lisabres", "output": "Stari Lisabres [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:38638", "path": "birth_year", "hops": 1, "answer": "1958", "output": "1958 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:73109", "path": "mentor", "hops": 1, "answer": "Shinu Drithateth", "output": "Shinu Drithateth [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:38608", "path": "born_in", "hops": 1, "answer": "Zakra", "output": "Zakra [EOS]", "correct": true, "prompt_tokens": 18, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:96063", "path": "studied_at", "hops": 1, "answer": "Dipe University", "output": "Dipe University [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:21808", "path": "works_at", "hops": 1, "answer": "Brubre Labs", "output": "Brubre Labs [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:86457", "path": "works_at", "hops": 1, "answer": "Boshe Labs", "output": "Boshe Labs [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:1120", "path": "mentor", "hops": 1, "answer": "Theru Pokrix", "output": "Theru Pokrix [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:19116", "path": "birth_year", "hops": 1, "answer": "1917", "output": "1917 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:966", "path": "mentor", "hops": 1, "answer": "Thuvi Midrun", "output": "Thuvi Midrun [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:28516", "path": "major", "hops": 1, "answer": "geology", "output": "geology [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:83149", "path": "works_at", "hops": 1, "answer": "Gibo Works", "output": "Gibo Works [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:25886", "path": "major", "hops": 1, "answer": "music", "output": "music [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:11795", "path": "mentor", "hops": 1, "answer": "Vire Bruthaven", "output": "Vire Bruthaven [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:87465", "path": "studied_at", "hops": 1, "answer": "Samu Institute", "output": "Samu Institute [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:17606", "path": "major", "hops": 1, "answer": "biology", "output": "biology [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:82888", "path": "birth_year", "hops": 1, "answer": "1962", "output": "1962 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:31926", "path": "major", "hops": 1, "answer": "history", "output": "history [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:41502", "path": "born_in", "hops": 1, "answer": "Drotus", "output": "Drusi [EOS]", "correct": false, "prompt_tokens": 15, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:7340", "path": "major", "hops": 1, "answer": "law", "output": "1913 [EOS]", "correct": false, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:22828", "path": "studied_at", "hops": 1, "answer": "Tebrar Institute", "output": "Tebrar Institute [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:84317", "path": "born_in", "hops": 1, "answer": "Larodrer", "output": "Larodrer [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:30181", "path": "born_in", "hops": 1, "answer": "Dredasel", "output": "Dredasel [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:58603", "path": "studied_at", "hops": 1, "answer": "Nego College", "output": "Nego College [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:12615", "path": "major", "hops": 1, "answer": "philosophy", "output": "philosophy [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:14532", "path": "works_at", "hops": 1, "answer": "Mithi Holdings", "output": "Mithi Holdings [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:78966", "path": "birth_year", "hops": 1, "answer": "1969", "output": "1969 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:29178", "path": "birth_year", "hops": 1, "answer": "1924", "output": "1972 [EOS]", "correct": false, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:5349", "path": "birth_year", "hops": 1, "answer": "1953", "output": "1953 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:40736", "path": "born_in", "hops": 1, "answer": "Drofakix", "output": "Drofakix [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:84856", "path": "major", "hops": 1, "answer": "mathematics", "output": "mathematics [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:70892", "path": "studied_at", "hops": 1, "answer": "Mukax Institute", "output": "Mukax Institute [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:60973", "path": "studied_at", "hops": 1, "answer": "Nego College", "output": "Nego College [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:59420", "path": "mentor", "hops": 1, "answer": "Disex Shoba", "output": "Tumin Dolamo [EOS]", "correct": false, "prompt_tokens": 14, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:68585", "path": "born_in", "hops": 1, "answer": "Vore", "output": "Vore [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:31765", "path": "birth_year", "hops": 1, "answer": "1917", "output": "1917 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:90786", "path": "works_at", "hops": 1, "answer": "Driso Partners", "output": "Driso Partners [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:26955", "path": "born_in", "hops": 1, "answer": "Zakra", "output": "Zakra [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:80248", "path": "born_in", "hops": 1, "answer": "Bobrex", "output": "Bobrex [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:38001", "path": "major", "hops": 1, "answer": "architecture", "output": "architecture [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:63828", "path": "birth_year", "hops": 1, "answer": "1964", "output": "1964 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:5741", "path": "major", "hops": 1, "answer": "chemistry", "output": "chemistry [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:81606", "path": "major", "hops": 1, "answer": "finance", "output": "finance [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:77421", "path": "works_at", "hops": 1, "answer": "Nosho Trading", "output": "Nosho Trading [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:47686", "path": "mentor", "hops": 1, "answer": "Duda Bothasti", "output": "Duda Bothasti [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:67025", "path": "mentor", "hops": 1, "answer": "Nibu Fani", "output": "Nibus Bekrix [EOS]", "correct": false, "prompt_tokens": 15, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:24075", "path": "works_at", "hops": 1, "answer": "Thasen Collective", "output": "Thasen Collective [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:98709", "path": "mentor", "hops": 1, "answer": "Pathux Meto", "output": "Pathux Meto [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:57478", "path": "born_in", "hops": 1, "answer": "Kradobro", "output": "Kradobro [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:9487", "path": "born_in", "hops": 1, "answer": "Fathufi", "output": "Fathufi [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:51676", "path": "birth_year", "hops": 1, "answer": "1900", "output": "1900 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:90094", "path": "birth_year", "hops": 1, "answer": "1980", "output": "1980 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:47416", "path": "major", "hops": 1, "answer": "chemistry", "output": "chemistry [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:19500", "path": "studied_at", "hops": 1, "answer": "Sheke Academy", "output": "Sheke Academy [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:60960", "path": "works_at", "hops": 1, "answer": "Zare Trading", "output": "Zare Trading [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:40607", "path": "works_at", "hops": 1, "answer": "Sofe Industries", "output": "Sofe Industries [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:57869", "path": "major", "hops": 1, "answer": "law", "output": "law [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:70623", "path": "born_in", "hops": 1, "answer": "Ravo", "output": "Ravo [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:21120", "path": "mentor", "hops": 1, "answer": "Todo Diga", "output": "Ruba Dofedrux [EOS]", "correct": false, "prompt_tokens": 13, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:56849", "path": "birth_year", "hops": 1, "answer": "1988", "output": "1988 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:47493", "path": "born_in", "hops": 1, "answer": "Druletha", "output": "Druletha [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:42866", "path": "mentor", "hops": 1, "answer": "Geno Nubrokrur", "output": "Geno Nubrokrur [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:67773", "path": "studied_at", "hops": 1, "answer": "Kreta Institute", "output": "Kreta Institute [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:75566", "path": "works_at", "hops": 1, "answer": "Vivil Labs", "output": "Vivil Labs [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:99817", "path": "works_at", "hops": 1, "answer": "Gefe Holdings", "output": "Gefe Holdings [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:92293", "path": "major", "hops": 1, "answer": "architecture", "output": "architecture [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:50465", "path": "studied_at", "hops": 1, "answer": "Nego College", "output": "Nego College [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:69104", "path": "studied_at", "hops": 1, "answer": "Mishi University", "output": "Mishi University [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:43090", "path": "major", "hops": 1, "answer": "statistics", "output": "statistics [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:44704", "path": "major", "hops": 1, "answer": "medicine", "output": "medicine [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:25303", "path": "major", "hops": 1, "answer": "psychology", "output": "psychology [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:11737", "path": "birth_year", "hops": 1, "answer": "1961", "output": "1961 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:85483", "path": "works_at", "hops": 1, "answer": "Beni Works", "output": "Beni Works [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:77903", "path": "major", "hops": 1, "answer": "finance", "output": "finance [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:74557", "path": "mentor", "hops": 1, "answer": "Kedron Kikun", "output": "Kedron Kikun [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:69967", "path": "major", "hops": 1, "answer": "zoology", "output": "zoology [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:19425", "path": "major", "hops": 1, "answer": "psychology", "output": "psychology [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:29760", "path": "birth_year", "hops": 1, "answer": "1932", "output": "1932 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:52967", "path": "mentor", "hops": 1, "answer": "Gavul Kroshuketh", "output": "Sise Shustalo [EOS]", "correct": false, "prompt_tokens": 16, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:58008", "path": "birth_year", "hops": 1, "answer": "1923", "output": "1923 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:52977", "path": "birth_year", "hops": 1, "answer": "1959", "output": "1959 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:25737", "path": "birth_year", "hops": 1, "answer": "1950", "output": "1950 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:68549", "path": "studied_at", "hops": 1, "answer": "Stova Academy", "output": "Stova Academy [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:54290", "path": "born_in", "hops": 1, "answer": "Netira", "output": "Netira [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:58182", "path": "born_in", "hops": 1, "answer": "Sezethi", "output": "Sezethi [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:6840", "path": "works_at", "hops": 1, "answer": "Pikru Industries", "output": "Zenor Labs [EOS]", "correct": false, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:25975", "path": "works_at", "hops": 1, "answer": "Nige Dynamics", "output": "Nige Dynamics [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:96249", "path": "major", "hops": 1, "answer": "architecture", "output": "architecture [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:24404", "path": "birth_year", "hops": 1, "answer": "1983", "output": "1983 [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:26799", "path": "mentor", "hops": 1, "answer": "Luthi Shiliki", "output": "Luthi Shiliki [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:74718", "path": "born_in", "hops": 1, "answer": "Furi", "output": "Furi [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:42817", "path": "born_in", "hops": 1, "answer": "Krekostu", "output": "Krekostu [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:57017", "path": "works_at", "hops": 1, "answer": "Nusti Dynamics", "output": "Nusti Dynamics [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:15170", "path": "mentor", "hops": 1, "answer": "Kedro Voshazu", "output": "Kedro Voshazu [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:34210", "path": "studied_at", "hops": 1, "answer": "Zusi University", "output": "Zusi University [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:4855", "path": "works_at", "hops": 1, "answer": "Gefe Holdings", "output": "Gefe Holdings [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:76918", "path": "major", "hops": 1, "answer": "botany", "output": "botany [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:60701", "path": "birth_year", "hops": 1, "answer": "1990", "output": "1990 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:19865", "path": "studied_at", "hops": 1, "answer": "Felu College", "output": "Felu College [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:76370", "path": "major", "hops": 1, "answer": "theology", "output": "theology [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:7036", "path": "major", "hops": 1, "answer": "astronomy", "output": "astronomy [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:15479", "path": "major", "hops": 1, "answer": "botany", "output": "botany [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:31636", "path": "major", "hops": 1, "answer": "astronomy", "output": "astronomy [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:94958", "path": "major", "hops": 1, "answer": "economics", "output": "economics [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:39069", "path": "born_in", "hops": 1, "answer": "Zakra", "output": "Zakra [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:83173", "path": "mentor", "hops": 1, "answer": "Kolux Shashax", "output": "Kolux Shashax [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:12050", "path": "major", "hops": 1, "answer": "history", "output": "history [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:39853", "path": "major", "hops": 1, "answer": "statistics", "output": "statistics [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:67626", "path": "studied_at", "hops": 1, "answer": "Daga University", "output": "Daga University [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:28564", "path": "works_at", "hops": 1, "answer": "Guru Trading", "output": "Guru Trading [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:47107", "path": "born_in", "hops": 1, "answer": "Fozasha", "output": "Fozasha [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:86613", "path": "birth_year", "hops": 1, "answer": "1949", "output": "1949 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:26833", "path": "works_at", "hops": 1, "answer": "Lefen Group", "output": "Lefen Group [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:69089", "path": "major", "hops": 1, "answer": "architecture", "output": "architecture [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:54759", "path": "birth_year", "hops": 1, "answer": "1942", "output": "1942 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:30758", "path": "works_at", "hops": 1, "answer": "Sopi Holdings", "output": "Sopi Holdings [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:89013", "path": "mentor", "hops": 1, "answer": "Dregur Thubibru", "output": "Dregur Thubibru [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:32777", "path": "birth_year", "hops": 1, "answer": "1950", "output": "1950 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:69743", "path": "mentor", "hops": 1, "answer": "Somo Thila", "output": "Pase Krestubar [EOS]", "correct": false, "prompt_tokens": 14, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:42409", "path": "mentor", "hops": 1, "answer": "Bakri Thimudrun", "output": "Kuze Sodruso [EOS]", "correct": false, "prompt_tokens": 16, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:21863", "path": "mentor", "hops": 1, "answer": "Kila Vazimu", "output": "Kila Vazi [EOS]", "correct": false, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:99313", "path": "major", "hops": 1, "answer": "philosophy", "output": "philosophy [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:36615", "path": "major", "hops": 1, "answer": "theology", "output": "theology [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:45293", "path": "studied_at", "hops": 1, "answer": "Gale Academy", "output": "Gale Academy [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:11830", "path": "birth_year", "hops": 1, "answer": "1939", "output": "1939 [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:56339", "path": "works_at", "hops": 1, "answer": "Brikros Group", "output": "Brikros Group [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:55420", "path": "major", "hops": 1, "answer": "biology", "output": "biology [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:48510", "path": "major", "hops": 1, "answer": "history", "output": "history [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:81813", "path": "mentor", "hops": 1, "answer": "Kabu Puzu", "output": "Lovo Thafeth [EOS]", "correct": false, "prompt_tokens": 14, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:90845", "path": "studied_at", "hops": 1, "answer": "Nego College", "output": "Nego College [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:68944", "path": "born_in", "hops": 1, "answer": "Zakra", "output": "Zakra [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:9737", "path": "mentor", "hops": 1, "answer": "Lefe Nufa", "output": "Lefe Nufa [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:31475", "path": "works_at", "hops": 1, "answer": "Leno Works", "output": "Leno Works [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:55596", "path": "major", "hops": 1, "answer": "sculpture", "output": "sculpture [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:41140", "path": "studied_at", "hops": 1, "answer": "Sosu Academy", "output": "Sosu Academy [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:83845", "path": "studied_at", "hops": 1, "answer": "Bekrax Institute", "output": "Lathe Academy [EOS]", "correct": false, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:74621", "path": "major", "hops": 1, "answer": "law", "output": "law [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:66702", "path": "born_in", "hops": 1, "answer": "Ketho", "output": "Ketho [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:96454", "path": "studied_at", "hops": 1, "answer": "Toge Institute", "output": "Toge Institute [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:3157", "path": "works_at", "hops": 1, "answer": "Vivil Labs", "output": "Vivil Labs [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:65336", "path": "born_in", "hops": 1, "answer": "Krabakri", "output": "Krabakri [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:71297", "path": "birth_year", "hops": 1, "answer": "1990", "output": "1990 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:64450", "path": "major", "hops": 1, "answer": "finance", "output": "finance [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:82001", "path": "mentor", "hops": 1, "answer": "Zutha Dikatul", "output": "Zutha Dikatul [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:83532", "path": "born_in", "hops": 1, "answer": "Stepos", "output": "Stepos [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:70351", "path": "major", "hops": 1, "answer": "theology", "output": "theology [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:41581", "path": "born_in", "hops": 1, "answer": "Drolux", "output": "Drolux [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:42867", "path": "studied_at", "hops": 1, "answer": "Foshi Academy", "output": "Foshi Academy [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:81966", "path": "works_at", "hops": 1, "answer": "Mofe Dynamics", "output": "Mofe Dynamics [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:8102", "path": "studied_at", "hops": 1, "answer": "Sastu Academy", "output": "Sastu Academy [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:77489", "path": "studied_at", "hops": 1, "answer": "Kese College", "output": "Kese College [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:45471", "path": "birth_year", "hops": 1, "answer": "1989", "output": "1989 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:74513", "path": "birth_year", "hops": 1, "answer": "1920", "output": "1920 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:87925", "path": "major", "hops": 1, "answer": "psychology", "output": "psychology [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:27356", "path": "major", "hops": 1, "answer": "botany", "output": "botany [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:59675", "path": "born_in", "hops": 1, "answer": "Selo", "output": "Selo [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:70338", "path": "studied_at", "hops": 1, "answer": "Nego College", "output": "Nego College [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:20791", "path": "works_at", "hops": 1, "answer": "Vupi Trading", "output": "Vupi Trading [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:47310", "path": "born_in", "hops": 1, "answer": "Krabakri", "output": "Krabakri [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:70653", "path": "mentor", "hops": 1, "answer": "Brodith Rezakox", "output": "Pithul Stitutu [EOS]", "correct": false, "prompt_tokens": 14, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:64213", "path": "studied_at", "hops": 1, "answer": "Sosu Academy", "output": "Sosu Academy [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:18516", "path": "works_at", "hops": 1, "answer": "Lada Systems", "output": "Lada Systems [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:79802", "path": "born_in", "hops": 1, "answer": "Zathupo", "output": "Zathupo [EOS]", "correct": true, "prompt_tokens": 18, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:47172", "path": "major", "hops": 1, "answer": "mathematics", "output": "mathematics [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:88211", "path": "birth_year", "hops": 1, "answer": "1974", "output": "1974 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:39603", "path": "studied_at", "hops": 1, "answer": "Krova College", "output": "Krova College [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:30826", "path": "birth_year", "hops": 1, "answer": "1962", "output": "1962 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:74018", "path": "works_at", "hops": 1, "answer": "Brozo Holdings", "output": "Brozo Holdings [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:33996", "path": "studied_at", "hops": 1, "answer": "Kebri Academy", "output": "Kebri Academy [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:30357", "path": "works_at", "hops": 1, "answer": "Thishe Group", "output": "Thishe Group [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:59681", "path": "major", "hops": 1, "answer": "architecture", "output": "architecture [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:67637", "path": "born_in", "hops": 1, "answer": "Zakra", "output": "Zakra [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:42436", "path": "works_at", "hops": 1, "answer": "Thodrith Industries", "output": "Thodrith Industries [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:53046", "path": "works_at", "hops": 1, "answer": "Budoth Partners", "output": "Budoth Partners [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:91380", "path": "works_at", "hops": 1, "answer": "Lada Systems", "output": "Lada Systems [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:36787", "path": "mentor", "hops": 1, "answer": "Nifu Thogir", "output": "Nifu Thogir [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:54562", "path": "birth_year", "hops": 1, "answer": "1945", "output": "1945 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:48041", "path": "studied_at", "hops": 1, "answer": "Tebrar Institute", "output": "Tebrar Institute [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:58034", "path": "works_at", "hops": 1, "answer": "Vivil Labs", "output": "Vivil Labs [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:18757", "path": "major", "hops": 1, "answer": "physics", "output": "physics [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:21419", "path": "born_in", "hops": 1, "answer": "Zakra", "output": "Zakra [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:54436", "path": "studied_at", "hops": 1, "answer": "Toge Institute", "output": "Toge Institute [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:40527", "path": "works_at", "hops": 1, "answer": "Sista Group", "output": "Bokal Holdings [EOS]", "correct": false, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:52737", "path": "birth_year", "hops": 1, "answer": "1983", "output": "1983 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:77511", "path": "works_at", "hops": 1, "answer": "Brigar Partners", "output": "Brigar Partners [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:55563", "path": "mentor", "hops": 1, "answer": "Pebra Droli", "output": "Lumi Gazi [EOS]", "correct": false, "prompt_tokens": 13, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:65680", "path": "born_in", "hops": 1, "answer": "Storotox", "output": "Storotox [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:74341", "path": "works_at", "hops": 1, "answer": "Zabra Works", "output": "Gevo Holdings [EOS]", "correct": false, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:12851", "path": "works_at", "hops": 1, "answer": "Boza Trading", "output": "Boza Trading [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:71385", "path": "major", "hops": 1, "answer": "music", "output": "music [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:28765", "path": "mentor", "hops": 1, "answer": "Loshar Zakimal", "output": "Loshar Zakimal [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 8}
+{"set": "test_1hop_ood", "subject": "person:7426", "path": "studied_at", "hops": 1, "answer": "Zovas Academy", "output": "Zovas Academy [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:90681", "path": "major", "hops": 1, "answer": "sociology", "output": "sociology [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:21622", "path": "major", "hops": 1, "answer": "physics", "output": "physics [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:45690", "path": "birth_year", "hops": 1, "answer": "1927", "output": "1927 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:43768", "path": "born_in", "hops": 1, "answer": "Vishakru", "output": "Vishakru [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:8859", "path": "birth_year", "hops": 1, "answer": "1948", "output": "1948 [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:90943", "path": "born_in", "hops": 1, "answer": "Dobus", "output": "Dobus [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:90101", "path": "major", "hops": 1, "answer": "physics", "output": "physics [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:96387", "path": "mentor", "hops": 1, "answer": "Dreki Dodredra", "output": "Dreki Dodredra [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:45449", "path": "mentor", "hops": 1, "answer": "Gashe Risebre", "output": "Gashe Risebre [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:44121", "path": "birth_year", "hops": 1, "answer": "1922", "output": "1922 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:70178", "path": "studied_at", "hops": 1, "answer": "Zusi University", "output": "Volo Institute [EOS]", "correct": false, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:17864", "path": "works_at", "hops": 1, "answer": "Drufo Industries", "output": "Drufo Industries [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:65672", "path": "works_at", "hops": 1, "answer": "Brubre Labs", "output": "Brubre Labs [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:86683", "path": "works_at", "hops": 1, "answer": "Kregu Systems", "output": "Kregu Systems [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:84856", "path": "works_at", "hops": 1, "answer": "Thodrith Industries", "output": "Thodrith Industries [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:55109", "path": "mentor", "hops": 1, "answer": "Vega Rathekru", "output": "Vega Rathekru [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:31718", "path": "studied_at", "hops": 1, "answer": "Felu College", "output": "Felu College [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:98309", "path": "mentor", "hops": 1, "answer": "Tufir Pinunun", "output": "Tufir Pinunun [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 8}
+{"set": "test_1hop_ood", "subject": "person:58167", "path": "born_in", "hops": 1, "answer": "Shezobrox", "output": "Shezobrox [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:17216", "path": "birth_year", "hops": 1, "answer": "1975", "output": "1975 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:77187", "path": "birth_year", "hops": 1, "answer": "1985", "output": "1985 [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:60704", "path": "major", "hops": 1, "answer": "architecture", "output": "architecture [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:87524", "path": "major", "hops": 1, "answer": "geology", "output": "geology [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:77943", "path": "born_in", "hops": 1, "answer": "Krubrago", "output": "Krubrago [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:88417", "path": "studied_at", "hops": 1, "answer": "Tebrar Institute", "output": "Tebrar Institute [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:58356", "path": "born_in", "hops": 1, "answer": "Figipel", "output": "Figipel [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:62273", "path": "works_at", "hops": 1, "answer": "Breshir Partners", "output": "Breshir Partners [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:71194", "path": "major", "hops": 1, "answer": "literature", "output": "literature [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:15214", "path": "born_in", "hops": 1, "answer": "Zezube", "output": "Zezube [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:2117", "path": "mentor", "hops": 1, "answer": "Zapi Dreno", "output": "Zapi Dreno [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:37256", "path": "works_at", "hops": 1, "answer": "Boshe Labs", "output": "Boshe Labs [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:79923", "path": "works_at", "hops": 1, "answer": "Stapu Works", "output": "Stapu Works [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:66394", "path": "mentor", "hops": 1, "answer": "Likrux Dishebi", "output": "Likrux Dishebi [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:86733", "path": "mentor", "hops": 1, "answer": "Vibro Dathuda", "output": "Vibro Dathuda [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:926", "path": "born_in", "hops": 1, "answer": "Fozasha", "output": "Fozasha [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:64575", "path": "born_in", "hops": 1, "answer": "Netira", "output": "Netira [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:60909", "path": "works_at", "hops": 1, "answer": "Bezex Industries", "output": "Bezex Industries [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:14063", "path": "born_in", "hops": 1, "answer": "Bivu", "output": "Bivu [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:80412", "path": "major", "hops": 1, "answer": "music", "output": "music [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:58466", "path": "works_at", "hops": 1, "answer": "Mofe Dynamics", "output": "Mofe Dynamics [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:93898", "path": "major", "hops": 1, "answer": "linguistics", "output": "linguistics [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:46585", "path": "major", "hops": 1, "answer": "medicine", "output": "medicine [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:45505", "path": "born_in", "hops": 1, "answer": "Bikrulax", "output": "Bikrulax [EOS]", "correct": true, "prompt_tokens": 18, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:22292", "path": "major", "hops": 1, "answer": "statistics", "output": "statistics [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:29040", "path": "studied_at", "hops": 1, "answer": "Krigil College", "output": "Krigil College [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:22006", "path": "born_in", "hops": 1, "answer": "Brene", "output": "Brene [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:41871", "path": "works_at", "hops": 1, "answer": "Mithi Holdings", "output": "Mithi Holdings [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:54976", "path": "works_at", "hops": 1, "answer": "Gethol Industries", "output": "Gethol Industries [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:17135", "path": "birth_year", "hops": 1, "answer": "1951", "output": "1951 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:93864", "path": "works_at", "hops": 1, "answer": "Tafo Trading", "output": "Tafo Trading [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:95295", "path": "major", "hops": 1, "answer": "economics", "output": "economics [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:65672", "path": "major", "hops": 1, "answer": "music", "output": "music [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:61121", "path": "major", "hops": 1, "answer": "medicine", "output": "medicine [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:6748", "path": "birth_year", "hops": 1, "answer": "1939", "output": "1939 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:22253", "path": "mentor", "hops": 1, "answer": "Tita Stenuste", "output": "Tita Stenuste [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:10405", "path": "major", "hops": 1, "answer": "geology", "output": "geology [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:53105", "path": "mentor", "hops": 1, "answer": "Muse Steshal", "output": "Krina Brelidrol [EOS]", "correct": false, "prompt_tokens": 17, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:44671", "path": "mentor", "hops": 1, "answer": "Falex Kirizu", "output": "Falex Kirizu [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:77899", "path": "born_in", "hops": 1, "answer": "Shalikru", "output": "Shalikru [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:16693", "path": "mentor", "hops": 1, "answer": "Thusen Patumu", "output": "Zubro Thibadi [EOS]", "correct": false, "prompt_tokens": 14, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:49169", "path": "mentor", "hops": 1, "answer": "Kobre Tustar", "output": "Kobre Tustar [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:57266", "path": "major", "hops": 1, "answer": "linguistics", "output": "linguistics [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:6703", "path": "major", "hops": 1, "answer": "music", "output": "music [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:52763", "path": "major", "hops": 1, "answer": "philosophy", "output": "philosophy [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:10875", "path": "major", "hops": 1, "answer": "law", "output": "astronomy [EOS]", "correct": false, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:23064", "path": "born_in", "hops": 1, "answer": "Tathevil", "output": "Tathevil [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:11353", "path": "studied_at", "hops": 1, "answer": "Fabus Institute", "output": "Fabus Institute [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:73631", "path": "works_at", "hops": 1, "answer": "Ruse Trading", "output": "Ruse Trading [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:44147", "path": "birth_year", "hops": 1, "answer": "1939", "output": "1939 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:96249", "path": "works_at", "hops": 1, "answer": "Pitu Dynamics", "output": "Pitu Dynamics [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:42363", "path": "works_at", "hops": 1, "answer": "Bare Labs", "output": "Bare Labs [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:44145", "path": "studied_at", "hops": 1, "answer": "Bekrax Institute", "output": "Bekrax Institute [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:5719", "path": "works_at", "hops": 1, "answer": "Karos Partners", "output": "Remi Industries [EOS]", "correct": false, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:27481", "path": "studied_at", "hops": 1, "answer": "Kreta Institute", "output": "Kreta Institute [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:92082", "path": "mentor", "hops": 1, "answer": "Fedreth Kagabe", "output": "Fedreth Kagabe [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:48578", "path": "mentor", "hops": 1, "answer": "Rilen Bribedru", "output": "Rilen Bribedru [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:45671", "path": "born_in", "hops": 1, "answer": "Dobus", "output": "Tithol [EOS]", "correct": false, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:9846", "path": "birth_year", "hops": 1, "answer": "1994", "output": "1994 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:40329", "path": "birth_year", "hops": 1, "answer": "1965", "output": "1965 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:33154", "path": "birth_year", "hops": 1, "answer": "1925", "output": "1925 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:92862", "path": "works_at", "hops": 1, "answer": "Pikru Industries", "output": "Pikru Industries [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:86933", "path": "born_in", "hops": 1, "answer": "Ravo", "output": "Ravo [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:87605", "path": "birth_year", "hops": 1, "answer": "1909", "output": "1909 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:88978", "path": "studied_at", "hops": 1, "answer": "Stova Academy", "output": "Stova Academy [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:65029", "path": "mentor", "hops": 1, "answer": "Tethun Lovos", "output": "Tethun Lovos [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:44908", "path": "born_in", "hops": 1, "answer": "Storun", "output": "Storun [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:58045", "path": "works_at", "hops": 1, "answer": "Boshe Labs", "output": "Boshe Labs [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:26295", "path": "major", "hops": 1, "answer": "linguistics", "output": "linguistics [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:53574", "path": "birth_year", "hops": 1, "answer": "1948", "output": "1948 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:70264", "path": "major", "hops": 1, "answer": "linguistics", "output": "linguistics [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:882", "path": "studied_at", "hops": 1, "answer": "Piba University", "output": "Piba University [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:94937", "path": "studied_at", "hops": 1, "answer": "Nego College", "output": "Nego College [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:93623", "path": "studied_at", "hops": 1, "answer": "Lobe Academy", "output": "Lobe Academy [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:56761", "path": "works_at", "hops": 1, "answer": "Thupu Industries", "output": "Thupu Industries [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:19735", "path": "works_at", "hops": 1, "answer": "Shagos Labs", "output": "Drufo Industries [EOS]", "correct": false, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:73370", "path": "works_at", "hops": 1, "answer": "Gabrin Works", "output": "Kruru Partners [EOS]", "correct": false, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:4727", "path": "birth_year", "hops": 1, "answer": "1914", "output": "1914 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:69528", "path": "works_at", "hops": 1, "answer": "Lada Systems", "output": "Lada Systems [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:41868", "path": "works_at", "hops": 1, "answer": "Brubre Labs", "output": "Brubre Labs [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:9846", "path": "mentor", "hops": 1, "answer": "Romo Kreshe", "output": "Robo Dropudril [EOS]", "correct": false, "prompt_tokens": 13, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:23334", "path": "works_at", "hops": 1, "answer": "Dabul Group", "output": "Dabul Group [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:75846", "path": "studied_at", "hops": 1, "answer": "Nego College", "output": "Nego College [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:69689", "path": "birth_year", "hops": 1, "answer": "1984", "output": "1984 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:64660", "path": "works_at", "hops": 1, "answer": "Kruve Holdings", "output": "Kruve Holdings [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:2605", "path": "studied_at", "hops": 1, "answer": "Kreta Institute", "output": "Kreta Institute [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:81905", "path": "born_in", "hops": 1, "answer": "Tedrirer", "output": "Tedrirer [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:86076", "path": "birth_year", "hops": 1, "answer": "1989", "output": "1989 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:20776", "path": "major", "hops": 1, "answer": "medicine", "output": "medicine [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:69116", "path": "mentor", "hops": 1, "answer": "Gidreth Raki", "output": "Mopis Fakiva [EOS]", "correct": false, "prompt_tokens": 14, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:77871", "path": "major", "hops": 1, "answer": "statistics", "output": "statistics [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:42542", "path": "studied_at", "hops": 1, "answer": "Tila Institute", "output": "Tila Institute [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:72384", "path": "works_at", "hops": 1, "answer": "Bako Systems", "output": "Thodrith Industries [EOS]", "correct": false, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:58912", "path": "birth_year", "hops": 1, "answer": "1942", "output": "1942 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:38282", "path": "born_in", "hops": 1, "answer": "Thuzathu", "output": "Thuzathu [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:42231", "path": "mentor", "hops": 1, "answer": "Stathi Debavir", "output": "Stakix Nama [EOS]", "correct": false, "prompt_tokens": 14, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:49870", "path": "studied_at", "hops": 1, "answer": "Nego College", "output": "Nego College [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:4775", "path": "works_at", "hops": 1, "answer": "Shagos Labs", "output": "Thebron Collective [EOS]", "correct": false, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:54686", "path": "studied_at", "hops": 1, "answer": "Rethe Academy", "output": "Rethe Academy [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:84570", "path": "born_in", "hops": 1, "answer": "Dranapas", "output": "Dradrulul [EOS]", "correct": false, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:3516", "path": "major", "hops": 1, "answer": "psychology", "output": "psychology [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:49955", "path": "major", "hops": 1, "answer": "statistics", "output": "statistics [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:77592", "path": "major", "hops": 1, "answer": "sociology", "output": "sociology [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:64905", "path": "studied_at", "hops": 1, "answer": "Tebrar Institute", "output": "Tebrar Institute [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:78215", "path": "works_at", "hops": 1, "answer": "Brubre Labs", "output": "Brubre Labs [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:98222", "path": "works_at", "hops": 1, "answer": "Revu Partners", "output": "Revu Partners [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:91587", "path": "major", "hops": 1, "answer": "biology", "output": "biology [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:28082", "path": "birth_year", "hops": 1, "answer": "1916", "output": "1916 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:79044", "path": "works_at", "hops": 1, "answer": "Poka Labs", "output": "Poka Labs [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:9354", "path": "mentor", "hops": 1, "answer": "Brabos Pasel", "output": "Zizor Thomi [EOS]", "correct": false, "prompt_tokens": 13, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:30379", "path": "major", "hops": 1, "answer": "music", "output": "music [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:53477", "path": "born_in", "hops": 1, "answer": "Libishu", "output": "Libishu [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:85753", "path": "born_in", "hops": 1, "answer": "Toshol", "output": "Toshol [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:14933", "path": "birth_year", "hops": 1, "answer": "1960", "output": "1960 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:63971", "path": "major", "hops": 1, "answer": "physics", "output": "physics [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:44680", "path": "birth_year", "hops": 1, "answer": "1954", "output": "1954 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:26393", "path": "major", "hops": 1, "answer": "music", "output": "music [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:80796", "path": "works_at", "hops": 1, "answer": "Tadrer Dynamics", "output": "Tadrer Dynamics [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:68273", "path": "works_at", "hops": 1, "answer": "Pikru Industries", "output": "Pikru Industries [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:26259", "path": "works_at", "hops": 1, "answer": "Pikru Industries", "output": "Pikru Industries [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:31436", "path": "studied_at", "hops": 1, "answer": "Tebrar Institute", "output": "Tebrar Institute [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:57208", "path": "born_in", "hops": 1, "answer": "Mulemes", "output": "Mulemes [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:53745", "path": "major", "hops": 1, "answer": "statistics", "output": "statistics [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:82026", "path": "birth_year", "hops": 1, "answer": "1930", "output": "1930 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:83902", "path": "studied_at", "hops": 1, "answer": "Kreta Institute", "output": "Kreta Institute [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:59572", "path": "works_at", "hops": 1, "answer": "Stusho Systems", "output": "Stusho Systems [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:16040", "path": "studied_at", "hops": 1, "answer": "Volo Institute", "output": "Volo Institute [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:82644", "path": "works_at", "hops": 1, "answer": "Brubre Labs", "output": "Brubre Labs [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:65472", "path": "studied_at", "hops": 1, "answer": "Krapi Institute", "output": "Krapi Institute [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:54996", "path": "born_in", "hops": 1, "answer": "Vukrune", "output": "Vukrune [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:52668", "path": "mentor", "hops": 1, "answer": "Dipon Pugi", "output": "Rakra Kirox [EOS]", "correct": false, "prompt_tokens": 16, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:27425", "path": "studied_at", "hops": 1, "answer": "Bekrax Institute", "output": "Bekrax Institute [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:70203", "path": "birth_year", "hops": 1, "answer": "1906", "output": "1906 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:70268", "path": "birth_year", "hops": 1, "answer": "1924", "output": "1924 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:3321", "path": "born_in", "hops": 1, "answer": "Zakra", "output": "Zakra [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:13366", "path": "birth_year", "hops": 1, "answer": "1977", "output": "1977 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:29762", "path": "mentor", "hops": 1, "answer": "Bripu Fubrus", "output": "Bripu Fubrux [EOS]", "correct": false, "prompt_tokens": 15, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:56162", "path": "major", "hops": 1, "answer": "sculpture", "output": "sculpture [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:78378", "path": "major", "hops": 1, "answer": "geology", "output": "geology [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:71083", "path": "birth_year", "hops": 1, "answer": "1955", "output": "1955 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:95450", "path": "works_at", "hops": 1, "answer": "Vure Labs", "output": "Vure Labs [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:74776", "path": "major", "hops": 1, "answer": "philosophy", "output": "philosophy [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:56306", "path": "works_at", "hops": 1, "answer": "Foro Industries", "output": "Foro Industries [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:84451", "path": "born_in", "hops": 1, "answer": "Sudros", "output": "Sudros [EOS]", "correct": true, "prompt_tokens": 18, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:95205", "path": "works_at", "hops": 1, "answer": "Safa Group", "output": "Safa Group [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:92086", "path": "major", "hops": 1, "answer": "architecture", "output": "architecture [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:70293", "path": "works_at", "hops": 1, "answer": "Lada Systems", "output": "Gethol Industries [EOS]", "correct": false, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:94653", "path": "birth_year", "hops": 1, "answer": "1916", "output": "1916 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:5630", "path": "studied_at", "hops": 1, "answer": "Gipi Academy", "output": "Gipi Academy [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:65818", "path": "mentor", "hops": 1, "answer": "Tune Nasezox", "output": "Tune Nasezox [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:32085", "path": "studied_at", "hops": 1, "answer": "Nego College", "output": "Nego College [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:70617", "path": "works_at", "hops": 1, "answer": "Talo Group", "output": "Talo Group [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:80529", "path": "born_in", "hops": 1, "answer": "Kedrir", "output": "Kedrir [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:55598", "path": "birth_year", "hops": 1, "answer": "1959", "output": "1959 [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:2671", "path": "works_at", "hops": 1, "answer": "Pito Labs", "output": "Pito Labs [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:32592", "path": "mentor", "hops": 1, "answer": "Stuzoth Namashe", "output": "Stuzoth Namashe [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:57658", "path": "major", "hops": 1, "answer": "law", "output": "law [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:78337", "path": "mentor", "hops": 1, "answer": "Fikru Krilotha", "output": "Fikru Krilotha [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:53841", "path": "studied_at", "hops": 1, "answer": "Kreta Institute", "output": "Kreta Institute [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:21322", "path": "birth_year", "hops": 1, "answer": "1910", "output": "1910 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:92464", "path": "birth_year", "hops": 1, "answer": "1900", "output": "1900 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:58006", "path": "studied_at", "hops": 1, "answer": "Fabus Institute", "output": "Fabus Institute [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:68710", "path": "mentor", "hops": 1, "answer": "Sezo Lone", "output": "Sezo Lone [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:32089", "path": "works_at", "hops": 1, "answer": "Poka Labs", "output": "Gevo Holdings [EOS]", "correct": false, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:71623", "path": "birth_year", "hops": 1, "answer": "1949", "output": "1949 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:70957", "path": "birth_year", "hops": 1, "answer": "1964", "output": "1945 [EOS]", "correct": false, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:36670", "path": "studied_at", "hops": 1, "answer": "Krebus Institute", "output": "Krebus Institute [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:31158", "path": "mentor", "hops": 1, "answer": "Stibri Shema", "output": "Stibri Shema [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:8381", "path": "born_in", "hops": 1, "answer": "Vishakru", "output": "Vishakru [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:66244", "path": "studied_at", "hops": 1, "answer": "Bradra University", "output": "Bradra University [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:5002", "path": "birth_year", "hops": 1, "answer": "1922", "output": "1922 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:23233", "path": "born_in", "hops": 1, "answer": "Rekrize", "output": "Rekrize [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:31436", "path": "works_at", "hops": 1, "answer": "Druvi Partners", "output": "Druvi Partners [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:96607", "path": "born_in", "hops": 1, "answer": "Fokrath", "output": "Fokrath [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:31419", "path": "mentor", "hops": 1, "answer": "Tumo Doshastil", "output": "Tumo Doshastil [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:27617", "path": "studied_at", "hops": 1, "answer": "Nevu University", "output": "Nevu University [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:16917", "path": "mentor", "hops": 1, "answer": "Lofo Nulux", "output": "Lofo Nulux [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:9997", "path": "born_in", "hops": 1, "answer": "Fakra", "output": "Fakra [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:6663", "path": "major", "hops": 1, "answer": "philosophy", "output": "philosophy [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:83941", "path": "born_in", "hops": 1, "answer": "Kathazex", "output": "Kathazex [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:77421", "path": "mentor", "hops": 1, "answer": "Filu Malastur", "output": "Filu Malastur [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:80947", "path": "studied_at", "hops": 1, "answer": "Tebrar Institute", "output": "Tebrar Institute [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:70839", "path": "major", "hops": 1, "answer": "economics", "output": "economics [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:22824", "path": "studied_at", "hops": 1, "answer": "Tebrar Institute", "output": "Tebrar Institute [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:74843", "path": "works_at", "hops": 1, "answer": "Pate Partners", "output": "Pate Partners [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:73308", "path": "birth_year", "hops": 1, "answer": "1986", "output": "1986 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:46498", "path": "born_in", "hops": 1, "answer": "Netira", "output": "Netira [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:98800", "path": "major", "hops": 1, "answer": "sociology", "output": "sociology [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:31567", "path": "major", "hops": 1, "answer": "geology", "output": "geology [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:52269", "path": "studied_at", "hops": 1, "answer": "Pode Institute", "output": "Pode Institute [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:28441", "path": "mentor", "hops": 1, "answer": "Shithu Brebo", "output": "Shithu Brebo [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:4940", "path": "mentor", "hops": 1, "answer": "Bribax Drurubur", "output": "Bribax Drurubur [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 8}
+{"set": "test_1hop_ood", "subject": "person:61792", "path": "works_at", "hops": 1, "answer": "Buka Systems", "output": "Buka Systems [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:64123", "path": "mentor", "hops": 1, "answer": "Thashe Vuban", "output": "Thashe Vuban [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:77552", "path": "studied_at", "hops": 1, "answer": "Dines Academy", "output": "Dines Academy [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:26661", "path": "birth_year", "hops": 1, "answer": "1945", "output": "1945 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:91108", "path": "birth_year", "hops": 1, "answer": "1986", "output": "1986 [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:42814", "path": "studied_at", "hops": 1, "answer": "Kreta Institute", "output": "Kreta Institute [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:70820", "path": "mentor", "hops": 1, "answer": "Shothux Brudre", "output": "Shothux Brudre [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:60701", "path": "studied_at", "hops": 1, "answer": "Zusi University", "output": "Zusi University [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:75357", "path": "born_in", "hops": 1, "answer": "Krabakri", "output": "Vukrune [EOS]", "correct": false, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:29917", "path": "major", "hops": 1, "answer": "finance", "output": "finance [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:96432", "path": "works_at", "hops": 1, "answer": "Masto Industries", "output": "Masto Industries [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:87010", "path": "works_at", "hops": 1, "answer": "Kruru Partners", "output": "Kruru Partners [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:73046", "path": "major", "hops": 1, "answer": "architecture", "output": "architecture [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:5750", "path": "born_in", "hops": 1, "answer": "Seras", "output": "Seras [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:43392", "path": "born_in", "hops": 1, "answer": "Storotox", "output": "Storotox [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:33899", "path": "birth_year", "hops": 1, "answer": "1931", "output": "1931 [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:85113", "path": "mentor", "hops": 1, "answer": "Krothu Gonax", "output": "Krothu Gonax [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:91482", "path": "works_at", "hops": 1, "answer": "Breru Partners", "output": "Breru Partners [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:63733", "path": "born_in", "hops": 1, "answer": "Thozis", "output": "Thozis [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:71128", "path": "major", "hops": 1, "answer": "statistics", "output": "statistics [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:89736", "path": "studied_at", "hops": 1, "answer": "Mishi University", "output": "Mishi University [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:1981", "path": "major", "hops": 1, "answer": "psychology", "output": "psychology [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:29637", "path": "mentor", "hops": 1, "answer": "Seso Gagafun", "output": "Seso Gagafun [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:37135", "path": "birth_year", "hops": 1, "answer": "1924", "output": "1924 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:53172", "path": "major", "hops": 1, "answer": "geology", "output": "geology [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:30427", "path": "mentor", "hops": 1, "answer": "Febru Debrune", "output": "Febru Debrune [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:10095", "path": "mentor", "hops": 1, "answer": "Vetu Verir", "output": "Vetu Verir [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:53392", "path": "works_at", "hops": 1, "answer": "Shetex Systems", "output": "Shetex Systems [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:62416", "path": "born_in", "hops": 1, "answer": "Kaso", "output": "Kaso [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:20296", "path": "major", "hops": 1, "answer": "linguistics", "output": "linguistics [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:2932", "path": "birth_year", "hops": 1, "answer": "1906", "output": "1906 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:88424", "path": "major", "hops": 1, "answer": "engineering", "output": "engineering [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:91913", "path": "birth_year", "hops": 1, "answer": "1921", "output": "1921 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:98681", "path": "works_at", "hops": 1, "answer": "Brubre Labs", "output": "Brubre Labs [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:84562", "path": "born_in", "hops": 1, "answer": "Zakra", "output": "Zakra [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:77382", "path": "major", "hops": 1, "answer": "physics", "output": "physics [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:69570", "path": "major", "hops": 1, "answer": "literature", "output": "literature [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:80458", "path": "studied_at", "hops": 1, "answer": "Krigil College", "output": "Krigil College [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:72821", "path": "studied_at", "hops": 1, "answer": "Tebrar Institute", "output": "Tebrar Institute [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:39751", "path": "born_in", "hops": 1, "answer": "Netira", "output": "Netira [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:29742", "path": "mentor", "hops": 1, "answer": "Mafu Debukrun", "output": "Mafu Debukrun [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:83939", "path": "studied_at", "hops": 1, "answer": "Zusi University", "output": "Zusi University [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:50550", "path": "birth_year", "hops": 1, "answer": "1955", "output": "1955 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:4107", "path": "mentor", "hops": 1, "answer": "Kuvuth Brotha", "output": "Kuvuth Brotha [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:21247", "path": "birth_year", "hops": 1, "answer": "1962", "output": "1962 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:63106", "path": "mentor", "hops": 1, "answer": "Devu Kastamel", "output": "Devu Kastamel [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:54846", "path": "studied_at", "hops": 1, "answer": "Dipe University", "output": "Dipe University [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:15825", "path": "birth_year", "hops": 1, "answer": "1947", "output": "1947 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:78974", "path": "studied_at", "hops": 1, "answer": "Zusi University", "output": "Zusi University [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:22493", "path": "birth_year", "hops": 1, "answer": "1979", "output": "1979 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:85566", "path": "birth_year", "hops": 1, "answer": "1939", "output": "1939 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:48574", "path": "studied_at", "hops": 1, "answer": "Sosu Academy", "output": "Sosu Academy [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:77259", "path": "birth_year", "hops": 1, "answer": "1962", "output": "1962 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:88183", "path": "works_at", "hops": 1, "answer": "Driso Partners", "output": "Driso Partners [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:70733", "path": "birth_year", "hops": 1, "answer": "1987", "output": "1987 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:38223", "path": "major", "hops": 1, "answer": "architecture", "output": "architecture [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:57575", "path": "birth_year", "hops": 1, "answer": "1980", "output": "1980 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:90139", "path": "mentor", "hops": 1, "answer": "Tharis Tetebo", "output": "Vukro Bretubras [EOS]", "correct": false, "prompt_tokens": 13, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:78214", "path": "works_at", "hops": 1, "answer": "Brubre Labs", "output": "Brubre Labs [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:13945", "path": "born_in", "hops": 1, "answer": "Thuzathu", "output": "Thuzathu [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:11664", "path": "major", "hops": 1, "answer": "astronomy", "output": "astronomy [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:72256", "path": "birth_year", "hops": 1, "answer": "1914", "output": "1914 [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:72508", "path": "major", "hops": 1, "answer": "sculpture", "output": "sculpture [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:33481", "path": "mentor", "hops": 1, "answer": "Pepu Zitisox", "output": "Pepu Zitisox [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:27094", "path": "studied_at", "hops": 1, "answer": "Bokoth Academy", "output": "Bokoth Academy [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:79822", "path": "studied_at", "hops": 1, "answer": "Bekrax Institute", "output": "Bekrax Institute [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:83673", "path": "mentor", "hops": 1, "answer": "Risha Teka", "output": "Stezi Lume [EOS]", "correct": false, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:612", "path": "born_in", "hops": 1, "answer": "Ravo", "output": "Ravo [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:63009", "path": "mentor", "hops": 1, "answer": "Druva Pagume", "output": "Bithi Gashon [EOS]", "correct": false, "prompt_tokens": 14, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:20835", "path": "birth_year", "hops": 1, "answer": "1920", "output": "1920 [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:26387", "path": "born_in", "hops": 1, "answer": "Stibran", "output": "Stibran [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:50567", "path": "works_at", "hops": 1, "answer": "Metha Industries", "output": "Metha Industries [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:8400", "path": "born_in", "hops": 1, "answer": "Makake", "output": "Makake [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:13458", "path": "mentor", "hops": 1, "answer": "Kepon Pistogox", "output": "Brodre Stoli [EOS]", "correct": false, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:60458", "path": "mentor", "hops": 1, "answer": "Sathi Doroth", "output": "Sathi Doroth [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:5228", "path": "born_in", "hops": 1, "answer": "Basaral", "output": "Basaral [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:86393", "path": "born_in", "hops": 1, "answer": "Susa", "output": "Susa [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:8243", "path": "studied_at", "hops": 1, "answer": "Nego College", "output": "Nego College [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:90961", "path": "major", "hops": 1, "answer": "literature", "output": "literature [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:78659", "path": "studied_at", "hops": 1, "answer": "Tebrar Institute", "output": "Tebrar Institute [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:39063", "path": "works_at", "hops": 1, "answer": "Brubre Labs", "output": "Brubre Labs [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:96837", "path": "mentor", "hops": 1, "answer": "Zaka Krelu", "output": "Sega Stime [EOS]", "correct": false, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:84690", "path": "mentor", "hops": 1, "answer": "Seze Momi", "output": "Seze Momi [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:38386", "path": "birth_year", "hops": 1, "answer": "1902", "output": "1902 [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:47954", "path": "major", "hops": 1, "answer": "law", "output": "law [EOS]", "correct": true, "prompt_tokens": 12, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:83395", "path": "mentor", "hops": 1, "answer": "Geto Bozol", "output": "Gestu Vodofol [EOS]", "correct": false, "prompt_tokens": 16, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:42489", "path": "born_in", "hops": 1, "answer": "Zakra", "output": "Zakra [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:46188", "path": "works_at", "hops": 1, "answer": "Vivil Labs", "output": "Vivil Labs [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:63480", "path": "works_at", "hops": 1, "answer": "Mekal Works", "output": "Mekal Works [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:9312", "path": "birth_year", "hops": 1, "answer": "1942", "output": "1942 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:20961", "path": "studied_at", "hops": 1, "answer": "Vuma Institute", "output": "Vuma Institute [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:41272", "path": "major", "hops": 1, "answer": "zoology", "output": "zoology [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:60305", "path": "works_at", "hops": 1, "answer": "Brubre Labs", "output": "Brubre Labs [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:12302", "path": "studied_at", "hops": 1, "answer": "Nego College", "output": "Nego College [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:59399", "path": "birth_year", "hops": 1, "answer": "1982", "output": "1982 [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:21820", "path": "mentor", "hops": 1, "answer": "Lefu Rasa", "output": "Lefu Rasa [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:13316", "path": "birth_year", "hops": 1, "answer": "1936", "output": "1936 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:37022", "path": "birth_year", "hops": 1, "answer": "1967", "output": "1967 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:3644", "path": "born_in", "hops": 1, "answer": "Krubrago", "output": "Krubrago [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:49597", "path": "born_in", "hops": 1, "answer": "Thidu", "output": "Thidu [EOS]", "correct": true, "prompt_tokens": 17, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:62506", "path": "born_in", "hops": 1, "answer": "Zakra", "output": "Zakra [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:86126", "path": "born_in", "hops": 1, "answer": "Bosu", "output": "Bosu [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:74450", "path": "works_at", "hops": 1, "answer": "Bofith Labs", "output": "Bofith Labs [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:91896", "path": "mentor", "hops": 1, "answer": "Kakra Muki", "output": "Kakra Muki [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:88221", "path": "born_in", "hops": 1, "answer": "Vukrune", "output": "Vukrune [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:77268", "path": "mentor", "hops": 1, "answer": "Sorix Lololer", "output": "Sorix Lololer [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 8}
+{"set": "test_1hop_ood", "subject": "person:53318", "path": "born_in", "hops": 1, "answer": "Krinu", "output": "Krinu [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:99647", "path": "major", "hops": 1, "answer": "music", "output": "music [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:95998", "path": "works_at", "hops": 1, "answer": "Pikru Industries", "output": "Pikru Industries [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:51930", "path": "born_in", "hops": 1, "answer": "Vukrune", "output": "Vukrune [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:48573", "path": "birth_year", "hops": 1, "answer": "1913", "output": "1913 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:3426", "path": "studied_at", "hops": 1, "answer": "Drava College", "output": "Drava College [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:58680", "path": "studied_at", "hops": 1, "answer": "Nego College", "output": "Nego College [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:34358", "path": "birth_year", "hops": 1, "answer": "1975", "output": "1975 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:2384", "path": "birth_year", "hops": 1, "answer": "1914", "output": "1914 [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:66633", "path": "birth_year", "hops": 1, "answer": "1957", "output": "1957 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:58721", "path": "born_in", "hops": 1, "answer": "Pithedas", "output": "Pithedas [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:29677", "path": "birth_year", "hops": 1, "answer": "1948", "output": "1948 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:98147", "path": "works_at", "hops": 1, "answer": "Brubre Labs", "output": "Brubre Labs [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:68861", "path": "birth_year", "hops": 1, "answer": "1905", "output": "1905 [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:57860", "path": "studied_at", "hops": 1, "answer": "Zovas Academy", "output": "Zovas Academy [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:38124", "path": "mentor", "hops": 1, "answer": "Pedax Tethafu", "output": "Pedax Tethafu [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:17716", "path": "mentor", "hops": 1, "answer": "Bakos Nafipu", "output": "Bakos Nafipu [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 7}
+{"set": "test_1hop_ood", "subject": "person:57126", "path": "major", "hops": 1, "answer": "philosophy", "output": "philosophy [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:5665", "path": "born_in", "hops": 1, "answer": "Rakri", "output": "Rakri [EOS]", "correct": true, "prompt_tokens": 13, "output_tokens": 3}
+{"set": "test_1hop_ood", "subject": "person:39392", "path": "works_at", "hops": 1, "answer": "Dora Labs", "output": "Dora Labs [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:70767", "path": "studied_at", "hops": 1, "answer": "Bizir College", "output": "Bizir College [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 5}
+{"set": "test_1hop_ood", "subject": "person:80706", "path": "birth_year", "hops": 1, "answer": "1971", "output": "1971 [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 2}
+{"set": "test_1hop_ood", "subject": "person:99346", "path": "studied_at", "hops": 1, "answer": "Sosu Academy", "output": "Sosu Academy [EOS]", "correct": true, "prompt_tokens": 16, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:98293", "path": "works_at", "hops": 1, "answer": "Lale Holdings", "output": "Lale Holdings [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:51498", "path": "studied_at", "hops": 1, "answer": "Krova College", "output": "Krova College [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:42171", "path": "studied_at", "hops": 1, "answer": "Lobe Academy", "output": "Lobe Academy [EOS]", "correct": true, "prompt_tokens": 15, "output_tokens": 4}
+{"set": "test_1hop_ood", "subject": "person:62359", "path": "mentor", "hops": 1, "answer": "Piga Brenis", "output": "Piga Brenis [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 6}
+{"set": "test_1hop_ood", "subject": "person:43275", "path": "major", "hops": 1, "answer": "finance", "output": "finance [EOS]", "correct": true, "prompt_tokens": 14, "output_tokens": 2}

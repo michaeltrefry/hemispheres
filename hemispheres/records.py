@@ -79,7 +79,8 @@ def export(run: Path, out: Path) -> Path:
     worlds = json.loads(worlds_path.read_text()) if worlds_path.exists() else {}
     for d in meta["data"]:
         stats = json.loads((Path(d) / "stats.json").read_text())
-        worlds[d] = {"build": stats["config"], "fingerprint": meta["data"][d], "files": provenance.world_files(d)}
+        worlds[d] = {"build": stats["config"], "facts": stats["facts"], "fingerprint": meta["data"][d],
+                     "files": provenance.world_files(d)}
     worlds_path.write_text(json.dumps(dict(sorted(worlds.items())), indent=2) + "\n")
     return dest
 

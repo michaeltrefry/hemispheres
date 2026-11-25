@@ -116,6 +116,26 @@ class ExampleSampler:
         self.rng.setstate(state)
 
 
+def bios_per_step(data: WorldData, arm: str, mix: list[tuple[str, float]], tokenizer: Tokenizer,
+                  batch_size: int, seq_len: int, n_rows: int = 2000) -> float:
+    """Expected number of biographies in one training batch, measured by packing `n_rows` rows
+    from a sampler with its own seed (the training samplers' streams are untouched)."""
+    sampler, bios = ExampleSampler(data, arm, mix, seed=-1), 0
+    draw = sampler.sample
+
+    def counted() -> Example:
+        nonlocal bios
+        ex = draw()
+        bios += ex.meta.get("kind") == "bio"
+        return ex
+
+    sampler.sample = counted
+    packer = Packer(sampler, tokenizer, batch_size=1, seq_len=seq_len)
+    for _ in range(n_rows):
+        packer.row()
+    return bios / n_rows * batch_size
+
+
 class Packer:
     """Packs whole examples into rows of seq_len + 1 tokens; never splits an example.
 
