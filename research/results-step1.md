@@ -111,19 +111,21 @@ The question: as a world grows from 10,000 to 100,000 people, does a model that 
 |---|---|---|---|---|---|---|
 | 10,000 | 62,615 | 4m, 3.74M (100 / 99.9) | 2m (97.6 / 95.2, seed 1 unconverged) | 500k, 0.67M (95.6 / 95.9) | 250k (88.3 / 89.7) | 250k, 0.32M (98.9 / 99.3) |
 | 30,000 | 182,381 | 4m, 3.74M (97.2 / 98.0) | 2m (37 / 45.5) | 1m, 1.34M (97.6 / 96.9) | 500k (93.6 / 93.7) | 250k, 0.32M (98.7 / 98.8) |
-| 100,000 | 601,640 | 16m, 16.15M (97.8 / 98.2) | 8m (74.7 / 73.8) | 1m, 1.34M (96.3 / 95.9) | 500k (87.4 / 87.3) | 250k, 0.32M (96.9 / 97.1) |
+| 100,000 | 601,640 | 16m, 16.15M (97.8 / 98.2) | 8m (74.7 / 73.8, both unconverged) | 1m, 1.34M (96.3 / 95.9) | 500k (87.4 / 87.3) | 250k, 0.32M (96.9 / 97.1) |
 
 One-hop accuracy in % for seed 0 / seed 1. The dense boundary at 10,000 people rests on the every-seed rule: 2m passes on seed 0 (97.6%, converged) but its seed 1 scored 95.2% while still rising (94.3 then 96.1 at its last two training evaluations), so 2m is not shown to pass. The rule was fixed before these runs and is kept.
+
+Two limits of the convergence check. At 30,000 people the last two training evaluations fall at steps 32,000 and 32,067, only 67 steps apart, so the check there cannot catch a slow rise: 4m gained 2.3 / 1.2 points over the 4,000 steps before them. Its pass does not depend on this, since more training would only raise it. At 100,000 people 8m was still rising (71.5 to 74.7% and 72.6 to 74.2% over its last 5,508 steps), so with more training the boundary there might be 8m (7.56M) rather than 16m. Sizes below 8m were not trained at 100,000 people; they are assumed to fail because 8m does.
 
 ### The thesis, as pre-registered
 
 The thesis is supported if the dense model's smallest passing size grows with the number of facts while the latent core loses no more than 3 points of one-hop accuracy between 10,000 and 100,000 people. "The latent core" is the smallest one that passes 10,000 people.
 
-1. **Dense: grows.** 3.74M at 10,000 and 30,000 people, 16.15M at 100,000: 4.3 times the parameters for 9.6 times the facts. The ladder doubles at each step, so it cannot show growth smaller than 2 times; 4m holding 30,000 people means the 10,000 to 30,000 step needed less than double.
-2. **Latent core with 4-bit keys (the rule as written, with E12): not supported.** The smallest core passing 10,000 people is 500k, and it falls from 95.6 / 95.9% to 87.4 / 87.3% at 100,000 people, a loss of 8.2 / 8.6 points on the two seeds.
+1. **Dense: grows.** 3.74M at 10,000 and 30,000 people, 16.15M at 100,000: 4.3 times the parameters for 9.6 times the facts (2.0 times if 8m would pass with more training). The ladder doubles at each step, so it cannot show growth smaller than 2 times; 4m holding 30,000 people means the 10,000 to 30,000 step needed less than double.
+2. **Latent core with 4-bit keys (the rule as written, judging latent cores with 4-bit keys): not supported.** The smallest core passing 10,000 people is 500k, and it falls from 95.6 / 95.9% to 87.4 / 87.3% at 100,000 people, a loss of 8.2 / 8.6 points on the two seeds.
 3. **Latent core with full-precision keys: supported.** The smallest core passing 10,000 people is 250k (0.32M parameters, a twelfth of the smallest passing dense model). It falls from 98.9 / 99.3% to 96.9 / 97.1%, a loss of 2.0 / 2.2 points.
 
-**So the outcome depends on key precision.** A fixed core reads a store ten times larger without retraining, but 4-bit keys cost small cores more as the store grows: with 4-bit keys the 500k core retrieves the right fact first 98.2% of the time at 10,000 people and 92.4% at 100,000 (seed 0), and the 250k core 92.5% and 78.0%. At full precision both stay at 99.8% or higher. One size up, the 1m core (1.34M) with 4-bit keys holds every world: 98.6 / 98.5% at 10,000 people, 97.6 / 96.9% at 30,000 and 96.3 / 95.9% at 100,000, a loss of 2.3 / 2.6 points on the two seeds. The key bits a store needs grow with the store's size, so a compressed store needs a somewhat larger core, still a twelfth of the dense model at 100,000 people.
+**So the outcome depends on key precision.** A fixed core reads a store ten times larger without retraining, but 4-bit keys cost small cores more as the store grows: with 4-bit keys the 500k core retrieves the right fact first 98.2% of the time at 10,000 people and 92.4% at 100,000 (seed 0), and the 250k core 92.5% and 78.0%. At full precision both stay at 99.8% or higher. One size up, the 1m core (1.34M) with 4-bit keys holds every world: 98.6 / 98.5% at 10,000 people, 97.6 / 96.9% at 30,000 and 96.3 / 95.9% at 100,000, a loss of 2.3 / 2.6 points on the two seeds. With 4-bit keys, retrieval gets worse as the store grows, so a compressed store needs a somewhat larger core, still a twelfth of the dense model at 100,000 people.
 
 ### Cost per answered question
 
@@ -135,7 +137,7 @@ Calculated from model shape and store size, generating one question at a time (R
 | 30,000 | 4m: 130 MFLOP, 56 MB | 1m: 47 + 2,412 MFLOP | 20 + 146 MB |
 | 100,000 | 16m: 563 MFLOP, 246 MB | 1m: 47 + 8,024 MFLOP | 20 + 495 MB |
 
-**The core's own cost stays flat, but the store lookup now dominates.** The store reader scores every token's query against every fact's key, so its compute and memory read grow with the store: at 100,000 people the latent core costs 14 times the dense model's compute and twice its memory read per question. The parameter thesis holds; the energy argument needs a store search that does not touch every key (an approximate nearest-neighbour index, for example), which is a separate project.
+**The core's own cost stays flat, but the store lookup now dominates.** The store reader scores every token's query against every fact's key, so its compute and memory read grow with the store: at 100,000 people the latent core costs 14 times the dense model's compute and twice its memory read per question. The parameter thesis holds at full precision, and with 4-bit keys for the 1m core; the energy argument needs a store search that does not touch every key (an approximate nearest-neighbour index, for example), which is a separate project.
 
 ## What this does and doesn't show
 
