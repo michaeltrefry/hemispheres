@@ -381,12 +381,12 @@ def capacity(runs: dict[str, Run], worlds: dict) -> tuple[list[str], list[tuple]
                         failing[-1] if failing else "—",
                         f"{lat_pass[0]} ({lat_pass[1] / 1e6:.2f}M)" if lat_pass else ("none" if verdicts else "—"),
                         lat_fail[-1] if lat_fail else "—", "; ".join(lat) or "—"])
-    md = ["Smallest model that holds each world's facts. A model passes at 95% one-hop accuracy on held-out "
-          "people (at least 1,000 questions) with its last two training evaluations within 1 point. Dense "
-          "models store the facts in their weights; latent cores read them from the world's store and are "
-          "evaluated on the larger worlds with no further training, judged with their store keys compressed to "
-          f"{LATENT_KEY_BITS} bits (TurboQuant; full-precision keys in brackets): a latent core passes when every "
-          f"seed passes with {LATENT_KEY_BITS}-bit keys. Seeds are separated by /. "
+    md = ["Smallest model that holds each world's facts. Dense models store the facts in their weights: a dense "
+          "size passes a world when every seed scores at least 95% one-hop accuracy on held-out people (at least "
+          "1,000 questions) and has its last two training evaluations within 1 point. Latent cores read the facts "
+          "from the world's store and are evaluated on the larger worlds with no further training: a latent core "
+          f"passes when every seed scores at least 95% with its store keys compressed to {LATENT_KEY_BITS} bits "
+          "(TurboQuant; full-precision keys in brackets). Seeds are separated by /. "
           "Sources: [every cell](#every-cell).", "",
           *table(["world", "people", "facts", "smallest passing dense size", "largest failing size below it",
                   f"smallest passing latent core ({LATENT_KEY_BITS}-bit keys)", "largest failing core below it",
