@@ -53,7 +53,7 @@ Pooled over world-A `test_id` and `test_1hop_ood` (lower is better for the last 
 
 ## Capacity: parameters needed versus facts known
 
-Smallest model that holds each world's facts. A model passes at 95% one-hop accuracy on held-out people (at least 1,000 questions) with its last two training evaluations within 1 point. Dense models store the facts in their weights; latent cores read them from the world's store and are evaluated on the larger worlds with no further training, judged with their store keys compressed to 4 bits (TurboQuant; full-precision keys in brackets): a latent core passes when every seed passes with 4-bit keys. Seeds are separated by /. Sources: [every cell](#every-cell).
+Smallest model that holds each world's facts. Dense models store the facts in their weights: a dense size passes a world when every seed scores at least 95% one-hop accuracy on held-out people (at least 1,000 questions) and has its last two training evaluations within 1 point. Latent cores read the facts from the world's store and are evaluated on the larger worlds with no further training: a latent core passes when every seed scores at least 95% with its store keys compressed to 4 bits (TurboQuant; full-precision keys in brackets). Seeds are separated by /. Sources: [every cell](#every-cell).
 
 | world | people | facts | smallest passing dense size | largest failing size below it | smallest passing latent core (4-bit keys) | largest failing core below it | latent cores: one-hop % with 4-bit keys (full precision) |
 |---|---|---|---|---|---|---|---|
