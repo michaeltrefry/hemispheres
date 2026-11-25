@@ -219,6 +219,15 @@ def test_capacity_picks_the_smallest_passing_size_and_charts_it(tmp_path):
     assert "| latent-x | world-b | one-hop held-out | 1000 | 0.30M | 16.0 |" in cost
 
 
+def test_final_eval_prefers_question_seed_0_over_a_same_size_rerun(tmp_path):
+    final = {"data": "data/world-b", "checkpoint": "final"}
+    _fake_run(tmp_path, "dense-a1-s1", {"seed": 1}, [(100, 0.54)],  # the rerun's name sorts first
+              {"world-b-a-seed1-final": ({**final, "seed": 1}, _one_hop(540)),
+               "world-b-heldout-final": ({**final, "seed": 0}, _one_hop(587))})
+    name, _, _ = report.final_eval(report.load_runs(tmp_path)["dense-a1-s1"], "world-b")
+    assert name == "world-b-heldout-final"
+
+
 def test_capacity_judges_latent_cores_by_4_bit_keys_on_every_seed(tmp_path):
     final = {"data": "data/world-b", "checkpoint": "final", "seed": 0}
     keys4 = {**final, "key_bits": 4}
