@@ -2,7 +2,7 @@
 
 An LLM that splits **reasoning** from **knowledge**. A knowledge-light reasoner reads from a separate store of facts. You add, change or delete a fact by editing the store, not by retraining the reasoner, and the reasoner uses updated facts in multi-step reasoning as well as a normal LLM uses what it memorized.
 
-Start with [`research/BRIEF.md`](research/BRIEF.md). It covers prior art, the gap, the strongest case against the idea, and the experiment plan. The detailed literature reviews are in [`research/tracks/`](research/tracks/).
+Start with [`research/BRIEF.md`](research/BRIEF.md). It covers prior art, the gap, the strongest case against the idea, and the experiment plan. The detailed literature reviews are in [`research/tracks/`](research/tracks/). Where the project goes next, and why, is in [`research/direction.md`](research/direction.md).
 
 ## Results so far (step 1: synthetic worlds)
 
