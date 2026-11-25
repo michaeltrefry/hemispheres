@@ -291,11 +291,11 @@ def dense_ladder(runs: dict[str, Run], world: str) -> dict[str, list[tuple[Run, 
         if r.config["arm"] != "dense" or r.config.get("init") or r.config["data"].split(",") != [f"data/{world}"]:
             continue
         out.setdefault(r.config["size"], []).append((r, one_hop(r, world)))
+    out = {s: sorted(e, key=lambda rc: rc[0].config.get("seed", 0)) for s, e in out.items() if any(c for _, c in e)}
     for size, entries in out.items():
         if len({recipe(r) for r, _ in entries}) > 1:
             raise SystemExit(f"{world}: dense size {size} has runs with different recipes "
                              f"({', '.join(r.name for r, _ in entries)}); they cannot be judged as seeds")
-    out = {s: sorted(e, key=lambda rc: rc[0].config.get("seed", 0)) for s, e in out.items() if any(c for _, c in e)}
     return dict(sorted(out.items(), key=lambda kv: kv[1][0][0].config["params"]))
 
 

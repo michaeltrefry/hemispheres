@@ -1,5 +1,6 @@
 import json
 import re
+import shutil
 from pathlib import Path
 
 import pytest
@@ -311,6 +312,9 @@ def test_dense_seeds_of_one_size_must_share_a_recipe(tmp_path):
               {"world-b-final": (final, _one_hop(1000))})
     with pytest.raises(SystemExit, match="different recipes"):
         report.dense_ladder(report.load_runs(tmp_path), "world-b")
+    shutil.rmtree(tmp_path / "dense-a3" / "evals")  # a size no seed has evaluated is hidden, not judged
+    shutil.rmtree(tmp_path / "dense-a3-long" / "evals")
+    assert report.dense_ladder(report.load_runs(tmp_path), "world-b") == {}
 
 
 def test_rerun_cross_check_skips_evaluations_with_compressed_keys(tmp_path):
